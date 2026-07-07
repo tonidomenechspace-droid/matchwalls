@@ -1,0 +1,607 @@
+{
+  "lot": "MW-GEO-LANDINGS-SPAIN-FRANCE-INTERNAL-LINKING-STOREFRONT-POST-PURGE-RECHECK-012O7",
+  "purge_confirmed_utc": "2026-07-04T15:49:00Z",
+  "csv_path": "C:\\Users\\d.bermejo\\OneDrive - Matchwalls\\Documentos\\Matchwalls Shopify\\auditoria-seo-geo-matchwalls\\qa-publico-MW-GEO-LANDINGS-SPAIN-FRANCE-INTERNAL-LINKING-STOREFRONT-POST-PURGE-RECHECK-012O7-2026-07-04.csv",
+  "total": 80,
+  "pass": 17,
+  "fail": 63,
+  "noindex_count": 0,
+  "status_counts": [
+    {
+      "key": "",
+      "count": 1
+    },
+    {
+      "key": "200",
+      "count": 79
+    }
+  ],
+  "by_page_pass": [
+    {
+      "key": "france | FAIL",
+      "count": 32
+    },
+    {
+      "key": "france | PASS",
+      "count": 8
+    },
+    {
+      "key": "spain | FAIL",
+      "count": 31
+    },
+    {
+      "key": "spain | PASS",
+      "count": 9
+    }
+  ],
+  "by_locale_pass": [
+    {
+      "key": "de | FAIL",
+      "count": 10
+    },
+    {
+      "key": "de | PASS",
+      "count": 6
+    },
+    {
+      "key": "en | FAIL",
+      "count": 16
+    },
+    {
+      "key": "es | FAIL",
+      "count": 13
+    },
+    {
+      "key": "es | PASS",
+      "count": 3
+    },
+    {
+      "key": "fr | FAIL",
+      "count": 12
+    },
+    {
+      "key": "fr | PASS",
+      "count": 4
+    },
+    {
+      "key": "nl | FAIL",
+      "count": 12
+    },
+    {
+      "key": "nl | PASS",
+      "count": 4
+    }
+  ],
+  "by_ua_pass": [
+    {
+      "key": "bingbot | FAIL",
+      "count": 14
+    },
+    {
+      "key": "bingbot | PASS",
+      "count": 6
+    },
+    {
+      "key": "browser_chrome | FAIL",
+      "count": 16
+    },
+    {
+      "key": "browser_chrome | PASS",
+      "count": 4
+    },
+    {
+      "key": "generic_ai_search | FAIL",
+      "count": 15
+    },
+    {
+      "key": "generic_ai_search | PASS",
+      "count": 5
+    },
+    {
+      "key": "googlebot | FAIL",
+      "count": 18
+    },
+    {
+      "key": "googlebot | PASS",
+      "count": 2
+    }
+  ],
+  "by_servedBy_pass": [
+    {
+      "key": "28zs | FAIL",
+      "count": 1
+    },
+    {
+      "key": "2ckt | FAIL",
+      "count": 1
+    },
+    {
+      "key": "2rtc | FAIL",
+      "count": 1
+    },
+    {
+      "key": "2s5s | FAIL",
+      "count": 1
+    },
+    {
+      "key": "2t67 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "2tpc | FAIL",
+      "count": 1
+    },
+    {
+      "key": "4kcx | FAIL",
+      "count": 2
+    },
+    {
+      "key": "4kcx | PASS",
+      "count": 1
+    },
+    {
+      "key": "4nqr | PASS",
+      "count": 1
+    },
+    {
+      "key": "5m4w | PASS",
+      "count": 1
+    },
+    {
+      "key": "68c6 | PASS",
+      "count": 1
+    },
+    {
+      "key": "7snw | FAIL",
+      "count": 1
+    },
+    {
+      "key": "7snw | PASS",
+      "count": 1
+    },
+    {
+      "key": "8492 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "89wc | FAIL",
+      "count": 2
+    },
+    {
+      "key": "8kwp | FAIL",
+      "count": 1
+    },
+    {
+      "key": "8wfl | PASS",
+      "count": 1
+    },
+    {
+      "key": "9zzj | FAIL",
+      "count": 1
+    },
+    {
+      "key": "EMPTY | FAIL",
+      "count": 1
+    },
+    {
+      "key": "b2s8 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "bpkg | FAIL",
+      "count": 1
+    },
+    {
+      "key": "bq5s | FAIL",
+      "count": 1
+    },
+    {
+      "key": "c5fq | FAIL",
+      "count": 1
+    },
+    {
+      "key": "c8sl | PASS",
+      "count": 1
+    },
+    {
+      "key": "cvhf | FAIL",
+      "count": 1
+    },
+    {
+      "key": "d8tw | FAIL",
+      "count": 1
+    },
+    {
+      "key": "dhbh | PASS",
+      "count": 1
+    },
+    {
+      "key": "dwj2 | FAIL",
+      "count": 2
+    },
+    {
+      "key": "f2rh | PASS",
+      "count": 1
+    },
+    {
+      "key": "flj4 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "glb7 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "gnps | FAIL",
+      "count": 1
+    },
+    {
+      "key": "hcwl | FAIL",
+      "count": 1
+    },
+    {
+      "key": "hw7h | FAIL",
+      "count": 1
+    },
+    {
+      "key": "hz7s | FAIL",
+      "count": 1
+    },
+    {
+      "key": "hz7s | PASS",
+      "count": 1
+    },
+    {
+      "key": "jmvq | FAIL",
+      "count": 1
+    },
+    {
+      "key": "jsgg | FAIL",
+      "count": 1
+    },
+    {
+      "key": "jv2x | PASS",
+      "count": 1
+    },
+    {
+      "key": "lg8m | FAIL",
+      "count": 1
+    },
+    {
+      "key": "ndnm | FAIL",
+      "count": 1
+    },
+    {
+      "key": "nwhv | FAIL",
+      "count": 1
+    },
+    {
+      "key": "pfjh | FAIL",
+      "count": 1
+    },
+    {
+      "key": "ph4s | FAIL",
+      "count": 1
+    },
+    {
+      "key": "ppwh | FAIL",
+      "count": 2
+    },
+    {
+      "key": "pxk2 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "q2fq | FAIL",
+      "count": 2
+    },
+    {
+      "key": "qhwm | FAIL",
+      "count": 1
+    },
+    {
+      "key": "qs9n | FAIL",
+      "count": 1
+    },
+    {
+      "key": "r9cv | PASS",
+      "count": 2
+    },
+    {
+      "key": "sdsh | PASS",
+      "count": 1
+    },
+    {
+      "key": "t85q | PASS",
+      "count": 1
+    },
+    {
+      "key": "v77g | FAIL",
+      "count": 3
+    },
+    {
+      "key": "vdwq | FAIL",
+      "count": 2
+    },
+    {
+      "key": "vfj7 | PASS",
+      "count": 1
+    },
+    {
+      "key": "vtkd | FAIL",
+      "count": 1
+    },
+    {
+      "key": "whvc | FAIL",
+      "count": 2
+    },
+    {
+      "key": "whwj | FAIL",
+      "count": 1
+    },
+    {
+      "key": "wjrr | FAIL",
+      "count": 1
+    },
+    {
+      "key": "wl78 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "wnsc | PASS",
+      "count": 1
+    },
+    {
+      "key": "wtg9 | FAIL",
+      "count": 3
+    },
+    {
+      "key": "wztm | FAIL",
+      "count": 1
+    },
+    {
+      "key": "xbzs | FAIL",
+      "count": 1
+    },
+    {
+      "key": "xc2n | FAIL",
+      "count": 1
+    },
+    {
+      "key": "zh62 | FAIL",
+      "count": 1
+    },
+    {
+      "key": "zkkm | FAIL",
+      "count": 1
+    },
+    {
+      "key": "zwns | FAIL",
+      "count": 1
+    }
+  ],
+  "fail_examples": [
+    {
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "browser_chrome",
+      "url": "https://www.matchwalls.com/pages/papel-pintado-espana",
+      "expected_href": "/pages/papel-pintado-francia",
+      "x_request_id": "9a6e95f1-32da-4d34-9ccc-74f792d851fd-1783180434",
+      "server_timing_servedBy": "2ckt",
+      "html_sha256_16": "0030df5a7b624e57",
+      "evidence_snippet": "intado en Barcelona, Madrid, Valencia, Málaga, Sevilla, Girona, Tarragona, Bizkaia, Gipuzkoa, Granada, Murcia o Zaragoza, MatchWalls puede servir como punto de partida para elegir diseño, material y muestra antes de avanzar con tu proyecto.</p> <h2>Preguntas frecuentes</h2> <h3>¿Puedo pedir muestras antes de comprar?</h3> <p>Sí. Las muestras ayudan a comprobar color, textura y acabado antes de decidir el papel pintado o mural definitivo.</p> <h3>¿MatchWalls trabaja con profesionales?</h3> <p>Sí. MatchWalls trabaja con interioristas, arquitectos, tiendas y proyectos comerciales que necesitan soporte en selección, muestras o personalización.</p> <h3>¿Puedo crear un mural personalizado?</h3> <p>Sí. La opción de personalización permite adaptar un mural o trabajar con una propuesta ajustada a las medidas y necesidades del espacio.</p> <p><a href=\"/collections/murales\">Ver papeles pintados"
+    },
+    {
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "bingbot",
+      "url": "https://www.matchwalls.com/pages/papel-pintado-espana",
+      "expected_href": "/pages/papel-pintado-francia",
+      "x_request_id": "e2acb80f-fa7b-4b2f-a256-0c6b7158dc0b-1783180435",
+      "server_timing_servedBy": "7snw",
+      "html_sha256_16": "0030df5a7b624e57",
+      "evidence_snippet": "intado en Barcelona, Madrid, Valencia, Málaga, Sevilla, Girona, Tarragona, Bizkaia, Gipuzkoa, Granada, Murcia o Zaragoza, MatchWalls puede servir como punto de partida para elegir diseño, material y muestra antes de avanzar con tu proyecto.</p> <h2>Preguntas frecuentes</h2> <h3>¿Puedo pedir muestras antes de comprar?</h3> <p>Sí. Las muestras ayudan a comprobar color, textura y acabado antes de decidir el papel pintado o mural definitivo.</p> <h3>¿MatchWalls trabaja con profesionales?</h3> <p>Sí. MatchWalls trabaja con interioristas, arquitectos, tiendas y proyectos comerciales que necesitan soporte en selección, muestras o personalización.</p> <h3>¿Puedo crear un mural personalizado?</h3> <p>Sí. La opción de personalización permite adaptar un mural o trabajar con una propuesta ajustada a las medidas y necesidades del espacio.</p> <p><a href=\"/collections/murales\">Ver papeles pintados"
+    },
+    {
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "browser_chrome",
+      "url": "https://www.matchwalls.com/en/pages/spain-wallpaper",
+      "expected_href": "/en/pages/french-wallpaper",
+      "x_request_id": "ec1981f5-92fe-4afb-9688-01b757c34b7e-1783180436",
+      "server_timing_servedBy": "q2fq",
+      "html_sha256_16": "9f9632754c902216",
+      "evidence_snippet": "your project is in Barcelona, Madrid, Valencia, Málaga, Sevilla, Girona, Tarragona, Bizkaia, Gipuzkoa, Granada, Murcia or Zaragoza, MatchWalls can be a starting point for choosing the right design, material and samples before moving forward.</p> <h2>Frequently asked questions</h2> <h3>Can I order samples before buying?</h3> <p>Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.</p> <h3>Does MatchWalls work with professionals?</h3> <p>Yes. MatchWalls works with interior designers, architects, retail spaces and commercial projects that need support with design selection, samples or customisation.</p> <h3>Can I create a custom mural?</h3> <p>Yes. Customisation options make it possible to adapt a mural or prepare a proposal based on the measurements and needs of the space.</p> <p><a href=\"/en/collections/all-matchwallsmurals-murals\">Explore co"
+    },
+    {
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "googlebot",
+      "url": "https://www.matchwalls.com/en/pages/spain-wallpaper",
+      "expected_href": "/en/pages/french-wallpaper",
+      "x_request_id": "c490ad28-3c93-413a-8dc8-2c3c2e992689-1783180437",
+      "server_timing_servedBy": "wl78",
+      "html_sha256_16": "e087a02507e67677",
+      "evidence_snippet": "your project is in Barcelona, Madrid, Valencia, Málaga, Sevilla, Girona, Tarragona, Bizkaia, Gipuzkoa, Granada, Murcia or Zaragoza, MatchWalls can be a starting point for choosing the right design, material and samples before moving forward.</p> <h2>Frequently asked questions</h2> <h3>Can I order samples before buying?</h3> <p>Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.</p> <h3>Does MatchWalls work with professionals?</h3> <p>Yes. MatchWalls works with interior designers, architects, retail spaces and commercial projects that need support with design selection, samples or customisation.</p> <h3>Can I create a custom mural?</h3> <p>Yes. Customisation options make it possible to adapt a mural or prepare a proposal based on the measurements and needs of the space.</p> <p><a href=\"/en/collections/all-matchwallsmurals-murals\">Explore co"
+    },
+    {
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "bingbot",
+      "url": "https://www.matchwalls.com/en/pages/spain-wallpaper",
+      "expected_href": "/en/pages/french-wallpaper",
+      "x_request_id": "95a577bd-15fe-4f02-a5c0-d71dbdc18c35-1783180437",
+      "server_timing_servedBy": "ppwh",
+      "html_sha256_16": "10a44cb077a526c7",
+      "evidence_snippet": "your project is in Barcelona, Madrid, Valencia, Málaga, Sevilla, Girona, Tarragona, Bizkaia, Gipuzkoa, Granada, Murcia or Zaragoza, MatchWalls can be a starting point for choosing the right design, material and samples before moving forward.</p> <h2>Frequently asked questions</h2> <h3>Can I order samples before buying?</h3> <p>Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.</p> <h3>Does MatchWalls work with professionals?</h3> <p>Yes. MatchWalls works with interior designers, architects, retail spaces and commercial projects that need support with design selection, samples or customisation.</p> <h3>Can I create a custom mural?</h3> <p>Yes. Customisation options make it possible to adapt a mural or prepare a proposal based on the measurements and needs of the space.</p> <p><a href=\"/en/collections/all-matchwallsmurals-murals\">Explore co"
+    },
+    {
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "generic_ai_search",
+      "url": "https://www.matchwalls.com/en/pages/spain-wallpaper",
+      "expected_href": "/en/pages/french-wallpaper",
+      "x_request_id": "01f8bf74-73fa-4218-9a40-442da99c263b-1783180438",
+      "server_timing_servedBy": "qhwm",
+      "html_sha256_16": "9f9632754c902216",
+      "evidence_snippet": "your project is in Barcelona, Madrid, Valencia, Málaga, Sevilla, Girona, Tarragona, Bizkaia, Gipuzkoa, Granada, Murcia or Zaragoza, MatchWalls can be a starting point for choosing the right design, material and samples before moving forward.</p> <h2>Frequently asked questions</h2> <h3>Can I order samples before buying?</h3> <p>Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.</p> <h3>Does MatchWalls work with professionals?</h3> <p>Yes. MatchWalls works with interior designers, architects, retail spaces and commercial projects that need support with design selection, samples or customisation.</p> <h3>Can I create a custom mural?</h3> <p>Yes. Customisation options make it possible to adapt a mural or prepare a proposal based on the measurements and needs of the space.</p> <p><a href=\"/en/collections/all-matchwallsmurals-murals\">Explore co"
+    },
+    {
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "browser_chrome",
+      "url": "https://www.matchwalls.com/fr/pages/papier-peint-en-espagne",
+      "expected_href": "/fr/pages/papier-peint-en-france",
+      "x_request_id": "cdc25012-900a-4435-ad08-f3d3e7459bd6-1783180439",
+      "server_timing_servedBy": "8kwp",
+      "html_sha256_16": "c617630c52203e88",
+      "evidence_snippet": "f (heightInput) { const debouncedHeightEvent = debounce(() => { pushInputMuralOutsideEvent('height', heightInput.value); }, 300); heightInput.addEventListener('input', debouncedHeightEvent); } }); </script> </store-header> </height-observer><navigation-drawer mobile-opening=\"left\" open-from=\"left\" id=\"header-sidebar-menu\" class=\"navigation-drawer drawer lg:hidden\" > <button is=\"close-button\" aria-label=\"Près\"><svg role=\"presentation\" stroke-width=\"2\" focusable=\"false\" width=\"19\" height=\"19\" class=\"icon icon-close\" viewBox=\"0 0 24 24\" > <path d=\"M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343\" stroke=\"currentColor\"></path> </svg></button><div class=\"panel-list__wrapper\"> <div class=\"panel\"> <div class=\"panel__wrapper\" >"
+    },
+    {
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "googlebot",
+      "url": "https://www.matchwalls.com/fr/pages/papier-peint-en-espagne",
+      "expected_href": "/fr/pages/papier-peint-en-france",
+      "x_request_id": "1ec33a41-9da0-40e7-930b-195342be7909-1783180439",
+      "server_timing_servedBy": "bq5s",
+      "html_sha256_16": "e6f6ec69e55e7ec6",
+      "evidence_snippet": "f (heightInput) { const debouncedHeightEvent = debounce(() => { pushInputMuralOutsideEvent('height', heightInput.value); }, 300); heightInput.addEventListener('input', debouncedHeightEvent); } }); </script> </store-header> </height-observer><navigation-drawer mobile-opening=\"left\" open-from=\"left\" id=\"header-sidebar-menu\" class=\"navigation-drawer drawer lg:hidden\" > <button is=\"close-button\" aria-label=\"Près\"><svg role=\"presentation\" stroke-width=\"2\" focusable=\"false\" width=\"19\" height=\"19\" class=\"icon icon-close\" viewBox=\"0 0 24 24\" > <path d=\"M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343\" stroke=\"currentColor\"></path> </svg></button><div class=\"panel-list__wrapper\"> <div class=\"panel\"> <div class=\"panel__wrapper\" >"
+    },
+    {
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "bingbot",
+      "url": "https://www.matchwalls.com/fr/pages/papier-peint-en-espagne",
+      "expected_href": "/fr/pages/papier-peint-en-france",
+      "x_request_id": "b9dd8251-232c-4364-9d05-d83aac4e8f75-1783180440",
+      "server_timing_servedBy": "v77g",
+      "html_sha256_16": "135ec35aa19374d1",
+      "evidence_snippet": "f (heightInput) { const debouncedHeightEvent = debounce(() => { pushInputMuralOutsideEvent('height', heightInput.value); }, 300); heightInput.addEventListener('input', debouncedHeightEvent); } }); </script> </store-header> </height-observer><navigation-drawer mobile-opening=\"left\" open-from=\"left\" id=\"header-sidebar-menu\" class=\"navigation-drawer drawer lg:hidden\" > <button is=\"close-button\" aria-label=\"Près\"><svg role=\"presentation\" stroke-width=\"2\" focusable=\"false\" width=\"19\" height=\"19\" class=\"icon icon-close\" viewBox=\"0 0 24 24\" > <path d=\"M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343\" stroke=\"currentColor\"></path> </svg></button><div class=\"panel-list__wrapper\"> <div class=\"panel\"> <div class=\"panel__wrapper\" >"
+    },
+    {
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "generic_ai_search",
+      "url": "https://www.matchwalls.com/fr/pages/papier-peint-en-espagne",
+      "expected_href": "/fr/pages/papier-peint-en-france",
+      "x_request_id": "051d9e87-3730-4b56-b6c3-cbf3e76cb7bc-1783180440",
+      "server_timing_servedBy": "ndnm",
+      "html_sha256_16": "135ec35aa19374d1",
+      "evidence_snippet": "f (heightInput) { const debouncedHeightEvent = debounce(() => { pushInputMuralOutsideEvent('height', heightInput.value); }, 300); heightInput.addEventListener('input', debouncedHeightEvent); } }); </script> </store-header> </height-observer><navigation-drawer mobile-opening=\"left\" open-from=\"left\" id=\"header-sidebar-menu\" class=\"navigation-drawer drawer lg:hidden\" > <button is=\"close-button\" aria-label=\"Près\"><svg role=\"presentation\" stroke-width=\"2\" focusable=\"false\" width=\"19\" height=\"19\" class=\"icon icon-close\" viewBox=\"0 0 24 24\" > <path d=\"M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343\" stroke=\"currentColor\"></path> </svg></button><div class=\"panel-list__wrapper\"> <div class=\"panel\"> <div class=\"panel__wrapper\" >"
+    },
+    {
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "googlebot",
+      "url": "https://www.matchwalls.com/de/pages/spanien-tapete",
+      "expected_href": "/de/pages/franzosische-tapete",
+      "x_request_id": "44063a68-4ac7-4cf0-9d17-40ad8a17398a-1783180442",
+      "server_timing_servedBy": "xbzs",
+      "html_sha256_16": "c5f309ce813b3478",
+      "evidence_snippet": "ut.value); }, 300); heightInput.addEventListener('input', debouncedHeightEvent); } }); </script> </store-header> </height-observer><navigation-drawer mobile-opening=\"left\" open-from=\"left\" id=\"header-sidebar-menu\" class=\"navigation-drawer drawer lg:hidden\" > <button is=\"close-button\" aria-label=\"Nahe\"><svg role=\"presentation\" stroke-width=\"2\" focusable=\"false\" width=\"19\" height=\"19\" class=\"icon icon-close\" viewBox=\"0 0 24 24\" > <path d=\"M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343\" stroke=\"currentColor\"></path> </svg></button><div class=\"panel-list__wrapper\"> <div class=\"panel\"> <div class=\"panel__wrapper\" > <div class=\"panel__scroller v-stack gap-8\"><ul class=\"v-stack gap-4\"> <li class=\"h3 sm:h4\"><button c"
+    },
+    {
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "browser_chrome",
+      "url": "https://www.matchwalls.com/nl/pages/spanje-behang",
+      "expected_href": "/nl/pages/frans-behang",
+      "x_request_id": "df3d3724-dd3e-4d0e-94cc-11f949636036-1783180443",
+      "server_timing_servedBy": "89wc",
+      "html_sha256_16": "15cbac82fe4f9858",
+      "evidence_snippet": "pushInputMuralOutsideEvent('height', heightInput.value); }, 300); heightInput.addEventListener('input', debouncedHeightEvent); } }); </script> </store-header> </height-observer><navigation-drawer mobile-opening=\"left\" open-from=\"left\" id=\"header-sidebar-menu\" class=\"navigation-drawer drawer lg:hidden\" > <button is=\"close-button\" aria-label=\"In de buurt van\"><svg role=\"presentation\" stroke-width=\"2\" focusable=\"false\" width=\"19\" height=\"19\" class=\"icon icon-close\" viewBox=\"0 0 24 24\" > <path d=\"M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343\" stroke=\"currentColor\"></path> </svg></button><div class=\"panel-list__wrapper\"> <div class=\"panel\"> <div class=\"panel__wrapper\" > <div class=\"panel__scroller v-stack gap-8\"><ul class=\"v-"
+    }
+  ],
+  "pass_examples": [
+    {
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "googlebot",
+      "url": "https://www.matchwalls.com/pages/papel-pintado-espana",
+      "expected_href": "/pages/papel-pintado-francia",
+      "x_request_id": "0d97d948-2c0d-4555-837e-d3ab482dcf6c-1783180434",
+      "server_timing_servedBy": "f2rh",
+      "html_sha256_16": "78374fdb70ec7aa3",
+      "evidence_snippet": "rial y muestra antes de avanzar con tu proyecto.</p> <h2>Papel pintado por país</h2><p>Estás consultando las soluciones para España. Si tu proyecto se desarrolla en Francia o quieres comparar opciones para otro mercado, consulta la guía de <a href=\"/pages/papel-pintado-francia\">papel pintado en Francia</a>.</p> <h2>Preguntas frecuentes</h2> <h3>¿Puedo pedir muestras antes de comprar?</h3> <p>Sí. Las muestras ayudan a comprobar color, textura y acabado antes de decidir el papel pintado o mural definitivo.</p> <h3>¿MatchWalls trabaja con profesionales?</h3> <p>Sí. MatchWalls trabaja con interioristas, arquitectos, tiendas y proyectos comerciales que necesitan soporte en selección, muestras o personalización.</p> <h3>¿Puedo crear un mural personalizado?</h3> <p>Sí. La opción de personalización permite adaptar un mural o trabajar con una propuesta ajustada a las medidas y necesidades del"
+    },
+    {
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "generic_ai_search",
+      "url": "https://www.matchwalls.com/pages/papel-pintado-espana",
+      "expected_href": "/pages/papel-pintado-francia",
+      "x_request_id": "ad7b5749-a37d-4a18-abcb-98a255b58b30-1783180435",
+      "server_timing_servedBy": "wnsc",
+      "html_sha256_16": "78374fdb70ec7aa3",
+      "evidence_snippet": "rial y muestra antes de avanzar con tu proyecto.</p> <h2>Papel pintado por país</h2><p>Estás consultando las soluciones para España. Si tu proyecto se desarrolla en Francia o quieres comparar opciones para otro mercado, consulta la guía de <a href=\"/pages/papel-pintado-francia\">papel pintado en Francia</a>.</p> <h2>Preguntas frecuentes</h2> <h3>¿Puedo pedir muestras antes de comprar?</h3> <p>Sí. Las muestras ayudan a comprobar color, textura y acabado antes de decidir el papel pintado o mural definitivo.</p> <h3>¿MatchWalls trabaja con profesionales?</h3> <p>Sí. MatchWalls trabaja con interioristas, arquitectos, tiendas y proyectos comerciales que necesitan soporte en selección, muestras o personalización.</p> <h3>¿Puedo crear un mural personalizado?</h3> <p>Sí. La opción de personalización permite adaptar un mural o trabajar con una propuesta ajustada a las medidas y necesidades del"
+    },
+    {
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "browser_chrome",
+      "url": "https://www.matchwalls.com/de/pages/spanien-tapete",
+      "expected_href": "/de/pages/franzosische-tapete",
+      "x_request_id": "f1794179-da8a-4815-b47b-0ed547e82b28-1783180441",
+      "server_timing_servedBy": "jv2x",
+      "html_sha256_16": "05831b0f0392f668",
+      "evidence_snippet": "Muster vor dem nächsten Schritt auszuwählen.</p> <h2>Tapeten nach Land</h2><p>Sie sehen die Lösungen für Spanien. Wenn Ihr Projekt in Frankreich liegt oder Sie Optionen für einen anderen Markt vergleichen möchten, lesen Sie den Leitfaden zu <a href=\"/de/pages/franzosische-tapete\">Tapeten in Frankreich</a>.</p> <h2>Häufige Fragen</h2> <h3>Kann ich vor dem Kauf Muster bestellen?</h3> <p>Ja. Muster helfen dabei, Farbe, Textur und Oberfläche zu prüfen, bevor Sie die endgültige Tapete oder das endgültige Wandbild auswählen.</p> <h3>Arbeitet MatchWalls mit Fachleuten zusammen?</h3> <p>Ja. MatchWalls arbeitet mit Innenarchitekten, Architekten, Ladengeschäften und gewerblichen Projekten zusammen, die Unterstützung bei Designauswahl, Mustern oder Individualisierung benötigen.</p> <h3>Kann ich ein individuelles Wandbild erstellen?</h3> <p>Ja. Individualisierungsoptionen ermöglichen es, ein Wandbil"
+    },
+    {
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "bingbot",
+      "url": "https://www.matchwalls.com/de/pages/spanien-tapete",
+      "expected_href": "/de/pages/franzosische-tapete",
+      "x_request_id": "dd5a7236-aae8-4e3e-8ceb-23a3b666012e-1783180442",
+      "server_timing_servedBy": "r9cv",
+      "html_sha256_16": "05831b0f0392f668",
+      "evidence_snippet": "Muster vor dem nächsten Schritt auszuwählen.</p> <h2>Tapeten nach Land</h2><p>Sie sehen die Lösungen für Spanien. Wenn Ihr Projekt in Frankreich liegt oder Sie Optionen für einen anderen Markt vergleichen möchten, lesen Sie den Leitfaden zu <a href=\"/de/pages/franzosische-tapete\">Tapeten in Frankreich</a>.</p> <h2>Häufige Fragen</h2> <h3>Kann ich vor dem Kauf Muster bestellen?</h3> <p>Ja. Muster helfen dabei, Farbe, Textur und Oberfläche zu prüfen, bevor Sie die endgültige Tapete oder das endgültige Wandbild auswählen.</p> <h3>Arbeitet MatchWalls mit Fachleuten zusammen?</h3> <p>Ja. MatchWalls arbeitet mit Innenarchitekten, Architekten, Ladengeschäften und gewerblichen Projekten zusammen, die Unterstützung bei Designauswahl, Mustern oder Individualisierung benötigen.</p> <h3>Kann ich ein individuelles Wandbild erstellen?</h3> <p>Ja. Individualisierungsoptionen ermöglichen es, ein Wandbil"
+    },
+    {
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "generic_ai_search",
+      "url": "https://www.matchwalls.com/de/pages/spanien-tapete",
+      "expected_href": "/de/pages/franzosische-tapete",
+      "x_request_id": "21a24c7d-9700-427b-b892-2431a48219bc-1783180443",
+      "server_timing_servedBy": "4nqr",
+      "html_sha256_16": "05831b0f0392f668",
+      "evidence_snippet": "Muster vor dem nächsten Schritt auszuwählen.</p> <h2>Tapeten nach Land</h2><p>Sie sehen die Lösungen für Spanien. Wenn Ihr Projekt in Frankreich liegt oder Sie Optionen für einen anderen Markt vergleichen möchten, lesen Sie den Leitfaden zu <a href=\"/de/pages/franzosische-tapete\">Tapeten in Frankreich</a>.</p> <h2>Häufige Fragen</h2> <h3>Kann ich vor dem Kauf Muster bestellen?</h3> <p>Ja. Muster helfen dabei, Farbe, Textur und Oberfläche zu prüfen, bevor Sie die endgültige Tapete oder das endgültige Wandbild auswählen.</p> <h3>Arbeitet MatchWalls mit Fachleuten zusammen?</h3> <p>Ja. MatchWalls arbeitet mit Innenarchitekten, Architekten, Ladengeschäften und gewerblichen Projekten zusammen, die Unterstützung bei Designauswahl, Mustern oder Individualisierung benötigen.</p> <h3>Kann ich ein individuelles Wandbild erstellen?</h3> <p>Ja. Individualisierungsoptionen ermöglichen es, ein Wandbil"
+    },
+    {
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "generic_ai_search",
+      "url": "https://www.matchwalls.com/nl/pages/spanje-behang",
+      "expected_href": "/nl/pages/frans-behang",
+      "x_request_id": "fef158f7-2e9e-4aa6-a010-876a401e0c08-1783180445",
+      "server_timing_servedBy": "sdsh",
+      "html_sha256_16": "5ce6215a41e7c658",
+      "evidence_snippet": "eriaal en monsters te kiezen voordat u verdergaat.</p> <h2>Behang per land</h2><p>U bekijkt de oplossingen voor Spanje. Als uw project zich in Frankrijk bevindt of als u opties voor een andere markt wilt vergelijken, bekijk dan de gids over <a href=\"/nl/pages/frans-behang\">behang in Frankrijk</a>.</p> <h2>Veelgestelde vragen</h2> <h3>Kan ik monsters bestellen voordat ik koop?</h3> <p>Ja. Monsters helpen om kleur, textuur en afwerking te controleren voordat u het definitieve behang of de definitieve wanddecoratie kiest.</p> <h3>Werkt MatchWalls met professionals?</h3> <p>Ja. MatchWalls werkt met interieurontwerpers, architecten, winkels en commerciële projecten die ondersteuning nodig hebben bij ontwerpkeuze, monsters of personalisatie.</p> <h3>Kan ik een gepersonaliseerde muurschildering maken?</h3> <p>Ja. Personalisatie maakt het mogelijk om een wanddecoratie of voorstel aan te passen a"
+    },
+    {
+      "page": "france",
+      "locale": "fr",
+      "ua_label": "browser_chrome",
+      "url": "https://www.matchwalls.com/fr/pages/papier-peint-en-france",
+      "expected_href": "/fr/pages/papier-peint-en-espagne",
+      "x_request_id": "4c3ae7d6-f922-4b23-960c-6984d6b11355-1783180450",
+      "server_timing_servedBy": "8wfl",
+      "html_sha256_16": "7285df0327a746ee",
+      "evidence_snippet": "ns avant de lancer votre projet.</p> <h2>Papier peint par pays</h2><p>Vous consultez les solutions pour la France. Si votre projet se situe en Espagne ou si vous souhaitez comparer les options pour un autre marché, consultez notre guide du <a href=\"/fr/pages/papier-peint-en-espagne\">papier peint en Espagne</a>.</p> <h2>Questions fréquentes</h2> <h3>Puis-je commander des échantillons avant d’acheter ?</h3> <p>Oui. Les échantillons permettent de vérifier la couleur, la texture et le rendu du matériau avant de choisir le papier peint ou le panoramique final.</p> <h3>MatchWalls travaille-t-il avec les professionnels ?</h3> <p>Oui. MatchWalls accompagne les architectes d’intérieur, décorateurs, boutiques et projets commerciaux dans la sélection de designs, matériaux et échantillons.</p> <h3>Puis-je créer un panoramique personnalisé ?</h3> <p>Oui. Les options de personnalisa"
+    },
+    {
+      "page": "france",
+      "locale": "de",
+      "ua_label": "browser_chrome",
+      "url": "https://www.matchwalls.com/de/pages/franzosische-tapete",
+      "expected_href": "/de/pages/spanien-tapete",
+      "x_request_id": "b41efee0-5f47-4d03-9436-ff9e260093cc-1783180453",
+      "server_timing_servedBy": "t85q",
+      "html_sha256_16": "181579adc9edbd24",
+      "evidence_snippet": "und Muster vor dem Projektstart auszuwählen.</p> <h2>Tapeten nach Land</h2><p>Sie sehen die Lösungen für Frankreich. Wenn Ihr Projekt in Spanien liegt oder Sie Optionen für einen anderen Markt vergleichen möchten, lesen Sie den Leitfaden zu <a href=\"/de/pages/spanien-tapete\">Tapeten in Spanien</a>.</p> <h2>Häufige Fragen</h2> <h3>Kann ich vor dem Kauf Muster bestellen?</h3> <p>Ja. Muster helfen dabei, Farbe, Textur und Oberfläche zu prüfen, bevor Sie die endgültige Tapete oder das endgültige Wandbild auswählen.</p> <h3>Arbeitet MatchWalls mit Fachleuten zusammen?</h3> <p>Ja. MatchWalls unterstützt Innenarchitekten, Dekorateure, Ladengeschäfte und gewerbliche Projekte bei der Auswahl von Designs, Materialien und Mustern.</p> <h3>Kann ich ein individuelles Wandbild erstellen?</h3> <p>Ja. Individualisierungsoptionen ermöglichen es, Design, Maßstab oder Komposition an die Maße und Anforderun"
+    }
+  ]
+}

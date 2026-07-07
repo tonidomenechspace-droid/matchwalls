@@ -1,0 +1,2 @@
+lote,fecha_backup,resource_type,id,path,target_actual,target_propuesto,estado_precheck,metodo_reversion
+MW-INDEXABILITY-REDIRECTS-SAMPLE-DEAD-TARGET-REPOINT-PAGE-011G7A1,2026-07-01,urlRedirect,gid://shopify/UrlRedirect/412616229091,/products/muestra-desnudos-blanco-y-negro,/collections/muestras,/pages/muestras,"Precheck Admin verificado: redirect existe; pagina /pages/muestras publicada; producto muestra origen en DRAFT sin onlineStoreUrl","Revertir con urlRedirectUpdate sobre el mismo id estableciendo target=/collections/muestras, solo si Daniel aprueba reversion"

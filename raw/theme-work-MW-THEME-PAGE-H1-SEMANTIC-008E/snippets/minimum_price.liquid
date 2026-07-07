@@ -1,0 +1,44 @@
+{% assign unit_number = block.settings.unit %}
+<script>
+  window.variantMinimumForSale = {};
+</script>
+
+{% for variant in product.variants %}
+  {% assign variant_minimum_price = unit_number | times: variant.price %}
+  {% assign price_in_ft_squared = variant.price | divided_by: 10.73 %}
+
+  <script>
+    window.variantMinimumForSale[{{ forloop.index0 }}] = {
+      id: {{ variant.id }},
+      price: "{{ variant_minimum_price | money }}",
+      variant_ftprice: "{{ price_in_ft_squared | money_with_currency }}",
+    };
+  </script>
+{% endfor %}
+{% assign selected_variant = product.selected_or_first_available_variant %}
+{% assign variant_price = selected_variant.price %}
+{% assign unit_number = block.settings.unit %}
+{% assign minimum_price = unit_number | times: variant_price %}
+<div min_unit="{{unit_number}}" class="minimum-price-for-sale">
+  <p class="pedido-minimum-paragraph">
+    (
+    {{ 'general.product.minimum_order' | t -}}
+    {% unless block.settings.tipo_template == 'murales' %}
+      {{- unit_number }}
+      {{ 'general.product.units' | t }}
+    {% endunless %}
+    - <span id="minimum_sale">{{ minimum_price | money }}</span>
+    )
+  </p>
+</div>
+<style>
+  .minimum-price-for-sale {
+    color: #707070;
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+  .pedido-minimum-paragraph {
+    text-transform: lowercase;
+  }
+</style>

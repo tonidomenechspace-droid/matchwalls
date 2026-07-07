@@ -1,0 +1,20 @@
+field,value
+lote,MW-MASTER-QUEUE-INFRA-HOLD-REPLAN-014B
+date,2026-07-05
+mode,solo lectura/documental
+source_reconciliation,MW-MASTER-QUEUE-RECONCILIATION-014A
+source_infra_update,MW-SHOPIFY-INFRA-500-REQUEST-ID-UPDATE-013J6R1
+shopify_ticket,68731900
+blocked_by_infra_rows,7
+safe_offline_rows,5
+prepare_no_publish_rows,4
+strategic_standby_rows,4
+total_replan_rows,20
+recommended_next_primary,MW-CEO-CMO-PANEL-SPEC-014C
+recommended_next_alternative,MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A
+shopify_changed,no
+bing_changed,no
+indexnow_changed,no
+langshop_changed,no
+cloudflare_changed,no
+final_state,VERIFICADO Y CORRECTO

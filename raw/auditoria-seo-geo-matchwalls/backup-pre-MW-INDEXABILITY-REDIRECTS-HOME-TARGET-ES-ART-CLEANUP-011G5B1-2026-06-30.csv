@@ -1,0 +1,5 @@
+id,path,target,estado_precheck,accion_aprobada,rollback
+gid://shopify/UrlRedirect/1518269596024,/collections/lienzos,/,"VERIFICADO Y CORRECTO","Eliminar redirect","Recrear redirect con path /collections/lienzos y target / o nuevo target canonico aprobado"
+gid://shopify/UrlRedirect/1518269628792,/collections/cuadros-rollos,/,"VERIFICADO Y CORRECTO","Eliminar redirect","Recrear redirect con path /collections/cuadros-rollos y target / o nuevo target canonico aprobado"
+gid://shopify/UrlRedirect/1518269661560,/collections/nuevos-cuadros-matchwalls,/,"VERIFICADO Y CORRECTO","Eliminar redirect","Recrear redirect con path /collections/nuevos-cuadros-matchwalls y target / o nuevo target canonico aprobado"
+gid://shopify/UrlRedirect/1518269694328,/collections/nuevos-lienzos-matchwalls,/,"VERIFICADO Y CORRECTO","Eliminar redirect","Recrear redirect con path /collections/nuevos-lienzos-matchwalls y target / o nuevo target canonico aprobado"

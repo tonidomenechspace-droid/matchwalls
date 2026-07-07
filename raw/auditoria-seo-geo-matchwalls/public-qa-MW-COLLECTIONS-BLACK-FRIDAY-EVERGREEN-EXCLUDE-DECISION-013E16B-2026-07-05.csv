@@ -1,0 +1,11 @@
+lote,fecha_hora_madrid,tipo,idioma,url,status,black_friday_link_count,links_or_robots,contains_black_friday_text,estado
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:51,hub,ES,https://www.matchwalls.com/collections,429,NO ACCESIBLE,"Error remoto 429 Too Many Requests",NO ACCESIBLE,NO ACCESIBLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:51,hub,EN,https://www.matchwalls.com/en/collections,200,1,/en/collections/wallpapers-black-friday,TRUE,VERIFICADO PERO MEJORABLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:51,hub,FR,https://www.matchwalls.com/fr/collections,200,1,/fr/collections/papiers-peints-black-friday,TRUE,VERIFICADO PERO MEJORABLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:51,hub,DE,https://www.matchwalls.com/de/collections,200,0,,TRUE,VERIFICADO PERO MEJORABLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:51,hub,NL,https://www.matchwalls.com/nl/collections,200,1,/nl/collections/black-friday-wallpaper,TRUE,VERIFICADO PERO MEJORABLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:52,direct,ES,https://www.matchwalls.com/collections/papel-pintado-black-friday,429,,NO ACCESIBLE,NO ACCESIBLE,NO ACCESIBLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:52,direct,EN,https://www.matchwalls.com/en/collections/wallpapers-black-friday,503,,NO ACCESIBLE,NO ACCESIBLE,NO ACCESIBLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:52,direct,FR,https://www.matchwalls.com/fr/collections/papiers-peints-black-friday,200,,noindex/nofollow,TRUE,VERIFICADO PERO MEJORABLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:52,direct,DE,https://www.matchwalls.com/de/collections/schwarzer-freitag-wallpaper,200,,noindex/nofollow,TRUE,VERIFICADO PERO MEJORABLE
+MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-EXCLUDE-DECISION-013E16B,2026-07-05 00:52,direct,NL,https://www.matchwalls.com/nl/collections/black-friday-wallpaper,200,,noindex/nofollow,TRUE,VERIFICADO PERO MEJORABLE

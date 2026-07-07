@@ -1,0 +1,18 @@
+metric,value,source,status,notes
+lote,MW-BING-WEBMASTER-SEARCH-PERFORMANCE-BASELINE-013J,local_documentation,VERIFICADO Y CORRECTO,Sin cambios en Shopify ni Bing.
+fecha_registro,2026-07-05 15:52 Europe/Madrid,local_system,VERIFICADO Y CORRECTO,
+propiedad,matchwalls.com/,capturas_Bing_Webmaster_Daniel,VERIFICADO Y CORRECTO,
+herramienta,Bing Webmaster Tools Search Performance,capturas_Bing_Webmaster_Daniel,VERIFICADO Y CORRECTO,
+rango_visible,3M,capturas_Bing_Webmaster_Daniel,VERIFICADO Y CORRECTO,
+total_clicks,3,capturas_Bing_Webmaster_Daniel,VERIFICADO Y CORRECTO,
+total_impressions,749,capturas_Bing_Webmaster_Daniel,VERIFICADO Y CORRECTO,
+avg_ctr_percent,0.4,capturas_Bing_Webmaster_Daniel,VERIFICADO Y CORRECTO,
+avg_position_global,NO_VISIBLE,capturas_Bing_Webmaster_Daniel,NO ACCESIBLE,La tarjeta global de posición media no estaba visible en las capturas.
+keywords_rows_visible,25,capturas_Bing_Webmaster_Daniel,VERIFICADO Y CORRECTO,Filas 1-25 visibles.
+keywords_rows_total_reported,88,capturas_Bing_Webmaster_Daniel,VERIFICADO PERO MEJORABLE,El informe indica 1-25 of 88; falta export completo.
+csv_search_performance_export_found,NO,filesystem_search,INCOMPLETO,No se localizó CSV Search Performance en Escritorio Descargas ni carpeta de auditoría.
+bing_browser_authenticated_now,NO,in_app_browser_read,NO ACCESIBLE,La pestaña actual redirigió a pantalla pública de Bing Webmaster con Sign In.
+ai_performance_separate,10 citations,diagnostico_013E3,VERIFICADO PERO MEJORABLE,No mezclar con Search Performance; son informes distintos.
+indexnow_received,13 submitted URLs,manual_check_013I4B,VERIFICADO PERO MEJORABLE,No implica indexación ni ranking.
+engineering_ticket,68731900,registro_014A,STANDBY,Home/render siguen bajo investigación Shopify.
+estado_final,VERIFICADO PERO MEJORABLE,baseline_013J,VERIFICADO PERO MEJORABLE,Baseline útil pero parcial hasta export completo.

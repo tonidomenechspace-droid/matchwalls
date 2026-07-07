@@ -1,0 +1,5 @@
+lote,fecha,check_name,id,path,target,resultado
+MW-INDEXABILITY-REDIRECTS-FR-DEAD-TARGET-CLEANUP-011G4B2,2026-07-01,deletedRedirect,gid://shopify/UrlRedirect/417581367523,,,CORREGIDO Y VERIFICADO - null tras delete
+MW-INDEXABILITY-REDIRECTS-FR-DEAD-TARGET-CLEANUP-011G4B2,2026-07-01,pathCount,,/fr/collections/painted-papers-baller-matchwallswallpapers,,0
+MW-INDEXABILITY-REDIRECTS-FR-DEAD-TARGET-CLEANUP-011G4B2,2026-07-01,targetCount,,target:/fr/collections/mural-murals-matchwallsmurals,,0
+MW-INDEXABILITY-REDIRECTS-FR-DEAD-TARGET-CLEANUP-011G4B2,2026-07-01,frRedirects,,path:/fr/*,,22

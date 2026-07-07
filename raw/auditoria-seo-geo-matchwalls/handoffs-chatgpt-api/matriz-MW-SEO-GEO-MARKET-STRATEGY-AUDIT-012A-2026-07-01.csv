@@ -1,0 +1,11 @@
+tipo,mercado,idioma,url_handle,titulo,productos,estado_estrategico,decision_recomendada
+page_country,España,ES,papel-pintado-espana,Papel Pintado España,n/a,existente_antigua,reformular como landing país pilar ES
+page_country,Francia,FR,papel-pintado-francia,Papel Pintado Francia,n/a,existente_antigua,reformular como landing país pilar FR
+missing_country,Alemania,DE,,,n/a,ausente,crear landing país DE: Tapeten Deutschland / Wandtapeten online
+missing_country,Países Bajos,NL,,,n/a,ausente,crear landing país NL: Behang Nederland / fotobehang op maat
+missing_country,UK,EN-UK,,,n/a,ausente,crear landing mercado UK diferenciada de USA
+missing_country,Bélgica,FR/NL,,,n/a,ausente,crear enfoque bilingüe Belgique/België
+missing_country,USA,EN-US,,,n/a,ausente,crear landing USA después de base Europa
+missing_country,México,ES-MX,,,n/a,ausente,crear landing México con español local después de base Europa
+standby,Italia,IT,,,n/a,publicado_no_prioritario,solo limpieza mínima defensiva; fase 2
+standby,Portugal,PT-PT,,,n/a,publicado_no_prioritario,solo limpieza mínima defensiva; fase 2

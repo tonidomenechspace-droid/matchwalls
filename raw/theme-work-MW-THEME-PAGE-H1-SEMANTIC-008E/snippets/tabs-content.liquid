@@ -1,0 +1,267 @@
+{%- case block.settings.tab_type -%}
+  {%- when 'product_description' %}
+    <div class="product-summary">
+      <div class="product-information">
+        <div class="product-short-description">{{ product.description }}</div>
+      </div>
+      <img
+        src="{{ block.settings.product.featured_image | image_url: width: 400, height: 400 }}"
+        width="400"
+        height="400"
+        alt="frame"
+      >
+    </div>
+  {%- when 'specifications' -%}
+    <div class="tab-content">
+      <h2>{{ 'general.product.specifications' | t }}</h2>
+      <div class="tab-pane is-visible" style="display: block;">
+        <div class="product-page-specification-container">
+          <div>{{ 'general.product.reference' | t }}</div>
+          <div class="value">
+            {% if template.suffix == 'art-prints-2' or template.suffix == 'cuadros' %}
+              {{ product.metafields.custom.product_reference }}
+            {% else %}
+              <variant-sku
+                form="{{ product_form_id }}"
+                class="product-info__sku text-xs"
+                id="sku-tab-specifications"
+                {% if product.selected_or_first_available_variant.sku == blank %}
+                  hidden
+                {% endif %}
+              >
+                {{ product.selected_or_first_available_variant.sku -}}
+              </variant-sku>
+            {% endif %}
+          </div>
+        </div>
+        <div class="product-page-specification-container">
+          <div>{{ 'general.product.collection' | t }}</div>
+          {% if template.suffix == 'rollos' %}
+            <div class="value">
+              <a style="color: black" href="/collections/papeles-pintados">#Bematchrolls</a>
+            </div>
+          {% elsif template.suffix == 'art-prints-2' or template.suffix == 'cuadros' %}
+            <div class="value">
+              <a style="color: black" href="/collections/cuadros-y-lienzos">#Bematchpaints</a>
+            </div>
+          {% else %}
+            <div class="value">
+              <a style="color: black" href="/collections/murales">#Bematchwalls</a>
+            </div>
+          {% endif %}
+        </div>
+        <div class="product-page-specification-container">
+          <div>{{ 'general.product.unit_measurement' | t }}</div>
+          <div class="value">
+            {{ 'general.product.m_squared' | t -}}
+            /
+            {{- 'general.product.ft_squared' | t }}
+          </div>
+        </div>
+        {% if template.suffix == 'art-prints-2' %}
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.fabric_quality' | t }}</div>
+            <div class="value">
+              {{ 'general.product.coton_canvas_polysterfabric' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.quality_mueso_matter_wallpaper' | t }}</div>
+            <div class="value">
+              {{ 'general.product.quality_mueso_matter_wallpaper_value' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.quality_mueso_matter_wallpaper' | t }}</div>
+            <div class="value">
+              {{ 'general.product.quality_mueso_matter_wallpaper_value_2' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.fsc_certification' | t }}</div>
+            <div class="value">{{ 'general.product.yes' | t }}</div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.sun_resistance' | t }}</div>
+            <div class="value">
+              {{ 'general.product.sun_resistance_value_2' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.sustainability' | t }}</div>
+            <div class="value">
+              <p>
+                <a href="/pages/sustainability" target="_self">
+                  <span style="color: rgb(0, 0, 0);">{{ 'general.product.free_voc' | t }}</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.glass' | t }}</div>
+            <div class="value">
+              {{ 'general.product.glass_value' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.installation_kit' | t }}</div>
+            <div class="value">
+              {{ 'general.product.installation_kit_value' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.packaging_protectors' | t }}</div>
+            <div class="value">
+              {{ 'general.product.packaging_protectors_value' | t }}
+            </div>
+          </div>
+        {% endif %}
+        {% if template.suffix == 'cuadros' %}
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.quality_mueso_matter_wallpaper' | t }}</div>
+            <div class="value">
+              {{ 'general.product.quality_mueso_matter_wallpaper_value_cuadro_1' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.quality_mueso_matter_wallpaper' | t }}</div>
+            <div class="value">
+              {{ 'general.product.quality_mueso_matter_wallpaper_value_cuadro_2' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.quality_mueso_matter_wallpaper' | t }}</div>
+            <div class="value">
+              {{ 'general.product.quality_mueso_matter_wallpaper_value_cuadro_3' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.fire_certification' | t }}</div>
+            <div class="value">{{ 'general.product.fire_certification_details' | t }}</div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.fsc_certification' | t }}</div>
+            <div class="value">{{ 'general.product.yes' | t }}</div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.sun_resistance' | t }}</div>
+            <div class="value">
+              {{ 'general.product.sun_resistance_value_2' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.sustainability' | t }}</div>
+            <div class="value">
+              <p>
+                <a href="/pages/sustainability" target="_self">
+                  <span style="color: rgb(0, 0, 0);">{{ 'general.product.free_voc' | t }}</span>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.framework' | t }}</div>
+            <div class="value">
+              {{ 'general.product.framework_value' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.glass' | t }}</div>
+            <div class="value">
+              {{ 'general.product.glass_value' | t }}
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.installation_kit' | t }}</div>
+            <div class="value">
+              {{ 'general.product.installation_kit_value' | t }}
+            </div>
+          </div>
+        {% endif %}
+        {% unless template.suffix == 'art-prints-2' or template.suffix == 'cuadros' %}
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.horizontal_repeat' | t }}</div>
+            <div class="value">{{ 'general.product.yes' | t }}</div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.vertical_repeat' | t }}</div>
+            <div class="value">{{ 'general.product.no' | t }}</div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.unit_measurement' | t }}</div>
+            <div class="value">
+              {{ 'general.product.m_squared' | t -}}
+              /
+              {{- 'general.product.ft_squared' | t }}
+            </div>
+          </div>
+
+          {% for variant in product.variants %}
+            <div class="product-page-specification-container">
+              <div>{{ 'general.product.type_wallpaper_mural_available' | t -}}</div>
+              <div class="value">{{ variant.title }} - {{ variant.metafields.custom.option_description }}</div>
+            </div>
+          {% endfor %}
+
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.fire_certification' | t }}</div>
+            <div class="value">{{ 'general.product.fire_certification_details' | t }}</div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.fsc_certification' | t }}</div>
+            <div class="value">{{ 'general.product.yes' | t }}</div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.sun_resistance' | t }}</div>
+            <div class="value">
+              <p>{{ 'general.product.excellent_sun_resistance' | t }}</p>
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.washability' | t }}</div>
+            <div class="value">
+              <p>{{ 'general.product.spongeable' | t }}</p>
+            </div>
+          </div>
+          <div class="product-page-specification-container">
+            <div>{{ 'general.product.sustainability' | t }}</div>
+            <div class="value">
+              <p>
+                <a href="/pages/sustainability" target="_self">
+                  <span style="color: rgb(0, 0, 0);">{{ 'general.product.free_voc' | t }}</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        {% endunless %}
+      </div>
+    </div>
+
+  {%- when 'compromiso' -%}
+    <div class="tab-content">
+      <h2>Compromiso Matchwalls</h2>
+      <p>Details about the Matchwalls commitment.</p>
+    </div>
+
+  {%- when 'instalations' -%}
+    <div class="tab-content">
+      <h2>Installations & Tester</h2>
+      <p>Information on installations and testing procedures.</p>
+    </div>
+
+  {%- when 'free_return' -%}
+    <div class="tab-content">
+      <h2>Free Return</h2>
+      <p>Instructions and policy details for free returns.</p>
+    </div>
+
+  {%- when 'return' -%}
+    <div class="tab-content">
+      <h2>Return</h2>
+      <p>Details about the return policy.</p>
+    </div>
+
+  {%- when 'other' -%}
+    {{ content }}
+{%- endcase -%}

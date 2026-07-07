@@ -1,0 +1,13 @@
+item,status,evidence,next_step
+"Lote 015B2 documental creado","VERIFICADO Y CORRECTO","Archivos locales generados en auditoria-seo-geo-matchwalls","Usar como base para 015B3 o 015C"
+"Razón social recibida","VERIFICADO Y CORRECTO","Daniel aportó Match Projects International S.L el 2026-07-06","Confirmar uso público en schema"
+"CIF/NIF/VAT recibido","VERIFICADO Y CORRECTO","Daniel aportó B70959283 el 2026-07-06","Confirmar si se declara como taxID, vatID o ambos"
+"Email oficial para schema recibido","VERIFICADO Y CORRECTO","Daniel aportó help@matchwalls.com el 2026-07-06","Incluir en propuesta, no implementar sin aprobación"
+"Dirección legal","INCOMPLETO","Daniel aportó Avd Catalunya 9 -08060, pero faltan ciudad, provincia/región y país","Completar dirección"
+"Teléfono","VERIFICADO PERO MEJORABLE","Daniel aportó 675916340, pero falta formato internacional y permiso público","Solicitar formato internacional"
+"sameAs","INCOMPLETO","No se recibieron URLs oficiales","Solicitar URLs exactas"
+"1961, Barcelona, fabricación propia y políticas","REQUIERE DECISION HUMANA","Mencionados sin fuente, frase exacta o condiciones","Solicitar datos completos"
+"Certificaciones, Trustpilot, autores/revisores","NO ACCESIBLE","No se recibieron evidencias ni personas/URLs concretas","Mantener fuera de schema"
+"Shopify y sistemas externos","NO ACCESIBLE","No se ejecutaron lecturas ni escrituras externas por alcance del lote","Mantener infra hold hasta respuesta Shopify"
+"Registro de cambios","VERIFICADO Y CORRECTO","Se prepara entrada local para registro-cambios-ejecutados.md","Verificar presencia"
+

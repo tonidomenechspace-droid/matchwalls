@@ -1,0 +1,23 @@
+﻿scope,query,count,precision,estado,nota
+total,,635,EXACT,VERIFICADO PERO MEJORABLE,Conteo total actual Shopify Admin GraphQL
+risk_free_search,matchwallsmurals,334,EXACT,REQUIERE DECISION HUMANA,Búsqueda libre sobre path/target; gran bloque legacy relacionado con matchwallsmurals
+risk_free_search,matchwallswallpapers,44,EXACT,REQUIERE DECISION HUMANA,Búsqueda libre sobre path/target; bloque legacy relacionado con matchwallswallpapers
+risk_free_search,facade,1,EXACT,INCORRECTO,Redirección de prueba /pages/facade-variants/test -> /
+risk_free_search,black-friday,0,EXACT,VERIFICADO Y CORRECTO,No hay redirecciones Admin para black-friday
+risk_free_search,matchalls,0,EXACT,VERIFICADO PERO MEJORABLE,No hay redirecciones Admin para typo matchalls
+risk_free_search,norid,0,EXACT,VERIFICADO PERO MEJORABLE,No hay redirecciones Admin para typo norid
+risk_free_search,enchathed,0,EXACT,VERIFICADO PERO MEJORABLE,No hay redirecciones Admin para typo enchathed
+risk_free_search,muestra,6,EXACT,VERIFICADO PERO MEJORABLE,Redirecciones de muestras detectadas
+risk_free_search,copy,6,EXACT,VERIFICADO PERO MEJORABLE,Redirecciones con copy detectadas
+risk_free_search,copia,12,EXACT,VERIFICADO PERO MEJORABLE,Redirecciones con copia detectadas
+risk_free_search,old,2,EXACT,RIESGO CRITICO,Incluye cadena /collections/papeles-pintados -> /collections/papeles-pintados-old -> /collections/murales
+admin_path_filter,path:/products/*,24,EXACT,INCOMPLETO,Filtro path de Shopify; no equivale a taxonomía completa
+admin_path_filter,path:/collections/*,56,EXACT,INCOMPLETO,Filtro path de Shopify; no equivale a taxonomía completa
+admin_path_filter,path:/pages/*,4,EXACT,INCOMPLETO,Filtro path de Shopify; no equivale a taxonomía completa
+admin_path_filter,path:/blogs/*,0,EXACT,VERIFICADO Y CORRECTO,Filtro path de Shopify
+admin_path_filter,path:/ar/*,4,EXACT,VERIFICADO PERO MEJORABLE,Filtro path de Shopify
+admin_path_filter,path:/fr/*,23,EXACT,VERIFICADO PERO MEJORABLE,Filtro path de Shopify
+admin_path_filter,path:/en/*,2,EXACT,VERIFICADO PERO MEJORABLE,Filtro path de Shopify
+admin_path_filter,path:/de/*,0,EXACT,VERIFICADO Y CORRECTO,Filtro path de Shopify
+admin_path_filter,path:/nl/*,0,EXACT,VERIFICADO Y CORRECTO,Filtro path de Shopify
+admin_target_filter,target:/,36,EXACT,VERIFICADO PERO MEJORABLE,Redirecciones cuyo target coincide con raíz según filtro Shopify

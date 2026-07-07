@@ -1,0 +1,165 @@
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      --section-spacing-inline: 0;
+      --scrolling-text-font-size: {% if section.settings.text_size == 'xsmall' %}1.125rem{% elsif section.settings.text_size == 'small' %}2.5rem{% elsif section.settings.text_size == 'medium' %}3.75rem{% elsif section.settings.text_size == 'large' %}5rem{% else %}7.5rem{% endif %};
+    }
+
+    .scrolling-container {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      max-height: {% if section.settings.text_size == 'xsmall' %}60px{% endif %};
+      background-color: var(--container-background, #f1f1f1);
+    }
+
+    .scrolling-content {
+      display: flex;
+      animation: scroll-left 20s linear infinite; /* Control speed and infinite scroll */
+      white-space: nowrap;
+      align-items: center; /* Align items vertically */
+      gap: 20px; /* Adjust gap between blocks */
+    }
+
+    .block-wrapper {
+      display: flex;
+      flex-direction: row; /* Align text and image horizontally */
+      align-items: center; /* Center items vertically */
+      padding: 10px;
+      background-color: var(--block-background-color, #ffffff);
+      color: var(--block-text-color, #000000);
+      border-radius: 5px; /* Set border radius to 5px */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .scrolling-text__text {
+      margin-right: 10px; /* Adjust spacing between text and image */
+      font-size: var(--scrolling-text-font-size); /* Control text size */
+    }
+
+    .block-image {
+      max-height: 30px; /* Set max height for images */
+      max-width: 50px; /* Adjust max width for better alignment */
+      object-fit: contain; /* Keep images within bounds */
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%); /* Ensure smooth infinite scrolling */
+      }
+    }
+  </style>
+
+  <div class="scrolling-container">
+    <div class="scrolling-content">
+      {%- capture content -%}
+        {%- for block in section.blocks -%}
+          <div class="block-wrapper" style="margin-top: 10px; border-radius: 25px; background-color: {{ block.settings.background_color }}; color: {{ block.settings.text_color }};">
+            {%- if block.settings.image -%}
+              <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt | escape }}" class="block-image">
+            {%- endif -%}  
+            <span class="scrolling-text__text heading">
+              {{ block.settings.text }}
+            </span>
+            
+          </div>
+        {%- endfor -%}
+      {%- endcapture -%}
+
+      <!-- Repeat the captured content to create a seamless scroll -->
+      {{ content }}
+      {{ content }}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Scrolling Promotions",
+  "class": "shopify-section--scrolling-text",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Block Text",
+          "default": "This is block text"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Block Image"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image Alt Text"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "label": "Text size",
+      "options": [
+        {
+          "value": "xsmall",
+          "label": "X-Small"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "xlarge",
+          "label": "X-Large"
+        }
+      ],
+      "default": "large"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling Promotions"
+    }
+  ]
+}
+{% endschema %}

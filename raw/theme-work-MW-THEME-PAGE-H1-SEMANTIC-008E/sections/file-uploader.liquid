@@ -1,0 +1,190 @@
+{%- render 'section-spacing-collapsing' -%}
+{% liquid
+  assign title = product.title
+  if section.settings.title != blank
+    assign title = section.settings.title
+  endif
+%}
+<style>
+  #shopify-section-{{ section.id }} {
+    --product-grid: auto / minmax(0, 1fr);
+    --product-gallery-media-list-grid: auto / auto-flow 100%;
+    --product-gallery-media-list-gap: {% if section.settings.mobile_media_size == 'expanded' %}var(--spacing-0-5){% else %}var(--grid-gutter){% endif %};
+  }
+
+  @media screen and (max-width: 999px) {
+    #shopify-section-{{ section.id }} {
+      --section-spacing-block-start: {% if section.settings.mobile_media_size == 'expanded' %}0px{% else %}var(--container-gutter){% endif %};
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} {
+      {%- assign media_ratio = section.settings.desktop_media_width | divided_by: 50.0 -%}
+      --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
+      --product-gallery-media-list-grid: {% if section.settings.desktop_media_layout contains 'grid' %}auto-flow dense / repeat(2, minmax(0, 1fr)){% else %}auto / auto-flow 100%{% endif %};
+      --product-gallery-media-list-gap: calc(var(--grid-gutter) / 2);
+    }
+
+    {%- if section.settings.desktop_media_layout == 'grid_highlight' -%}
+      #shopify-section-{{ section.id }} .product-gallery__media-list > :not([hidden]) {
+        grid-column: span 2;
+      }
+
+      #shopify-section-{{ section.id }} .product-gallery__media-list > :not([hidden]) ~ *:not(.product-gallery__media--expand) {
+        grid-column: span 1;
+      }
+    {%- endif -%}
+  }
+
+  @media screen and (min-width: 1400px) {
+    #shopify-section-{{ section.id }} {
+      --product-gallery-media-list-gap: var(--grid-gutter);
+    }
+  }
+</style>
+<div {% render 'section-properties', tight: true %}>
+  <div class="file__uploader--header">
+    <h1 class="title-product-page h2">{{ title }}</h1>
+    {% if section.settings.subtitle %}
+      <p>{{ section.settings.subtitle }}</p>
+    {% endif %}
+  </div>
+  <div class="product file__uploader--body">
+    <div class="left-side">
+      <ol class="block-list">
+        {% for block in section.blocks %}
+          <li>
+            <div>
+              <h4 class="h6">{{ block.settings.title }}</h4>
+              <p>{{ block.settings.subtitle }}</p>
+            </div>
+          </li>
+        {% endfor %}
+        <li>
+          {{- product.price | money_with_currency -}}
+          / m2
+        </li>
+      </ol>
+    </div>
+    {% render 'product-file-uploader', product: product %}
+  </div>
+</div>
+<script>
+  window.product = {{ product | json }};
+</script>
+
+{% schema %}
+{
+  "name": "Product page: uploader",
+  "class": "shopify-section--main-product",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "mobile_media_size",
+      "label": "Mobile media size",
+      "options": [
+        {
+          "value": "expanded",
+          "label": "Expanded"
+        },
+        {
+          "value": "contained",
+          "label": "Contained"
+        }
+      ],
+      "default": "expanded"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "range",
+      "id": "desktop_media_width",
+      "label": "Desktop media size",
+      "min": 35,
+      "max": 65,
+      "step": 5,
+      "unit": "%",
+      "default": 55
+    },
+    {
+      "type": "select",
+      "id": "desktop_media_layout",
+      "label": "Desktop media layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "grid_highlight",
+          "label": "Grid with main media"
+        },
+        {
+          "value": "carousel_thumbnails_left",
+          "label": "Thumbnails left (carousel)"
+        },
+        {
+          "value": "carousel_thumbnails_bottom",
+          "label": "Thumbnails bottom (carousel)"
+        }
+      ],
+      "default": "carousel_thumbnails_left"
+    },
+    {
+      "type": "color",
+      "id": "input_background",
+      "label": "Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "input_text_color",
+      "label": "Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "file-uploader",
+      "name": "File uploader",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

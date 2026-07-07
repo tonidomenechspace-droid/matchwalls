@@ -1,0 +1,121 @@
+{
+  "sitemap_urls_total": 7932,
+  "rastreadas": 2110,
+  "por_idioma_tipo_sitemap": {
+    "de|article": 12,
+    "de|collection": 107,
+    "de|home": 1,
+    "de|page": 42,
+    "de|product": 971,
+    "en|article": 12,
+    "en|collection": 107,
+    "en|home": 1,
+    "en|page": 42,
+    "en|product": 971,
+    "es|article": 12,
+    "es|collection": 107,
+    "es|home": 1,
+    "es|other": 1,
+    "es|page": 42,
+    "es|product": 971,
+    "fr|article": 12,
+    "fr|collection": 107,
+    "fr|home": 1,
+    "fr|page": 42,
+    "fr|product": 971,
+    "it|article": 12,
+    "it|collection": 107,
+    "it|home": 1,
+    "it|page": 42,
+    "it|product": 971,
+    "nl|article": 12,
+    "nl|collection": 107,
+    "nl|home": 1,
+    "nl|page": 42,
+    "nl|product": 971,
+    "pt-PT|article": 12,
+    "pt-PT|collection": 107,
+    "pt-PT|home": 1,
+    "pt-PT|page": 42,
+    "pt-PT|product": 971
+  },
+  "http": {
+    "200": 565,
+    "500": 1,
+    "429": 1541,
+    "0": 3
+  },
+  "schema": {
+    "AggregateRating": 7,
+    "BreadcrumbList": 564,
+    "ListItem": 564,
+    "Organization": 40,
+    "SearchAction": 7,
+    "WebSite": 7,
+    "BlogPosting": 33,
+    "ImageObject": 149,
+    "Person": 33,
+    "Answer": 14,
+    "FAQPage": 14,
+    "Question": 14,
+    "Brand": 116,
+    "Offer": 116,
+    "Product": 116,
+    "QuantitativeValue": 116
+  },
+  "aggregate_rating_pages": 7,
+  "review_schema_pages": 0,
+  "possible_language_mix": 0,
+  "missing_description": 1,
+  "missing_canonical": 1,
+  "missing_h1": 35,
+  "multiple_h1": 15,
+  "duplicate_titles": {
+    "MatchWalls - Tapeten, die deine Räume verwandelnAmerican ExpressApple PayBancontactGoogle PayiDEAL WeroMaestroMastercardShop PayUnion PayVisa": [
+      "https://www.matchwalls.com/de",
+      "https://www.matchwalls.com/de/",
+      "https://www.matchwalls.com/de/pages/facade-variants/test"
+    ],
+    "Your Privacy ChoicesAmerican ExpressApple PayBancontactGoogle PayiDEAL WeroMaestroMastercardShop PayUnion PayVisa": [
+      "https://www.matchwalls.com/de/pages/verkaufen-oder-teilen-sie-meine-personlichen-daten-nicht-oder-teilen-sie-sie-nicht",
+      "https://www.matchwalls.com/en/pages/do-not-sell-or-share-my-personal-information"
+    ],
+    "MatchWalls - Wallpaper and murals to transform your spacesAmerican ExpressApple PayBancontactGoogle PayiDEAL WeroMaestroMastercardShop PayUnion PayVisa": [
+      "https://www.matchwalls.com/en",
+      "https://www.matchwalls.com/en/",
+      "https://www.matchwalls.com/en/pages/facade-variants/test"
+    ]
+  },
+  "duplicate_descriptions": {
+    "Maßgefertigte Tapeten und individuelle Wandbilder, perfekt für Ihr Projekt mit selbstklebendem Vinyl. Einzigartige Designs, kostenloser internationaler Versand.": [
+      "https://www.matchwalls.com/de",
+      "https://www.matchwalls.com/de/",
+      "https://www.matchwalls.com/de/pages/facade-variants/test"
+    ],
+    "Como se describe en nuestra Política de privacidad, recopilamos información personal de sus interacciones con nosotros y nuestro sitio web, incluso a través de cookies y tecnologías similares. También podemos compartir esta información personal con terceros, incluidos socios publicitarios. Hacemos esto para mostrarle a": [
+      "https://www.matchwalls.com/de/pages/verkaufen-oder-teilen-sie-meine-personlichen-daten-nicht-oder-teilen-sie-sie-nicht",
+      "https://www.matchwalls.com/en/pages/do-not-sell-or-share-my-personal-information"
+    ],
+    "\"Classical Grid\" ist ein Tapete, das ein einfaches, aber elegantes Gitter in blauen Tönen auf einem weißen Hintergrund bietet, ideal für Räume, die eine saubere und organisierte Ästhetik suchen.Das \"Classic Grid\" Wallpaper bietet ein subtiles und zeitloses Design, das sich perfekt an jede Umgebung anpasst, in der Klarh": [
+      "https://www.matchwalls.com/de/products/blue-classic-grid-probe",
+      "https://www.matchwalls.com/de/products/green-classic-grid-probe"
+    ],
+    "Custom and personalized wallpapers and murals, perfect for your project in self-adhesive vinyl. Unique designs, free international shipping.": [
+      "https://www.matchwalls.com/en",
+      "https://www.matchwalls.com/en/",
+      "https://www.matchwalls.com/en/pages/facade-variants/test"
+    ]
+  },
+  "shared_canonicals": {
+    "https://www.matchwalls.com/de": [
+      "https://www.matchwalls.com/de",
+      "https://www.matchwalls.com/de/",
+      "https://www.matchwalls.com/de/pages/facade-variants/test"
+    ],
+    "https://www.matchwalls.com/en": [
+      "https://www.matchwalls.com/en",
+      "https://www.matchwalls.com/en/",
+      "https://www.matchwalls.com/en/pages/facade-variants/test"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+product_gid,legacy_resource_id,title,handle,seo_hidden_before,seo_hidden_after,seo_hidden_type,metafield_id,rollback
+gid://shopify/Product/14835721306488,14835721306488,"Muestra de Cuadrícula Clásica  Gris",muestra-de-cuadricula-clasica-gris,null,1,number_integer,gid://shopify/Metafield/198958986264952,delete seo.hidden to restore null
+gid://shopify/Product/14835721175416,14835721175416,"Muestra de Cuadrícula Clásica  Verde",muestra-de-cuadricula-clasica-verde,null,1,number_integer,gid://shopify/Metafield/198958986297720,delete seo.hidden to restore null
+gid://shopify/Product/14835721372024,14835721372024,"Muestra de Cuadrícula Clásica Blanco y negro",muestra-de-cuadricula-clasica-blanco-y-negro,null,1,number_integer,gid://shopify/Metafield/198958986330488,delete seo.hidden to restore null
+gid://shopify/Product/14835719176568,14835719176568,"Muestra de Damas Clásicas Gris",muestra-de-damas-clasicas-gris,null,1,number_integer,gid://shopify/Metafield/198958986363256,delete seo.hidden to restore null
+gid://shopify/Product/14835719307640,14835719307640,"Muestra de Damas Clásicas Verde",muestra-de-damas-clasicas-verde,null,1,number_integer,gid://shopify/Metafield/198958986396024,delete seo.hidden to restore null
+gid://shopify/Product/14858207789432,14858207789432,"Muestra de Forest Study Retreat",muestra-de-forest-study-retreat,null,1,number_integer,gid://shopify/Metafield/198958986428792,delete seo.hidden to restore null
+gid://shopify/Product/14835717210488,14835717210488,"Muestra de Golden Woodland Amarillo",muestra-de-golden-woodland-amarillo,null,1,number_integer,gid://shopify/Metafield/198958986461560,delete seo.hidden to restore null
+gid://shopify/Product/14835717341560,14835717341560,"Muestra de Golden Woodland Lila",muestra-de-golden-woodland-lila,null,1,number_integer,gid://shopify/Metafield/198958986494328,delete seo.hidden to restore null
+gid://shopify/Product/14835717079416,14835717079416,"Muestra de Golden Woodland Marrón",muestra-de-golden-woodland-marron,null,1,number_integer,gid://shopify/Metafield/198958986527096,delete seo.hidden to restore null
+gid://shopify/Product/14858732339576,14858732339576,"Muestra de Highland Plaid Marròn",muestra-de-highland-plaid-marron,null,1,number_integer,gid://shopify/Metafield/198958986559864,delete seo.hidden to restore null

@@ -1,0 +1,377 @@
+{%- if collections.size == 0 -%}
+  <div class="empty-state">
+    <div class="empty-state__icon-wrapper">
+      {%- render 'icon' with 'picto-box', width: 32, height: 32, stroke_width: 1 -%}
+      <span class="count-bubble count-bubble--lg">0</span>
+    </div>
+
+    <div class="prose">
+      <p class="h4">{{ 'collection.general.no_collections' | t }}</p>
+
+      {%- assign button_content = 'collection.general.continue_shopping' | t -%}
+      {%- render 'button', href: settings.routes.root_url, size: 'xl', content: button_content -%}
+    </div>
+  </div>
+{%- else -%}
+  <style>
+    #shopify-section-{{ section.id }} .collection-list {
+      --collection-list-grid: auto / repeat({{ section.settings.collections_per_row_mobile | times: 1 }}, minmax(0, 1fr));
+    }
+
+    @media screen and (min-width: 700px) {
+      #shopify-section-{{ section.id }} .collection-list {
+        --collection-list-grid: auto / repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media screen and (min-width: 1000px) {
+      #shopify-section-{{ section.id }} .collection-list {
+        --collection-list-grid: auto / repeat({{ 3 | at_most: section.settings.collections_per_row }}, minmax(0, 1fr));
+      }
+    }
+
+    @media screen and (min-width: 1400px) {
+      #shopify-section-{{ section.id }} .collection-list {
+        --collection-list-grid: auto / repeat({{ section.settings.collections_per_row }}, minmax(0, 1fr));
+      }
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root {
+      max-width: 960px;
+      margin-inline: auto;
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__intro {
+      max-width: 860px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__quick-link {
+      border: 1px solid rgb(var(--text-color) / .16);
+      border-radius: 999px;
+      padding: .65rem 1rem;
+      line-height: 1;
+      text-decoration: none;
+      transition: border-color .2s ease, background .2s ease;
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__quick-link:hover {
+      border-color: currentColor;
+      background: rgb(var(--text-color) / .04);
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__faq {
+      display: grid;
+      gap: .75rem;
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__faq details {
+      border: 1px solid rgb(var(--text-color) / .12);
+      border-radius: var(--rounded-sm);
+      padding: 1rem;
+      background: rgb(var(--background) / .5);
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__faq summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    #shopify-section-{{ section.id }} .mw-collections-root__faq p {
+      margin-block-start: .75rem;
+    }
+  </style>
+
+  <div class="container">
+    <div class="page-spacer">
+      <div class="v-stack gap-12">
+        <div class="mw-collections-root v-stack gap-8">
+          <div class="mw-collections-root__intro prose">
+            <h1 class="h1">{{ 'mw_collections_root_heading' | t }}</h1>
+            <p>{{ 'mw_collections_root_intro' | t }}</p>
+            <p>{{ 'mw_collections_root_guidance' | t }}</p>
+          </div>
+
+          <nav class="mw-collections-root__quick-links" aria-label="{{ 'mw_collections_root_quick_links_label' | t }}">
+            <a class="mw-collections-root__quick-link" href="{{ 'mw_collections_root_main_catalog_url' | t }}">{{ 'mw_collections_root_main_catalog_label' | t }}</a>
+            <a class="mw-collections-root__quick-link" href="{{ 'mw_collections_root_measure_url' | t }}">{{ 'mw_collections_root_measure_label' | t }}</a>
+            <a class="mw-collections-root__quick-link" href="{{ 'mw_collections_root_custom_url' | t }}">{{ 'mw_collections_root_custom_label' | t }}</a>
+            <a class="mw-collections-root__quick-link" href="{{ 'mw_collections_root_professional_url' | t }}">{{ 'mw_collections_root_professional_label' | t }}</a>
+            <a class="mw-collections-root__quick-link" href="{{ 'mw_collections_root_spain_url' | t }}">{{ 'mw_collections_root_spain_label' | t }}</a>
+            <a class="mw-collections-root__quick-link" href="{{ 'mw_collections_root_france_url' | t }}">{{ 'mw_collections_root_france_label' | t }}</a>
+          </nav>
+
+          <div class="mw-collections-root__faq">
+            <h2 class="h3 text-center">{{ 'mw_collections_root_faq_heading' | t }}</h2>
+
+            <details>
+              <summary>{{ 'mw_collections_root_faq_one_question' | t }}</summary>
+              <p>{{ 'mw_collections_root_faq_one_answer' | t }}</p>
+            </details>
+
+            <details>
+              <summary>{{ 'mw_collections_root_faq_two_question' | t }}</summary>
+              <p>{{ 'mw_collections_root_faq_two_answer' | t }}</p>
+            </details>
+
+            <details>
+              <summary>{{ 'mw_collections_root_faq_three_question' | t }}</summary>
+              <p>{{ 'mw_collections_root_faq_three_answer' | t }}</p>
+            </details>
+          </div>
+        </div>
+
+        <h2 class="h2 text-center">{{ 'mw_collections_root_collection_list_heading' | t }}</h2>
+
+        {%- paginate collections by 48 -%}
+          <collection-list class="collection-list">
+            {% assign collections_list = section.settings.collections | default: collections %}
+
+            {%- for collection in collections_list -%}
+              <a href="{{ collection.url }}" class="collection-card" reveal-js>
+                <div
+                  class="content-over-media group rounded-sm"
+                  style="--content-over-media-overlay: {{ section.settings.overlay_color.rgb }} / {{ section.settings.overlay_opacity | divided_by: 100.0 }}"
+                >
+                  {%- if collection.featured_image != blank -%}
+                    {%- capture sizes -%}(max-width: 699px) 73vw, {{ settings.page_width | divided_by: section.settings.collections_per_row }}px{%- endcapture -%}
+                    {{-
+                      collection.featured_image
+                      | image_url: width: collection.featured_image.width
+                      | image_tag:
+                        loading: 'lazy',
+                        sizes: sizes,
+                        widths: '200,300,400,500,600,800,1000,1200,1400,1600',
+                        class: 'zoom-image'
+                    -}}
+                  {%- endif -%}
+
+                  <div
+                    class="collection-card__content-wrapper place-self-center text-center text-custom"
+                    style="--text-color: {{ section.settings.text_color.rgb }}"
+                  >
+                    <div class="collection-card__content">
+                      <h2 class="h2">{{ collection.title | escape }}</h2>
+                    </div>
+
+                    {%- render 'icon' with 'circle-button-right-clipped', width: 48, height: 48 -%}
+                  </div>
+                </div>
+              </a>
+            {%- endfor -%}
+          </collection-list>
+
+          {%- if section.settings.collections == empty -%}
+            {%- render 'pagination', paginate: paginate -%}
+          {%- endif -%}
+        {%- endpaginate -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "List collections",
+  "class": "shopify-section--main-list-collections",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "collection_list",
+      "id": "collections",
+      "label": "Selected collections",
+      "limit": 48
+    },
+    {
+      "type": "select",
+      "id": "collections_per_row_mobile",
+      "label": "Collections per row (mobile)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "collections_per_row",
+      "min": 2,
+      "max": 5,
+      "label": "Collections per row (desktop)",
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 30
+    }
+  ],
+  "locales": {
+    "es": {
+      "mw_collections_root_heading": "Colecciones de papel pintado y murales",
+      "mw_collections_root_intro": "Explora las colecciones de MatchWalls y encuentra papel pintado, murales decorativos y diseños a medida para viviendas, tiendas, hoteles, oficinas y proyectos profesionales.",
+      "mw_collections_root_guidance": "Busca por estilo, estancia, color o material, compara opciones como non woven, vinílico o autoadhesivo, y revisa las guías de medición antes de comprar.",
+      "mw_collections_root_quick_links_label": "Enlaces principales de colecciones",
+      "mw_collections_root_collection_list_heading": "Explora las colecciones",
+      "mw_collections_root_faq_heading": "Cómo elegir tu papel pintado o mural",
+      "mw_collections_root_faq_one_question": "¿Qué diferencia hay entre papel pintado y mural?",
+      "mw_collections_root_faq_one_answer": "El papel pintado suele elegirse por diseño o patrón; un mural se adapta a una pared o composición concreta y puede requerir medidas personalizadas.",
+      "mw_collections_root_faq_two_question": "¿Puedo pedir muestras antes de comprar?",
+      "mw_collections_root_faq_two_answer": "Sí. Las muestras ayudan a comprobar color, textura y acabado antes de elegir el papel pintado o mural definitivo.",
+      "mw_collections_root_faq_three_question": "¿Qué material debo elegir?",
+      "mw_collections_root_faq_three_answer": "Depende del uso, la superficie y el nivel de exigencia del proyecto. Antes de decidir, conviene revisar las opciones de material y medir correctamente la pared.",
+      "mw_collections_root_main_catalog_label": "Ver todos los diseños",
+      "mw_collections_root_main_catalog_url": "/collections/murales",
+      "mw_collections_root_measure_label": "Medir la pared",
+      "mw_collections_root_measure_url": "/pages/medidas-paredes",
+      "mw_collections_root_custom_label": "Crear mural personalizado",
+      "mw_collections_root_custom_url": "/products/custom-file-uploader",
+      "mw_collections_root_professional_label": "Cuenta profesional",
+      "mw_collections_root_professional_url": "/pages/formulario-profesionales",
+      "mw_collections_root_spain_label": "Papel pintado en España",
+      "mw_collections_root_spain_url": "/pages/papel-pintado-espana",
+      "mw_collections_root_france_label": "Papel pintado en Francia",
+      "mw_collections_root_france_url": "/pages/papel-pintado-francia"
+    },
+    "en": {
+      "mw_collections_root_heading": "Wallpaper and mural collections",
+      "mw_collections_root_intro": "Explore MatchWalls collections to find wallpaper, wall murals and made-to-measure designs for homes, shops, hotels, offices and professional interiors.",
+      "mw_collections_root_guidance": "Browse by style, room, colour or material, compare non-woven, vinyl and self-adhesive options, and check the measuring guide before ordering.",
+      "mw_collections_root_quick_links_label": "Main collection links",
+      "mw_collections_root_collection_list_heading": "Explore collections",
+      "mw_collections_root_faq_heading": "How to choose your wallpaper or mural",
+      "mw_collections_root_faq_one_question": "What is the difference between wallpaper and a mural?",
+      "mw_collections_root_faq_one_answer": "Wallpaper is usually selected by pattern or design family; a mural is adapted to a specific wall, composition or custom size.",
+      "mw_collections_root_faq_two_question": "Can I order samples before buying?",
+      "mw_collections_root_faq_two_answer": "Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.",
+      "mw_collections_root_faq_three_question": "Which material should I choose?",
+      "mw_collections_root_faq_three_answer": "It depends on the surface, use and project requirements. Review the material options and measure the wall before ordering.",
+      "mw_collections_root_main_catalog_label": "View all designs",
+      "mw_collections_root_main_catalog_url": "/en/collections/all-matchwallsmurals-murals",
+      "mw_collections_root_measure_label": "Measure your wall",
+      "mw_collections_root_measure_url": "/en/pages/how-to-take-wall-measurements",
+      "mw_collections_root_custom_label": "Create a custom mural",
+      "mw_collections_root_custom_url": "/en/products/custom-file-uploader",
+      "mw_collections_root_professional_label": "Professional account",
+      "mw_collections_root_professional_url": "/en/pages/professional-form",
+      "mw_collections_root_spain_label": "Wallpaper in Spain",
+      "mw_collections_root_spain_url": "/en/pages/spain-wallpaper",
+      "mw_collections_root_france_label": "Wallpaper in France",
+      "mw_collections_root_france_url": "/en/pages/french-wallpaper"
+    },
+    "fr": {
+      "mw_collections_root_heading": "Collections de papiers peints et panoramiques",
+      "mw_collections_root_intro": "Explorez les collections MatchWalls pour trouver des papiers peints, des panoramiques muraux et des designs sur mesure pour maisons, boutiques, hôtels, bureaux et projets professionnels.",
+      "mw_collections_root_guidance": "Parcourez les modèles par style, pièce, couleur ou matière, comparez les options non-tissé, vinyle ou adhésives, et consultez le guide de mesure avant de commander.",
+      "mw_collections_root_quick_links_label": "Liens principaux des collections",
+      "mw_collections_root_collection_list_heading": "Explorer les collections",
+      "mw_collections_root_faq_heading": "Comment choisir votre papier peint ou panoramique",
+      "mw_collections_root_faq_one_question": "Quelle est la différence entre un papier peint et un panoramique mural ?",
+      "mw_collections_root_faq_one_answer": "Un papier peint se choisit souvent par motif ou par collection; un panoramique mural s’adapte à une composition ou à des dimensions précises.",
+      "mw_collections_root_faq_two_question": "Puis-je commander des échantillons avant d’acheter ?",
+      "mw_collections_root_faq_two_answer": "Oui. Les échantillons permettent de vérifier la couleur, la texture et la finition avant de choisir le papier peint ou le panoramique définitif.",
+      "mw_collections_root_faq_three_question": "Quelle matière choisir ?",
+      "mw_collections_root_faq_three_answer": "Le choix dépend de la surface, de l’usage et du niveau d’exigence du projet. Il est conseillé de comparer les matières et de mesurer le mur avant de commander.",
+      "mw_collections_root_main_catalog_label": "Voir tous les designs",
+      "mw_collections_root_main_catalog_url": "/fr/collections/tous-les-peintures-murales-matchwallsmurals",
+      "mw_collections_root_measure_label": "Mesurer le mur",
+      "mw_collections_root_measure_url": "/fr/pages/comment-prendre-des-mesures-murales",
+      "mw_collections_root_custom_label": "Créer un panoramique personnalisé",
+      "mw_collections_root_custom_url": "/fr/products/telechargeur-de-fichiers-personnalise",
+      "mw_collections_root_professional_label": "Compte professionnel",
+      "mw_collections_root_professional_url": "/fr/pages/forme-professionnelle",
+      "mw_collections_root_spain_label": "Papier peint en Espagne",
+      "mw_collections_root_spain_url": "/fr/pages/papier-peint-en-espagne",
+      "mw_collections_root_france_label": "Papier peint en France",
+      "mw_collections_root_france_url": "/fr/pages/papier-peint-en-france"
+    },
+    "de": {
+      "mw_collections_root_heading": "Kollektionen für Tapeten und Wandbilder",
+      "mw_collections_root_intro": "Entdecke die MatchWalls-Kollektionen mit Tapeten, Wandbildern und maßgefertigten Designs für Wohnräume, Shops, Hotels, Büros und professionelle Innenraumprojekte.",
+      "mw_collections_root_guidance": "Suche nach Stil, Raum, Farbe oder Material, vergleiche Vlies-, Vinyl- und selbstklebende Optionen und nutze vor der Bestellung die Messanleitung.",
+      "mw_collections_root_quick_links_label": "Wichtige Links zu Kollektionen",
+      "mw_collections_root_collection_list_heading": "Kollektionen entdecken",
+      "mw_collections_root_faq_heading": "So wählst du Tapete oder Wandbild aus",
+      "mw_collections_root_faq_one_question": "Was ist der Unterschied zwischen Tapete und Wandbild?",
+      "mw_collections_root_faq_one_answer": "Tapete wird meist nach Muster oder Designfamilie gewählt; ein Wandbild wird auf eine bestimmte Wand, Komposition oder Größe abgestimmt.",
+      "mw_collections_root_faq_two_question": "Kann ich vor dem Kauf Muster bestellen?",
+      "mw_collections_root_faq_two_answer": "Ja. Muster helfen, Farbe, Struktur und Oberfläche vor der endgültigen Auswahl zu prüfen.",
+      "mw_collections_root_faq_three_question": "Welches Material soll ich wählen?",
+      "mw_collections_root_faq_three_answer": "Das hängt von Oberfläche, Nutzung und Anforderungen des Projekts ab. Materialoptionen und Wandmaße sollten vor der Bestellung geprüft werden.",
+      "mw_collections_root_main_catalog_label": "Alle Designs ansehen",
+      "mw_collections_root_main_catalog_url": "/de/collections/alle-matchwallsmurals-wandbilder",
+      "mw_collections_root_measure_label": "Wand messen",
+      "mw_collections_root_measure_url": "/de/pages/wie-man-wandmessungen-durchnimmt",
+      "mw_collections_root_custom_label": "Individuelles Wandbild erstellen",
+      "mw_collections_root_custom_url": "/de/products/benutzerdefinierte-datei-uploader",
+      "mw_collections_root_professional_label": "Professionelles Konto",
+      "mw_collections_root_professional_url": "/de/pages/professionelle-form",
+      "mw_collections_root_spain_label": "Tapete in Spanien",
+      "mw_collections_root_spain_url": "/de/pages/spanien-tapete",
+      "mw_collections_root_france_label": "Tapete in Frankreich",
+      "mw_collections_root_france_url": "/de/pages/franzosische-tapete"
+    },
+    "nl": {
+      "mw_collections_root_heading": "Collecties behang en wandprints",
+      "mw_collections_root_intro": "Ontdek de collecties van MatchWalls met behang, wandprints en ontwerpen op maat voor woningen, winkels, hotels, kantoren en professionele interieurs.",
+      "mw_collections_root_guidance": "Zoek op stijl, ruimte, kleur of materiaal, vergelijk vliesbehang, vinyl en zelfklevende opties, en gebruik de meetgids voordat je bestelt.",
+      "mw_collections_root_quick_links_label": "Belangrijkste collectielinks",
+      "mw_collections_root_collection_list_heading": "Collecties bekijken",
+      "mw_collections_root_faq_heading": "Hoe kies je behang of een wandprint",
+      "mw_collections_root_faq_one_question": "Wat is het verschil tussen behang en een wandprint?",
+      "mw_collections_root_faq_one_answer": "Behang wordt meestal gekozen op patroon of collectie; een wandprint wordt afgestemd op een specifieke wand, compositie of maat.",
+      "mw_collections_root_faq_two_question": "Kan ik stalen bestellen voordat ik koop?",
+      "mw_collections_root_faq_two_answer": "Ja. Stalen helpen om kleur, textuur en afwerking te beoordelen voordat je het definitieve behang of de wandprint kiest.",
+      "mw_collections_root_faq_three_question": "Welk materiaal moet ik kiezen?",
+      "mw_collections_root_faq_three_answer": "Dat hangt af van de ondergrond, het gebruik en de eisen van het project. Vergelijk de materialen en meet de wand voordat je bestelt.",
+      "mw_collections_root_main_catalog_label": "Alle designs bekijken",
+      "mw_collections_root_main_catalog_url": "/nl/collections/alle-matchwallsmurals-muurschilderingen",
+      "mw_collections_root_measure_label": "Wand meten",
+      "mw_collections_root_measure_url": "/nl/pages/hoe-u-muurmetingen-kunt-uitvoeren",
+      "mw_collections_root_custom_label": "Gepersonaliseerde wandprint maken",
+      "mw_collections_root_custom_url": "/nl/products/aangepaste-bestandsbelaster",
+      "mw_collections_root_professional_label": "Professioneel account",
+      "mw_collections_root_professional_url": "/nl/pages/professionele-vorm",
+      "mw_collections_root_spain_label": "Behang in Spanje",
+      "mw_collections_root_spain_url": "/nl/pages/spanje-behang",
+      "mw_collections_root_france_label": "Behang in Frankrijk",
+      "mw_collections_root_france_url": "/nl/pages/frans-behang"
+    }
+  }
+}
+{% endschema %}

@@ -1,0 +1,17 @@
+metric,value,state
+lote,MW-CRAWLERS-WAF-CLOUDFLARE-429-SUPPORT-EVIDENCE-013J6B,VERIFICADO Y CORRECTO
+source_lote,MW-BING-SEO-GEO-PRIORITY-URL-PUBLIC-QA-013J6,VERIFICADO Y CORRECTO
+priority_urls_checked,42,VERIFICADO Y CORRECTO
+browser_like_200,6,VERIFICADO Y CORRECTO
+browser_like_429,36,INCOMPLETO
+bingbot_like_429,42,INCOMPLETO
+slow_recheck_after_cooldown,"3/3 returned 429 Cloudflare",INCOMPLETO
+server_observed_on_429,cloudflare,VERIFICADO Y CORRECTO
+shopify_x_request_id_on_429,absent,VERIFICADO Y CORRECTO
+can_confirm_real_bingbot_blocked,no,NO ACCESIBLE
+can_confirm_page_level_seo_failure,no,NO ACCESIBLE
+recommended_next_if_support,MW-CRAWLERS-WAF-CLOUDFLARE-429-SUPPORT-SUBMISSION-013J6C,REQUIERE DECISION HUMANA
+recommended_next_if_wait,MW-BING-SEO-GEO-PRIORITY-URL-PUBLIC-QA-013J6R,REQUIERE DECISION HUMANA
+shopify_changed,no,VERIFICADO Y CORRECTO
+bing_changed,no,VERIFICADO Y CORRECTO
+indexnow_changed,no,VERIFICADO Y CORRECTO

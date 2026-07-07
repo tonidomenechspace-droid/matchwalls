@@ -1,0 +1,8 @@
+﻿query,count,precision
+target:/collections/murales,4,EXACT
+target:/en/collections/all-matchwallsmurals-murals,8,EXACT
+path:/collections/murales,0,EXACT
+path:/collections/murales-mvp,1,EXACT
+path:/collections/%20papeles-pintados,1,EXACT
+path:/collections/papeles-pintados,1,EXACT
+path:/collections/papeles-pintados-old,1,EXACT

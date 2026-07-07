@@ -1,0 +1,5 @@
+﻿type,id,path,target,collection_id,handle,title,products_count,publications_count,seo_hidden,rollback_target,estado
+"redirect_to_update","gid://shopify/UrlRedirect/410027000035","/collections/papeles-pintados","/collections/papeles-pintados-old","","","","","","","/collections/papeles-pintados-old","VERIFICADO Y CORRECTO"
+"redirect_to_keep","gid://shopify/UrlRedirect/417318207715","/collections/papeles-pintados-old","/collections/murales","","","","","","","/collections/murales","VERIFICADO Y CORRECTO"
+"real_collection","","/collections/murales","","gid://shopify/Collection/439953719523","murales","Todos los Papeles Pintados","758","9","null","No revert; collection unchanged","VERIFICADO Y CORRECTO"
+"guard_count","path:/collections/murales","0","EXACT","","","","","","","","VERIFICADO Y CORRECTO"

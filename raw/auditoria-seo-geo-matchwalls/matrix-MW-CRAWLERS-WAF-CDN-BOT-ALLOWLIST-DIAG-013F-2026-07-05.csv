@@ -1,0 +1,15 @@
+lote;recurso;user_agent_o_area;resultado;estado;riesgo;recomendacion
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;robots.txt;Todos los user-agents probados;200 OK;VERIFICADO Y CORRECTO;Bajo;No modificar robots.txt
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;sitemap.xml;Todos los user-agents probados;200 OK;VERIFICADO Y CORRECTO;Bajo;Mantener monitorización Bing/Google
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;llms.txt;Todos los user-agents probados;200 OK;VERIFICADO Y CORRECTO;Bajo;Diagnosticar en lote separado si se puede reforzar factualidad
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;agents.md;Todos los user-agents probados;200 OK;VERIFICADO Y CORRECTO;Bajo;Diagnosticar en lote separado si se puede reforzar factualidad
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;/pages/papel-pintado-espana;Chrome Googlebot Bingbot OAI Claude Perplexity Apple;200 OK;VERIFICADO Y CORRECTO;Bajo;No actuar
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;/en/collections/;Chrome Googlebot Bingbot OAI Claude Perplexity Apple;200 OK;VERIFICADO Y CORRECTO;Bajo;No actuar
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;/;Chrome;2/5 OK y 3/5 error 500;RIESGO CRITICO;Alto;Elevar como incidencia home/render/CDN
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;/;Googlebot;1/5 OK y 4/5 error 500;RIESGO CRITICO;Alto;Elevar como incidencia home/render/CDN
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;/;Bingbot;0/5 OK y 5/5 error 500;RIESGO CRITICO;Alto;Elevar como incidencia home/render/CDN
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;/;OAI-SearchBot;0/5 OK y 5/5 error 500;RIESGO CRITICO;Alto;Elevar como incidencia home/render/CDN
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;/;PerplexityBot;0/5 OK y 5/5 error 500;RIESGO CRITICO;Alto;Elevar como incidencia home/render/CDN
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;IP real bots;Google Bing OpenAI Anthropic Perplexity Apple;No validable desde entorno local;NO ACCESIBLE;Medio;Validar con logs Shopify/CDN o soporte proveedor
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;WAF clásico;403 401 captcha 429;No detectado en muestra;VERIFICADO Y CORRECTO;Bajo;No crear allowlist por UA sin IP oficial
+MW-CRAWLERS-WAF-CDN-BOT-ALLOWLIST-DIAG-013F;Shopify generic 500;Home;Detectado intermitente con request IDs;RIESGO CRITICO;Alto;Abrir lote 013F1 de evidencia para Shopify

@@ -1,0 +1,145 @@
+<div class="toggle-container">
+  <span
+    id="toggleText"
+    class="toggle-text"
+  >
+    {{ 'general.collection.show_space' | t }}
+  </span>
+  <label class="switch">
+    <input type="checkbox" id="toggleImages">
+    <span class="slider round"></span>
+  </label>
+</div>
+
+<style>
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ddd;
+    transition: background-color 0.4s, box-shadow 0.2s;
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  input:checked + .slider {
+    background-color: #e9bcc7;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+
+  .slider:hover:before {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .slider:active:before {
+    transform: scale(1.1);
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 4px #e9bcc7;
+  }
+
+  .toggle-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .toggle-text {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1;
+  }
+</style>
+
+<script>
+  // Ensure dataLayer is initialized
+  window.dataLayer = window.dataLayer || [];
+
+  function swapImages() {
+    const savedToggleState = localStorage.getItem('toggleImagesState');
+    const isChecked = savedToggleState === 'on';
+    const productFigures = document.querySelectorAll('.product-card__figure');
+
+    productFigures.forEach((figure) => {
+      const muestraImage = figure.querySelector('img#muestra-image');
+      const otherImage = Array.from(figure.querySelectorAll('img')).find((img) => img !== muestraImage);
+
+      if (muestraImage && otherImage) {
+        // Assign classes based on the toggle state
+        muestraImage.classList.toggle('product-card__image--secondary', isChecked);
+        muestraImage.classList.toggle('product-card__image--primary', !isChecked);
+
+        otherImage.classList.toggle('product-card__image--primary', isChecked);
+        otherImage.classList.toggle('product-card__image--secondary', !isChecked);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleSwitch = document.getElementById('toggleImages');
+    const toggleText = document.getElementById('toggleText');
+
+    // Load the saved toggle state from localStorage
+    const savedToggleState = localStorage.getItem('toggleImagesState');
+    toggleSwitch.checked = savedToggleState === 'on';
+
+    // Call swapImages to reflect the current state on page load
+    swapImages();
+
+    toggleSwitch.addEventListener('change', () => {
+      const previousState = localStorage.getItem('toggleImagesState') === 'on'; // Get previous state
+      const currentState = toggleSwitch.checked; // Get the new state (true/false)
+
+      // Update the toggle state in localStorage
+      const toggleState = currentState ? 'on' : 'off';
+      localStorage.setItem('toggleImagesState', toggleState);
+
+      // Determine which event to push to the dataLayer
+      if (!previousState && currentState) {
+        // If previous state was "off" and current state is "on", push toggle_activated
+        window.dataLayer.push({ event: 'toggle_activated' });
+      } else if (previousState && !currentState) {
+        // If previous state was "on" and current state is "off", push toggle_disactivated
+        window.dataLayer.push({ event: 'toggle_disactivated' });
+      }
+
+      // Call swapImages to reflect the toggle change
+      swapImages();
+    });
+  });
+</script>

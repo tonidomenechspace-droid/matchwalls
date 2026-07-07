@@ -1,0 +1,5 @@
+total_sitemaps=36
+total_urls=7330
+sections={'agents': 1, 'blog': 84, 'collection': 749, 'home': 7, 'page': 294, 'product': 6195}
+languages={'de': 1047, 'en': 1047, 'es': 1048, 'fr': 1047, 'it': 1047, 'nl': 1047, 'pt': 1047}
+flags={'black_friday': 5, 'enchanted_typo_enchathed': 19, 'facade_variants_test': 7, 'geo_collection_candidate': 118, 'matchalls_typo': 1, 'nordic_typo_norid': 70, 'sample_term': 10, 'suffix_minus_1': 404}

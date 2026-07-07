@@ -1,0 +1,6 @@
+lote,fecha,check_name,id,path,target,resultado
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,sourceRedirect,gid://shopify/UrlRedirect/408478908643,/collections/rayas-rollos,/collections/murales-estilo-a-rayas,CORREGIDO Y VERIFICADO
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,intermediateRedirect,gid://shopify/UrlRedirect/417542537443,/collections/papel-pintado-rayas,/collections/murales-estilo-a-rayas,VERIFICADO PERO MEJORABLE - conservado fuera de alcance para trafico antiguo directo
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,targetCount,,target:/collections/murales-estilo-a-rayas,2,VERIFICADO Y CORRECTO
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,oldTargetCount,,target:/collections/papel-pintado-rayas,0,CORREGIDO Y VERIFICADO
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,finalCollection,gid://shopify/Collection/439174496483,/collections/murales-estilo-a-rayas,"Papel Pintado Rayas / 87 productos",VERIFICADO Y CORRECTO

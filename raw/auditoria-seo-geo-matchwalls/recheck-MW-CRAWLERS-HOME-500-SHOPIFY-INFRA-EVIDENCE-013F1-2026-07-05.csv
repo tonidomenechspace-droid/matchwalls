@@ -1,0 +1,16 @@
+timestamp;url;user_agent;run;status;duration_ms;response_length;x_request_id;server_timing_excerpt;marker
+2026-07-05T13:05:12+02:00;https://www.matchwalls.com/;Chrome;1;200;3174;1716597;b91fa507-af3a-40c6-bf17-3f3343c2f14a-1783249512;processing dur 41 edge MAD;html
+2026-07-05T13:05:15+02:00;https://www.matchwalls.com/;Chrome;2;200;2937;1716597;0374624f-17b6-4455-8f25-5b892be35242-1783249515;processing dur 33 edge MAD;html
+2026-07-05T13:05:18+02:00;https://www.matchwalls.com/;Chrome;3;200;3177;1716597;e9be145f-171e-4d9b-a31b-d166e3b43df2-1783249518;processing dur 36 edge MAD;html
+2026-07-05T13:05:21+02:00;https://www.matchwalls.com/;Googlebot;1;200;3115;1716597;8850e77f-ffc5-42b4-9f31-bcb11a4f146c-1783249521;processing dur 32 edge MAD;html
+2026-07-05T13:05:24+02:00;https://www.matchwalls.com/;Googlebot;2;200;3214;1716597;a4d8ff6c-2d09-4656-8461-3784e805eb16-1783249524;processing dur 40 edge MAD;html
+2026-07-05T13:05:27+02:00;https://www.matchwalls.com/;Googlebot;3;500;3161;11009;ebb41ee4-197e-4aff-9230-d8bdd8ca874f-1783249527;processing dur 3013 render;Shopify generic error page
+2026-07-05T13:05:31+02:00;https://www.matchwalls.com/;Bingbot;1;500;3102;11009;95bd8cb7-761c-4d67-ba46-d1a8b78c2d3e-1783249530;processing dur 3013 render;Shopify generic error page
+2026-07-05T13:05:34+02:00;https://www.matchwalls.com/;Bingbot;2;200;2278;1716597;11805d23-40d3-4740-a4ce-a2c9367a4466-1783249533;processing dur 29 edge MAD;html
+2026-07-05T13:05:36+02:00;https://www.matchwalls.com/;Bingbot;3;500;3449;11009;4a63db8c-172c-4253-b811-1026c7a645e6-1783249536;processing dur 3018 render;Shopify generic error page
+2026-07-05T13:05:40+02:00;https://www.matchwalls.com/;OAI-SearchBot;1;500;3080;11009;a6d938cf-d633-4d50-9be3-38879ed25ee0-1783249539;processing dur 3015 render;Shopify generic error page
+2026-07-05T13:05:43+02:00;https://www.matchwalls.com/;OAI-SearchBot;2;200;1935;1716597;83e9cb44-05d5-4a20-9e7c-a662cadbc043-1783249542;processing dur 75 edge MAD;html
+2026-07-05T13:05:45+02:00;https://www.matchwalls.com/;OAI-SearchBot;3;500;3100;11009;e54d0359-802e-4565-8bc3-36d43bc3a770-1783249544;processing dur 3014 render;Shopify generic error page
+2026-07-05T13:05:48+02:00;https://www.matchwalls.com/;PerplexityBot;1;500;3141;11009;74dab310-8c62-4b9b-93c0-f3e4b4133edd-1783249547;processing dur 3014 render;Shopify generic error page
+2026-07-05T13:05:51+02:00;https://www.matchwalls.com/;PerplexityBot;2;500;3097;11009;8d6d52f6-256c-4d7a-9344-f024c27e75d8-1783249550;processing dur 3015 render;Shopify generic error page
+2026-07-05T13:05:54+02:00;https://www.matchwalls.com/;PerplexityBot;3;500;3080;11009;9e22d769-158d-492d-b083-bf74c9acd833-1783249553;processing dur 3011 render;Shopify generic error page

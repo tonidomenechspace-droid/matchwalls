@@ -1,0 +1,165 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "multi_column_PNnPXR": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_nUMKQF": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "4"
+          }
+        },
+        "item_8aWrYY": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Formulario profesionales",
+            "heading_tag": "h2",
+            "title_img_position": "start",
+            "content": "<p>¿Eres un estudio de interiorismo y trabajas proyectos comerciales contract o residenciales? Solicita los servicios y ventajas profesionales Matchwwalls<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "spacer_6Nqkqr": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "4"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_nUMKQF",
+        "item_8aWrYY",
+        "spacer_6Nqkqr"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#e9bcc7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_EaiQQt": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_Xp6mQt": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Lunes a Jueves:<\/strong> 09.00 - 17.00 (GMT +1)<br\/><strong>Viernes:<\/strong> 09.00 - 14.00 (GMT +1)<br\/>Cerrado para el almuerzo de 13:00 a 14:00<\/p><p><strong>Teléfono:<\/strong> +34 675 91 163 40<strong><br\/>Correo electrónico:<\/strong> <a href=\"mailto:help@matchwalls.com\" target=\"_blank\">help@matchwalls.com<br\/><\/a><a href=\"https:\/\/www.bing.com\/ck\/a?!&&p=68033d40f3f65483JmltdHM9MTcyMTE3NDQwMCZpZ3VpZD0xNGI2Mjk2MC00MGQyLTY2NTktMTBkZC0zZGZhNDE5NTY3ZDMmaW5zaWQ9NTUxMg&ptn=3&ver=2&hsh=3&fclid=14b62960-40d2-6659-10dd-3dfa419567d3&u=a1L21hcHM_Jm1lcGk9MTA5fn5Ub3BPZlBhZ2V-QWRkcmVzc19MaW5rJnR5PTE4JnE9QWt0aXZhJTIwRGVzaWduJnNzPXlwaWQuWU42MzA2eDE2NjY0NDc5ODg0MTAyNjE0ODAxJnBwb2lzPTQxLjM5NTMxMzI2MjkzOTQ1XzIuMTUzNjU0MDk4NTEwNzQyX0FrdGl2YSUyMERlc2lnbl9ZTjYzMDZ4MTY2NjQ0Nzk4ODQxMDI2MTQ4MDF-JmNwPTQxLjM5NTMxM34yLjE1MzY1NCZ2PTImc1Y9MSZGT1JNPU1QU1JQTA&ntb=1\" target=\"_blank\">Av Diagonal 508 Principal 2ª, 08006, Barcelona, Spain<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Xp6mQt"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1721214661187cccb2": {
+      "type": "apps",
+      "blocks": {
+        "qikify_form_builder_embed_form_i4erma": {
+          "type": "shopify:\/\/apps\/qikify-form-builder\/blocks\/embed-form\/753fa0d7-50d4-480a-b094-cff26e632c36",
+          "settings": {
+            "type": "form",
+            "formId": 347327
+          }
+        }
+      },
+      "block_order": [
+        "qikify_form_builder_embed_form_i4erma"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_R4hLWL": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_JaMFeT": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_qezgNX": {
+          "type": "heading",
+          "settings": {
+            "text": "También puedes reservar una cita online con nuestro equipo",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_63fLxN": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_bB669D": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Reservar en Calendy",
+            "url": "https:\/\/outlook.office365.com\/book\/MatchwallscomBookourexpertteammeeting@matchwalls.com\/",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JaMFeT",
+        "heading_qezgNX",
+        "richtext_63fLxN",
+        "button_bB669D"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multi_column_PNnPXR",
+    "rich_text_EaiQQt",
+    "1721214661187cccb2",
+    "rich_text_R4hLWL"
+  ]
+}

@@ -1,0 +1,2 @@
+lote,fecha_hora_local,store,tema_id,tema_nombre,tema_rol,recurso,estado_previo_checksum,estado_previo_size,estado_nuevo_checksum,estado_nuevo_size,updated_at_utc,processing,processing_failed,resultado
+MW-SHOPIFY-CLI-INSTALL-AUTH-THEME-PUSH-013E16E2,2026-07-05 06:06:02 +02:00,matchwalls.myshopify.com,178399019384,MW-TECH-JS-ADD-EVENT-LISTENER-010A-QA-2026-06-18,MAIN,sections/main-list-collections.liquid,70c8ead00d939f15528f6f11e5bfb540,4934,4fa31878b7bcb38e469ce27c109ffec8,5161,2026-07-05T04:00:31Z,false,false,CORREGIDO Y VERIFICADO

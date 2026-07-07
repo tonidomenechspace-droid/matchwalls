@@ -1,0 +1,20 @@
+{% assign facade = product.metafields.custom.facade_variants %}
+{% if facade %}
+  {% assign prods = facade.value.opts.value %}
+  <div class="facade-wrapper">
+    <div class="facade-container">
+      <p class="text-subdued">{{ 'general.label.color' | t }}</p>
+      {% for prod in prods %}
+        <a class="facade-variant" href="{{ prod.url }}"
+          ><img
+            {% if prod.id == product.id %}
+              class="active"
+            {% endif %}
+            src="{{ prod.images[0] | image_url: width:60, height:60 }}"
+            width="60"
+            height="60"
+        ></a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

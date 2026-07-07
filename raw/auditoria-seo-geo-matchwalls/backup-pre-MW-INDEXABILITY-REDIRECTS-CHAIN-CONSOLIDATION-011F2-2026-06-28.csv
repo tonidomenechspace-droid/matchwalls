@@ -1,0 +1,5 @@
+﻿id,path,target,scope,rollback_target
+"gid://shopify/UrlRedirect/405088796899","/pages/como-tomar-medidas-paredes-y-techos-boton","/pages/medidas-paredes-techos","to_update","/pages/medidas-paredes-techos"
+"gid://shopify/UrlRedirect/409984762083","/pages/medidas-paredes-techos","/pages/medidas-paredes","unchanged_intermediate","/pages/medidas-paredes"
+"gid://shopify/UrlRedirect/410027000035","/collections/papeles-pintados","/collections/papeles-pintados-old","to_update","/collections/papeles-pintados-old"
+"gid://shopify/UrlRedirect/417318207715","/collections/papeles-pintados-old","/collections/murales","unchanged_intermediate","/collections/murales"

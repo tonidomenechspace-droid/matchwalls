@@ -1,0 +1,195 @@
+{
+  "sections": {
+    "multi_column_YjWBGB": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_RDbGkN": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "12"
+          }
+        },
+        "item_zVRjQh": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Empecemos por lo primero. ¿Cómo tomar medidas de tu techo? #BeMatchWalls",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yiMHE7": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>El papel pintado roll y mural tiene el poder de embellecer tu entorno. Incorporarlo en el techo es una <strong>idea innovadora que aporta un toque único de personalidad y vibración de color a tu espacio,<\/strong> transformándolo en una expresión artística. No hay razón para limitar tu expresión creativa a las paredes cuando tu techo ofrece otro vasto lienzo esperando ser explorado Identificar el espacio.<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "spacer_kwEHAB": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "12"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_RDbGkN",
+        "item_zVRjQh",
+        "item_yiMHE7",
+        "spacer_kwEHAB"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#e9bcc7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_HgYfUB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ei9bPj": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_U6Bqd4": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_ei9bPj",
+        "richtext_U6Bqd4"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_HKXQ7a": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_f7aWyd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/large-7.jpg",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 44,
+            "subheading": "",
+            "title": "",
+            "title_img_position": "start",
+            "content": "<p>Para asegurar un acabado perfecto, tu techo debe estar <strong>completamente liso. <\/strong>Las texturas visibles bajo el papel tapiz pueden causar que se vea con arrugas y desigualdades. Si te encuentras con este problema, es hora de lijar cualquier irregularidad y rellenar las imperfecciones detectadas. Finaliza el proceso asegurándote de que el techo esté impecablemente limpio, preferentemente con la ayuda de un detergente, para un resultado óptimo <strong>¿Has revisado el estado de tu techo?<\/strong> Considera si hay huecos, instalaciones de luz o cualquier otro detalle que pudiera influir en la instalación del papel pintado. Recomendamos encarecidamente que esta tarea sea llevada a cabo por <strong>dos personas, <\/strong>como mínimo. Verás que es más fácil y hasta más divertido con un poco de ayuda. Si decides empezar desde el <strong>extremo izquierdo del diseño, tu punto de inicio debería ser la tira número 1, avanzando secuencialmente en orden ascendente.<\/strong> En cambio, si prefieres <strong>comenzar por el lado derecho,<\/strong> localiza la última tira en el interior del último rollo y empieza por ahí, continuando luego en orden numérico inverso hacia las tiras anteriores.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#4d2e24",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_f7aWyd"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "rich_text_9NKbUL": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_6imcrW": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>¿TIENES MÁS DUDAS?<\/p>"
+          }
+        },
+        "heading_xcUyeh": {
+          "type": "heading",
+          "settings": {
+            "text": "Descarga nuestras guías de instalación",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "button_w34Qwg": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "VER GUÍAS",
+            "url": "shopify:\/\/pages\/guia-de-instalacion",
+            "background": "#e9bcc7",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_6imcrW",
+        "heading_xcUyeh",
+        "button_w34Qwg"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "multi_column_YjWBGB",
+    "main",
+    "rich_text_HgYfUB",
+    "media_with_text_HKXQ7a",
+    "rich_text_9NKbUL"
+  ]
+}

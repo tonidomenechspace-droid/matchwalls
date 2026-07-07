@@ -1,0 +1,10 @@
+area,status,recommendation,allowed_now,requires_approval,risk,notes
+"Hubs raiz ES/EN/FR/DE/NL","RIESGO CRITICO","Mantener indexables temporalmente y preparar mejora editorial",false,true,"Pueden seguir siendo citados como fuentes genericas","No tocar hasta conocer fuente de renderizado"
+"Noindex hubs raiz","REQUIERE DECISION HUMANA","No aplicar ahora; evaluar solo si no hay via limpia de mejora",false,true,"Puede retirar URLs reales de sitemap/navegacion y afectar hreflang/senales internas","Opcion futura, no primer movimiento"
+"Redireccion hubs raiz","INCORRECTO","Descartar ahora",false,true,"Conflicto de intencion, posible deuda de redirecciones y perdida de hub real","No recomendado sin alternativa muy clara"
+"Mejora editorial de hubs","REQUIERE DECISION HUMANA","Ruta preferida si la fuente tecnica es segura",false,true,"Puede afectar plantilla global e idiomas si se implementa mal","Primero SOURCE-FEASIBILITY-DIAG"
+"Ajustes minimos de H1/title/meta","VERIFICADO PERO MEJORABLE","Solo como parte de mejora editorial mayor",false,true,"No soluciona contenido debil ni mezcla de colecciones","Insuficiente como solucion unica"
+"Black Friday en hubs","REQUIERE DECISION HUMANA","Separar en sublote propio",false,true,"Puede mezclar campanas obsoletas con hubs evergreen","No limpiar dentro de este lote"
+"Colecciones geograficas legacy","STANDBY","Seguir politica de indexabilidad geografica separada",false,true,"Riesgo de borrar o ocultar senales utiles junto con deuda","No resolver desde hub raiz"
+"IT/PT","STANDBY","Fuera de prioridad activa salvo autorizacion expresa",false,true,"Expandir alcance consume recursos y puede desordenar estrategia","Solo ES/EN/FR/DE/NL ahora"
+"Siguiente lote","REQUIERE DECISION HUMANA","MW-COLLECTIONS-ROOT-HUB-I18N-SOURCE-FEASIBILITY-DIAG-013E12",true,false,"Ninguno relevante si es solo lectura","Identificar fuente tecnica antes de copy/escritura"

@@ -1,0 +1,134 @@
+{%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+
+<file-uploader class="product-customizer right-side" data-surface="{{ product.metafields.custom.surface }}">
+  <div class="file-uploader-form">
+    {%- form 'product', product, id: product_form_id, is: 'product-form' -%}
+      {% render 'icon' with 'upload' %}
+      <input type="hidden" name="quantity" value="1" customizer-input>
+      <input
+        type="hidden"
+        name="id"
+        customizer-input
+        value="{{ product.selected_or_first_available_variant.id }}"
+      >
+      <input
+        type="hidden"
+        name="properties[_customizer]"
+        customizer-input
+      >
+      <input
+        type="hidden"
+        name="properties[dimensions]"
+        customizer-input
+        value="100x100cm"
+      >
+      <input
+        type="hidden"
+        name="properties[greyscale]"
+        customizer-input
+        value="false"
+      >
+      <input type="file" name="properties[file]" customizer-input accept="image/*">
+      {%- render 'button', content: button_content, type: 'submit', secondary: true, size: 'lg', stretch: true -%}
+    {%- endform -%}
+    <p style="font-size:13px; margin-bottom:1rem;">{{ 'product.customizer.file_info' | t }}</p>
+    <button class="button button--xl hidden" open-modal>{{ 'product.customizer.customize' | t }}</button>
+  </div>
+  <dialog>
+    <div class="customizer__content">
+      <header>
+        <div class="customizer__btns">
+          <button data-action="length">
+            {% render 'icon' with 'lines' -%}
+            {{- 'product.customizer.show_length' | t }}
+          </button>
+          <button data-action="grayscale">
+            {% render 'icon' with 'grayscale' %}
+            {{ 'product.customizer.greyscale' | t }}
+          </button>
+          <button data-action="flip">
+            {% render 'icon' with 'flip' %}
+            {{ 'product.customizer.flip' | t }}
+          </button>
+        </div>
+        <button close-modal>X</button>
+      </header>
+
+      <div class="customizer__body">
+        <div class="customizer__body__container">
+          <div class="height-width-configurador">
+            <div class="input-row-flex">
+              <div class="form-control">
+                <label for="centimeters">
+                  <input type="radio" class="" id="centimeters" name="measure" value="cm" checked>
+                  {{ 'product.customizer.cm' | t }}
+                </label>
+              </div>
+              <div class="form-control">
+                <label for="in">
+                  <input type="radio" class="" id="in" name="measure" value="in">
+                  {{ 'product.customizer.inches' | t }}
+                </label>
+              </div>
+            </div>
+
+            <div class="form-surface">
+              <div class="form-control">
+                <label for="width">
+                  {{ 'product.customizer.width' | t }}
+                </label>
+                <input type="number" class="input" id="width" min="100" max="2000" value="400">
+              </div>
+              <div class="form-control">
+                <label for="height">
+                  {{ 'product.customizer.height' | t }}
+                </label>
+                <input type="number" id="height" class="input" min="100" max="2000" value="280">
+              </div>
+            </div>
+            <div class="info__container">
+              <p><span class="total-surface">100cm</span><sup>2</sup></p>
+              <p>
+                {{ 'product.customizer.total_price' | t -}}
+                <span class="final-price"></span>
+              </p>
+            </div>
+            <div>
+              {%- render 'button', content: button_content, type: 'text', secondary: true, size: 'lg', stretch: true -%}
+              <button class="button w-full button--lg" close-modal>{{ 'general.accessibility.close' | t }}</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="customizer__canvas">
+          <div class="canvas__wrapper">
+            <div class="canvas__width__container">
+              <div class="canvas__width">
+                <span>700cm</span>
+              </div>
+            </div>
+
+            <div class="canvas__height__container">
+              <div class="canvas__height">
+                <span>700cm</span>
+              </div>
+            </div>
+
+            <div class="canvas__container">
+              {% assign customizer_img = product.metafields.pdp.tester_product.featured_image %}
+              <div
+                class="canvas__image"
+                style=""
+              >
+                <div class="length-lines"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</file-uploader>
+<script>
+  window.product = {{ product | json }};
+</script>

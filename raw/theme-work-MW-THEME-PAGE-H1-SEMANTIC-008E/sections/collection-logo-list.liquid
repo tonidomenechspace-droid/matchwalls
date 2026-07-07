@@ -1,0 +1,277 @@
+{%- if section.blocks.size > 0 -%}
+  <div class="logo-collection-section">
+    <div class=" {% if section.settings.text_alignment == 'center' %}sm:justify-items-center{% endif %}">
+      <div class="prose collection-list-header {% if section.settings.text_alignment == 'center' %}text-center{% endif %}">
+        {%- if section.settings.title != blank -%}
+          <h2 class="h2">
+            {%- render 'styled-text',
+              content: section.settings.title,
+              text_color: section.settings.heading_color,
+              gradient: section.settings.heading_gradient
+            -%}
+          </h2>
+        {%- endif -%}
+
+        {{- section.settings.content -}}
+      </div>
+
+      <reveal-items-collection class=" ">
+        {%- for block in section.blocks -%}
+          <a
+            href="{{block.settings.link}}"
+            class="logo-link"
+            data-logo-title="{{ block.settings.collection_logo_title }}"
+            style="justify-self: center;"
+          >
+            <div class="">
+              {{
+                block.settings.logo
+                | image_url: width: block.settings.logo.width, height: block.settings.logo.height
+                | image_tag: loading: 'lazy', class: 'logo-list__image'
+              }}
+              <p class="logo-text">{{ block.settings.collection_logo_title }}</p>
+              <style>
+                .logo-link {
+                  justify-self: center;
+                }
+                .logo-list__image {
+                  border-radius: 50%;
+                  object-fit: cover;
+                  width: 120px;
+                  height: 120px;
+                  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+                }
+                @media (max-width: 1000px) {
+                  .logo-list__image {
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 70px;
+                    height: 70px;
+                  }
+                }
+
+                a:hover .logo-list__image,
+                a:hover .logo-text {
+                  transform: scale(1.2); /* Zoom in the logo and text */
+                  transition: transform 0.3s ease-in-out; /* Smooth transition */
+                }
+              </style>
+            </div>
+          </a>
+        {%- endfor -%}
+      </reveal-items-collection>
+    </div>
+  </div>
+{%- endif -%}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.body.addEventListener('click', function (event) {
+      if (event.target.closest('.logo-link')) {
+        const logoLink = event.target.closest('.logo-link');
+        const logoTitle = logoLink.getAttribute('data-logo-title');
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'collection_banner_click',
+          collectionTitle: logoTitle,
+        });
+      }
+    });
+  });
+</script>
+
+<style>
+    reveal-items-collection {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 767px) {
+      reveal-items-collection {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 12px;
+        display:grid;
+    }
+  }
+
+    .logo-collection-section {
+
+    }
+
+    .collection-list-header {
+      padding-bottom: 10px;
+    }
+
+    .logo-text {
+      border-radius: 25px;
+      background-color: #ffc0cb;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    div[{{ block.shopify_attributes }}] {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centers the image and text */
+      max-width: 150px; /* Set a max-width to match the image size */
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Collection Logo list",
+  "class": "shopify-section--logo-list",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_mobile",
+      "label": "Stack on mobile",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Logo list"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "range",
+      "id": "items_per_row",
+      "min": 3,
+      "max": 7,
+      "label": "Items per row (desktop)",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color_background",
+      "id": "heading_gradient",
+      "label": "Heading gradient"
+    },
+    {
+      "type": "color",
+      "id": "logo_item_background",
+      "label": "Logo background"
+    },
+    {
+      "type": "color",
+      "id": "logo_item_border",
+      "label": "Logo border"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "text",
+          "id": "collection_logo_title",
+          "label": "Collection title",
+          "default": "Logo Collection item"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo",
+          "info": "300 x 90px .jpg recommended"
+        },
+        {
+          "type": "range",
+          "id": "logo_width",
+          "min": 50,
+          "max": 300,
+          "unit": "px",
+          "step": 10,
+          "label": "Logo width",
+          "default": 120
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection logo list",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

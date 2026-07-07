@@ -1,0 +1,242 @@
+{%- capture product_form_id -%}product-form-rolls{%- endcapture -%}
+{%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+{% if product.available %}
+  <rolls-calculator class="product-info__button" data-surface="5">
+    <button class="cta-roll button" open-modal>{{ 'product.customizer.roll_calculator' | t }}</button>
+    <dialog>
+      <div class="dialog--content">
+        <div class="dialog-header-calculator">
+          <p class="h4">{{ 'product.customizer.paper_calculator' | t }}</p>
+          <button class="close-button" close-modal aria-label="{{ 'general.accessibility.close' | t }}">
+            &#x2715;
+          </button>
+        </div>
+        <p class="h6">
+          {{ 'product.customizer.room_dimensions' | t }}
+          <span style="font-size: 15px; text-transform: math-auto;">{{ 'product.customizer.room_details' | t }}</span>
+        </p>
+        <p>{{ 'general.product.select_quality' | t }}</p>
+        <div class="roll-calculator-variant-selector"></div>
+
+        <div class="input-row-flex">
+          <div class="form-control">
+            <label for="meters">
+              <input type="radio" id="meters" name="measure" value="m" checked>
+              {{ 'product.customizer.meters' | t }}
+            </label>
+          </div>
+          <div class="form-control">
+            <label for="feet">
+              <input type="radio" id="feet" name="measure" value="ft">
+              {{ 'product.customizer.feet' | t }}
+            </label>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="form-control">
+            <label for="width">
+              <span>{{ 'product.customizer.width' | t }}</span>
+              <span class="unit-form-control">{{ 'general.product.meter' | t }} </span>
+              <input type="number" class="input" id="width" min="1" max="2000" value="1">
+            </label>
+          </div>
+          <div class="form-control">
+            <label for="height">
+              <span>{{ 'product.customizer.height' | t }}</span>
+              <span class="unit-form-control">{{ 'general.product.meter' | t }} </span>
+              <input type="number" id="height" class="input" min="1" max="2000" value="1">
+            </label>
+          </div>
+        </div>
+        <p><span class="total-surface">1m</span><sup>2</sup></p>
+        <p>
+          {{ 'product.customizer.total_rolls' | t }}
+          <span class="rolls-quantity">1</span>
+        </p>
+        <p>
+          {{ 'product.customizer.total_price' | t }}
+          <span class="final-price"></span>
+          <span class="compare-final-price text-subdued line-through" style="font-size: 14px"></span>
+          <span class="discount-percentage text-on-sale " style="font-size: 14px;"></span>
+        </p>
+
+        <div class="input-row button-buy-calculator">
+          {%- form 'product', product, id: product_form_id, is: 'product-form' -%}
+            <input type="hidden" name="quantity" value="1" customizer-input>
+            <input
+              type="hidden"
+              name="id"
+              customizer-input
+              value="{{ product.selected_or_first_available_variant.id }}"
+            >
+            {%- render 'button', content: button_content, type: 'submit', secondary: true, size: 'lg', stretch: true -%}
+          {%- endform -%}
+        </div>
+      </div>
+    </dialog>
+  </rolls-calculator>
+  <script>
+    window.product = {{ product | json }};
+    window.unitsTranslations = {
+      feet: "{{ 'general.product.feet' | t }}",
+      meter: "{{ 'general.product.meter' | t }}"
+    };
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const openModalButton = document.querySelector('rolls-calculator button[open-modal]');
+      const closeModalButton = document.querySelector('rolls-calculator button[close-modal]');
+      const dialog = document.querySelector('rolls-calculator dialog');
+      const variantPicker = document.querySelector('variant-picker');
+      const rollCalculatorVariantSelector = document.querySelector('.roll-calculator-variant-selector');
+      const originalPosition = variantPicker.parentNode;
+      const divToHide = variantPicker.querySelector('.variant-picker__option-info');
+
+      openModalButton.addEventListener('click', function () {
+        dialog.showModal();
+        divToHide.style.display = 'none';
+        rollCalculatorVariantSelector.appendChild(variantPicker);
+      });
+
+      function closeModal() {
+        dialog.close();
+        divToHide.style.display = '';
+        originalPosition.appendChild(variantPicker);
+      }
+
+      closeModalButton.addEventListener('click', closeModal);
+
+      dialog.addEventListener('click', function (event) {
+        if (event.target === dialog) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+{% else %}
+  {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+  {%- assign button_disabled = true -%}
+{% endif %}
+
+<style>
+  rolls-calculator dialog::backdrop {
+    background-color: #333333d1;
+  }
+  .dialog--content {
+    border: black 2px solid;
+    padding: 18px;
+  }
+  rolls-calculator label span {
+    font-weight: 100;
+  }
+  rolls-calculator button {
+    white-space: nowrap !important;
+    height: -webkit-fill-available;
+  }
+  .muestra-roll-calculator {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    align-items: center;
+  }
+  .muestra-roll-calculator .product-info__button {
+    flex: auto;
+    width: 100%;
+  }
+  rolls-calculator button {
+    width: 100%;
+  }
+  @media (min-width: 1000px) {
+    .muestra-roll-calculator {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 400px) {
+    .muestra-roll-calculator {
+      display: flex;
+      flex-direction: column;
+    }
+    .product-info__quantity-selector {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 900px) {
+    .dialog-header-calculator p {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 500px) {
+    .dialog-header-calculator p {
+      font-size: 16px;
+    }
+    .dialog--content p {
+      font-size: 14px;
+    }
+  }
+  @media (min-width: 900px) {
+    .dialog-header-calculator .h4 {
+      font-size: 24px !important;
+    }
+    .dialog--content p {
+      font-size: 14px;
+    }
+  }
+  rolls-calculator dialog .button-buy-calculator {
+    grid-template-columns: none;
+  }
+  .product-info__quantity-selector {
+    display: flex;
+    grid-column-gap: 8px;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .dialog-header-calculator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    height: 4rem;
+  }
+
+  .h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close-button:hover {
+    color: #e74c3c;
+    background-color: #e0e0e0;
+  }
+
+  .close-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+  }
+  rolls-calculator button {
+    max-height: 3rem;
+  }
+</style>

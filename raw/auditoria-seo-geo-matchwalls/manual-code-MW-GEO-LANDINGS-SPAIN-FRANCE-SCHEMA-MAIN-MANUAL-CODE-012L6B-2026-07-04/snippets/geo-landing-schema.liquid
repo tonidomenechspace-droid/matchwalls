@@ -1,0 +1,213 @@
+{% doc %}
+Renders WebPage and FAQPage JSON-LD for approved country landing pages.
+{% enddoc %}
+
+{%- liquid
+  assign mw_geo_page_id = page.id | append: ''
+  assign mw_geo_schema_enabled = false
+  assign mw_geo_country = ''
+  assign mw_geo_country_label = ''
+  assign mw_geo_language = localization.language.iso_code | default: 'es'
+  assign mw_geo_language_allowed = false
+  assign mw_geo_faq_1_question = ''
+  assign mw_geo_faq_1_answer = ''
+  assign mw_geo_faq_2_question = ''
+  assign mw_geo_faq_2_answer = ''
+  assign mw_geo_faq_3_question = ''
+  assign mw_geo_faq_3_answer = ''
+
+  if request.page_type == 'page'
+    if mw_geo_page_id == '687276622200'
+      assign mw_geo_schema_enabled = true
+      assign mw_geo_country = 'spain'
+      assign mw_geo_country_label = 'Spain'
+    elsif mw_geo_page_id == '687276654968'
+      assign mw_geo_schema_enabled = true
+      assign mw_geo_country = 'france'
+      assign mw_geo_country_label = 'France'
+    endif
+  endif
+
+  if mw_geo_schema_enabled
+    if mw_geo_language == 'es'
+      assign mw_geo_language_allowed = true
+    elsif mw_geo_language == 'en'
+      assign mw_geo_language_allowed = true
+    elsif mw_geo_language == 'fr'
+      assign mw_geo_language_allowed = true
+    elsif mw_geo_language == 'de'
+      assign mw_geo_language_allowed = true
+    elsif mw_geo_language == 'nl'
+      assign mw_geo_language_allowed = true
+    endif
+  endif
+
+  if mw_geo_schema_enabled
+    unless mw_geo_language_allowed
+      assign mw_geo_schema_enabled = false
+    endunless
+  endif
+
+  if mw_geo_schema_enabled
+    case mw_geo_language
+      when 'en'
+        if mw_geo_country == 'france'
+          assign mw_geo_country_label = 'France'
+        else
+          assign mw_geo_country_label = 'Spain'
+        endif
+        assign mw_geo_faq_1_question = 'Can I order samples before buying?'
+        if mw_geo_country == 'france'
+          assign mw_geo_faq_1_answer = 'Yes. Samples allow you to check colour, texture and finish before choosing the final wallpaper or mural.'
+          assign mw_geo_faq_2_answer = 'Yes. MatchWalls supports interior designers, decorators, retail spaces and commercial projects in selecting designs, materials and samples.'
+          assign mw_geo_faq_3_answer = 'Yes. Customisation options make it possible to adapt a design, scale or composition to the dimensions and needs of your space.'
+        else
+          assign mw_geo_faq_1_answer = 'Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.'
+          assign mw_geo_faq_2_answer = 'Yes. MatchWalls works with interior designers, architects, retail spaces and commercial projects that need support with design selection, samples or customisation.'
+          assign mw_geo_faq_3_answer = 'Yes. Customisation options make it possible to adapt a mural or prepare a proposal based on the measurements and needs of the space.'
+        endif
+        assign mw_geo_faq_2_question = 'Does MatchWalls work with professionals?'
+        assign mw_geo_faq_3_question = 'Can I create a custom mural?'
+      when 'fr'
+        if mw_geo_country == 'france'
+          assign mw_geo_country_label = 'France'
+        else
+          assign mw_geo_country_label = 'Espagne'
+        endif
+        assign mw_geo_faq_1_question = 'Puis-je commander des échantillons avant d’acheter ?'
+        if mw_geo_country == 'france'
+          assign mw_geo_faq_1_answer = 'Oui. Les échantillons permettent de vérifier la couleur, la texture et le rendu du matériau avant de choisir le papier peint ou le panoramique final.'
+          assign mw_geo_faq_2_answer = 'Oui. MatchWalls accompagne les architectes d’intérieur, décorateurs, boutiques et projets contract dans la sélection de designs, matériaux et échantillons.'
+          assign mw_geo_faq_3_answer = 'Oui. Les options de personnalisation permettent d’adapter un design, une échelle ou une composition aux dimensions et aux besoins de votre espace.'
+        else
+          assign mw_geo_faq_1_answer = 'Oui. Les échantillons permettent de vérifier la couleur, la texture et le rendu du matériau avant de choisir le papier peint ou le panoramique final.'
+          assign mw_geo_faq_2_answer = 'Oui. MatchWalls accompagne les architectes d’intérieur, décorateurs, boutiques et projets commerciaux dans la sélection de designs, matériaux et échantillons.'
+          assign mw_geo_faq_3_answer = 'Oui. Les options de personnalisation permettent d’adapter un design, une échelle ou une composition aux dimensions et aux besoins de votre espace.'
+        endif
+        assign mw_geo_faq_2_question = 'MatchWalls travaille-t-il avec les professionnels ?'
+        assign mw_geo_faq_3_question = 'Puis-je créer un panoramique personnalisé ?'
+      when 'de'
+        if mw_geo_country == 'france'
+          assign mw_geo_country_label = 'Frankreich'
+        else
+          assign mw_geo_country_label = 'Spanien'
+        endif
+        assign mw_geo_faq_1_question = 'Kann ich vor dem Kauf Muster bestellen?'
+        if mw_geo_country == 'france'
+          assign mw_geo_faq_1_answer = 'Ja. Muster helfen dabei, Farbe, Textur und Oberfläche zu prüfen, bevor Sie die endgültige Tapete oder das endgültige Wandbild auswählen.'
+          assign mw_geo_faq_2_answer = 'Ja. MatchWalls unterstützt Innenarchitekten, Dekorateure, Ladengeschäfte und gewerbliche Projekte bei der Auswahl von Designs, Materialien und Mustern.'
+          assign mw_geo_faq_3_answer = 'Ja. Individualisierungsoptionen ermöglichen es, Design, Maßstab oder Komposition an die Maße und Anforderungen Ihres Raums anzupassen.'
+        else
+          assign mw_geo_faq_1_answer = 'Ja. Muster helfen dabei, Farbe, Textur und Oberfläche zu prüfen, bevor Sie die endgültige Tapete oder das endgültige Wandbild auswählen.'
+          assign mw_geo_faq_2_answer = 'Ja. MatchWalls arbeitet mit Innenarchitekten, Architekten, Ladengeschäften und gewerblichen Projekten zusammen, die Unterstützung bei Designauswahl, Mustern oder Individualisierung benötigen.'
+          assign mw_geo_faq_3_answer = 'Ja. Individualisierungsoptionen ermöglichen es, ein Wandbild oder eine Gestaltung an die Maße und Anforderungen des Raums anzupassen.'
+        endif
+        assign mw_geo_faq_2_question = 'Arbeitet MatchWalls mit Fachleuten zusammen?'
+        assign mw_geo_faq_3_question = 'Kann ich ein individuelles Wandbild erstellen?'
+      when 'nl'
+        if mw_geo_country == 'france'
+          assign mw_geo_country_label = 'Frankrijk'
+        else
+          assign mw_geo_country_label = 'Spanje'
+        endif
+        assign mw_geo_faq_1_question = 'Kan ik monsters bestellen voordat ik koop?'
+        if mw_geo_country == 'france'
+          assign mw_geo_faq_1_answer = 'Ja. Monsters helpen om kleur, textuur en afwerking te controleren voordat u het definitieve behang of de definitieve wanddecoratie kiest.'
+          assign mw_geo_faq_2_answer = 'Ja. MatchWalls ondersteunt interieurontwerpers, decorateurs, winkels en commerciële projecten bij de keuze van ontwerpen, materialen en monsters.'
+          assign mw_geo_faq_3_answer = 'Ja. Personalisatie maakt het mogelijk om ontwerp, schaal of compositie aan te passen aan de afmetingen en behoeften van uw ruimte.'
+        else
+          assign mw_geo_faq_1_answer = 'Ja. Monsters helpen om kleur, textuur en afwerking te controleren voordat u het definitieve behang of de definitieve wanddecoratie kiest.'
+          assign mw_geo_faq_2_answer = 'Ja. MatchWalls werkt met interieurontwerpers, architecten, winkels en commerciële projecten die ondersteuning nodig hebben bij ontwerpkeuze, monsters of personalisatie.'
+          assign mw_geo_faq_3_answer = 'Ja. Personalisatie maakt het mogelijk om een wanddecoratie of voorstel aan te passen aan de maten en behoeften van de ruimte.'
+        endif
+        assign mw_geo_faq_2_question = 'Werkt MatchWalls met professionals?'
+        assign mw_geo_faq_3_question = 'Kan ik een gepersonaliseerde muurschildering maken?'
+      else
+        if mw_geo_country == 'france'
+          assign mw_geo_country_label = 'Francia'
+        else
+          assign mw_geo_country_label = 'España'
+        endif
+        assign mw_geo_faq_1_question = '¿Puedo pedir muestras antes de comprar?'
+        if mw_geo_country == 'france'
+          assign mw_geo_faq_1_answer = 'Sí. Las muestras permiten comprobar color, textura y acabado antes de elegir el papel pintado o mural definitivo.'
+          assign mw_geo_faq_2_answer = 'Sí. MatchWalls trabaja con interioristas, decoradores, tiendas y proyectos comerciales en la selección de diseños, materiales y muestras.'
+          assign mw_geo_faq_3_answer = 'Sí. Las opciones de personalización permiten adaptar un diseño, una escala o una composición a las dimensiones y necesidades del espacio.'
+        else
+          assign mw_geo_faq_1_answer = 'Sí. Las muestras ayudan a comprobar color, textura y acabado antes de decidir el papel pintado o mural definitivo.'
+          assign mw_geo_faq_2_answer = 'Sí. MatchWalls trabaja con interioristas, arquitectos, tiendas y proyectos comerciales que necesitan soporte en selección, muestras o personalización.'
+          assign mw_geo_faq_3_answer = 'Sí. La opción de personalización permite adaptar un mural o trabajar con una propuesta ajustada a las medidas y necesidades del espacio.'
+        endif
+        assign mw_geo_faq_2_question = '¿MatchWalls trabaja con profesionales?'
+        assign mw_geo_faq_3_question = '¿Puedo crear un mural personalizado?'
+    endcase
+  endif
+-%}
+
+{%- if mw_geo_schema_enabled -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": {{ canonical_url | append: '#webpage' | json }},
+          "url": {{ canonical_url | json }},
+          "name": {{ page.title | json }},
+          "headline": {{ page.title | json }},
+          "description": {{ page_description | strip_html | strip | json }},
+          "inLanguage": {{ mw_geo_language | json }},
+          "about": {
+            "@type": "Country",
+            "name": {{ mw_geo_country_label | json }}
+          },
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": {{ shop.name | json }},
+            "url": {{ shop.url | json }}
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": {{ shop.name | json }},
+            "url": {{ shop.url | json }}
+          },
+          "mainEntity": {
+            "@id": {{ canonical_url | append: '#faq' | json }}
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": {{ canonical_url | append: '#faq' | json }},
+          "url": {{ canonical_url | json }},
+          "inLanguage": {{ mw_geo_language | json }},
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": {{ mw_geo_faq_1_question | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ mw_geo_faq_1_answer | json }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ mw_geo_faq_2_question | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ mw_geo_faq_2_answer | json }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ mw_geo_faq_3_question | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ mw_geo_faq_3_answer | json }}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+{%- endif -%}

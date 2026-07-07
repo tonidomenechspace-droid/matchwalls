@@ -1,0 +1,6 @@
+﻿type,id,path,target,estado,evidence
+"failed_mutation","gid://shopify/UrlRedirect/410027000035","/collections/papeles-pintados","/collections/murales","INCOMPLETO","Shopify userError: Destino no puede redirigir a otro redireccionamiento"
+"blocking_redirect","gid://shopify/UrlRedirect/1534386274680","/collections/murales","/en/collections/all-matchwallsmurals-murals","RIESGO CRITICO","Admin path:/collections/murales exists"
+"dependent_redirect","gid://shopify/UrlRedirect/410026868963","/collections/murales-mvp","/collections/murales","VERIFICADO PERO MEJORABLE","Admin target:/collections/murales"
+"dependent_redirect","gid://shopify/UrlRedirect/417318207715","/collections/papeles-pintados-old","/collections/murales","VERIFICADO PERO MEJORABLE","Admin target:/collections/murales"
+"dependent_redirect","gid://shopify/UrlRedirect/417542701283","/collections/%20papeles-pintados","/collections/murales","VERIFICADO PERO MEJORABLE","Admin target:/collections/murales"

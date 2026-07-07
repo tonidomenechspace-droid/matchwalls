@@ -1,0 +1,2 @@
+id,path,target,pre_count_target_home,estado_precheck,metodo_reversion
+gid://shopify/UrlRedirect/412625207523,/pages/facade-variants/test,/,36,VERIFICADO Y CORRECTO,"Recrear UrlRedirect con path=/pages/facade-variants/test y target=/ si se requiere rollback"

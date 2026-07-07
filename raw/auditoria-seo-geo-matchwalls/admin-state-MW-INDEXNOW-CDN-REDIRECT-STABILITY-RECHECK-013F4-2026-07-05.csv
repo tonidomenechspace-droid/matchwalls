@@ -1,0 +1,8 @@
+"timestamp_utc","resource_type","id","field","value","state"
+"2026-07-05T08:10:00Z","UrlRedirect","gid://shopify/UrlRedirect/1659100168568","path","/1fe8851103534006a2a9433fe8b56f2d.txt","VERIFICADO Y CORRECTO"
+"2026-07-05T08:10:00Z","UrlRedirect","gid://shopify/UrlRedirect/1659100168568","target","https://cdn.shopify.com/s/files/1/0677/5308/3107/files/1fe8851103534006a2a9433fe8b56f2d.txt?v=1783238351","VERIFICADO Y CORRECTO"
+"2026-07-05T08:10:00Z","GenericFile","gid://shopify/GenericFile/66247836041592","fileStatus","READY","VERIFICADO Y CORRECTO"
+"2026-07-05T08:10:00Z","GenericFile","gid://shopify/GenericFile/66247836041592","url","https://cdn.shopify.com/s/files/1/0677/5308/3107/files/1fe8851103534006a2a9433fe8b56f2d.txt?v=1783238351","VERIFICADO Y CORRECTO"
+"2026-07-05T08:10:00Z","GenericFile","gid://shopify/GenericFile/66247836041592","mimeType","text/plain","VERIFICADO Y CORRECTO"
+"2026-07-05T08:10:00Z","GenericFile","gid://shopify/GenericFile/66247836041592","originalFileSize","33","VERIFICADO Y CORRECTO"
+"2026-07-05T08:10:00Z","GenericFile","gid://shopify/GenericFile/66247836041592","fileErrors","[]","VERIFICADO Y CORRECTO"

@@ -1,0 +1,5 @@
+url,attempt,status,final_url,location,observacion
+https://www.matchwalls.com/pages/facade-variants/test?mwqa=011g5a,1,404,https://www.matchwalls.com/pages/facade-variants/test?mwqa=011g5a,,Sin redirect a home
+https://www.matchwalls.com/pages/facade-variants/test?mwqa=011g5a,2,404,https://www.matchwalls.com/pages/facade-variants/test?mwqa=011g5a,,Sin redirect a home
+https://www.matchwalls.com/pages/facade-variants/test?mwqa=011g5a,3,404,https://www.matchwalls.com/pages/facade-variants/test?mwqa=011g5a,,Sin redirect a home
+sitemap_check,1,0_found,29_sitemap_files,,URL no aparece en sitemap; 0 errores de lectura

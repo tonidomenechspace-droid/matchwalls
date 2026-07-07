@@ -1,0 +1,8 @@
+area,auditoria/cola dice,shopify_real_api,lectura,riesgo,decision
+gobierno,Estado global INCOMPLETO; lecturas autorizadas; escrituras requieren aprobación exacta,Solo lecturas ejecutadas desde ChatGPT/API,coherente,bajo,mantener protocolo
+idiomas,Prioritarios ES/EN/FR/DE/NL; IT/PT publicados fuera de prioridad activa,ES primario; EN/FR/DE/NL/IT/PT-PT publicados,coherente,medio,IT/PT fase 2 con limpieza mínima defensiva
+volumen,Shopify/sitemap en proceso; no todo cerrado,"3022 productos, 109 colecciones, 55 páginas, 604 redirects",base real actual,medio,usar API actual como foto Shopify
+black_friday,Black Friday obsoleto CORREGIDO Y VERIFICADO; noindex/ausente sitemap,"colección existe, 0 productos, seo.hidden=1",coherente con noindex Shopify,bajo,no tocar
+geo_landings,Geo restantes incompletas; riesgo de repetición,Barcelona y París existen con 73 productos y sin seo.hidden,confirma riesgo y oportunidad,alto,no noindexar estratégicas sin decisión
+landings país,Falta ordenar estrategia mercados,España y Francia existen como páginas; DE/NL/UK/BE/USA/MX no detectadas como landings maduras,brecha estratégica,alto,"crear mapa 012B, sin escribir"
+redirects_rayas_011G7C,Cola dice REQUIERE DECISION HUMANA para consolidar cadena rayas,/collections/rayas-rollos y /collections/papel-pintado-rayas ya apuntan directo a /collections/murales-estilo-a-rayas,posible auditoría desactualizada o lote ya aplicado,medio,NO ejecutar 011G7C sin revalidar público/sitemap; marcar revisión

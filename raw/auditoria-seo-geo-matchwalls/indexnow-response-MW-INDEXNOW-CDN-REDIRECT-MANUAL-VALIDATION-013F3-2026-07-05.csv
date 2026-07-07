@@ -1,0 +1,2 @@
+﻿"timestamp_utc","endpoint","host","key_location","url_submitted","http_status","content_type","effective_url","body","key_mask"
+"2026-07-05T08:01:21Z","https://api.indexnow.org/indexnow","www.matchwalls.com","https://www.matchwalls.com/1fe8851103534006a2a9433fe8b56f2d.txt","https://www.matchwalls.com/","400","application/json; charset=utf-8","https://api.indexnow.org/indexnow","{""errorCode"":""InvalidRequestParameters"",""message"":""Given request parameters are null or invalid"",""details"":null}","1fe88511...6f2d"

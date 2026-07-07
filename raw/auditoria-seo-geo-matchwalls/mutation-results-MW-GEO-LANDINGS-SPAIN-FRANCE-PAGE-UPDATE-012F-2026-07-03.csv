@@ -1,0 +1,4 @@
+operation,resource,id,handle,field_scope,status,user_errors,updated_at,notes
+pageUpdate,page,gid://shopify/Page/687276622200,papel-pintado-espana,"title,body","CORREGIDO Y VERIFICADO",0,2026-07-03T11:56:37Z,"Alicante excluida del texto público; no se cambiaron handle, redirects, colecciones, tema ni productos."
+pageUpdate,page,gid://shopify/Page/687276654968,papel-pintado-francia,"title,body","CORREGIDO Y VERIFICADO",0,2026-07-03T11:57:06Z,"Base ES actualizada; no se cambiaron handle, redirects, colecciones, tema ni productos."
+translationsRegister,page,gid://shopify/Page/687276654968,papel-pintado-francia,"fr title,fr body_html","CORREGIDO Y VERIFICADO",0,2026-07-03T11:58:08Z,"Traducción FR registrada sobre handle localizado existente /fr/pages/papier-peint-en-france con enlaces FR verificados."

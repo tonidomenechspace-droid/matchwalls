@@ -1,0 +1,11 @@
+lang,country,url,status,title_tag_language_ok,meta_description_language_ok,og_title_language_ok,og_description_language_ok,spanish_marker_non_es,estado,nota
+ES,Spain,https://www.matchwalls.com/pages/papel-pintado-espana?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas en ES; correcto para URL ES."
+FR,Spain,https://www.matchwalls.com/fr/pages/papier-peint-en-espagne?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas públicas en FR; no se reproduce preview española."
+EN,Spain,https://www.matchwalls.com/en/pages/spain-wallpaper?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas públicas en EN."
+DE,Spain,https://www.matchwalls.com/de/pages/spanien-tapete?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas públicas en DE."
+NL,Spain,https://www.matchwalls.com/nl/pages/spanje-behang?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas públicas en NL."
+ES,France,https://www.matchwalls.com/pages/papel-pintado-francia?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas en ES; correcto para URL ES."
+FR,France,https://www.matchwalls.com/fr/pages/papier-peint-en-france?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas públicas en FR."
+EN,France,https://www.matchwalls.com/en/pages/french-wallpaper?mwqa=012i-retry,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Primer intento de red falló; retry 200 con metas públicas en EN."
+DE,France,https://www.matchwalls.com/de/pages/franzosische-tapete?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas públicas en DE."
+NL,France,https://www.matchwalls.com/nl/pages/frans-behang?mwqa=012i,200,true,true,true,true,false,VERIFICADO Y CORRECTO,"Metas públicas en NL."

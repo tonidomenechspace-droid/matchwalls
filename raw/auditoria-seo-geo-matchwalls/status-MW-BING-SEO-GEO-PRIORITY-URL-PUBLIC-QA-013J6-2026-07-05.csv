@@ -1,0 +1,17 @@
+field,value
+lote,MW-BING-SEO-GEO-PRIORITY-URL-PUBLIC-QA-013J6
+date,2026-07-05
+mode,solo lectura
+input_queue,priority-url-qa-queue-MW-BING-SEO-GEO-QUERY-URL-OPPORTUNITY-MAP-013J5-2026-07-05.csv
+priority_urls_total,42
+browser_200_page_level_checked,6
+browser_429_incomplete,36
+bingbot_429_from_qa_environment,42
+slow_recheck_after_cooldown,"3/3 returned 429 Cloudflare"
+page_level_state_verified_correct,6
+page_level_state_incomplete,36
+shopify_changed,no
+bing_changed,no
+indexnow_changed,no
+recommended_next_lote,MW-CRAWLERS-WAF-CLOUDFLARE-429-SUPPORT-EVIDENCE-013J6B
+final_state,INCOMPLETO

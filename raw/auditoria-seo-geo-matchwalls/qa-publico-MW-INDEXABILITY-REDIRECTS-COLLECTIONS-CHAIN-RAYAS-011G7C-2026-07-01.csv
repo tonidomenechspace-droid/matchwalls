@@ -1,0 +1,4 @@
+lote,fecha,path,tipo,first_status,first_location,final_status,final_url,canonical,resultado
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,/collections/rayas-rollos,source_updated,301,/collections/murales-estilo-a-rayas,200,https://www.matchwalls.com/collections/murales-estilo-a-rayas,https://www.matchwalls.com/collections/murales-estilo-a-rayas,CORREGIDO Y VERIFICADO
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,/collections/papel-pintado-rayas,intermediate_existing,301,/collections/murales-estilo-a-rayas,200,https://www.matchwalls.com/collections/murales-estilo-a-rayas,https://www.matchwalls.com/collections/murales-estilo-a-rayas,VERIFICADO Y CORRECTO
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-CHAIN-RAYAS-011G7C,2026-07-01,/collections/murales-estilo-a-rayas,final_target,200,,200,https://www.matchwalls.com/collections/murales-estilo-a-rayas,https://www.matchwalls.com/collections/murales-estilo-a-rayas,VERIFICADO Y CORRECTO

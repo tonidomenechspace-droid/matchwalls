@@ -1,0 +1,6 @@
+lote,fecha_hora_local,locale,url,http_status,theme_id,served_by,request_id,content_language,collection_card_count,black_friday_hits,resultado
+MW-SHOPIFY-CLI-INSTALL-AUTH-THEME-PUSH-013E16E2,2026-07-05 06:06:02 +02:00,ES,https://www.matchwalls.com/collections,200,178399019384,jhkr,a53bbe02-413e-49ba-bef2-53f6a4e9ef83-1783224280,es-ES,47,0,PASS
+MW-SHOPIFY-CLI-INSTALL-AUTH-THEME-PUSH-013E16E2,2026-07-05 06:06:02 +02:00,EN,https://www.matchwalls.com/en/collections,200,178399019384,vfxw,7e4166d5-dac5-4b8d-aaaf-9ab0254f595a-1783224284,en-ES,47,0,PASS
+MW-SHOPIFY-CLI-INSTALL-AUTH-THEME-PUSH-013E16E2,2026-07-05 06:06:02 +02:00,FR,https://www.matchwalls.com/fr/collections,200,178399019384,mqfn,b593fe60-9262-4909-ad30-fa306a643003-1783224287,fr-ES,47,0,PASS
+MW-SHOPIFY-CLI-INSTALL-AUTH-THEME-PUSH-013E16E2,2026-07-05 06:06:02 +02:00,DE,https://www.matchwalls.com/de/collections,200,178399019384,8rp8,fd939180-4dc4-4a59-ad0f-7c5380e37dc3-1783224292,de-ES,47,0,PASS
+MW-SHOPIFY-CLI-INSTALL-AUTH-THEME-PUSH-013E16E2,2026-07-05 06:06:02 +02:00,NL,https://www.matchwalls.com/nl/collections,200,178399019384,vs2h,28d592f1-2cf4-40e3-9856-47e348bd619b-1783224296,nl-ES,47,0,PASS

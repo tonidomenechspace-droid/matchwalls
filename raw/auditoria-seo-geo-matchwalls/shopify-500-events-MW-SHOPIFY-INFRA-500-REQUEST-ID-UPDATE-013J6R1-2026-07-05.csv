@@ -1,0 +1,3 @@
+lote,ticket,source_lote,url,http_status,elapsed_ms,server,cf_ray,shopify_x_request_id,state
+MW-SHOPIFY-INFRA-500-REQUEST-ID-UPDATE-013J6R1,68731900,MW-BING-SEO-GEO-PRIORITY-URL-PUBLIC-QA-013J6R,https://www.matchwalls.com/products/gingham-charm-verde,500,3266,cloudflare,a1677b84fa654bd6-MAD,085d24e5-299a-4e8c-bd90-f0ba737e13bb-1783266176,RIESGO CRITICO
+MW-SHOPIFY-INFRA-500-REQUEST-ID-UPDATE-013J6R1,68731900,MW-BING-SEO-GEO-PRIORITY-URL-PUBLIC-QA-013J6R,https://www.matchwalls.com/en/collections/salamanca-wallpaper,500,3294,cloudflare,a1677c42ca9cf91f-MAD,84b5fb4a-fca0-48bb-80b9-1ee7399344c6-1783266207,RIESGO CRITICO

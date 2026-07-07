@@ -1,0 +1,6 @@
+﻿chain_id,step,id,path,target,estado,decision_recomendada
+CHAIN-PAGES-MEDIDAS,1,gid://shopify/UrlRedirect/405088796899,/pages/como-tomar-medidas-paredes-y-techos-boton,/pages/medidas-paredes-techos,RIESGO CRITICO,Consolidar a destino final solo tras lote aprobado
+CHAIN-PAGES-MEDIDAS,2,gid://shopify/UrlRedirect/409984762083,/pages/medidas-paredes-techos,/pages/medidas-paredes,RIESGO CRITICO,Conservar destino final o validar URL pública antes de propuesta
+CHAIN-COLLECTIONS-PAPELES,1,gid://shopify/UrlRedirect/410027000035,/collections/papeles-pintados,/collections/papeles-pintados-old,RIESGO CRITICO,Consolidar a destino final solo tras lote aprobado
+CHAIN-COLLECTIONS-PAPELES,2,gid://shopify/UrlRedirect/417318207715,/collections/papeles-pintados-old,/collections/murales,RIESGO CRITICO,Conservar destino final o validar arquitectura antes de propuesta
+FACADE-TEST,1,gid://shopify/UrlRedirect/412625207523,/pages/facade-variants/test,/,INCORRECTO,Revisar si debe conservarse tras cleanup 011C1; no borrar sin aprobación

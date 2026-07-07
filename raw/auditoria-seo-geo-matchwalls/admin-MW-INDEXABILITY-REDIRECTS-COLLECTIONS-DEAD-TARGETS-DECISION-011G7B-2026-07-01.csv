@@ -1,0 +1,6 @@
+lote,fecha,redirect_id,path,target,admin_redirect_status,target_collection_admin_status,decision_estado
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-DEAD-TARGETS-DECISION-011G7B,2026-07-01,gid://shopify/UrlRedirect/405254897891,/collections/kids,/collections/kids-rollos,existe,target handle no existe en Admin,REQUIERE DECISION HUMANA
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-DEAD-TARGETS-DECISION-011G7B,2026-07-01,gid://shopify/UrlRedirect/408478843107,/collections/patrones-grandes-rollos,/collections/papel-pintado-estampado-grande,existe,target handle no existe en Admin,REQUIERE DECISION HUMANA
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-DEAD-TARGETS-DECISION-011G7B,2026-07-01,gid://shopify/UrlRedirect/408478974179,/collections/semi-lisos-rollos,/collections/semi-lisos-papel-pintado,existe,target handle no existe en Admin,REQUIERE DECISION HUMANA
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-DEAD-TARGETS-DECISION-011G7B,2026-07-01,gid://shopify/UrlRedirect/408479006947,/collections/moderno-rollos,/collections/moderno-papel-pintado,existe,target handle no existe en Admin,REQUIERE DECISION HUMANA
+MW-INDEXABILITY-REDIRECTS-COLLECTIONS-DEAD-TARGETS-DECISION-011G7B,2026-07-01,gid://shopify/UrlRedirect/408719425763,/collections/lienzos-artista,/collections/lienzos-abstractos,existe,target handle no existe en Admin,REQUIERE DECISION HUMANA

@@ -1,0 +1,11 @@
+﻿metric,value,state
+priority_urls_total,42,VERIFICADO Y CORRECTO
+browser_200_page_level_checked,6,VERIFICADO Y CORRECTO
+browser_429_incomplete,36,INCOMPLETO
+bingbot_429_from_qa_environment,42,INCOMPLETO
+page_level_state_VERIFICADO Y CORRECTO,6,VERIFICADO Y CORRECTO
+page_level_state_INCOMPLETO,36,INCOMPLETO
+slow_recheck_after_cooldown,3/3 returned 429 Cloudflare,INCOMPLETO
+shopify_changed,no,VERIFICADO Y CORRECTO
+bing_changed,no,VERIFICADO Y CORRECTO
+next_safe_lote,MW-CRAWLERS-WAF-CLOUDFLARE-429-SUPPORT-EVIDENCE-013J6B,REQUIERE DECISION HUMANA

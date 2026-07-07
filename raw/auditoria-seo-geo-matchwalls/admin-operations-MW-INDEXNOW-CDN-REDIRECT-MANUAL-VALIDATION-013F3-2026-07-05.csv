@@ -1,0 +1,4 @@
+"timestamp_utc","operation","resource","id","path_or_url","status","user_errors","rollback"
+"2026-07-05T07:58:18Z","stagedUploadsCreate","temporary staged upload","","tmp/67753083107/files/db101fcd-ee86-47d1-a6d2-1e8ec370030b/1fe8851103534006a2a9433fe8b56f2d.txt","staged target created","0","no persistent Shopify resource"
+"2026-07-05T07:59:09Z","fileCreate","GenericFile","gid://shopify/GenericFile/66247836041592","https://cdn.shopify.com/s/files/1/0677/5308/3107/files/1fe8851103534006a2a9433fe8b56f2d.txt?v=1783238351","READY; mimeType text/plain; size 33 bytes","0","fileDelete(fileIds:[gid://shopify/GenericFile/66247836041592])"
+"2026-07-05T08:00:00Z","urlRedirectCreate","UrlRedirect","gid://shopify/UrlRedirect/1659100168568","/1fe8851103534006a2a9433fe8b56f2d.txt -> CDN TXT","created","0","urlRedirectDelete(id:gid://shopify/UrlRedirect/1659100168568)"

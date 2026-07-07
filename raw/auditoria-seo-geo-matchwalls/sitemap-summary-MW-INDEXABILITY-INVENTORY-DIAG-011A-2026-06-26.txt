@@ -1,0 +1,7 @@
+robots_status=200 robots_bytes=3640 robots_url=https://www.matchwalls.com/robots.txt
+sitemap_root_status=200 sitemap_root_kind=sitemapindex sitemap_root_bytes=4511
+sub_sitemaps=36 total_urls=7932
+sitemap_statuses={'200': 36}
+languages={'es': 1134, 'pt': 1133, 'fr': 1133, 'de': 1133, 'it': 1133, 'en': 1133, 'nl': 1133}
+types={'agents.md': 1, 'home': 7, 'products': 6797, 'pages': 294, 'collections': 749, 'blogs': 84}
+flags={'suffix_1': 435, 'typo_norid': 70, 'sample': 168, 'geo_or_location_collection_possible': 114, 'black_friday': 5, 'test_url': 7, 'typo_enchathed': 19, 'brand_typo_matchalls': 1}

@@ -1,0 +1,608 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "image_with_text_overlay_cGppU4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_jg7VJw": {
+          "type": "heading",
+          "settings": {
+            "text": "Crea tu propio Papel Pintado",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jg7VJw"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/ccccccccccccccccccc_1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/ggggggggggggggggggggggggggggggggg.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-start-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 11
+      }
+    },
+    "rich_text_Rww9fh": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_QDHbCw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>¡En Matchwalls te lo ponemos muy fácil!<\/strong> Solo tienes que subir una foto o una ilustración en cualquier formato, introducir las dimensiones de tu papel pintado y escoger la calidad del material. Realizamos todas las impresiones bajo pedido. Lo fabricaremos siendo conscientes de tu ilusión y  en un plazo de fabricación más control de calidad de 4 días desde la recepción de tu pedido y posterior envío  recibirás el papel pintado mural que no sabías deseabas, especialmente<strong> diseñado por ti <\/strong>y fabricado por Matchwalls.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_QDHbCw"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_V8WYDT": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_jhCgTL": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "12"
+          }
+        },
+        "item_DPMgXy": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Crea sin limites. Decora tu casa o negocio con un pattern diseñado por ti.",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_NjyFb9": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>En Matchwalls cuidamos que todos nuestros papeles pintados sean de la mejor calidad de materiales e impresión. Para asegurarnos de que tu pattern llega a tu hogar o negocio en perfectas condiciones, te lo enviamos envuelto en<strong> papel protector dentro de una caja reciclada de cartón protegida con esquinas de alta resistencia y protegido.<\/strong><\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "spacer_pggYez": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "12"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_jhCgTL",
+        "item_DPMgXy",
+        "item_NjyFb9",
+        "spacer_pggYez"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_L6R78R": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_ckhPmf": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "3"
+          }
+        },
+        "item_a8Yb7q": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "¿Estás listo? Envíanos tu diseño",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "#anchor_form",
+            "render_customizer_snippet": false,
+            "link_text": "CREA TU PAPEL PINTADO",
+            "link_style": "button"
+          }
+        },
+        "spacer_jq7gpP": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "3"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_ckhPmf",
+        "item_a8Yb7q",
+        "spacer_jq7gpP"
+      ],
+      "custom_css": [
+        "2 {background-color: #f5f5f5; padding-top: 50px;}",
+        ".button.button--lg {width: 340px;}",
+        " {background-color: #f5f5f5;}",
+        ".button.button--lg {width: 250px; background: #ffffff;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#e9bcc7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_BD8Qyd": {
+      "type": "multi-column",
+      "blocks": {
+        "item_F9RGXg": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "¿Qué debo saber antes de subir o enviar mi diseño pattern personalizado?",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>Sube una imagen (en formato .jpg, .tiff, .eps o .pdf) con la mejor calidad y la mejor definición posibles. Si no está seguro de si la imagen tiene una resolución lo suficientemente alta, puedes contactarnos antes de realizar el pedido y <strong>te ayudaremos a revisar la imagen <\/strong>en un plazo máximo de 3 días. Si no necesitas ayuda con tu fotografía, simplemente introduce las dimensiones que deseas para tu papel pintado y recorta la imagen como lo harías para comprar cualquiera de nuestros productos.<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Q8GqVG": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "¿Qué precio tiene mi papel pintado pattern personalizado?",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>Para conseguir tu precio exacto debes escoger el<strong> tipo de producto y la calidad<\/strong> que necesitas además de introducir las dimensiones de tus paredes en el calculador de rollos o simulador de murales. Nuestros precios se basan en precio unidad o rollo y m2 o inches2 en el caso de los pattern personalizables.<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_F9RGXg",
+        "item_Q8GqVG"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_wBQgBk": {
+      "type": "multi-column",
+      "blocks": {
+        "item_wRrPmm": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "¿Qué tamaño debe tener mi imagen?",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>Para poder imprimir <strong>tu papel pintado pattern<\/strong>, la fotografía que elijas debe tener por lo menos 1 pixel por cada milímetro en el papel. Por ejemplo, si quieres un mural de 4000 x 2500 milímetros (400cm\/57.48” x 250cm\/98.43¨metros), tu imagen deberá tener, por lo menos, 4000 x 2500 píxeles. Cuando subas tu fotografía, valora que debes cargar un archivo de imagen y no de texto. <\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_8nQ9Bi": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "¿Puedo crear cualquier creatividad para mi pattern personalizado?",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>Puedes usar cualquier creatividad que siga los detalles técnicos de resolución y tamaño correctos, tu propio pattern, fotografía familiar, ilustración o cualquier diseño que tu consideres es el adecuado para tu proyecto decorativo y de<strong> interiorismo residencial o profesional.<\/strong> Puedes también inspirarte y buscar en bancos de imágenes y portales profesionales donde puedes inspirarte y ayudarte a crear tu propio papel pintado.<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kxAzAn": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "column_size": "1.5",
+            "title": "¿Qué calidad elijo para mi papel pintado pattern personalizado?",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>Todas nuestras calidades<strong> se imprimen sobre material non woven <\/strong>o tejidos sostenibles, certificados al fuego, lavables, resistentes a la luz del sol y tienen estándares de durabilidad y resistencia de la más alta calidad. Nuestros papeles pintados pattern están pensados para dar<strong> soluciones de instalación profesionales y residenciales a decoradores, <\/strong>arquitectos, interioristas y particulares amantes de la decoración y el interiorismo. Dependiendo de tu necesidad de resistencia, mate en colores, textura o sin textura además de la facilidad de instalación y desinstalación escoge entre nuestras calidades, non woven, vinílica, metallic o peel & stick.<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_wRrPmm",
+        "item_8nQ9Bi",
+        "item_kxAzAn"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_dQ8VHW": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_8VCQFh": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_MxatzP": {
+          "type": "heading",
+          "settings": {
+            "text": "¿Qué calidad elijo para mi papel pintado pattern personalizado?",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_t9d8KY": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Todas nuestras calidades<strong> se imprimen sobre material non woven <\/strong>o tejidos sostenibles, certificados al fuego, lavables, resistentes a la luz del sol y tienen estándares de durabilidad y resistencia de la más alta calidad. Nuestros papeles pintados pattern están pensados para dar<strong> soluciones de instalación profesionales y residenciales a decoradores, <\/strong>arquitectos, interioristas y particulares amantes de la decoración y el interiorismo. Dependiendo de tu necesidad de resistencia, mate en colores, textura o sin textura además de la facilidad de instalación y desinstalación escoge entre nuestras calidades, non woven, vinílica, metallic o peel & stick.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8VCQFh",
+        "heading_MxatzP",
+        "richtext_t9d8KY"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "before_after_image_hBf7TB": {
+      "type": "before-after-image",
+      "settings": {
+        "full_width": true,
+        "subheading": "¿NECESITAS INSPO?",
+        "title": "Elije uno de nuestros diseños y personalízalo",
+        "content": "<p>Adaptamos un diseño de nuestra<strong> colección Matchwalls a tus necesidades y gustos. <\/strong>¿Te planteas cambiar un <strong>color<\/strong>, añadir un objeto o <strong>quitar<\/strong> o simplemente cambiar la<strong> escala <\/strong>y proporciones?<strong> Contacta<\/strong> con nuestro equipo y estudio de diseño Matchwalls y te ayudaremos <a href=\"mailto:designservices@matchwalls.com\"><span style=\"text-decoration:underline\">designservices@matchwalls.com<\/span><\/a> <\/p><h2><\/h2>",
+        "before_image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-03-15_105840.png",
+        "before_image_mobile": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-03-15_105840.png",
+        "after_image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-03-15_102608.png",
+        "after_image_mobile": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-03-15_102608.png",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Sin MatchWalls",
+        "after_text": "Con MatchWalls",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "rich_text_RjdQQG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BzHLCg": {
+          "type": "heading",
+          "settings": {
+            "text": "¿Tienes dudas para crear tu propio mural?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_HBYEK7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Contacta con nuestro equipo y estudio de diseño Matchwalls y te ayudaremos <a href=\"mailto:designservices@matchwalls.com\"><span style=\"text-decoration:underline\">designservices@matchwalls.com<\/span><\/a><\/p>"
+          }
+        },
+        "button_chbgxN": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "CONTÁCTANOS",
+            "url": "shopify:\/\/pages\/formulario-particulares",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_BzHLCg",
+        "richtext_HBYEK7",
+        "button_chbgxN"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_nneNNq": {
+      "type": "faq",
+      "blocks": {
+        "item_9J4LHi": {
+          "type": "item",
+          "settings": {
+            "title": "¿Qué cantidad de papel pintado Matchwalls necesito?",
+            "content": "<p>Nuestros papeles pintados se imprimen<strong> bajo demanda<\/strong>, es decir, fabricamos en el plazo de 4 días una vez recibimos tu pedido de acuerdo con las dimensiones de su pared. Mide al <strong>ancho y alto de tu pared<\/strong> y añade de 6 a 10 cm o (2,5 a 6 inches) a estas medidas para el margen de colocación y evitar la falta de papel o error al realizar los cortes, además te ayudará a dejar un acabado perfecto.  Después, selecciona tu diseño y añade las medidas a nuestro calculador de m2 o rollos. En la mayoría de los casos, puede que necesites recortar la imagen para que encaje en las proporciones de la pared, pero puedes seleccionar y ajustar la parte de mural que más te interese, además puedes contactar con nosotros para realizar diseño o cambios sobre nuestros diseños si lo desea, eliminar un motivo o cambiar la escala de tu elección. Si te planteas crear un diseño de papel pintado de más de 600 (240 inches) centímetros de ancho o 350 (140 inches) centímetros de alto, te recomendamos que te pongas en contacto con nosotros antes de hacer el pedido para asegurarte de que la calidad de la imagen es apta para la ampliación y poder realizar un trabajo perfecto y que cumpla con las expectativas que esperas de Matchwalls y tu papel pintado de alta calidad.<\/p>"
+          }
+        },
+        "item_dbFWUH": {
+          "type": "item",
+          "settings": {
+            "title": "¿Qué precio tiene el papel pintado rollo o mural personalizado?",
+            "content": "<p>El precio del papel pintado varía en función del <strong>tipo de papel que escojas,<\/strong> rollo papel pintado no personalizable de medidas de 50 cm (0,20 inches ) de ancho por 10 m ( 393.70 inches)  de largo de venta por unidad o mural personalizable en tiras de 50 cm ( 0,20 inches) por la altura que desees y de venta por m2 o inches2. <\/p><p>Para conseguir tu precio exacto debes escoger el tipo de producto y la calidad que necesitas además de introducir las dimensiones de tus paredes en el calculador de rollos o simulador de murales. Nuestros precios se basan en precio unidad o rollo y m2 o inches2 en el caso de los murales personalizables.<\/p>"
+          }
+        },
+        "item_JLVMpN": {
+          "type": "item",
+          "settings": {
+            "title": "¿Qué medidas tienen las tiras de papel pintado rollo y mural?",
+            "content": "<p>Nuestro papel pintado rollo y mural se imprime en ambos productos en <strong>achos de bobina y paneles o tiras de 50 cm<\/strong> (0,20 inches). Para los rollos son de 10 m (393.70 inches) y para los murales personalizados lo fabricaremos a las medidas de altura que necesites en tiras de 0.50 cm (0.20 inches) de ancho en todas nuestras calidades, Non woven, Vinilicas,Metallics o Peel &Sitck. <\/p><p><strong>Por ejemplo<\/strong>, si realizas un pedido de 320 cm (125.98 inches) de ancho recibirás 7 paneles y en la mayoría de los casos, el último panel aparecerá impreso parcialmente hasta las medidas que necesitas y dejando en blanco o sin impresión la parte del panel restante.<\/p>"
+          }
+        },
+        "item_dEd6Xg": {
+          "type": "item",
+          "settings": {
+            "title": "¿Como puedo hacer para evitar la falta de papel pintado y administrar los cm o inches que pueden faltar en la parte superior o inferior de la pared?",
+            "content": "<p><strong>No todas las paredes son perfectas ni rectas<\/strong>. Cuando instales el papel pintado en la pared, es importante asegurarte de que la primera tira se equilibre verticalmente con un nivel o plomada para que la instalación de las siguientes muestre el diseño perfectamente orientado y acorde con la pared o espacio. Recomendamos siempre que dejes 6 a 10 cm o (2,5 a 6 inches) tanto en la parte superior como en la inferior par que si no se a nivelado el papel al 100% perfecto evites que falte papel pintado tanto en la parte superior como en la inferior debido a la acumulación de desnivel.  <\/p>"
+          }
+        },
+        "item_a6Dx7K": {
+          "type": "item",
+          "settings": {
+            "title": " ¿Cómo se empaqueta y que recibo en mi entrega?",
+            "content": "<p>Tu papel pintado rollo o mural personalizado <strong>se entregará en una caja <\/strong>de dimensiones de 50 cm x 15 cm x 15 cm (0,20 inches x 5.9 inches x 5. 9 inches) y cada rollo estará perfectamente protegido, revisado en una caja de cartón duro e incluye los detalles técnicos e instrucciones de instalación. Dependiendo del tamaño de tu pedido puedes recibir 1 caja o varias cajas que contienen un rollo cada una hasta completar tu pedido y necesidades. <\/p>"
+          }
+        },
+        "item_7cxAkH": {
+          "type": "item",
+          "settings": {
+            "title": "¿Cuál es la diferencia entre las calidades Non woven, Vinílico, Metallics o Peel & Stick?",
+            "content": "<p>Todas nuestras calidades se <strong>imprimen sobre material Non woven<\/strong> o tejido sostenibles, certificados al fuego, lavables, resistentes a la luz del sol y tienen estándares de durabilidad y resistencia de la más alta calidad. <\/p><p>Nuestros papeles pintados están pensados para dar soluciones de instalación profesionales y residenciales a decoradores, arquitectos, interioristas y particulares amantes de la decoración y el interiorismo. <\/p><p><strong>Non woven<\/strong>: La solución para particulares que buscan un papel de alta calidad sin textura de fácil instalación y con las certificaciones al fuego (ignífugas), lavabilidad auditadas y sustancias volátiles y de sostenibilidad. Diseñadas para espacios particulares y también públicos, restaurantes, hoteles, tiendas. Es la opción más tradicional y que muestra el papel y colores de una forma excelente además de profundizar en el diseño y detalles sobre impresión de tintas al agua sostenibles y en acabado mate.<\/p><p><strong>Vinílico: <\/strong>Material de uso particular y profesional de capacidades y prestaciones ignífugas y lavabilidad superiores a la calidad Non woven en acabado mate texturizado. Vinílico es un material de alta calidad y acabados capaz de ampliar la sensación de confort y sensaciones de un material texturizado. Certificación superior ignífuga, lavabilidad, partículas volátiles además de resistencia y capacidad de tolerancia al roce o golpes. Es un material perfecto para los más exigentes decoradores, interioristas y arquitectos o expertos particulares amantes de la alta decoración y detalles.<\/p><p><strong>Peel & Stick:<\/strong> La solución autoadhesiva para particulares que necesitan una instalación limpia, sencilla, basta con quitar la lámina protectora posterior y aplicarlo directamente en la pared. Peel&Stick ayuda a realizar una simple instalación de tu papel pintado o mural. Peel & Stick es un material de alta calidad con certificaciones ignífugas, lavabilidad, resistencia y durabilidad en acabado mate satinado para espacios profesionales, tiendas, hoteles y restaurantes. <\/p><p>Es una práctica opción para espacios que necesitan cambios continuos de atmosfera, alquilados y que requieren de una simple desinstalación.  <\/p><p><strong>Metallics:<\/strong> El papel pintado más sofisticado con acabados en plata, oro y cobre para los espacios más exigentes. Metallics es la respuesta a los diseños metálicos que necesitan de este material. Ahora con metallics particulares y profesionales pueden crear auténticos diseños dorados, plata y cobre con certificaciones ignífugas, lavabilidad y durabilidad. Es un material que destaca las tintas metálicas no texturizado. Este material solo está disponible para los diseños que incluyen, plata, oro y cobre y no se imprime para otros diseños que nos tengan una de las tres tintas metálicas, oro, plata o cobre. <\/p><p>Puedes solicitar las fichas técnicas de cada uno de estos materiales a nuestro servicio de atención al cliente Matchwalls y estaremos encantados de proporcionarte, certificaciones y especificaciones técnicas tanto de instalación como del material para tus proyectos de interiorismo.<\/p>"
+          }
+        },
+        "item_b8PQi9": {
+          "type": "item",
+          "settings": {
+            "title": "¿Puedo pedir una muestra de mi papel pintado antes de realizar la compra definitiva?",
+            "content": "<p><strong>Estaremos encantados de ayudarte <\/strong>a seleccionar tu papel pintado rollo o mural ideal. Puedes solicitar una muestra A4 a través de nuestra opción “solicita una muestra”, así podrás valorar colores, diseño, textura y calidad del papel. Las muestras se envían por correo ordinario y las recibirás en tu buzón. Si necesitas muestra de 50 cm x 50 cm (0.20 inches x 0.20 inches) o tiras superiores te podemos ayudar y te recomendamos por favor que contactes con nuestro departamento de atención al cliente, estaremos encantados de asesorarte y fabricar tus muestras con tu diseño personalizado o nuestras colecciones para tu proyecto de interiorismo profesional o residencial. <\/p>"
+          }
+        },
+        "item_WG4ihn": {
+          "type": "item",
+          "settings": {
+            "title": "¿Puedo pedir muestra de mi propio diseño de papel pintado rollo o mural?",
+            "content": "<p>Si, <strong>puedes solicitar muestras de tu propio diseño <\/strong>de papel pintado rollo o mural. Contacta con nuestro equipo de atención al cliente, envíanos tu archivo y diseño en formato JPG, JPEG con un mínimo de 150 dpi, calidad de papel escogida, tamaño de la pared y te asesoraremos para desarrollar tanto tu diseño papel pintado rollo como mural papel pintado además de tu fabricar tu muestra que enviaremos por correo postal ordinario o servicio estándar o urgente.<\/p>"
+          }
+        },
+        "item_zcVMzw": {
+          "type": "item",
+          "settings": {
+            "title": "¿Cómo elijo el mejor diseño de papel pintado Matchwalls para mi espacio residencial o profesional?",
+            "content": "<p>Puedes inspirarte y buscar referencias en <strong>nuestras redes sociales,<\/strong> Tik Tok, Instagram, Pinterest, LinkedIn o youtube, además de nuestro magazine de <strong>inspiración<\/strong>. Valora los patrones y diseños y escoge el motivo, color y acabado de material que mejor se adapte a tu proyecto de interiorismo y look & feel que quieres transmitir en tu habitación, sala de estar, tienda, hotel o restaurante. Factores como el tamaño del espacio, los ángulos, puertas y ventanas son muy importantes para crear un espacio. <\/p><p>Transmite<strong> tu estilo y decora<\/strong> usando nuestros papeles pintados, encontraras soluciones a tus necesidades a través de nuestras colecciones y equipo de diseño. No dudes en enviar tu espacio una vez esté acabado a nuestro equipo de social y prensa para que publiquemos tus proyectos y podamos compartir juntos tu experiencia Matchwalls.<\/p>"
+          }
+        },
+        "item_djPApN": {
+          "type": "item",
+          "settings": {
+            "title": "¿Es importante la superficie en la que voy a instalar mi papel pintado rollo o mural?",
+            "content": "<p>No apliques el papel pintado rollo o mural sobre<strong> paredes rugosas y verifica<\/strong> que la pared siempre este seca, nivelada y limpia. Es recomendable limpiar la pared con el objetivo de prepararla y evitar la porosidad de las superficies absorbentes, porosas o conglomeradas. No se puede instalar papel sobre paredes metálicas, cristales o laminados de madera sintética, es aconsejable preparar y revisar la pared antes de instalar para que los papeles que se instalan con cola en pared queden bien fijados y con un aspecto homogéneo y de calidad.<\/p>"
+          }
+        },
+        "item_xBA4MW": {
+          "type": "item",
+          "settings": {
+            "title": "¿Puedo instalar mi papel pintado mural o rollo encima de una pared empapelada?",
+            "content": "<p>Siempre hemos de desinstalar el papel de la pared y limpiar la pared <strong>evitando rugosidades<\/strong> y dejando la pared lo más lisa y sin ondulaciones posibles para conseguir un resultado óptimo. <\/p><p><strong>Necesitarás<\/strong> un cubo con agua tibia, un trapo o esponja y un rascador de papel pintado. Busca la junta, levanta el papel suavemente y humedece todo el papel pintado. Posteriormente realiza unos cortes sobre el papel pintado que ayuden a despedazar el papel pintado y estira con suavidad pasados unos minutos con la ayuda del rascador. <\/p>"
+          }
+        },
+        "item_4eYkiR": {
+          "type": "item",
+          "settings": {
+            "title": "¿Puedo instalar papel pintado en zonas húmedas o cocinas?",
+            "content": "<p>Puedes instalar nuestros papeles pintados en zonas húmedas o cocinas siempre y cuando el papel <strong>no tenga contacto directo con líquidos fríos o calientes<\/strong> y exista una distancia prudencial de contacto directo. Nuestros papeles pintados tienen certificaciones de lavabilidad y fuego y pueden lavarse siguiendo las instrucciones de guías de uso que puedes solicitar a nuestro equipo de atención al cliente.<\/p><p><strong>Un consejo<\/strong> que funciona muy bien: “Imprime una capa de latex (de venta en cualquier centro especializado de decoración o bricolaje) sobre tu papel pintado una vez instalado” y protege con una película de material transparente tanto tu papel como las juntas y así podrás aumentar o resistencia a la humedad ambiental o manchas que se puedan producir en tu cocina.<\/p><p><strong>Cualquiera de nuestras calidades <\/strong>se puede instalar en estos espacios, pero si has de escoger una, te recomendaremos la calidad vinílica que es la que más altas prestaciones de lavabilidad tiene. <\/p>"
+          }
+        },
+        "item_w9GCUX": {
+          "type": "item",
+          "settings": {
+            "title": "¿Podéis realizar instalaciones de papel pintado rollo o mural?",
+            "content": "<p>Nos encantaría poder enviarte un instalador, pero Matchwalls vende a nivel <strong>internacional y no es posible <\/strong>recomendarte un instalador local, pero si estaremos encantados de que sigas nuestras recomendaciones y solicites nuestras guías de instalación además estaremos encantados de ayudarte para cualquier duda si contactas con nuestro servicio de atención al cliente.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_9J4LHi",
+        "item_dbFWUH",
+        "item_JLVMpN",
+        "item_dEd6Xg",
+        "item_a6Dx7K",
+        "item_7cxAkH",
+        "item_b8PQi9",
+        "item_WG4ihn",
+        "item_zcVMzw",
+        "item_djPApN",
+        "item_xBA4MW",
+        "item_4eYkiR",
+        "item_w9GCUX"
+      ],
+      "custom_css": [
+        "{padding-top: 50px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Preguntas frecuentes sobre papeles pintados patterns personalizados",
+        "content": "",
+        "team_avatar_width": 260,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "1719938907c04d50fe": {
+      "type": "apps",
+      "blocks": {
+        "qikify_form_builder_embed_form_hFWipE": {
+          "type": "shopify:\/\/apps\/qikify-form-builder\/blocks\/embed-form\/753fa0d7-50d4-480a-b094-cff26e632c36",
+          "settings": {
+            "type": "form",
+            "formId": 373516
+          }
+        }
+      },
+      "block_order": [
+        "qikify_form_builder_embed_form_hFWipE"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_LC4dPx": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_7wwaMV": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Comparte tu espacio Matchwalls con nosotros en @bematchwalls @matchwalls <\/strong>#bematchwalls #matchwalls #matchwallsbarcelona #matchwallspapers<\/p>"
+          }
+        },
+        "html_Gwpgk3": {
+          "type": "html",
+          "settings": {
+            "content": "<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><strong>Envíanos tu video de instalación o fotografías a help@matchwalls.com <\/strong><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_7wwaMV",
+        "html_Gwpgk3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_cGppU4",
+    "rich_text_Rww9fh",
+    "multi_column_V8WYDT",
+    "multi_column_L6R78R",
+    "multi_column_BD8Qyd",
+    "multi_column_wBQgBk",
+    "rich_text_dQ8VHW",
+    "before_after_image_hBf7TB",
+    "rich_text_RjdQQG",
+    "faq_nneNNq",
+    "1719938907c04d50fe",
+    "rich_text_LC4dPx"
+  ]
+}

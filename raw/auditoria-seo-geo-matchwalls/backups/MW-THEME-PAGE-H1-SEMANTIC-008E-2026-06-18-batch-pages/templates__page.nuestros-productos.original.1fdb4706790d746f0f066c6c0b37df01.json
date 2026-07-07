@@ -1,0 +1,667 @@
+{
+  "sections": {
+    "multi_column_KXKJzg": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_fXAFnN": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "6"
+          }
+        },
+        "item_AjpMYL": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Crea tus propios diseños. Crea espacios únicos.",
+            "heading_tag": "h3",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7zcCk8": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>En Matchwalls imprimimos cada diseño a medida. Explora y elige nuestros diseños ya creados y lo adaptamos a tus medidas o imprime tu propio diseño en la más alta calidad. <\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "spacer_KUTTCb": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "6"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_fXAFnN",
+        "item_AjpMYL",
+        "item_7zcCk8",
+        "spacer_KUTTCb"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "multi_column_QQ6QVa": {
+      "type": "multi-column",
+      "blocks": {
+        "item_WKetir": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rollos_II.jpg",
+            "column_size": "4",
+            "title": "Mi papel pintado",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "https:\/\/www.matchwalls.com\/pages\/crea-tu-papel-pintado-rollo",
+            "render_customizer_snippet": false,
+            "link_text": "Crear mi papel pintado",
+            "link_style": "link"
+          }
+        },
+        "item_WdaQ3b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nuestros_productos_2.jpg",
+            "column_size": "4",
+            "title": "Mi propio mural",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "https:\/\/www.matchwalls.com\/pages\/crea-tu-mural",
+            "render_customizer_snippet": false,
+            "link_text": "Crear mi propio mural",
+            "link_style": "link"
+          }
+        },
+        "item_Ltb77P": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lienzo_III.jpg",
+            "column_size": "4",
+            "title": "Lienzo personalizado",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "https:\/\/www.matchwalls.com\/pages\/crea-tu-lienzo",
+            "render_customizer_snippet": false,
+            "link_text": "Crear mi lienzo personalizado",
+            "link_style": "link"
+          }
+        },
+        "item_m89pkV": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/art_prints_2.jpg",
+            "column_size": "4",
+            "title": "Art prints únicos",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "https:\/\/www.matchwalls.com\/pages\/crea-tu-art-print",
+            "render_customizer_snippet": false,
+            "link_text": "Crear un art print único",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_WKetir",
+        "item_WdaQ3b",
+        "item_Ltb77P",
+        "item_m89pkV"
+      ],
+      "custom_css": [
+        "p {max-width: 550px;}",
+        "img.rounded {border-radius: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Servicios de personalización",
+        "content": "<p>En Matchwalls puedes subir <strong>tu propio diseño<\/strong>, ilustración, fotografía, pattern o mural y hacer tu  pedido personalizado instantáneamente a través de nuestra aplicación customize o enviando un mail a nuestro equipo de <a href=\"mailto:desigservices@matchwalls.com\">desigservices@matchwalls.com<\/a><\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_T8bp87": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_E3eqtF": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Nuestros productos"
+          }
+        },
+        "heading_qGwnwg": {
+          "type": "heading",
+          "settings": {
+            "text": "Matchwalls",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_zUigiP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>En Matchwalls fabricamos con los materiales decorativos de la <strong>más alta calidad<\/strong> y aplicamos las artes decorativas de <strong>forma sostenible <\/strong>para llenar de personalidad las paredes de tu casa, hotel, restaurante o proyecto de interiorismo <strong>particular o profesional<\/strong>. En nuestras colecciones, productos y diseños encontrarás diferentes motivos creados y seleccionados con el mayor cuidado. Simplemente escoge el tuyo y nosotros lo imprimimos. Además también puedes imprimir tu propio diseño para tu espacio particular o profesional en calidades de altas prestaciones <\/p><p><strong>En Matchwalls diseñamos e imprimimos todos nuestros productos a la medida de tus paredes. <\/strong><\/p><p>¿Quieres<strong> saber más<\/strong> sobre la calidad y la instalación de nuestros productos? <a href=\"\/pages\/guia-de-instalacion\" title=\"Guía de instalación\"><strong>Haz click aquí.<\/strong><\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_E3eqtF",
+        "heading_qGwnwg",
+        "richtext_zUigiP"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "scrolling_text_qMzf6R": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 70px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "text": "¿Necesitas inspiración?",
+        "text_size": "small",
+        "text_style": "outline",
+        "scrolling_mode": "scroll",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#f3bac9",
+        "text_gradient": ""
+      }
+    },
+    "media_grid_4TBMqz": {
+      "type": "media-grid",
+      "blocks": {
+        "image_AL7NbF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/M1303C2M3.webp",
+            "title": "Crear mi propio papel pintado",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_bW8D6H": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_gd6CBq": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_HyP9Fy": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_AL7NbF",
+        "image_bW8D6H",
+        "image_gd6CBq",
+        "image_HyP9Fy"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 400,
+        "mobile_row_height": 210,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "rich_text_hhCVjJ": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_CNWKE4": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_qrxPwb": {
+          "type": "heading",
+          "settings": {
+            "text": "¿Qué producto elijo?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_Fctb6w": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Estos son los productos que podemos imprimir a tu medida y personalizar. Descubre más sobre cada uno para elegir el que mejor se adapte a lo que buscas.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_CNWKE4",
+        "heading_qrxPwb",
+        "richtext_Fctb6w"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#e9bcc7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "images_with_text_scrolling_3ycRTy": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_mLRbJn": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/llllllllllllllllllllllllllllllppppppppppppppppppppppppppppppppppp_1.jpg",
+            "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/M1196C6_2_9a840060-45ee-4758-9fc1-dd79e81d2d17.jpg",
+            "icon_width": 48,
+            "title": "Papel pintado mural",
+            "content": "<p>Nuestros papeles pintados <strong>murales<\/strong> Matchwalls son de la mejor calidad en material e impresión. <strong>Son fáciles de montar<\/strong> y sostenibles además de cumplir las normativas europeas de fabricación están exclusivamente diseñados para tus paredes. <a href=\"\/pages\/papel-pintado-murales\" title=\"Todo sobre nuestros murales\"><span style=\"text-decoration:underline\"><strong>Si quieres seguir explorando nuestros papeles pintados, haz clic aquí.<\/strong><\/span><\/a><\/p>"
+          }
+        },
+        "item_JHKWP4": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "item_NQ96tc": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "item_LjNAdx": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "item_dxHLx6": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "item_F97PX6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/55555555555555555555555555_1.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Papel Pintado rollo pattern",
+            "content": "<p>Si buscas un papel pintado de composición <strong>tradicional y no quieres una gran imagen<\/strong> o formato mural personalizada para tus paredes nuestros patterns matcwalls son la mejor solución. Motivos y diseños vanguardistas repetitivos fabricados en<strong> rollos<\/strong> de 50cm x 10 m (0.20 inches x 393.70 inches) en calidades, non woven, vinílica, metallic o peel&amp;stick para decorar tu espacio residencial o comercial y crear tu proyecto de interiorismo con perfectos acabados para tu interiorismo. <a href=\"\/pages\/papel-pintado-rollos\" title=\"Todo sobre nuestros rollos de papel pintado\"><span style=\"text-decoration:underline\"><strong>Si quieres seguir explorando nuestros papeles pintados rollos, haz clic aquí.<\/strong><\/span><\/a><\/p>"
+          }
+        },
+        "item_BFAdKA": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lienzos_ce08a3c1-ae18-4896-9546-89ff21d727bb.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Lienzos",
+            "content": "<p>Nuestros<strong> lienzos<\/strong> Matchwalls proponen una colección cuidadosamente revisada de impresiones artísticas y cuidadosa selección de diseño realizados  por diferentes artistas, fotógrafos y diseñadores exclusivamente para Matchwalls en formatos <strong>horizontales, verticales y cuadrados <\/strong>impresos en papel de alta calidad, sostenible y anchos de hasta 100 cm ( 40 inches) . Completa tu proyecto de interiorismo con papeles pintados y lienzos Matchwalls para tu espacio residencial o profesional. <a href=\"\/pages\/lienzos\" title=\"Todo sobre nuestros lienzos\"><span style=\"text-decoration:underline\"><strong>Si quieres seguir explorando nuestros Lienzos, haz clic aquí.<\/strong><\/span><\/a><\/p>"
+          }
+        },
+        "item_CVanyA": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/f6a1ac1d-11bd-4bae-913a-0934148319b4.webp",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Art Print",
+            "content": "<p>Nuestros <strong>art prints<\/strong> exploran y capturan la esencia de la creatividad de diferentes estilos producidos de forma sostenible y con la más alta calidad de <strong>papeles ecológicos<\/strong> por artistas seleccionados por nuestro equipo en formatos verticales, horizontales y cuadrados y hasta anchos de 100 cm  ( 40 inches)  <a href=\"\/pages\/art-prints\" title=\"Art prints\"><span style=\"text-decoration:underline\"><strong>Si quieres seguir explorando nuestros art prints, haz clic aquí.<\/strong><\/span><\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_mLRbJn",
+        "item_JHKWP4",
+        "item_NQ96tc",
+        "item_LjNAdx",
+        "item_dxHLx6",
+        "item_F97PX6",
+        "item_BFAdKA",
+        "item_CVanyA"
+      ],
+      "custom_css": [
+        "img.rounded-sm {border-radius: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": true,
+        "desktop_image_effect": "reveal",
+        "image_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_twcz9H": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KkWNkE": {
+          "type": "heading",
+          "settings": {
+            "text": "¿Necesitas inspiración?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_iYXqFR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Descubre nuestra selección de diseños ya hechos.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KkWNkE",
+        "richtext_iYXqFR"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_collection_AEjWpr": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "collection": "papeles-pintados",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 14,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Papeles pintados",
+        "content": "",
+        "link_url": "shopify:\/\/collections\/murales-mas-vendidos-mural",
+        "link_text": "Ver todos los papeles pintados",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_WfqGAm": {
+      "type": "featured-collection",
+      "custom_css": [],
+      "settings": {
+        "collection": "murales",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 14,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Todos los Papeles Pintados",
+        "content": "",
+        "link_url": "",
+        "link_text": "Ver todos los Papeles Pintados",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "rich_text_RcV6MJ": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_q474JG": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Comparte tu espacio Matchwalls con nosotros en @bematchwalls @matchwalls <\/strong>#bematchwalls #matchwalls #matchwallsbarcelona #matchwallspapers<\/p>"
+          }
+        },
+        "html_KNbGtN": {
+          "type": "html",
+          "settings": {
+            "content": "<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><strong>Envíanos tu video de instalación o fotografías a help@matchwalls.com <\/strong><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_q474JG",
+        "html_KNbGtN"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_collection_hNKaBe": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "cuadros-rollos",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 14,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Cuadros y lienzos",
+        "content": "",
+        "link_url": "",
+        "link_text": "Ver todos los lienzos",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_mEAVAm": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "art-prints",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 14,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Art prints y pósters",
+        "content": "",
+        "link_url": "",
+        "link_text": "Ver todos los art prints",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "multi_column_KXKJzg",
+    "main",
+    "multi_column_QQ6QVa",
+    "rich_text_T8bp87",
+    "scrolling_text_qMzf6R",
+    "media_grid_4TBMqz",
+    "rich_text_hhCVjJ",
+    "images_with_text_scrolling_3ycRTy",
+    "rich_text_twcz9H",
+    "featured_collection_AEjWpr",
+    "featured_collection_WfqGAm",
+    "rich_text_RcV6MJ",
+    "featured_collection_hNKaBe",
+    "featured_collection_mEAVAm"
+  ]
+}

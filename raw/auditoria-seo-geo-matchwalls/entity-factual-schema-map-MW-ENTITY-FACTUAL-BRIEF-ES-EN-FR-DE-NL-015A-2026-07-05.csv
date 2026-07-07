@@ -1,0 +1,14 @@
+schema_type,status,safe_fields_now,blocked_fields_until_verified,source_basis,next_lot
+Organization,"VERIFICADO PERO MEJORABLE","name=MatchWalls; url=https://www.matchwalls.com/; description factual by language","legalName; taxID; address; contactPoint; foundingDate; sameAs; logo if asset not confirmed; aggregateRating; certifications","012F,012G1,013E13,014C","MW-ENTITY-FACTUAL-SCHEMA-PROPOSAL-015C"
+WebSite,"VERIFICADO PERO MEJORABLE","name=MatchWalls; url=https://www.matchwalls.com/; inLanguage list ES/EN/FR/DE/NL","SearchAction until internal search behavior is validated","014C and site architecture docs","MW-ENTITY-FACTUAL-SCHEMA-PROPOSAL-015C"
+WebPage,"VERIFICADO Y CORRECTO","name/headline/description for pages with visible matching content; inLanguage; isPartOf WebSite","Claims not visible on page; hidden FAQ not visible; unsupported geography claims","012F,012G1,012E","MW-ENTITY-FACTUAL-SCHEMA-PROPOSAL-015C"
+BreadcrumbList,"VERIFICADO PERO MEJORABLE","Use only where visible/canonical breadcrumbs exist","Synthetic breadcrumb paths that do not match navigation","013E13 and prior audits","MW-ENTITY-FACTUAL-SCHEMA-PROPOSAL-015C"
+FAQPage,"VERIFICADO PERO MEJORABLE","Use only for FAQs visibly present in body and stable translations","Template FAQ blocks with unsupported shipping/guarantee claims","012E,012F,014B","MW-ENTITY-FAQ-SAFE-CONTENT-015F"
+Product,"VERIFICADO PERO MEJORABLE","Product name, image, description, brand when present; material only if product data confirms it","GTIN; MPN; aggregateRating; review; certifications; manufacturer claims","Prior technical debt and product schema work","MW-PRODUCT-SCHEMA-VALIDATION-015G"
+Offer,"VERIFICADO PERO MEJORABLE","price/currency/availability only from live product data","Shipping details, returns, delivery times or guarantees if not policy-verified","Prior schema audits","MW-PRODUCT-OFFER-POLICY-015H"
+Article_or_BlogPosting,"VERIFICADO PERO MEJORABLE","headline, URL, date if accessible, articleBody summary when visible","author/reviewer/expert unless verified; medical/legal-style authority claims","013E6 cited blog evidence","MW-CONTENT-AUTHORSHIP-015I"
+LocalBusiness,"REQUIERE DECISION HUMANA","None for now","address; geo; openingHours; telephone; local service area","No validated legal/local source in 015A","MW-ENTITY-FACTUAL-SOURCE-VALIDATION-015B"
+Service,"VERIFICADO PERO MEJORABLE","Could model custom mural/personalization service after process is validated","Service area, guarantees, turnaround, provider address","012G1 copy only","MW-ENTITY-SERVICE-SCHEMA-015J"
+ContactPoint,"NO ACCESIBLE","None for now","email; phone; contactType; languages","help@matchwalls.com appears in old backups only","MW-ENTITY-FACTUAL-SOURCE-VALIDATION-015B"
+sameAs,"NO ACCESIBLE","None for now","Instagram; Pinterest; YouTube; TikTok; LinkedIn; Trustpilot; others","No official profile audit in 015A","MW-ENTITY-SAMEAS-AUDIT-015K"
+

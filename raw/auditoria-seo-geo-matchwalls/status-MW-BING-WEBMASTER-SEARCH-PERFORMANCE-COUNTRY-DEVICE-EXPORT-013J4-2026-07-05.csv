@@ -1,0 +1,22 @@
+field,value,status
+lote,MW-BING-WEBMASTER-SEARCH-PERFORMANCE-COUNTRY-DEVICE-EXPORT-013J4,VERIFICADO PERO MEJORABLE
+date,2026-07-05,VERIFICADO Y CORRECTO
+mode,solo lectura,VERIFICADO Y CORRECTO
+country_source_file,C:\Users\d.bermejo\OneDrive - Matchwalls\Escritorio\matchwalls.com_CountryReport_7_5_2026 EEEEEEEEEE.csv,VERIFICADO Y CORRECTO
+device_source_file,C:\Users\d.bermejo\OneDrive - Matchwalls\Escritorio\matchwalls.com_DeviceReport_7_5_2026 DDDDDDD.csv,VERIFICADO Y CORRECTO
+country_rows,11,VERIFICADO Y CORRECTO
+device_rows,2,VERIFICADO Y CORRECTO
+country_impressions,749,VERIFICADO Y CORRECTO
+country_clicks,3,VERIFICADO Y CORRECTO
+device_impressions,749,VERIFICADO Y CORRECTO
+device_clicks,3,VERIFICADO Y CORRECTO
+desktop_impressions,713,VERIFICADO PERO MEJORABLE
+desktop_clicks,3,VERIFICADO PERO MEJORABLE
+mobile_impressions,36,VERIFICADO PERO MEJORABLE
+mobile_clicks,0,VERIFICADO PERO MEJORABLE
+largest_country_bucket,ww 456 impressions,VERIFICADO PERO MEJORABLE
+priority_country_signal,es 112 impressions and fr 68 impressions,VERIFICADO PERO MEJORABLE
+shopify_changed,no,VERIFICADO Y CORRECTO
+bing_changed,no,VERIFICADO Y CORRECTO
+indexnow_changed,no,VERIFICADO Y CORRECTO
+next_recommended_lote,MW-BING-SEO-GEO-QUERY-URL-OPPORTUNITY-MAP-013J5,VERIFICADO PERO MEJORABLE

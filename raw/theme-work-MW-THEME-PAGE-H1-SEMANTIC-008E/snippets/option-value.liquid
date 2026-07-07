@@ -1,0 +1,383 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  OPTION VALUE
+  ----------------------------------------------------------------------------------------------------------------------
+
+  This component renders a single option value. It is a generic component that is used both on product and collection
+  pages (for metaobject filtering). It ca be used to render a swatch, a block or a thumbnail.
+
+  ********************************************
+  Supported variables
+  ********************************************
+
+
+  * type: control the presentational type of the swatch. Can be "swatch", "block" or "thumbnail". [REQUIRED]
+  * value: the value submitted to the server [REQUIRED]
+  * name: the name attribute when field is submitted to the server [REQUIRED]
+  * selected: if set to true, this swatch is preselected
+  * allow_multiple: if set to true, it allows several values to be selected (by using a checkbox instead of radio)
+  * label: an optional label to show as tooltip (if no provided, it uses the value)
+  * form: the form ID that this swatch is linked to
+  * disabled: if set to true, this swatch is disabled
+  * href: if defined, the swatch will be outputted as a link instead of an input (most of the other attributes are ignored)
+
+  Thumbnail specific parameters:
+
+  * image: the image to use
+  * size: can be 'sm' to make it smaller
+  * bordered: if set to true, a border is added when the image is not selected
+
+  Block swatch specific parameters
+
+  * show_swatch: if set to true, show the color as a small tile.
+  * color: a single color drop (used for product color swatches)
+  * colors: an optional list of color drop (if not set, the theme will use the config based approach as a fallback). When more
+            than one color is given, a conic gradient is generated. It supports up to 4 colors.
+  * image: an optional image used as the background (if not set, the theme will use the config based approach as a fallback)
+
+  Color swatch specific parameters:
+
+  * show_tooltip: if set to true, display a tooltip on hover
+  * color: a single color drop (used for product color swatches)
+  * colors: an optional list of color drop (if not set, the theme will use the config based approach as a fallback). When more
+            than one color is given, a conic gradient is generated. It supports up to 4 colors.
+  * image: an optional image used as the background (if not set, the theme will use the config based approach as a fallback)
+{%- endcomment -%}
+
+{%- capture id -%}option-value-{{ section.id }}-{{ form }}-{{ context }}-{{ name | handle }}-{{ value | handle }}{%- endcapture -%}
+
+{%- liquid
+  if type == 'swatch' or type == 'block' and show_swatch
+    if color != blank
+      assign swatch_style = '--swatch-background: linear-gradient(to right, ' | append: color | append: ', ' | append: color | append: ')'
+    elsif colors != blank
+      assign size_limit = colors.size | at_most: 4
+      assign rotation = '0deg'
+
+      if size_limit == 2
+        assign rotation = '45deg'
+      endif
+
+      assign angle_increment = 360 | divided_by: size_limit
+      assign angle = 0
+
+      capture conic_gradient
+        for color in colors limit: size_limit
+          echo color | append: ' ' | append: angle | append: 'deg '
+          assign angle = angle | plus: angle_increment
+          echo angle | append: 'deg'
+
+          unless forloop.last
+            echo ', '
+          endunless
+        endfor
+      endcapture
+
+      assign swatch_style = '--swatch-background: conic-gradient(from ' | append: rotation | append: ', ' | append: conic_gradient | append: ')'
+    elsif image != blank
+      assign swatch_image = image | image_url: width: 72
+      assign swatch_style = '--swatch-background: url(' | append: swatch_image | append: ')'
+    else
+      # When color or image is not explicitly passed, we parse the config
+      assign swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />'
+
+      assign value_downcase = value | downcase | strip
+      assign swatch_style = '--swatch-background: linear-gradient(to right, ' | append: value_downcase | append: ', ' | append: value_downcase | append: ')'
+
+      for swatch_item in swatch_config
+        assign swatch_parts = swatch_item | split: ':'
+        assign swatch_name = swatch_parts.first | downcase | strip
+
+        if value_downcase == swatch_name
+          assign swatch_value = swatch_parts.last | strip
+
+          if swatch_value contains '#'
+            assign swatch_style = '--swatch-background: linear-gradient(to right, ' | append: swatch_value | append: ', ' | append: swatch_value | append: ')'
+          elsif swatch_value contains 'linear-gradient('
+            assign swatch_style = '--swatch-background: ' | append: swatch_value
+          elsif images[swatch_value] != blank
+            assign swatch_image = images[swatch_value] | image_url: width: 72
+            assign swatch_style = '--swatch-background: url(' | append: swatch_image | append: ')'
+          endif
+
+          break
+        endif
+      endfor
+    endif
+  endif
+-%}
+
+{%- unless href -%}
+  <input
+    class="sr-only"
+    type="{% if allow_multiple %}checkbox{% else %}radio{% endif %}"
+    name="{{ name }}"
+    {% if form %}
+      form="{{ form | escape }}"color-swatch
+    {% endif %}
+    id="{{ id | escape }}"
+    value="{{ value | escape }}"
+    {% if disabled %}
+      disabled
+    {% endif %}
+    {% if selected %}
+      checked="checked"
+    {% endif %}
+  >
+{%- endunless -%}
+
+{%- case type -%}
+  {%- when 'thumbnail' -%}
+    {%- if image != blank -%}
+      {%- if href -%}
+        <a
+          href="{{ href }}"
+          class="thumbnail-swatch {% if size == 'sm' %}thumbnail-swatch--sm{% endif %} {% if selected %}is-selected{% endif %} {% if bordered %}border{% endif %}"
+        >
+          <span class="sr-only">{{ label | default: value }}</span>
+          {{-
+            image
+            | image_url: width: image.width
+            | image_tag: loading: 'lazy', sizes: '60px', widths: '60,120', class: 'object-cover'
+          -}}
+        </a>
+      {%- else -%}
+        <label
+          class="thumbnail-swatch {% if size == 'sm' %}thumbnail-swatch--sm{% endif %} {% if bordered %}border{% endif %}"
+          for="{{ id | escape }}"
+          data-option-value
+        >
+          <span class="sr-only">{{ label | default: value }}</span>
+          {{-
+            image
+            | image_url: width: image.width
+            | image_tag: loading: 'lazy', sizes: '60px', widths: '60,120', class: 'object-cover'
+          -}}
+        </label>
+      {%- endif -%}
+    {%- else -%}
+      <label
+        style="width: 100%;"
+        class="block-swatch"
+        for="{{ id | escape }}"
+        data-option-value
+      >
+        {{- label | default: value -}}
+      </label>
+    {%- endif -%}
+
+  {%- when 'block' -%}
+    {%- assign white_label = 'general.label.white' | t | downcase -%}
+    {%- assign value_downcase = value | downcase -%}
+
+    {%- if href -%}
+      <a href="{{ href }}" class="block-swatch {% if selected %}is-selected{% endif %}">
+        {%- if show_swatch -%}
+          <span
+            class="block-swatch__color {% if white_label == value_downcase %}ring-inset{% endif %}"
+            style="{{ swatch_style }}"
+          ></span>
+        {%- endif -%}
+
+        <span>{{ label | default: value }}</span>
+      </a>
+
+    {%- else -%}
+      <label
+        class="block-swatch {% if selected %}selected-variant{% endif %}"
+        for="{{ id | escape }}"
+        position="{{ index }}"
+        variant-price-currency="{{ option.values[index].variant.price | money_with_currency }}"
+        compare-variant-price-currency="{{ option.values[index].variant.compare_at_price | money_with_currency }}"
+        data-option-value
+        data-tooltip="{{ option.values[index].variant.metafields.custom.option_description }}"
+      >
+        <div class="price-and-title">
+          <div class="label-bullet">
+            <span class="variant-title">
+              {{ option.values[index].variant.title }}
+            </span>
+            <span class="price-circle">
+              {{ option.values[index].variant.price | money }}
+            </span>
+            <span class="currency-info"> {{ cart.currency.symbol }} / {{ 'general.product.m_squared' | t }} </span>
+          </div>
+          <div class="variant-instructions">
+            {% if option.values[index].variant.sku contains 'MV' %}
+              <li>{{ 'general.customizer.textile_nonwoven_vinyl' | t }}</li>
+              <li>{{ 'general.customizer.glue_wall' | t }}</li>
+              <li>{{ 'general.customizer.no_fade_sunlight' | t }}</li>
+              <li>{{ 'general.customizer.eco_friendly' | t }}</li>
+              <li>{{ 'general.customizer.volatile_free' | t }}</li>
+              <li>{{ 'general.customizer.non_flammable' | t }}</li>
+              <li>{{ 'general.customizer.scratch_resistant' | t }}</li>
+              <li>{{ 'general.customizer.matte_surface' | t }}</li>
+              <li>{{ 'general.customizer.no_light_reflection' | t }}</li>
+              <li>{{ 'general.customizer.washable_spong' | t }}</li>
+            {% elsif option.values[index].variant.sku contains 'MP' %}
+              <li>{{ 'general.customizer.textile_nonwoven' | t }}</li>
+              <li>{{ 'general.customizer.no_fade_sunlight' | t }}</li>
+              <li>{{ 'general.customizer.eco_friendly' | t }}</li>
+              <li>{{ 'general.customizer.pvc_free' | t }}</li>
+              <li>{{ 'general.customizer.satin_finish' | t }}</li>
+              <li>{{ 'general.customizer.non_flammable' | t }}</li>
+              <li>{{ 'general.customizer.high_quality_selfadhesive' | t }}</li>
+              <li>{{ 'general.customizer.easy_install_remove' | t }}</li>
+              <li>{{ 'general.customizer.satin_finish' | t }}</li>
+            {% elsif option.values[index].variant.sku contains 'MT' %}
+              <li>{{ 'general.customizer.textile_nonwoven_matte' | t }}</li>
+              <li>{{ 'general.customizer.glue_wall' | t }}</li>
+              <li>{{ 'general.customizer.no_fade_sunlight' | t }}</li>
+              <li>{{ 'general.customizer.pvc_free' | t }}</li>
+              <li>{{ 'general.customizer.non_flammable' | t }}</li>
+            {% elsif option.values[index].variant.sku contains 'MN' %}
+              <li>{{ 'general.customizer.textile_nonwoven_matte' | t }}</li>
+              <li>{{ 'general.customizer.glue_wall' | t }}</li>
+              <li>{{ 'general.customizer.no_fade_sunlight' | t }}</li>
+              <li>{{ 'general.customizer.eco_friendly' | t }}</li>
+              <li>{{ 'general.customizer.pvc_free' | t }}</li>
+              <li>{{ 'general.customizer.non_flammable' | t }}</li>
+              <li>{{ 'general.customizer.washable_spong' | t }}</li>
+            {% else %}
+              <p>{{ 'general.customizer.sku_not_match' | t }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </label>
+    {%- endif -%}
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const qualityToggleText = document.querySelector('.quality-toggle-text');
+        const LOCAL_STORAGE_KEY = 'selectedVariant'; // Key for local storage
+
+        // Function to update the qualityToggleText and related UI
+        function updateQualityTextFromLabel(label) {
+          if (label) {
+            const labelTitle = label.querySelector('.variant-title').textContent.trim();
+            qualityToggleText.textContent = labelTitle;
+
+            // Remove 'selected-variant' class from all labels
+            const allLabels = document.querySelectorAll('.block-swatch');
+            allLabels.forEach((lbl) => {
+              lbl.classList.remove('selected-variant');
+            });
+
+            // Add 'selected-variant' class to the current label
+            label.classList.add('selected-variant');
+
+            // Get the value of the associated input
+            const associatedInput = label.previousElementSibling; // Find the input linked to this label
+            const selectedValue = associatedInput ? associatedInput.value : null;
+
+            // Save the selected value to local storage
+            if (selectedValue) {
+              localStorage.setItem(LOCAL_STORAGE_KEY, selectedValue);
+              console.log(`Saved variant to local storage: ${selectedValue}`);
+            }
+
+            // Update all inputs with the same value to keep them synchronized
+            const allInputs = document.querySelectorAll('input[type="radio"]');
+            allInputs.forEach((input) => {
+              if (input.value === selectedValue) {
+                input.checked = true; // Synchronize the checked state
+              }
+            });
+
+            // Update the product price display
+            const variantPriceCurrency = label.getAttribute('variant-price-currency');
+            const compareVariantPriceCurrency = label.getAttribute('compare-variant-price-currency');
+
+            const pricePerUnitElement = document.getElementById('price-per-unit');
+            const compareAtPricePerUnitElement = document.getElementById('compare-at-price-per-unit');
+            const priceFtPerUnitElement = document.getElementById('price-ft-per-unit');
+
+            if (pricePerUnitElement) {
+              pricePerUnitElement.textContent = variantPriceCurrency;
+            }
+
+            if (compareAtPricePerUnitElement) {
+              compareAtPricePerUnitElement.textContent = compareVariantPriceCurrency;
+            }
+
+            if (priceFtPerUnitElement) {
+              const priceDivided = parseFloat(variantPriceCurrency.replace(/[^0-9.-]+/g, '')) / 10.73;
+              priceFtPerUnitElement.textContent = priceDivided.toFixed(2);
+            }
+          }
+        }
+
+        // Load the selected variant from local storage on page load
+        function loadSelectedVariantFromLocalStorage() {
+          const savedValue = localStorage.getItem(LOCAL_STORAGE_KEY);
+          if (savedValue) {
+            console.log(`Loaded variant from local storage: ${savedValue}`);
+            const matchingInput = document.querySelector(`input[type="radio"][value="${savedValue}"]`);
+            if (matchingInput) {
+              matchingInput.checked = true; // Set the radio input as checked
+              const associatedLabel = matchingInput.nextElementSibling; // Find the label linked to this input
+              updateQualityTextFromLabel(associatedLabel); // Update the UI
+            }
+          }
+        }
+
+        // Initialize the state
+        loadSelectedVariantFromLocalStorage();
+
+        // Event delegation: listen for clicks on the entire document
+        document.addEventListener('click', function (event) {
+          // Check if the clicked element is within a .price-and-title div
+          const priceAndTitle = event.target.closest('.price-and-title');
+          if (priceAndTitle) {
+            console.log('Price and title clicked:', priceAndTitle);
+
+            // Use closest() to find the parent label with the class 'block-swatch'
+            const label = priceAndTitle.closest('.block-swatch');
+            if (label) {
+              console.log('Closest label found for the price-and-title:', label);
+              updateQualityTextFromLabel(label);
+            }
+          }
+        });
+      });
+    </script>
+
+  {%- when 'swatch' -%}
+    {%- assign white_label = 'general.label.white' | t | downcase -%}
+    {%- assign value_downcase = value | downcase -%}
+
+    {%- if href -%}
+      <a
+        href="{{ href }}"
+        class="color-swatch {% if settings.color_swatch_style == 'rectangle' %}color-swatch--rectangle{% endif %} {% if size == 'sm' %}color-swatch--sm{% endif %} {% if selected %}is-selected{% endif %} {% if white_label == value_downcase %}ring-inset{% endif %} {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %}"
+        {% if show_tooltip %}
+          data-tooltip="{{ label | default: value | escape }}"
+        {% endif %}
+        style="{{ swatch_style }}"
+      >
+        <span class="sr-only">{{ label | default: value }}</span>
+      </a>
+    {%- else -%}
+      <label
+        class=" filter-options-color {% if settings.color_swatch_style == 'rectangle' %}color-swatch--rectangle{% endif %} {% if size == 'sm' %}color-swatch--sm{% endif %} {% if white_label == value_downcase %}ring-inset{% endif %} {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %}"
+        for="{{ id | escape }}"
+        data-option-value
+        {% if show_tooltip %}
+          data-tooltip="{{ label | default: value | escape }}"
+        {% endif %}
+        style="{{ swatch_style }}"
+      >
+        <label class="color-swatch"> </label>
+        <div>{{ value }}</div>
+        <span class="sr-only">{{ label | default: value }}</span>
+      </label>
+    {%- endif -%}
+{%- endcase -%}
+<style>
+  .filter-options-color .color-swatch {
+    border-radius: 50%;
+  }
+  .label-bullet {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

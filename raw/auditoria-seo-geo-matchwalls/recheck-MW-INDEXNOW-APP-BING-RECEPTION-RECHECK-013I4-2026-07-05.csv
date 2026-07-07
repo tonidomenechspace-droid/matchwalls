@@ -1,0 +1,8 @@
+"check","source","result","estado","nota"
+"app_connected","IndexNow app","Your store is now connected to IndexNow","CORREGIDO Y VERIFICADO","App conectada."
+"last_30_days_submissions","IndexNow app","1","CORREGIDO Y VERIFICADO","Sin subida de contador tras activar EN/FR/DE/NL."
+"failed_submissions","IndexNow app","0","CORREGIDO Y VERIFICADO","Sin fallos visibles."
+"failure_rate","IndexNow app","0.0%","CORREGIDO Y VERIFICADO","Sin fallos visibles."
+"breakdown","IndexNow app","Home update = 1 successful","CORREGIDO Y VERIFICADO","Único envío visible: home."
+"bing_webmaster_indexnow","Bing Webmaster Tools","Sign In/public page","NO ACCESIBLE","No hay sesión autenticada disponible desde Codex; no se verificó recepción en Bing."
+"manual_submissions","IndexNow app","not used","VERIFICADO Y CORRECTO","No se usaron envíos manuales."

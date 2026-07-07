@@ -1,0 +1,1655 @@
+{
+  "sections": {
+    "multi_column_TbfrNB": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_T3KLMX": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "12"
+          }
+        },
+        "item_3C7rf3": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Acerca de nuestras muestras Matchwalls",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_P9ifeL": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>En Matchwalls, estamos comprometidos con la <strong>excelencia y la sostenibilidad<\/strong>, dos pilares fundamentales que guían cada uno de nuestros pasos. Hemos adoptado soluciones digitales de vanguardia que permiten a nuestros clientes visualizar nuestros innovadores diseños de papel pintado con facilidad y precisión, minimizando así el impacto ambiental al reducir la necesidad de enviar muestras físicas innecesarias. Sin embargo, entendemos que la <strong>experiencia táctil y visual es insustituible en ciertas etapas del proceso <\/strong>de diseño de interiores.<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "spacer_U4KgGt": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "12"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_T3KLMX",
+        "item_3C7rf3",
+        "item_P9ifeL",
+        "spacer_U4KgGt"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_QyQWdb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PE3fAH": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_8bLGE9": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "richtext_3yW6Yc": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Muestra grandes medidas: 50cm x 50cm \/ 19,68 inches x 19,66 inches.<\/p>"
+          }
+        },
+        "image_7WFLBm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_4.jpg",
+            "width_mode": "full_width",
+            "max_width": 260,
+            "mobile_max_width": 320
+          }
+        },
+        "richtext_3HG7PN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Muestra medidas: 29,7cm x 21cm \/ 17,7 inches x 8,3 inches<\/p>"
+          }
+        },
+        "image_t4fqzd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_1.jpg",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_6weWji": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_PE3fAH",
+        "richtext_8bLGE9",
+        "richtext_3yW6Yc",
+        "image_7WFLBm",
+        "richtext_3HG7PN",
+        "image_t4fqzd",
+        "richtext_6weWji"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_QLLT3x": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_yeztgz": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "6"
+          }
+        },
+        "item_UFLWKc": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Elije uno de nuestros acabados de la más alta calidad",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9pzpgL": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "<p>ofrecemos muestras de nuestras cuatro excepcionales calidades de papel pintado: <strong>Non-Woven, Vinyl, Metallic y Peel & Stick<\/strong>. Cada una de estas calidades ha sido cuidadosamente seleccionada para ofrecer soluciones versátiles y de alta calidad que se adaptan a diversas necesidades y estilos:<\/p>",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "spacer_A7V6L7": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "6"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_yeztgz",
+        "item_UFLWKc",
+        "item_9pzpgL",
+        "spacer_A7V6L7"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "feature_chart_zhD9AG": {
+      "type": "feature-chart",
+      "blocks": {
+        "headings_m3Efhw": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Instalación",
+            "heading_2": "Lavabilidad",
+            "heading_3": "Resistencia",
+            "heading_4": "Sostenible",
+            "heading_5": "Tipo de pegamento",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_YMQWLR": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Yes<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>No<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "values_MUBB7q": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>No<\/p>",
+            "value_2": "<p>Yes<\/p>",
+            "value_3": "<p>Yes<\/p>",
+            "value_4": "<p>No<\/p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "values_QrhzCG": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "",
+            "value_2": "",
+            "value_3": "",
+            "value_4": "",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "headings_m3Efhw",
+        "values_YMQWLR",
+        "values_MUBB7q",
+        "values_QrhzCG"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare",
+        "title": "Product specification",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.<\/p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "accordion_content_rNHifm": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_aML9Lg": {
+          "type": "item",
+          "settings": {
+            "title": "Non Woven",
+            "content": "<p>Un material premium, <strong>durable y fácil de instalar<\/strong>, que permite una aplicación y remoción sin complicaciones, perfecto para aquellos que buscan conveniencia sin comprometer la calidad.<\/p>"
+          }
+        },
+        "item_cYVUqW": {
+          "type": "item",
+          "settings": {
+            "title": "Metallic",
+            "content": "<p>Para quienes desean añadir un <strong>toque de brillo y sofisticación<\/strong>, nuestra calidad Metallic ofrece diseños con acabados metálicos que capturan la luz, creando efectos visuales <strong>impresionantes y elegantes<\/strong>.<\/p>"
+          }
+        },
+        "item_CnQrzG": {
+          "type": "item",
+          "settings": {
+            "title": "Vinyl",
+            "content": "<p>Ideal para áreas de <strong>alto tráfico o ambientes húmedos<\/strong>, nuestro papel pintado de vinilo combina durabilidad excepcional con una limpieza fácil, manteniendo su belleza a lo largo del tiempo.<\/p>"
+          }
+        },
+        "item_pJGVyK": {
+          "type": "item",
+          "settings": {
+            "title": "Peel & Stick",
+            "content": "<p>La solución perfecta para <strong>proyectos DIY y espacios temporales, <\/strong>esta calidad ofrece una instalación sencilla y la flexibilidad de cambiar el diseño sin dejar residuos al ser retirado.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_aML9Lg",
+        "item_cYVUqW",
+        "item_CnQrzG",
+        "item_pJGVyK"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "rich_text_J8VrNL": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_DGaYDF": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/facil-instalacion-04_f46ab0e5-9b30-4274-a29f-3867463230e0.png",
+            "icon_width": 108,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
+        "heading_3waLHJ": {
+          "type": "heading",
+          "settings": {
+            "text": "Non Woven",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "end"
+          }
+        },
+        "richtext_JFayJJ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Un material premium, <strong>durable y fácil de instalar<\/strong>, que permite una aplicación y remoción sin complicaciones, perfecto para aquellos que buscan conveniencia sin comprometer la calidad.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_DGaYDF",
+        "heading_3waLHJ",
+        "richtext_JFayJJ"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#e9bcc7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_g6V6Ei": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_bWUjyk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03702_HR-1_3284aa0c-f942-45a4-b19c-0ad899a2f8b3.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Non Woven",
+            "title_img_position": "start",
+            "content": "<p>Un material premium, <strong>durable y fácil de instalar<\/strong>, que permite una aplicación y remoción sin complicaciones, perfecto para aquellos que buscan conveniencia sin comprometer la calidad.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#e9bcc7",
+            "background_gradient": "",
+            "text_color": "#504746",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_bWUjyk"
+      ],
+      "settings": {
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "logo_list_9MhXQx": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_XMjVAg": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/non-woven-04_c096d7ce-e90f-4883-b181-2eafd7d87db9.png",
+            "logo_width": 210,
+            "link": ""
+          }
+        },
+        "logo_yKBKqh": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/facil-instalacion-04_a7e870a3-9a49-4f34-aa2f-315f0f00c725.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_8RGrrz": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/lavabilidad_2-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_hrDTdC": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/sostenible-04_7859766c-1353-49a5-b037-100e62fc71dc.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_NtbzPc": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/resistente_luz-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_zmiKrP": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/cola-pared-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_eMjjN3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/no-sustancias-volatiles-04_6673a7e3-f283-4985-9ac5-845a8db65853.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_XMjVAg",
+        "logo_yKBKqh",
+        "logo_8RGrrz",
+        "logo_hrDTdC",
+        "logo_NtbzPc",
+        "logo_zmiKrP",
+        "logo_eMjjN3"
+      ],
+      "custom_css": [
+        ".bg-secondary {background: none;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 7,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "#ffffff",
+        "logo_item_border": ""
+      }
+    },
+    "image_link_blocks_MmDhx3": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_9D9AhJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03824_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_RXkFVT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03702_HR-1.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_CQbzeK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03763_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_CJ4wjm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03817_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_gY49V4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03709_HR-1.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_9D9AhJ",
+        "item_RXkFVT",
+        "item_CQbzeK",
+        "item_CJ4wjm",
+        "item_gY49V4"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "block_size": "large",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "media_with_text_tx783Y": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_4QJhX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03750_HR.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Metallic",
+            "title_img_position": "start",
+            "content": "<p>Para quienes desean añadir un <strong>toque de brillo y sofisticación<\/strong>, nuestra calidad Metallic ofrece diseños con acabados metálicos que capturan la luz, creando efectos visuales <strong>impresionantes y elegantes<\/strong>.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#e9bcc7",
+            "background_gradient": "",
+            "text_color": "#504746",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_4QJhX8"
+      ],
+      "settings": {
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "rich_text_AkAnMP": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_JAxHtT": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/metallics_icono.png",
+            "icon_width": 76,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
+        "heading_tkaWCn": {
+          "type": "heading",
+          "settings": {
+            "text": "Metallic",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_FVnAVY": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Para quienes desean añadir un <strong>toque de brillo y sofisticación<\/strong>, nuestra calidad Metallic ofrece diseños con acabados metálicos que capturan la luz, creando efectos visuales <strong>impresionantes y elegantes<\/strong>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_JAxHtT",
+        "heading_tkaWCn",
+        "richtext_FVnAVY"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "logo_list_mPhFQy": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_NtLbRY": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/calidad_metalica-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_JdzpRc": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/facil-instalacion-04_a7e870a3-9a49-4f34-aa2f-315f0f00c725.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_L6qLxC": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/lavabilidad_2-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_kxQx9g": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/sostenible-04_7859766c-1353-49a5-b037-100e62fc71dc.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_CFjhdy": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/resistente_luz-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_PzPm3P": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/cola-pared-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_FWUpMB": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/no-sustancias-volatiles-04_6673a7e3-f283-4985-9ac5-845a8db65853.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_NtLbRY",
+        "logo_JdzpRc",
+        "logo_L6qLxC",
+        "logo_kxQx9g",
+        "logo_CFjhdy",
+        "logo_PzPm3P",
+        "logo_FWUpMB"
+      ],
+      "custom_css": [
+        ".bg-secondary {background: none;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 7,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "#ffffff",
+        "logo_item_border": ""
+      }
+    },
+    "media_with_text_ETwGyA": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_4YwTYd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03719_HR.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Vinyl",
+            "title_img_position": "start",
+            "content": "<p>Ideal para áreas de <strong>alto tráfico o ambientes húmedos<\/strong>, nuestro papel pintado de vinilo combina durabilidad excepcional con una limpieza fácil, manteniendo su belleza a lo largo del tiempo.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#e9bcc7",
+            "background_gradient": "",
+            "text_color": "#504746",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_4YwTYd"
+      ],
+      "settings": {
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "image_link_blocks_3dVLEp": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_WWcCQY": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03838_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Wc3HmU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03750_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Pp9xfQ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03773_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_WrC3gk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03805_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_jPP6Et": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03751_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_WWcCQY",
+        "item_Wc3HmU",
+        "item_Pp9xfQ",
+        "item_WrC3gk",
+        "item_jPP6Et"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "block_size": "large",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "image_link_blocks_QLweMX": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_keXKeE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03845_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_RYjkFj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03743_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_X99LrK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03778_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_6xmw6G": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03801_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_eXffdi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03744_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_keXKeE",
+        "item_RYjkFj",
+        "item_X99LrK",
+        "item_6xmw6G",
+        "item_eXffdi"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "block_size": "large",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_m8Cxwk": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_TaUCgB": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/vinilica_1.png",
+            "icon_width": 76,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
+        "heading_ch9htr": {
+          "type": "heading",
+          "settings": {
+            "text": "Vinyl",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_FctJHm": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_TaUCgB",
+        "heading_ch9htr",
+        "richtext_FctJHm"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "logo_list_dJ8y7X": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_NWgpEj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/vinilica.png",
+            "logo_width": 50,
+            "link": ""
+          }
+        },
+        "logo_kja4aH": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/facil-instalacion-04_a7e870a3-9a49-4f34-aa2f-315f0f00c725.png",
+            "logo_width": 110,
+            "link": ""
+          }
+        },
+        "logo_63CB8L": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/lavabilidad_2-04.png",
+            "logo_width": 110,
+            "link": ""
+          }
+        },
+        "logo_ViFit6": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/sostenible-04_7859766c-1353-49a5-b037-100e62fc71dc.png",
+            "logo_width": 110,
+            "link": ""
+          }
+        },
+        "logo_HbL8ae": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/resistente_luz-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_fUVF6r": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/cola-pared-04.png",
+            "logo_width": 110,
+            "link": ""
+          }
+        },
+        "logo_8BUEEy": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/anti-bacteria-04.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_NWgpEj",
+        "logo_kja4aH",
+        "logo_63CB8L",
+        "logo_ViFit6",
+        "logo_HbL8ae",
+        "logo_fUVF6r",
+        "logo_8BUEEy"
+      ],
+      "custom_css": [
+        ".bg-secondary {background: none;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 7,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "#ffffff",
+        "logo_item_border": ""
+      }
+    },
+    "image_link_blocks_AMmcei": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_78zPGH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03830_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_iKpLGp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03719_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_rRC9pY": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03766_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_8Q7xEU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03816_HR.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_7cYTeG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/230320_VBM03816_HR_3d9ef55d-34ff-4bd9-b48b-fd4f38840705.jpg",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_78zPGH",
+        "item_iKpLGp",
+        "item_rRC9pY",
+        "item_8Q7xEU",
+        "item_7cYTeG"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "block_size": "large",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_M8X3n4": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_GztmYf": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/peel_and_steek_icono.png",
+            "icon_width": 76,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
+        "heading_Hjk8ke": {
+          "type": "heading",
+          "settings": {
+            "text": "Peel & Stick",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_JbUjrB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>La solución perfecta para <strong>proyectos DIY y espacios temporales, <\/strong>esta calidad ofrece una instalación sencilla y la flexibilidad de cambiar el diseño sin dejar residuos al ser retirado.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_GztmYf",
+        "heading_Hjk8ke",
+        "richtext_JbUjrB"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#e9bcc7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "logo_list_8PLai8": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_WRjfEQ": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/autoadesivo-04_68010653-9f01-4370-8bf5-42e4eef7e0a5.png",
+            "logo_width": 90,
+            "link": ""
+          }
+        },
+        "logo_keEFAH": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/facil-instalacion-04_a7e870a3-9a49-4f34-aa2f-315f0f00c725.png",
+            "logo_width": 90,
+            "link": ""
+          }
+        },
+        "logo_axrK39": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/lavabilidad_2-04.png",
+            "logo_width": 90,
+            "link": ""
+          }
+        },
+        "logo_aF6hNc": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/sostenible-04_7859766c-1353-49a5-b037-100e62fc71dc.png",
+            "logo_width": 90,
+            "link": ""
+          }
+        },
+        "logo_TUFfyf": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/resistente_luz-04.png",
+            "logo_width": 90,
+            "link": ""
+          }
+        },
+        "logo_YicPCm": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/no-sustancias-volatiles-04_6673a7e3-f283-4985-9ac5-845a8db65853.png",
+            "logo_width": 90,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_WRjfEQ",
+        "logo_keEFAH",
+        "logo_axrK39",
+        "logo_aF6hNc",
+        "logo_TUFfyf",
+        "logo_YicPCm"
+      ],
+      "custom_css": [
+        ".bg-secondary {background: none;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 7,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "#ffffff",
+        "logo_item_border": ""
+      }
+    },
+    "image_link_blocks_YbrrwL": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_FpgWAp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peel_1.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_HcN6py": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peel_2.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_n9hbdd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peel_3.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_DThkrt": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peel_4.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_P8EVDH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peel_5.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_FpgWAp",
+        "item_HcN6py",
+        "item_n9hbdd",
+        "item_DThkrt",
+        "item_P8EVDH"
+      ],
+      "settings": {
+        "full_width": false,
+        "block_size": "large",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_pHtYmX": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_Ff4BwA": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Entendemos que cada <strong>proyecto es único<\/strong> y que la elección del papel pintado adecuado es crucial para lograr el ambiente deseado. Por ello, nuestras muestras están diseñadas para brindarte una visión completa de cómo cada calidad puede influir en el carácter de tus espacios. Te invitamos a combinar estas muestras con nuestro <a href=\"mailto:equipodesignservice@matchwalls.com\" title=\"mailto:equipodesignservice@matchwalls.com\"><strong>equipodesignservice@matchwalls.com<\/strong><\/a><strong>, <\/strong>para una experiencia de diseño en tus <strong>proyectos de interiorismo residenciales y comerciales.<\/strong><\/p>"
+          }
+        },
+        "richtext_MhfAeg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Comparte tu espacio Matchwalls con nosotros en @bematchwalls @matchwalls <\/strong>#bematchwalls #matchwalls #matchwallsbarcelona #matchwallspapers<\/p>"
+          }
+        },
+        "html_NiDJHa": {
+          "type": "html",
+          "settings": {
+            "content": "<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><strong>Envíanos tu video de instalación o fotografías a help@matchwalls.com <\/strong><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><\/p>"
+          }
+        },
+        "button_Br8463": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Solicita tu muestra",
+            "url": "shopify:\/\/pages\/contact",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Ff4BwA",
+        "richtext_MhfAeg",
+        "html_NiDJHa",
+        "button_Br8463"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "tabs_T7bg8w": {
+      "type": "tabs",
+      "blocks": {
+        "tab_q7rtbk": {
+          "type": "tab",
+          "settings": {
+            "content_long": "",
+            "product": "",
+            "product_summary": false,
+            "title": "Tab 2",
+            "content": "<p>Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_imth9W": {
+          "type": "tab",
+          "settings": {
+            "content_long": "",
+            "product": "",
+            "product_summary": false,
+            "title": "Tab 3",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_KHEWPq": {
+          "type": "tab",
+          "settings": {
+            "content_long": "",
+            "product": "",
+            "product_summary": false,
+            "title": "Tab",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_r3m8rR": {
+          "type": "tab",
+          "settings": {
+            "content_long": "",
+            "product": "",
+            "product_summary": false,
+            "title": "Tab",
+            "content": "",
+            "page": "tiendas"
+          }
+        }
+      },
+      "block_order": [
+        "tab_q7rtbk",
+        "tab_imth9W",
+        "tab_KHEWPq",
+        "tab_r3m8rR"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "Subheading",
+        "title": "Heading",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "multi_column_TbfrNB",
+    "main",
+    "rich_text_QyQWdb",
+    "multi_column_QLLT3x",
+    "feature_chart_zhD9AG",
+    "accordion_content_rNHifm",
+    "rich_text_J8VrNL",
+    "media_with_text_g6V6Ei",
+    "logo_list_9MhXQx",
+    "image_link_blocks_MmDhx3",
+    "media_with_text_tx783Y",
+    "rich_text_AkAnMP",
+    "logo_list_mPhFQy",
+    "media_with_text_ETwGyA",
+    "image_link_blocks_3dVLEp",
+    "image_link_blocks_QLweMX",
+    "rich_text_m8Cxwk",
+    "logo_list_dJ8y7X",
+    "image_link_blocks_AMmcei",
+    "rich_text_M8X3n4",
+    "logo_list_8PLai8",
+    "image_link_blocks_YbrrwL",
+    "rich_text_pHtYmX",
+    "tabs_T7bg8w"
+  ]
+}

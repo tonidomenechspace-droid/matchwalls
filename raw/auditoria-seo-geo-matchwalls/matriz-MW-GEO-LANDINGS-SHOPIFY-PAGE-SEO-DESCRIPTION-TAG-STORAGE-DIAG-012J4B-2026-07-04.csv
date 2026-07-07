@@ -1,0 +1,15 @@
+recurso,id,url,idioma_o_mercado,comprobacion,evidencia,estado,recomendacion
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/pages/papel-pintado-espana,ES base,global.title_tag,API Admin devuelve null,VERIFICADO Y CORRECTO,No escribir
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/pages/papel-pintado-espana,ES base,global.description_tag,API Admin devuelve null,VERIFICADO Y CORRECTO,No escribir
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/pages/papel-pintado-espana,ES base,metafields,API Admin devuelve lista vacia,VERIFICADO Y CORRECTO,No escribir
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/pages/papel-pintado-espana,ES base,translatableContent,API Admin solo muestra title/body_html/handle; no description_tag,VERIFICADO Y CORRECTO,Mantener automatico
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/en/pages/spain-wallpaper,EN,translations,API Admin solo muestra title/body_html/handle; no description_tag,VERIFICADO Y CORRECTO,Mantener automatico
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/fr/pages/papier-peint-en-espagne,FR,translations,API Admin solo muestra title/body_html/handle; no description_tag,VERIFICADO Y CORRECTO,Mantener automatico
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/de/pages/spanien-tapete,DE,translations,API Admin solo muestra title/body_html/handle; no description_tag,VERIFICADO Y CORRECTO,Mantener automatico
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/nl/pages/spanje-behang,NL,translations,API Admin solo muestra title/body_html/handle; no description_tag,VERIFICADO Y CORRECTO,Mantener automatico
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/pages/papel-pintado-espana,ES,translations(locale es),API Admin devuelve lista vacia,VERIFICADO Y CORRECTO,No escribir
+Shopify Page,gid://shopify/Page/687276622200,https://www.matchwalls.com/pages/papel-pintado-espana,Spain market,market-specific translations,API Admin devuelve listas vacias ES/EN/FR/DE/NL,VERIFICADO Y CORRECTO,No escribir
+Storefront HTML,gid://shopify/Page/687276622200,https://www.matchwalls.com/pages/papel-pintado-espana,ES,meta description publica,Clientes HTTP devuelven resultados contradictorios; curl detecta valor exacto 012J3 en algunos contextos,INCORRECTO,Recheck 012J4C solo lectura
+Storefront HTML,gid://shopify/Page/687276622200,https://www.matchwalls.com/de/pages/spanien-tapete,DE,meta description publica,Ultimo contraste limpio pero historial 012J4A tuvo respuestas contaminadas,VERIFICADO PERO MEJORABLE,Recheck 012J4C solo lectura
+Storefront HTML,gid://shopify/Page/687276622200,https://www.matchwalls.com/nl/pages/spanje-behang,NL,meta description publica,Ultimo contraste limpio pero historial 012J4A tuvo respuestas contaminadas,VERIFICADO PERO MEJORABLE,Recheck 012J4C solo lectura
+Storefront/theme,178399019384,varias,global,page_description,theme.liquid y social-meta-tags usan page_description para meta/OG/twitter,VERIFICADO Y CORRECTO,No tocar tema

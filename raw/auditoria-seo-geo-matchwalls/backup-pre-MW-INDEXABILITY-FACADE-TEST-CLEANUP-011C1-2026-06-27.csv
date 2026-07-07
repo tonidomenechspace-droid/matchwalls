@@ -1,0 +1,2 @@
+timestamp,resource_type,id,type,handle,displayName,updatedAt,publishable_status,onlineStore_templateSuffix,fields,estado
+2026-06-27 01:43:00 +02:00,Metaobject,gid://shopify/Metaobject/65268613347,facade_variants,test,Test,2024-11-20T16:57:46Z,ACTIVE,,"opts=[gid://shopify/Product/8277681733859,gid://shopify/Product/8277681832163,gid://shopify/Product/8308962623715]",VERIFICADO Y CORRECTO

@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "newsletter_3KJrzh": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": true,
+        "klaviyo_newsletter": "<div class=\"klaviyo-form-U2ngKt\"></div>",
+        "show_icon": false,
+        "title": "NOTICIAS, INSPIRACIÓN, REGALOS Y NOVEDADES",
+        "content": "<p>¡Suscríbete a nuestras noticias! Sé la primera persona en conocer las últimas tendencias, novedades de nuestros papeles pintados y art prints, además de consejos útiles para decorar tu espacio. #BeMatchWalls</p>",
+        "button_text": "",
+        "subtext": "#JoinTheMatch",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_A8zFya": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify://shop_images/Caja_1ec22c37-ba87-4497-b3f2-8ea902c4a67e.webp",
+            "mobile_icon_width": 24,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#f8e1e7",
+            "icon_color": "#504746",
+            "title": "Envío internacional",
+            "content": "Consulta los plazos y condiciones de envío disponibles para tu país."
+          }
+        },
+        "item_QgtB3M": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-credit-card",
+            "custom_icon": "shopify://shop_images/Cell.webp",
+            "mobile_icon_width": 24,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#f8e1e7",
+            "icon_color": "#504746",
+            "title": "Pagos seguros",
+            "content": "Consulta los métodos de pago disponibles en la pantalla de pago."
+          }
+        },
+        "item_DEWgDL": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-star",
+            "custom_icon": "shopify://shop_images/Carita.webp",
+            "mobile_icon_width": 24,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#f8e1e7",
+            "icon_color": "#504746",
+            "title": "Atención y soporte",
+            "content": "Te ayudamos antes y después de tu pedido."
+          }
+        },
+        "customer-support": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-printer",
+            "custom_icon": "shopify://shop_images/Pintura_8e0c8284-761d-46a1-9333-57752703bfc2.webp",
+            "mobile_icon_width": 36,
+            "icon_width": 48,
+            "icon_background_type": "none",
+            "icon_background": "#f8e1e7",
+            "icon_color": "#504746",
+            "title": "Personalización",
+            "content": "Te orientamos para adaptar tu diseño a medida."
+          }
+        },
+        "item_gm7PTn": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon": "shopify://shop_images/Engranaje.webp",
+            "mobile_icon_width": 36,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#f8e1e7",
+            "icon_color": "#504746",
+            "title": "Guías de instalación",
+            "content": "Consulta nuestras guías antes de instalar tu papel pintado o mural."
+          }
+        }
+      },
+      "block_order": [
+        "item_A8zFya",
+        "item_QgtB3M",
+        "item_DEWgDL",
+        "customer-support",
+        "item_gm7PTn"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "links_hFcP7H": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-profesional",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "links_X4Yg8z": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-brand",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "links_Qp4ir6": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "newsletter_rYyiKC": {
+          "type": "newsletter",
+          "settings": {
+            "store_title": "",
+            "icon": "shopify://shop_images/Logo_MatchWalls-02.png",
+            "additional_text": "",
+            "image_width": 50,
+            "heading_size": "h3",
+            "title": "#Bematchwalls",
+            "content": "<p><strong>Lunes a Jueves:</strong> 9-17H (GMT +1)<br/><strong>Viernes:</strong> 9 - 14H (GMT +1)<br/>Cerrado para el almuerzo de 13H a 14H<strong><br/></strong><a href=\"mailto:help@matchwalls.com\" target=\"_blank\">help@matchwalls.com<br/></a>Av Diagonal 508 Principal 2ª, 08006, Barcelona, Spain</p>",
+            "content_2": "",
+            "content_3": "",
+            "show_newsletter": false
+          }
+        },
+        "links_fJFVfP": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-legal",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "links_hFcP7H",
+        "links_X4Yg8z",
+        "links_Qp4ir6",
+        "newsletter_rYyiKC",
+        "links_fJFVfP"
+      ],
+      "custom_css": [
+        ".bold {font-weight: 900; font-size: large;}",
+        ".social-media {color: #f1b6c9; margin-block: 3%;}"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": false,
+        "show_country_flag": false,
+        "show_country_name": false,
+        "show_locale_selector": false
+      }
+    }
+  },
+  "order": [
+    "newsletter_3KJrzh",
+    "text-with-icons",
+    "footer"
+  ]
+}

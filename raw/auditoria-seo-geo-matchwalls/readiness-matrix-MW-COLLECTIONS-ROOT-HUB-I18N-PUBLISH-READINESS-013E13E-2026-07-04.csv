@@ -1,0 +1,9 @@
+lote,gate,criterio,evidencia,estado,decision
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G1,El draft existe y sigue sin publicar,"Draft 178396463480 role UNPUBLISHED; processing=false; processingFailed=false",VERIFICADO Y CORRECTO,Apto para seguir evaluando
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G2,MAIN no fue modificado,"MAIN 178399019384 role MAIN; checksum main-list-collections 70c8ead00d939f15528f6f11e5bfb540",VERIFICADO Y CORRECTO,Apto
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G3,El bloque hub pasa QA técnico y lingüístico básico,"013E13D: 10/10 desktop/mobile ES/EN/FR/DE/NL; H1; links; FAQ; canonical; hreflang; JSON-LD parseable",CORREGIDO Y VERIFICADO,Apto técnico del bloque
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G4,El bloque no introduce overflow,"013E13D: root_overflow_px=0 en 10/10",CORREGIDO Y VERIFICADO,Apto técnico del bloque
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G5,La página completa no debe tener deuda visible crítica,"013E13D detecta deuda heredada en FR/DE/NL: Nouveaux mortels; Bestverkauf; Best verkopen; handles matchwallsmurals",VERIFICADO PERO MEJORABLE,No apto para publicación perfecta sin decisión humana
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G6,El render/caché público debe ser estable antes de MAIN,"012O sigue pendiente de ingeniería Shopify según registro; no consta cierre técnico",INCOMPLETO,No apto para promoción MAIN todavía
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G7,Debe existir reversión clara,"Backup 013E13C disponible; restaurar sections/main-list-collections.liquid en draft a checksum 6fc0ff58489b32304e4a3d428e2b0614",VERIFICADO Y CORRECTO,Apto para rollback si se ejecuta futuro lote
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,G8,Debe existir aprobación exacta de publicación,"No existe APROBADO LOTE de promoción MAIN para este hub",REQUIERE DECISION HUMANA,Publicación no autorizada

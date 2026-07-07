@@ -1,0 +1,9 @@
+lote,fecha,hora,item,valor,evidencia,estado,accion
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,Propiedad,matchwalls.com/,Captura manual Bing Webmaster Tools,VERIFICADO Y CORRECTO,Sin accion
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,Submitted URLs agregado,13,Panel IndexNow Insights,VERIFICADO Y CORRECTO,Monitorizar
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,Filas visibles,3,Submitted Urls list shows latest 1000 urls,VERIFICADO PERO MEJORABLE,Recheck 24-72h
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,URL visible 1,https://www.matchwalls.com/,Tabla visible,VERIFICADO Y CORRECTO,Ya auditada
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,URL visible 2,https://www.matchwalls.com/products/custom-file-uploader,Tabla visible,VERIFICADO PERO MEJORABLE,No enviar manualmente por noindex
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,URL visible 3,https://www.matchwalls.com/products/bambuze-negro,Tabla visible,VERIFICADO Y CORRECTO,Ya auditada
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,Discrepancia,13 agregado vs 3 filas visibles,Evidencia manual,STANDBY,No bloquear plan; recheck posterior
+MW-INDEXNOW-BING-WEBMASTER-DISCREPANCY-MONITOR-013I5C,2026-07-05,12:18 Europe/Madrid,Modificaciones,0,Solo lectura,VERIFICADO Y CORRECTO,Continuar sin envios manuales

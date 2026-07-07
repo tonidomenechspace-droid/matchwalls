@@ -1,0 +1,7 @@
+﻿lot,url,status,final_url,robots_meta,bingbot_meta,googlebot_meta,canonical,x_robots_tag,noindex,noarchive,nocache,nosnippet,html_len,error
+MW-CRAWLERS-BING-COPILOT-AI-ROBOTS-DIAG-013B,https://www.matchwalls.com/,,,,,,,,,,,,,<HTTPError 500: 'Internal Server Error'>
+MW-CRAWLERS-BING-COPILOT-AI-ROBOTS-DIAG-013B,https://www.matchwalls.com/products/custom-file-uploader,,,,,,,,,,,,,<HTTPError 429: 'Too Many Requests'>
+MW-CRAWLERS-BING-COPILOT-AI-ROBOTS-DIAG-013B,https://www.matchwalls.com/pages/papel-pintado-espana,,,,,,,,,,,,,<HTTPError 429: 'Too Many Requests'>
+MW-CRAWLERS-BING-COPILOT-AI-ROBOTS-DIAG-013B,https://www.matchwalls.com/pages/papel-pintado-francia,,,,,,,,,,,,,<HTTPError 429: 'Too Many Requests'>
+MW-CRAWLERS-BING-COPILOT-AI-ROBOTS-DIAG-013B,https://www.matchwalls.com/en/pages/spain-wallpaper,,,,,,,,,,,,,<HTTPError 429: 'Too Many Requests'>
+MW-CRAWLERS-BING-COPILOT-AI-ROBOTS-DIAG-013B,https://www.matchwalls.com/fr/pages/papier-peint-en-france,,,,,,,,,,,,,<HTTPError 429: 'Too Many Requests'>

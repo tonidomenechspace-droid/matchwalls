@@ -1,0 +1,7 @@
+lote,fecha,url,http_status,content_type,resultado,nota
+MW-INDEXNOW-BING-COPILOT-IMPLEMENTATION-READINESS-013F,2026-07-05,https://www.matchwalls.com/robots.txt,200,text/plain; charset=utf-8,VERIFICADO Y CORRECTO,"Robots público activo; primera línea: Shopify storefront..."
+MW-INDEXNOW-BING-COPILOT-IMPLEMENTATION-READINESS-013F,2026-07-05,https://www.matchwalls.com/sitemap.xml,200,application/xml; charset=utf-8,VERIFICADO Y CORRECTO,"Sitemap público activo"
+MW-INDEXNOW-BING-COPILOT-IMPLEMENTATION-READINESS-013F,2026-07-05,https://www.matchwalls.com/indexnow.txt,404,text/plain; charset=utf-8,INCOMPLETO,"No existe key obvia IndexNow"
+MW-INDEXNOW-BING-COPILOT-IMPLEMENTATION-READINESS-013F,2026-07-05,https://www.matchwalls.com/this-file-should-not-exist-indexnow-readiness-013f.txt,404,text/plain; charset=utf-8,VERIFICADO Y CORRECTO,"404 real para TXT arbitrario inexistente"
+MW-INDEXNOW-BING-COPILOT-IMPLEMENTATION-READINESS-013F,2026-07-05,https://www.matchwalls.com/agents.md,200,text/markdown; charset=utf-8,VERIFICADO Y CORRECTO,"Archivo agentic discovery activo"
+MW-INDEXNOW-BING-COPILOT-IMPLEMENTATION-READINESS-013F,2026-07-05,https://www.matchwalls.com/llms.txt,200,text/markdown; charset=utf-8,VERIFICADO Y CORRECTO,"Archivo AI/LLM discovery activo"

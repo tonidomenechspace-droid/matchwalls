@@ -1,0 +1,15 @@
+priority,topic,question,why_it_matters,current_status
+1,"Dirección legal","Confirma la dirección completa exacta: calle escrita oficialmente, número, código postal, ciudad, provincia o región y país.","Sin esto no debe usarse PostalAddress ni LocalBusiness.","INCOMPLETO"
+2,"Uso público de datos legales","Confirma si se permite publicar en schema la razón social Match Projects International S.L y el CIF/VAT B70959283.","Evita exponer datos legales sin decisión expresa.","REQUIERE DECISION HUMANA"
+3,"Teléfono","Confirma el teléfono público en formato internacional y si puede usarse en schema.","Schema debería usar formato internacional y un número realmente público.","VERIFICADO PERO MEJORABLE"
+4,"Idiomas de atención","Confirma en qué idiomas se atiende realmente al cliente: ES, EN, FR, DE, NL u otros.","No se debe declarar ContactPoint.availableLanguage solo por tener traducciones.","INCOMPLETO"
+5,"Perfiles sameAs","Envía las URLs exactas oficiales de Instagram, Pinterest, TikTok, YouTube, LinkedIn, Facebook, Trustpilot u otros perfiles que quieras enlazar.","sameAs solo debe contener perfiles oficiales verificados.","INCOMPLETO"
+6,"Desde 1961","Confirma fuente, entidad a la que aplica y frase exacta aprobada para el claim histórico.","No se debe convertir un claim ambiguo en foundingDate o historia corporativa.","REQUIERE DECISION HUMANA"
+7,"Barcelona","Confirma la frase exacta: sede legal, origen creativo, oficina, estudio, showroom, taller, almacén u otra relación con Barcelona.","Evita mezclar dirección legal, origen de marca y claim comercial.","REQUIERE DECISION HUMANA"
+8,"Fabricación propia","Describe exactamente qué significa fabricación propia: diseño, impresión, producción bajo pedido, taller propio, partner externo, país/lugar y límites del claim.","Evita usar manufacturer o fabricante de forma incorrecta.","REQUIERE DECISION HUMANA"
+9,"Certificaciones y sostenibilidad","Aporta certificados, fichas técnicas o claims permitidos: FSC, PVC-free, tintas, ignífugo, lavable, reciclable u otros, si existen.","Los claims técnicos y ambientales necesitan prueba.","NO ACCESIBLE"
+10,"Envío gratis y plazos","Aporta condiciones reales por mercado: umbral, países, producción, entrega, excepciones y vigencia.","OfferShippingDetails exige precisión comercial y legal.","REQUIERE DECISION HUMANA"
+11,"Devoluciones y garantías","Aporta política vigente de devoluciones y garantías para productos personalizados y muestras.","MerchantReturnPolicy y garantías no deben inventarse.","REQUIERE DECISION HUMANA"
+12,"Trustpilot","Aporta URL oficial y confirma si se permite usar rating/reseñas en schema o solo sameAs.","AggregateRating requiere datos actuales y permiso.","NO ACCESIBLE"
+13,"Autores/revisores","Aporta nombres, cargos, experiencia, bio corta, idioma y permiso de publicación para autores o revisores expertos.","Article.author y reviewedBy deben ser personas u organizaciones reales verificables.","NO ACCESIBLE"
+

@@ -1,0 +1,14 @@
+rule_id,input_condition,classification,allowed_use,blocked_use,next_step
+RULE-001,"Dato aportado por Daniel con fuente oficial y permiso público","VERIFICADO Y CORRECTO","Copy público y schema correspondiente","Ninguno salvo restricciones legales","Pasar a 015B2 validación"
+RULE-002,"Dato aportado por Daniel con fuente oficial pero no publicable","VERIFICADO Y CORRECTO","Gobernanza interna","Copy público y schema","Registrar como interno"
+RULE-003,"Dato aparece solo en backup antiguo","DECLARADO PERO NO VERIFICADO","Ninguno","Copy, schema, IA, FAQ, política","Solicitar fuente actual"
+RULE-004,"Dato aparece en página o plantilla marcada como deuda","DECLARADO PERO NO VERIFICADO","Ninguno","Copy, schema, FAQ, política","Esperar corrección y QA estable"
+RULE-005,"Dato se deduce de screenshots o memoria del chat","DECLARADO PERO NO VERIFICADO","Ninguno","Schema y claims públicos","Solicitar confirmación oficial"
+RULE-006,"Dato requiere exactitud legal y no hay documento","NO ACCESIBLE","Ninguno","legalName, taxID, address, LocalBusiness","Solicitar documento"
+RULE-007,"Perfil social no confirmado como oficial","NO ACCESIBLE","Ninguno","sameAs","Auditar perfil"
+RULE-008,"Rating/reseña sin fuente y permiso","NO ACCESIBLE","Ninguno","aggregateRating, review, testimonial","Auditar y validar uso"
+RULE-009,"Certificación sin PDF/ficha técnica","NO ACCESIBLE","Ninguno","hasCertification, eco claims, material claims","Solicitar certificado"
+RULE-010,"Política comercial sin versión vigente","REQUIERE DECISION HUMANA","Ninguno","shippingDetails, MerchantReturnPolicy, warranty","Solicitar política vigente"
+RULE-011,"Dato multidioma validado solo en ES","VERIFICADO PERO MEJORABLE","Uso ES; traducción pendiente","Publicación multidioma automática","Traducir y QA lingüística"
+RULE-012,"Dato seguro mínimo 015A","VERIFICADO Y CORRECTO","Schema mínimo y copy prudente","Campos enriquecidos no validados","Puede pasar a 015C mínimo"
+

@@ -1,0 +1,242 @@
+<nav
+  class="header_scrolling_bar {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap"
+  role="navigation"
+>
+  <!-- Desktop Menu -->
+  <ul class="desktop-menu" role="list">
+    {%- for link in section.settings.scrolling_bar_menu.links -%}
+      {% liquid
+        assign link_handle_downcase = link.object.id | strip | downcase
+        assign mega_menu_block = ''
+
+        for block in section.blocks
+          assign menu_item_downcase = block.settings.menu_item | strip | downcase
+
+          if menu_item_downcase == link_handle_downcase
+            assign mega_menu_block = block
+            break
+          endif
+        endfor
+      %}
+
+      <li link-handle="{{ link.handle }}">
+        {%- if link.levels == 0 and mega_menu_block == '' -%}
+          <a
+            href="{{ link.url }}"
+            class="bold link-faded-reverse"
+            {% if link.current %}
+              aria-current="page"
+            {% endif %}
+          >
+            {{- link.title -}}
+          </a>
+        {%- else -%}
+          {%- if mega_menu_block != '' -%}
+            {%- unless mega_menu_block.settings.layout == 'drawer' -%}
+              <details
+                is="mega-menu-disclosure"
+                trigger="{{ section.settings.menu_open_trigger | escape }}"
+                {{ mega_menu_block.shopify_attributes }}
+              >
+                <summary
+                  class="text-with-icon gap-2.5 bold link-faded-reverse"
+                  {% if link.url != '#' %}
+                    href="{{ link.url | escape }}"
+                    data-url="{{ link.url | escape }}"
+                  {% endif %}
+                >
+                  {{- link.title -}}
+                  {%- render 'icon' with 'chevron-bottom' -%}
+                </summary>
+                {%- render 'mega-menu-horizontal', link: link, section: section, mega_menu_block: mega_menu_block -%}
+              </details>
+            {%- else -%}
+              <button
+                aria-controls="navigation-drawer-{{ forloop.index }}"
+                aria-expanded="false"
+                class="text-with-icon gap-2.5 bold link-faded-reverse"
+              >
+                {{- link.title -}}
+                {%- render 'icon' with 'chevron-bottom' -%}
+              </button>
+              <navigation-drawer
+                class="navigation-drawer drawer lg-max:hidden"
+                id="navigation-drawer-{{ forloop.index }}"
+                open-from="left"
+                mega-menu
+              >
+                {%- render 'navigation-panel',
+                  navigation_layout: section.settings.layout,
+                  main_menu: link,
+                  is_mega_menu: true,
+                  mega_menu_block: mega_menu_block
+                -%}
+              </navigation-drawer>
+            {%- endunless -%}
+          {%- endif -%}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <!-- Mobile Menu -->
+  <ul class="mobile-menu" role="list">
+    {%- for link in section.settings.scrolling_bar_menu_mobile.links -%}
+      <li link-handle="{{ link.handle }}">
+        <a
+          href="{{ link.url }}"
+          class="bold link-faded-reverse"
+          {% if link.current %}
+            aria-current="page"
+          {% endif %}
+        >
+          {{- link.title -}}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+
+<style>
+  li[link-handle='ofertas'] {
+    background: red;
+    border-radius: 25px;
+  }
+
+  .header_scrolling_bar ul li details {
+    height: 100%;
+  }
+  .header_scrolling_bar ul a {
+    border-radius: 5px;
+    width: inherit;
+    padding: 5px;
+  }
+
+  .header_scrolling_bar ul::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar for a cleaner look */
+  }
+
+  .header_scrolling_bar {
+    justify-content: center;
+    width: 100%;
+    background-color: #453526;
+    color: white;
+    height: 48px;
+    align-items: center;
+    display: flex;
+    overflow-x: scroll;
+
+    /* Hide the scrollbar */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+
+  .header_scrolling_bar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+  @media (max-width: 768px) {
+    .mega-menu {
+      display: none;
+    }
+    /* Targeting screens 768px wide or less */
+    summary .icon-chevron-bottom {
+      display: none;
+    }
+    .header_scrolling_bar ul li summary {
+      padding: 0px;
+    }
+  }
+  @media (min-width: 768px) {
+    .header_scrolling_bar ul li summary {
+      padding: 5px 20px;
+    }
+  }
+
+  .header_scrolling_bar ul li summary {
+    border-radius: 25px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevents line breaks for long text */
+  }
+
+  .header_scrolling_bar ul li summary:hover {
+    color: #453526;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .header_scrolling_bar ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Default visibility - desktop menu only */
+  .desktop-menu {
+    display: flex !important;
+  }
+  .mobile-menu {
+    display: none !important;
+  }
+
+  /* Mobile screen - show only the mobile menu */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none !important;
+    }
+    .mobile-menu {
+      display: flex !important;
+      gap: 7px;
+      overflow-x: inherit;
+    }
+  }
+
+  /* Additional styling for menu items */
+  .header_scrolling_bar ul li a {
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  .mobile-menu li a {
+    border-radius: 25px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .header_scrolling_bar ul li a:hover {
+    color: #453526;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Select all links in both desktop and mobile menus
+    const menuLinks = document.querySelectorAll(
+      '.desktop-menu li a, .desktop-menu li details summary, .mobile-menu li a, .mega-menu__nav li a'
+    );
+
+    // Add a click event listener to each link
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent immediate navigation
+
+        const linkTitle = event.currentTarget.textContent.trim();
+        const linkUrl = event.currentTarget.getAttribute('href'); // Get the link URL for redirection
+
+        // Push the event to dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'collection_submenu_click',
+          link_title: linkTitle,
+        });
+
+        // Redirect to the link after a brief delay to ensure dataLayer push completes
+        setTimeout(function () {
+          window.location.href = linkUrl;
+        }, 200); // Adjust delay as necessary (200ms is typical)
+      });
+    });
+  });
+</script>

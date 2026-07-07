@@ -1,0 +1,2 @@
+lote,fecha_backup,resource_type,id,path,target_actual,accion_aprobada,metodo_reversion
+MW-INDEXABILITY-REDIRECTS-FR-DEAD-TARGET-CLEANUP-011G4B2,2026-07-01,urlRedirect,gid://shopify/UrlRedirect/417581367523,/fr/collections/painted-papers-baller-matchwallswallpapers,/fr/collections/mural-murals-matchwallsmurals,delete,"Recrear con urlRedirectCreate path=/fr/collections/painted-papers-baller-matchwallswallpapers target=/fr/collections/mural-murals-matchwallsmurals solo con aprobacion expresa"

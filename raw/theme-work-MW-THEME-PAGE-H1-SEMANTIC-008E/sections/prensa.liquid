@@ -1,0 +1,211 @@
+<div class=" only-desktop prensa">
+  <div class="header-social-media">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'social_media' -%}
+          {% render 'social-media' %}
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+  <div class="prensa-selectors">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'image_with_number' -%}
+          <a class="prensa-page image-number-block" href="{{ block.settings.link }}">
+            <img
+              src="{{ block.settings.image | img_url: width: block.settings.image.width, height: block.settings.image.height }}"
+              alt="Block Image"
+              class="image-number-image"
+            >
+            <span class="image-number-text">{{ block.settings.number }}</span>
+          </a>
+      {%- endcase -%}
+    {%- endfor -%}
+    <div class="prensa-pages">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {%- render block -%}
+          {%- when 'text' -%}
+            <a
+              class="prensa-page"
+              {% if block.settings.blog.url %}
+                href="{{ block.settings.blog.url }}"
+              {% else %}
+                href="{{ block.settings.page.url }}"
+              {% endif %}
+            >
+              {{- block.settings.title -}}
+            </a>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+    <div class="country-language-selector">
+      {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
+        <div class="prensa-country hidden md:block shrink-0">
+          {%- render 'localization-selector',
+            type: 'country',
+            show_country_name: section.settings.show_country_name,
+            show_country_flag: section.settings.show_country_flag,
+            popover_vertical_position: 'end'
+          -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
+        <div class="prensa-location hidden md:block shrink-0">
+          {%- render 'localization-selector', type: 'locale', popover_vertical_position: 'end' -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  .only-desktop {
+    background-color: #FFFFF;
+    padding-top: 1px;
+    padding-bottom: 9px;
+    color: #504746;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .header-social-media {
+    left: 0;
+    position: absolute;
+    margin-left: 16px;
+  }
+  .country-language-selector {
+    display: flex;
+  }
+  .prensa-selectors {
+    display: flex;
+  }
+  .prensa .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .prensa {
+    display: none;
+  }
+  @media (min-width: 699px) {
+    .prensa {
+      display: flex;
+    }
+  }
+
+  .prensa-country {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
+  .prensa-location {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
+  .prensa {
+    padding-top: 10px;
+    justify-content: right;
+  }
+  .prensa-page {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
+</style>
+{% schema %}
+{
+  "name": "Section-two-columns/right",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Language selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Country/region selector",
+      "info": "To add a country/region, go to your [markets settings.](/admin/settings/markets). For best user experience, we recommend to keep this setting off and to use the free [Shopify Geolocation app](https://apps.shopify.com/geolocation)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show country/region selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_flag",
+      "label": "Show country flag",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_name",
+      "label": "Show country name",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Texto",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "blog",
+          "id": "blog",
+          "label": "Blog"
+        }
+      ]
+    },
+    {
+      "type": "social_media",
+      "name": "Social media",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "image_with_number",
+      "name": "Image with Number",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "category": "Contenido",
+      "name": "Dos Columnas"
+    }
+  ]
+}
+{% endschema %}

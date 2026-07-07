@@ -1,0 +1,93 @@
+<section
+  class="collection-banner"
+  {% if collection.image %}
+    style="background-image: url('{{ collection.image | img_url: 'original' }}');"
+  {% endif %}
+>
+  <div class="collection-banner__content">
+    <h1 class="collection-banner__title">{{ collection.title }}</h1>
+    <div class="collection-banner__description">{{ collection.description }}</div>
+  </div>
+</section>
+{% if collection.image %}
+  <style>
+    .collection-banner .collection-banner__description {
+      background: #f1f1f1;
+      border-radius: 10px;
+      padding: 5px;
+    }
+    .collection-banner__content {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .collection-banner {
+      padding: 60px 20px;
+    }
+  </style>
+{% endif %}
+<style>
+  .collection-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #453526;
+    text-align: center;
+  }
+
+  .collection-banner__content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff; /* White background for the text block */
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .collection-banner__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #453526; /* Text color */
+  }
+
+  .collection-banner__description {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #453526; /* Text color */
+  }
+
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .collection-banner {
+      padding: 30px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .collection-banner__content {
+      max-width: 77%; /* Use full width */
+      padding: 15px; /* Reduce padding for content */
+    }
+
+    .collection-banner__title {
+      font-size: 20px; /* Smaller font size for headline */
+      margin-bottom: 5px; /* Reduce margin to minimize empty space */
+    }
+
+    .collection-banner__description {
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.2px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Collection Banner Souhail",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Collection Banner Souhail",
+      "category": "Collections"
+    }
+  ]
+}
+{% endschema %}

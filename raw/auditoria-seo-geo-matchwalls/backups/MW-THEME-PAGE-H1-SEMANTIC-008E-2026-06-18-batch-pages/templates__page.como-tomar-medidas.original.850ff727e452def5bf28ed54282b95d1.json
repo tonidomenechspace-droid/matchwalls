@@ -1,0 +1,255 @@
+{
+  "sections": {
+    "multi_column_pQ46yb": {
+      "type": "multi-column",
+      "blocks": {
+        "spacer_QQdtbt": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "3"
+          }
+        },
+        "item_eXpqKA": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Empecemos por lo primero. ¿Cómo tomar medidas de tu pared? #BeMatchWalls",
+            "heading_tag": "h4",
+            "title_img_position": "start",
+            "content": "",
+            "link_url": "",
+            "render_customizer_snippet": false,
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "spacer_DJ4Led": {
+          "type": "spacer",
+          "settings": {
+            "column_size": "3"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_QQdtbt",
+        "item_eXpqKA",
+        "spacer_DJ4Led"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#e9bcc7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "image_with_text_overlay_n9BFfT": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_wkB6BL": {
+          "type": "heading",
+          "settings": {
+            "text": "Guía sobre como tomar medidas en paredes y techo",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wkB6BL"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/pexels-ksenia-chernaya-7695264.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40
+      }
+    },
+    "images_with_text_scrolling_DmAJAG": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_YgWbHB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/medidas_1.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Paredes verticales",
+            "content": "<p>Para empezar, mide la longitud total y la altura de tu pared. Es <strong>importante que sumes 10 cm <\/strong>(equivalente a 3 pulgadas) a cada una de estas medidas, tanto en la longitud como en la altura. Esto se debe a que fabricamos el papel pintado mural (rollo medida estándar no personalizable) a la <strong>medida exacta <\/strong>basada en las especificaciones que nos proporcionas al realizar tu pedido. Si necesitas ayuda para medir diferentes tipos de paredes, no dudes en consultar los ejemplos que ofrecemos a continuación. Primero, toma las medidas de ancho y alto de la pared en su totalidad. Es crucial confirmar estas medidas con una <strong>segunda revisión para asegurar su precisión. <\/strong>Cuando realices tu pedido, fabricaremos el papel pintado mural (rollo medida estándar no personalizable) ajustándonos<strong> exactamente a las dimensiones que nos proporciones<\/strong>. Por ello, es recomendable que incrementes en 10 cm (equivalente a 3 pulgadas) tanto el ancho como el alto, para garantizar el ajuste perfecto.<\/p>"
+          }
+        },
+        "item_7dUHn6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/large-2.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Paredes inclinadas",
+            "content": "<p><strong>Omite cualquier inclinación<\/strong> y toma las medidas de la pared en su punto máximo de altura y anchura. El mural se creará como una sola pieza, llegando a tus manos en formato rectangular o cuadrado; el <strong>exceso debido a las pendientes <\/strong>se ajustará en el momento de la instalación. Es prudente que incrementes las dimensiones tanto de la altura como de la anchura en 10 cm (unas 3 pulgadas), para asegurar un ajuste ideal.<\/p>"
+          }
+        },
+        "item_VpDADx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/medidas_2.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Paredes inclinadas por ambos lados superiores",
+            "content": "<p>Mide la<strong> sección más extensa<\/strong> de la pared, tanto en su altura como en su anchura. Al instalar el producto final, que usualmente tiene forma de rectángulo o cuadrado, <strong>se ajustará recortando cualquier parte inclinada<\/strong> del rollo o mural. Para asegurar un ajuste perfecto, es recomendable que aumentes las medidas de ancho y alto en 10 cm (aproximadamente 3 pulgadas).<\/p>"
+          }
+        },
+        "item_R6JbMr": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/medida_3.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Paredes con ventanas y puertas",
+            "content": "<p>Asegúrate de medir tanto<strong> el largo como el alto completo <\/strong>de la pared. Durante la instalación, se tomará en cuenta la eliminación de cualquier impedimento. El papel pintado rollo y mural se confecciona siguiendo <strong>al pie de la letra las dimensiones que especificas al hacer la compra, <\/strong>así que es recomendable que sumes 10 cm (aproximadamente 3 pulgadas) a tus medidas de ancho y alto. Esto asegurará que el papel pintado rollo y mural se ajuste perfectamente a tu espacio.<\/p>"
+          }
+        },
+        "item_FrWepw": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/large-5.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Esquinas y paredes continuas",
+            "content": "<p>Antes de hacer tu compra, toma el ancho <strong>de cada pared individualmente y suma estas medidas.<\/strong> Como precaución, incrementa 10 cm (unas 3 pulgadas) a cada lado de cada pared. Después, mide la altura desde el punto más alto, agregando también 10 cm (3 pulgadas) a esta última medida. <strong>No es necesario<\/strong> que solicites el mural en <strong>secciones separadas <\/strong>para las distintas paredes.<\/p>"
+          }
+        },
+        "item_CqLpFi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/large-6.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Paredes con escaleras",
+            "content": "<p>Al medir la altura de la pared, toma en cuenta tanto el<strong> punto más alto como el más bajo<\/strong>, igual que harías con muros que presenten inclinaciones. La misma regla se aplica al calcular el ancho. Durante el montaje, se procederá a eliminar las partes inclinadas. Para asegurarte de que todo encaje perfectamente, te <strong>aconsejamos <\/strong>incrementar las medidas de ancho y altura en 10 cm (unas 3 pulgadas).<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_YgWbHB",
+        "item_7dUHn6",
+        "item_VpDADx",
+        "item_R6JbMr",
+        "item_FrWepw",
+        "item_CqLpFi"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": true,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_A7cPr7": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_fimQb7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>¿TIENES MÁS DUDAS?<\/p>"
+          }
+        },
+        "heading_imAKUe": {
+          "type": "heading",
+          "settings": {
+            "text": "Descarga nuestras guías de instalación",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "button_8bwJNd": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "VER GUÍAS",
+            "url": "shopify:\/\/pages\/guia-de-instalacion",
+            "background": "#e9bcc7",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_fimQb7",
+        "heading_imAKUe",
+        "button_8bwJNd"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_CgjpdC": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_z8nJDL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Comparte tu espacio Matchwalls con nosotros en @bematchwalls @matchwalls <\/strong>#bematchwalls #matchwalls #matchwallsbarcelona #matchwallpapers<\/p>"
+          }
+        },
+        "html_D7KyBm": {
+          "type": "html",
+          "settings": {
+            "content": "<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" astyle=\"display:inline; margin: 0;\"><strong>Envíanaos tu video de instalación o fotografías a help@matchwalls.com <\/strong><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_z8nJDL",
+        "html_D7KyBm"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "multi_column_pQ46yb",
+    "main",
+    "image_with_text_overlay_n9BFfT",
+    "images_with_text_scrolling_DmAJAG",
+    "rich_text_A7cPr7",
+    "rich_text_CgjpdC"
+  ]
+}

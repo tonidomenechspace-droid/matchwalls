@@ -1,0 +1,270 @@
+{%- if link.links.size > 0 -%}
+  <style>
+    @media screen and (min-width: 1380px) {
+      #mega-menu-{{ mega_menu_block.id }} {
+        --mega-menu-nav-column-max-width: {% if mega_menu_block.settings.submenu_style == 'bold_text' %}{% if link.links.size <= 2 %}240px{% else %}200px{% endif %}{% else %}{% if link.links.size <= 2 %}180px{% else %}160px{% endif %}{% endif %};
+        --mega-menu-justify-content: {% if link.links.size == 0 or mega_menu_block.settings.layout == 'horizontal_center' and mega_menu_block.settings.stretch_promo == false %}center{% else %}space-between{% endif %};
+        --mega-menu-nav-gap: {% if mega_menu_block.settings.stretch_promo %}var(--spacing-12){% else %}var(--spacing-8){% endif %};
+
+        {% if link.links.size > 3 %}
+          --column-list-max-width: 75%;
+        {% endif %}
+      }
+    }
+
+    @media screen and (min-width: 1400px) {
+      #mega-menu-{{ mega_menu_block.id }} {
+        --mega-menu-nav-column-max-width: {% if mega_menu_block.settings.submenu_style == 'bold_text' %}{% if link.links.size == 1 %}260px{% elsif link.links.size == 2 %}240px{% else %}210px{% endif %}{% else %}{% if link.links.size == 1 %}220px{% elsif link.links.size == 2 %}200px{% else %}180px{% endif %}{% endif %};
+        --mega-menu-nav-gap: {% if mega_menu_block.settings.layout == 'horizontal_center' %}var(--spacing-12){% else %}var(--spacing-16){% endif %};
+
+        {% if link.links.size > 4 %}
+          --column-list-max-width: 75%;
+        {% else %}
+          --column-list-max-width: max-content;
+        {% endif %}
+      }
+    }
+
+    @media screen and (min-width: 1600px) {
+      #mega-menu-{{ mega_menu_block.id }} {
+        --mega-menu-nav-gap: var(--spacing-16);
+      }
+    }
+
+    @media screen and (min-width: 1800px) {
+      #mega-menu-{{ mega_menu_block.id }} {
+        --mega-menu-nav-gap: var(--spacing-20);
+      }
+    }
+  </style>
+{%- endif -%}
+
+<div
+  id="mega-menu-{{ mega_menu_block.id }}"
+  style="ggap: 4rem;"
+  class="mega-menu {% if link.links.size == 0 %}justify-center{% endif %}"
+>
+  {%- if link.links.size > 0 -%}
+    <div class="links-block-menu">
+      <div class="link-children-menu">
+        {%- if link.links.size > 0 -%}
+          <li class="mega-menu__headline">
+            <a class="a-element-li-menu" href="{{ link.links[0].url }}">
+              {{ link.links[0].title }}
+            </a>
+          </li>
+        {%- endif -%}
+        <ul class="mega-menu__nav" role="list">
+          {%- for sub_link in link.links -%}
+            {%- if forloop.index > 1 -%}
+              <li class=" gap-4 justify-items-start">
+                <a
+                  {% if sub_link.url != '#' %}
+                    href="{{ sub_link.url }}"
+                  {% endif %}
+                  class="a-element-li-menu {% if mega_menu_block.settings.submenu_style == 'bold_heading' %}h5{% endif %}"
+                  {% if sub_link.current %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  {% if sub_link.object.metafields.custom.color %}
+                    <span
+                      class="image_sub_link"
+                      color="{{ sub_link.object.metafields.custom.color_code }}"
+                      style="background-color: {{ sub_link.object.metafields.custom.color_code }};"
+                    ></span>
+                  {% else %}
+                    {{-
+                      sub_link.object.featured_image
+                      | image_url: width: sub_link.object.featured_image.width
+                      | image_tag: widths: '200', class: 'image_sub_link'
+                    -}}
+                  {% endif %}
+
+                  <span
+                    {% if sub_link.url != '#' %}
+                      class="{% if mega_menu_block.settings.submenu_style == 'bold_text' %}link-faded{% else %}reversed-link hover:show{% endif %}"
+                    {% endif %}
+                  >
+                    {{- sub_link.title -}}
+                  </span>
+                </a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+
+    <style>
+      span[color='#000001'] {
+        background: linear-gradient(90deg, #dad313, #ff5733, #33ff57, #3357ff);
+      }
+      span[color='#000002'] {
+        background: repeating-linear-gradient(90deg, #000000, #000000 10px, #ffffff 10px, #ffffff 20px);
+      }
+
+      .image_sub_link {
+        display: inline-block;
+        width: 51px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        margin-right: 0.5rem;
+      }
+      .a-element-li-menu {
+        opacity: 1;
+        transform: translateY(0px);
+        display: flex;
+        align-items: center;
+      }
+      .desktop-menu {
+        align-items: center;
+      }
+      .link-children-menu {
+        overflow: hidden;
+        width: 100%;
+        justify-items: center;
+      }
+      .discover-menu {
+        width: 30%;
+      }
+
+      .mega-menu__nav {
+        padding: 10px;
+        background-color: #f1f1f1;
+        border-radius: 25px;
+        column-gap: 1rem;
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-auto-flow: column;
+        width: inherit;
+      }
+      .links-block-menu {
+        width: 70%;
+        justify-items: center;
+      }
+
+      .mega-menu__headline {
+        justify-self: left;
+        font-weight: bold;
+        font-size: 1.2rem;
+        list-style: none;
+      }
+      .discover-menu ul {
+        align-items: center;
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-auto-flow: column;
+        gap: 0.1rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .mega-menu__nav {
+      }
+
+      .mega-menu__nav li {
+        margin: 0;
+        width: inherit;
+        padding: 0;
+      }
+
+      .mega-menu__nav a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+  {%- endif -%}
+  {% if section.settings.scrolling_bar_menu_index %}
+    <div class="discover-menu">
+      {%- if section.settings.scrolling_bar_menu_index.links.size > 0 -%}
+        <li class="mega-menu__headline">
+          <a href="{{ section.scrolling_bar_menu_index.links[0].url }}">
+            {{ section.settings.scrolling_bar_menu_index.links[0].title }}
+          </a>
+        </li>
+      {%- endif -%}
+      <ul role="list">
+        {%- for sub_link in section.settings.scrolling_bar_menu_index.links -%}
+          {%- if forloop.index > 1 -%}
+            <li class=" gap-4 justify-items-start">
+              <a
+                {% if sub_link.url != '#' %}
+                  href="{{ sub_link.url }}"
+                {% endif %}
+                class="a-element-li-menu {% if mega_menu_block.settings.submenu_style == 'bold_heading' %}h5{% endif %}"
+                {% if sub_link.current %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {% if sub_link.object.metafields.custom.color %}
+                  <span
+                    style="width: 20px; height: 20px"
+                    class="image_sub_link"
+                    color="{{ sub_link.object.metafields.custom.color_code }}"
+                    style="background-color: {{ sub_link.object.metafields.custom.color_code }};"
+                  ></span>
+                {% else %}
+                  {{-
+                    sub_link.object.featured_image
+                    | image_url: width: sub_link.object.featured_image.width
+                    | image_tag: widths: '200', class: 'image_sub_link', style: 'width: 40px; height: 40px'
+                  -}}
+                {% endif %}
+
+                <span
+                  {% if sub_link.url != '#' %}
+                    class="{% if mega_menu_block.settings.submenu_style == 'bold_text' %}link-faded{% else %}reversed-link hover:show{% endif %}"
+                  {% endif %}
+                >
+                  {{- sub_link.title -}}
+                </span>
+              </a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% liquid
+    # To maximize space, we force a carousel mode depending on the actual content
+
+    assign promo_item_count = 0
+    assign use_carousel_fallback_until = ''
+
+    for i in (1..3)
+      assign image_setting = 'image_' | append: i
+
+      if mega_menu_block.settings[image_setting] != blank
+        assign promo_item_count = promo_item_count | plus: 1
+      endif
+    endfor
+
+    if mega_menu_block.settings.product != blank
+      assign promo_item_count = promo_item_count | plus: 1
+    endif
+
+    if link.links.size > 0 and promo_item_count == 4 or mega_menu_block.settings.promo_content_layout == 'carousel'
+      assign force_carousel_mode = true
+    else
+      if link.links.size == 2
+        if promo_item_count == 3 and mega_menu_block.settings.layout == 'grid'
+          assign use_carousel_fallback_until = 'xl'
+        endif
+      elsif link.links.size >= 3 and promo_item_count == 3
+        if use_promo_collage
+          assign use_carousel_fallback_until = 'xl'
+        else
+          assign use_carousel_fallback_until = '2xl'
+        endif
+      endif
+    endif
+  %}
+
+  {% if section.scrolling_bar_menu_index %}
+  {% endif %}
+</div>

@@ -1,0 +1,5 @@
+lote,opcion,descripcion,beneficio,riesgo,estado,recomendacion
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,A,Esperar cierre 012O y corregir primero deuda heredada de colecciones FR/DE/NL,"Máxima coherencia con objetivo de web perfecta y multilingüe; reduce riesgo SEO/GEO visible","Retrasa publicación del hub",REQUIERE DECISION HUMANA,RECOMENDADA
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,B,Esperar cierre 012O y publicar hub aceptando deuda heredada documentada,"Publica antes el bloque nuevo ya verificado","Deja visible deuda lingüística en la misma página; riesgo de calidad de marca e IA",VERIFICADO PERO MEJORABLE,SOLO CON DECISION HUMANA EXPLICITA
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,C,Publicar ahora sin esperar 012O,"Acelera salida del hub","Riesgo alto por incidencia de render/caché aún abierta y deuda heredada visible",RIESGO CRITICO,NO RECOMENDADA
+MW-COLLECTIONS-ROOT-HUB-I18N-PUBLISH-READINESS-013E13E,D,No publicar ni corregir colecciones,"Evita riesgo inmediato","Se pierde oportunidad SEO/GEO del hub y se mantiene deuda visible",INCOMPLETO,NO RECOMENDADA

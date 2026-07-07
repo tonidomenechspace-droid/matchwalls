@@ -1,0 +1,11 @@
+recurso,url,idioma,comprobacion,evidencia,estado,recomendacion
+Storefront,https://www.matchwalls.com/pages/papel-pintado-espana,ES Chrome locale,meta description,3 rondas limpias con meta autogenerada de 320 caracteres,VERIFICADO PERO MEJORABLE,Mantener sin tocar
+Storefront,https://www.matchwalls.com/pages/papel-pintado-espana,ES Googlebot simulado,meta description,Valor 012J3 detectado en rondas 1 y 3,INCORRECTO,Preparar evidencia soporte 012J4D
+Storefront,https://www.matchwalls.com/pages/papel-pintado-espana,ES OAI-SearchBot simulado,meta description,Valor 012J3 detectado en rondas 1 y 2,INCORRECTO,Preparar evidencia soporte 012J4D
+Storefront,https://www.matchwalls.com/pages/papel-pintado-espana,ES Bingbot simulado,meta description,Recheck dirigido limpio; lectura amplia previa requirio revalidacion,VERIFICADO PERO MEJORABLE,Revisar de nuevo en 012J4D si se prepara soporte
+Storefront,https://www.matchwalls.com/en/pages/spain-wallpaper,EN,meta description,3 rondas amplias limpias con meta autogenerada en ingles,VERIFICADO PERO MEJORABLE,Mantener sin tocar
+Storefront,https://www.matchwalls.com/fr/pages/papier-peint-en-espagne,FR,meta description,3 rondas amplias limpias con meta autogenerada en frances,VERIFICADO PERO MEJORABLE,Mantener sin tocar
+Storefront,https://www.matchwalls.com/de/pages/spanien-tapete,DE,meta description,3 rondas amplias limpias con meta autogenerada en aleman,VERIFICADO PERO MEJORABLE,Mantener sin tocar
+Storefront,https://www.matchwalls.com/nl/pages/spanje-behang,NL,meta description,3 rondas amplias limpias con meta autogenerada en neerlandes,VERIFICADO PERO MEJORABLE,Mantener sin tocar
+Admin API,gid://shopify/Page/687276622200,ES,global.description_tag,012J4B devolvio null,VERIFICADO Y CORRECTO,No hay valor visible que limpiar por API
+LangShop UI,gid://shopify/Page/687276622200,ES/DE,SEO visible,012J4A mostro campos SEO vacios,VERIFICADO Y CORRECTO,No tocar LangShop

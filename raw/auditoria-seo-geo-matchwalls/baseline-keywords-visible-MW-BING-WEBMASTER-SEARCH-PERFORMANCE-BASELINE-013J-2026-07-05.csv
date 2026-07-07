@@ -1,0 +1,26 @@
+rank_visible,keyword,impressions,clicks,ctr_percent,avg_position,language_signal,intent_or_theme,priority,risk_note,status
+1,papel pasillo plus,8,0,0.00,3.75,ES,papel pintado pasillo / producto long-tail,media,Sin URL asociada visible; requiere mapping con export.,VERIFICADO PERO MEJORABLE
+2,papel pintado negro,6,0,0.00,8.83,ES,color negro / categoría producto,alta,Consulta comercial clara; oportunidad de página/categoría si existe.,VERIFICADO PERO MEJORABLE
+3,wall decoration interior salamanca,5,0,0.00,6.00,EN+ES,geográfica Salamanca / decoración interior,media,Geográfica no incluida en lista protegida inicial; revisar antes de crear contenido.,VERIFICADO PERO MEJORABLE
+4,papel pintado de tartán beige,4,0,0.00,5.00,ES,patrón tartán beige,alta,Long-tail de patrón con posición útil; mapear URL.,VERIFICADO PERO MEJORABLE
+5,wall decoration interior tarragona,4,0,0.00,8.50,EN+ES,geográfica Tarragona / decoración interior,media,Tarragona sí está en lista ES protegida; requiere mapping.,VERIFICADO PERO MEJORABLE
+6,papel pintado con diseño geométrico,4,0,0.00,8.75,ES,estilo geométrico,alta,Consulta comercial general; revisar hub/categoría geométricos.,VERIFICADO PERO MEJORABLE
+7,papel pintado geométrico,3,0,0.00,5.00,ES,estilo geométrico,alta,Consulta comercial general; revisar canibalización.,VERIFICADO PERO MEJORABLE
+8,fresque avec photo,3,0,0.00,FR,mural/fresco con foto personalizado,alta,Relevante para personalización FR; requiere mapping.,VERIFICADO PERO MEJORABLE
+9,papel de parede lilás,3,0,0.00,PT,color lila / PT,standby,PT fuera de prioridad salvo autorización; no actuar ahora.,STANDBY
+10,mural com nome da equipe e foto com tnt e crepon,2,0,0.00,PT,consulta artesanal/no core,standby,PT no prioritario y query posiblemente no comercial para MatchWalls.,STANDBY
+11,papelillo paris,2,0,0.00,ES,marca/competidor o typo,media,Requiere investigación; no asumir intención.,VERIFICADO PERO MEJORABLE
+12,site para fazer mural,2,0,0.00,PT,mural personalizado / herramienta,standby,PT fuera de prioridad; no actuar ahora.,STANDBY
+13,papel de pared con patrón de gingham rosa,2,0,0.00,ES,patrón gingham rosa,alta,Consulta comercial de producto/patrón; mapear URL.,VERIFICADO PERO MEJORABLE
+14,azul marejada,2,0,0.00,ES,color/nombre de diseño,media,Puede ser familia/color propio; no traducir ni cambiar sin evidencia.,VERIFICADO PERO MEJORABLE
+15,papel de pared estética negra y blanco,2,0,0.00,ES,color/estética blanco-negro,media,Long-tail de color; revisar URL destino.,VERIFICADO PERO MEJORABLE
+16,papel de tartán amarillo y azul,2,0,0.00,ES,patrón tartán amarillo/azul,alta,Long-tail de patrón; revisar productos asociados.,VERIFICADO PERO MEJORABLE
+17,papel con cuadros de gingham verde,2,0,0.00,ES,patrón gingham verde,alta,Long-tail de patrón; revisar productos asociados.,VERIFICADO PERO MEJORABLE
+18,panel pared hzabitacion juvenil,2,0,0.00,ES con typo,habitación juvenil / panel pared,media,Query contiene typo; no optimizar literalmente.,VERIFICADO PERO MEJORABLE
+19,papel pintado gingham precio,2,0,0.00,ES,precio gingham,alta,Consulta transaccional; revisar precio/claridad del producto.,VERIFICADO PERO MEJORABLE
+20,papel de pared con puntos de polka rosa,2,0,0.00,ES,patrón polka rosa,alta,Consulta comercial; mapear URL.,VERIFICADO PERO MEJORABLE
+21,machwalls,2,1,50.00,1.00,Brand typo,marca mal escrita,alta,Única fila visible con click; oportunidad defensiva de marca pero no tocar ahora.,VERIFICADO PERO MEJORABLE
+22,papel de mesa a cuadros verde y blanco,1,0,0.00,ES,producto no core / mesa,media,Puede no ser intención principal de papel pintado mural.,VERIFICADO PERO MEJORABLE
+23,imagen de como es el ancho y el alto de una pared,1,0,0.00,ES,medición de pared,alta,Conecta con guías de medición; oportunidad editorial clara.,VERIFICADO PERO MEJORABLE
+24,papel de pared con cuadros de gingham rosa,1,0,0.00,ES,patrón gingham rosa,alta,Relacionado con fila 13; posible consolidación temática.,VERIFICADO PERO MEJORABLE
+25,papel pintado lila,1,0,0.00,ES,color lila,media,Consulta color; revisar categoría/color.,VERIFICADO PERO MEJORABLE

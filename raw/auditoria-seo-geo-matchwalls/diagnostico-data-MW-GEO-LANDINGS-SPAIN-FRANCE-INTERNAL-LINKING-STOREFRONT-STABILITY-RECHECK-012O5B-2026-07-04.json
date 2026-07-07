@@ -1,0 +1,498 @@
+{
+  "lot": "MW-GEO-LANDINGS-SPAIN-FRANCE-INTERNAL-LINKING-STOREFRONT-STABILITY-RECHECK-012O5B",
+  "csv_path": "C:\\Users\\d.bermejo\\OneDrive - Matchwalls\\Documentos\\Matchwalls Shopify\\auditoria-seo-geo-matchwalls\\qa-publico-MW-GEO-LANDINGS-SPAIN-FRANCE-INTERNAL-LINKING-STOREFRONT-STABILITY-RECHECK-012O5B-2026-07-04.csv",
+  "total": 80,
+  "pass": 14,
+  "fail": 66,
+  "noindex_count": 0,
+  "status_counts": [
+    {
+      "key": "200",
+      "count": 80
+    }
+  ],
+  "by_page_pass": [
+    {
+      "key": "france | FAIL",
+      "count": 33
+    },
+    {
+      "key": "france | PASS",
+      "count": 7
+    },
+    {
+      "key": "spain | FAIL",
+      "count": 33
+    },
+    {
+      "key": "spain | PASS",
+      "count": 7
+    }
+  ],
+  "by_locale_pass": [
+    {
+      "key": "de | FAIL",
+      "count": 10
+    },
+    {
+      "key": "de | PASS",
+      "count": 6
+    },
+    {
+      "key": "en | FAIL",
+      "count": 16
+    },
+    {
+      "key": "es | FAIL",
+      "count": 13
+    },
+    {
+      "key": "es | PASS",
+      "count": 3
+    },
+    {
+      "key": "fr | FAIL",
+      "count": 14
+    },
+    {
+      "key": "fr | PASS",
+      "count": 2
+    },
+    {
+      "key": "nl | FAIL",
+      "count": 13
+    },
+    {
+      "key": "nl | PASS",
+      "count": 3
+    }
+  ],
+  "by_ua_pass": [
+    {
+      "key": "bingbot | FAIL",
+      "count": 18
+    },
+    {
+      "key": "bingbot | PASS",
+      "count": 2
+    },
+    {
+      "key": "browser_chrome | FAIL",
+      "count": 15
+    },
+    {
+      "key": "browser_chrome | PASS",
+      "count": 5
+    },
+    {
+      "key": "generic_ai_search | FAIL",
+      "count": 18
+    },
+    {
+      "key": "generic_ai_search | PASS",
+      "count": 2
+    },
+    {
+      "key": "googlebot | FAIL",
+      "count": 15
+    },
+    {
+      "key": "googlebot | PASS",
+      "count": 5
+    }
+  ],
+  "by_theme_pass": [
+    {
+      "key": "178399019384 | FAIL",
+      "count": 66
+    },
+    {
+      "key": "178399019384 | PASS",
+      "count": 14
+    }
+  ],
+  "pass_rows": [
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "zh62",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "154a12a1-6751-45a3-a552-d314e39171fa-1783179094"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "9lqh",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "5f9642c9-5f2f-4efc-b80e-c10b8475550f-1783179102"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "googlebot",
+      "server_timing_servedBy": "mk8q",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "x_request_id": "540fa7de-b72b-4703-b1e0-14c0f5f97167-1783179105"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "fr",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "x4pz",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "x_request_id": "11e9dc60-82bb-4568-8a06-9f62e75c2c8c-1783179111"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "fr",
+      "ua_label": "bingbot",
+      "server_timing_servedBy": "bfdg",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "x_request_id": "ff4754a4-6ee6-4e6a-84d9-f84cd0304304-1783179112"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "de",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "m9rj",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "ca77766d-4818-45f8-b0ac-d1eae05243e6-1783179114"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "de",
+      "ua_label": "googlebot",
+      "server_timing_servedBy": "h7dk",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "703393e1-ca1d-47f3-8d62-dbc1294d45ed-1783179114"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "de",
+      "ua_label": "generic_ai_search",
+      "server_timing_servedBy": "9nw8",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "cdb5d090-1589-4437-941d-9389a0161416-1783179116"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "nl",
+      "ua_label": "generic_ai_search",
+      "server_timing_servedBy": "f5lp",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "x_request_id": "c950083a-74eb-4b78-8047-ee0519a332b9-1783179118"
+    },
+    {
+      "round": 2,
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "googlebot",
+      "server_timing_servedBy": "rdgk",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "111b282a-c3da-46e7-99e5-bf3fc5f5206c-1783179119"
+    },
+    {
+      "round": 2,
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "bingbot",
+      "server_timing_servedBy": "bw88",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "222dfb6a-fea6-4865-9175-b16627e534bf-1783179120"
+    },
+    {
+      "round": 2,
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "9lbd",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "badb91b7-92f4-48ba-a742-69523ff1201c-1783179126"
+    },
+    {
+      "round": 2,
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "googlebot",
+      "server_timing_servedBy": "zwck",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "4ce291d4-4920-4a0c-9862-c593e3969bd7-1783179126"
+    },
+    {
+      "round": 2,
+      "page": "france",
+      "locale": "nl",
+      "ua_label": "googlebot",
+      "server_timing_servedBy": "k2ls",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "x_request_id": "a9142738-1d6e-488d-89fa-6ac0e7888e42-1783179141"
+    }
+  ],
+  "sample_fail_rows": [
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "8wfl",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "118c0e09-413e-414c-b916-6dd8ce5ff264-1783179095",
+      "expected_href": "/pages/papel-pintado-francia"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "kzpw",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "a6fccfd3-afbb-4179-a3d8-e95ed5bcfa1e-1783179095",
+      "expected_href": "/pages/papel-pintado-francia"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "5rdr",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "8a4eeb4c-bd84-4c8c-8135-6ac81f645ecc-1783179096",
+      "expected_href": "/pages/papel-pintado-francia"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "hxml",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "x_request_id": "bf919eb1-ad52-4bf1-8d0d-3aaa96a6e94f-1783179097",
+      "expected_href": "/en/pages/french-wallpaper"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "rlp7",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "x_request_id": "f6d3ad13-5029-415e-adc1-a77833924ea5-1783179097",
+      "expected_href": "/en/pages/french-wallpaper"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "s6pq",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "x_request_id": "c5fa61fb-ad6f-4cc7-8ad1-49b74633ae41-1783179098",
+      "expected_href": "/en/pages/french-wallpaper"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "mk8q",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "x_request_id": "e34c1654-392f-4100-bbad-8cdad59dc6db-1783179099",
+      "expected_href": "/en/pages/french-wallpaper"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "vk6z",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "x_request_id": "20413b16-8eca-480c-8059-652055aef8dd-1783179099",
+      "expected_href": "/fr/pages/papier-peint-en-france"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "z642",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "x_request_id": "a2a5cb24-2f2c-4c49-81de-b28928f412f7-1783179100",
+      "expected_href": "/fr/pages/papier-peint-en-france"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "pxk2",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "x_request_id": "82a8e6af-1ea3-479d-b366-83a2bdfe267a-1783179100",
+      "expected_href": "/fr/pages/papier-peint-en-france"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "skzh",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "x_request_id": "1cab86f3-ff0b-4dbe-9d86-3d19a8bd48ef-1783179101",
+      "expected_href": "/fr/pages/papier-peint-en-france"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "nbpx",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "e88fba1b-ee25-48b1-89c8-648d015019e4-1783179102",
+      "expected_href": "/de/pages/franzosische-tapete"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "6ppw",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "11ecd281-b387-4b65-840f-05ddc1cb22f0-1783179103",
+      "expected_href": "/de/pages/franzosische-tapete"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "69rc",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "x_request_id": "a6decc09-defc-4107-a020-4a4ae0fce03f-1783179104",
+      "expected_href": "/de/pages/franzosische-tapete"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "ktrb",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "x_request_id": "685097a6-e956-4ef9-833f-84ec2272ecdd-1783179104",
+      "expected_href": "/nl/pages/frans-behang"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "zvqz",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "x_request_id": "c6f32f03-765b-4a22-a031-d6a98b7ad221-1783179105",
+      "expected_href": "/nl/pages/frans-behang"
+    },
+    {
+      "round": 1,
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "s6pq",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "x_request_id": "151d3a8e-448f-4fa2-b092-6404c808068d-1783179106",
+      "expected_href": "/nl/pages/frans-behang"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "es",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "pfjh",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "6cc1a653-1fa9-4762-bd53-a4ffc11132bd-1783179106",
+      "expected_href": "/pages/papel-pintado-espana"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "es",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "hl9t",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "3f9ace4a-afec-4305-8375-9b76b4c38fc1-1783179107",
+      "expected_href": "/pages/papel-pintado-espana"
+    },
+    {
+      "round": 1,
+      "page": "france",
+      "locale": "es",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "bpkg",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "x_request_id": "70248ca0-3489-4829-9890-762ebf885f20-1783179108",
+      "expected_href": "/pages/papel-pintado-espana"
+    }
+  ]
+}

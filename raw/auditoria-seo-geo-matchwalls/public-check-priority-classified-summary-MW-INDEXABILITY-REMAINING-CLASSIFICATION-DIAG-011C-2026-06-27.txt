@@ -1,0 +1,12 @@
+total_rows=482
+by_group={'black_friday': 5, 'enchanted_typo_enchathed': 19, 'facade_test': 7, 'geo_collection_candidate': 346, 'matchalls_typo': 1, 'nordic_typo_norid': 70, 'sample_residual_page': 10, 'suffix_minus_1_sample': 24}
+by_estado={'INCOMPLETO': 248, 'INCORRECTO': 95, 'REQUIERE DECISION HUMANA': 129, 'VERIFICADO PERO MEJORABLE': 10}
+by_http_status={'': 4, '200': 227, '301': 7, '429': 244}
+group_estado[black_friday]={'REQUIERE DECISION HUMANA': 5}
+group_estado[enchanted_typo_enchathed]={'INCORRECTO': 19}
+group_estado[facade_test]={'INCORRECTO': 7}
+group_estado[geo_collection_candidate]={'INCOMPLETO': 241, 'REQUIERE DECISION HUMANA': 105}
+group_estado[matchalls_typo]={'INCORRECTO': 1}
+group_estado[nordic_typo_norid]={'INCOMPLETO': 2, 'INCORRECTO': 68}
+group_estado[sample_residual_page]={'VERIFICADO PERO MEJORABLE': 10}
+group_estado[suffix_minus_1_sample]={'INCOMPLETO': 5, 'REQUIERE DECISION HUMANA': 19}

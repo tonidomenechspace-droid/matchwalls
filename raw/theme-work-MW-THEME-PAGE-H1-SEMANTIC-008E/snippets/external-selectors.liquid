@@ -1,0 +1,303 @@
+<span class="wallpaper-instructions">
+  <b>{{ 'general.customizer.measure_size' | t }}</b>
+  <span>{{ 'general.customizer.measure_size_height_width' | t }} </span>
+</span>
+
+<style>
+  .wallpaper-instructions {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+    word-spacing: -1px; /* Reduces space between words */
+  }
+
+  .wallpaper-instructions b {
+    font-size: 14px;
+    color: #504746;
+    font-weight: bold;
+  }
+
+  .wallpaper-instructions span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+    word-spacing: -1px; /* Reduces space between words */
+  }
+
+  .wallpaper-instructions strong {
+    color: #000;
+  }
+</style>
+
+<div class="external-quantity-selector">
+  <div class="input-group">
+    <label for="external-width">↔ {{ 'product.customizer.width' | t }}</label>
+    <div class="input-with-unit">
+      <input type="number" id="external-width" min="0" value="400">
+      <select class="unit-selector" id="width-unit">
+        <option value="cm" selected>cm</option>
+        <option value="ft">ft</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label for="external-height">↕ {{ 'product.customizer.height' | t }}</label>
+    <div class="input-with-unit">
+      <input type="number" id="external-height" min="0" value="300">
+      <select class="unit-selector" id="height-unit">
+        <option value="cm" selected>cm</option>
+        <option value="ft">ft</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- Section for displaying calculated total surface -->
+<div class="calculated-values">
+  <p id="surface-calculation">0.00m x 0.00m = 0.00 m²</p>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // External inputs and unit selectors
+    const externalWidthInput = document.getElementById('external-width');
+    const externalHeightInput = document.getElementById('external-height');
+    const widthUnitSelector = document.getElementById('width-unit');
+    const heightUnitSelector = document.getElementById('height-unit');
+
+    // Internal inputs inside dialog
+    const internalWidthInput = document.getElementById('width');
+    const internalHeightInput = document.getElementById('height');
+
+    // Customizer radio labels for cm and ft
+    const cmRadioLabel = document.querySelector('label[for="centimeters"]');
+    const ftRadioLabel = document.querySelector('label[for="in"]');
+
+    // Elements to display calculated values
+    const surfaceCalculationElement = document.getElementById('surface-calculation');
+    const surfaceCalculationCustomizerElement = document.getElementById('surface-calculation-customizer');
+    const surfaceToggleContent = document.getElementById('dimension-toggle-content');
+
+    // Conversion constants
+    const cmToMeter = 100;
+    const ftToMeter = 0.3048;
+
+    // Function to calculate and display total surface
+    function calculateValues() {
+      const widthValue = parseFloat(externalWidthInput.value) || 0;
+      const heightValue = parseFloat(externalHeightInput.value) || 0;
+
+      // Check the units and convert to meters
+      const widthInMeters = widthUnitSelector.value === 'cm' ? widthValue / cmToMeter : widthValue * ftToMeter;
+      const heightInMeters = heightUnitSelector.value === 'cm' ? heightValue / cmToMeter : heightValue * ftToMeter;
+
+      const totalSurface = widthInMeters * heightInMeters; // Calculate total surface
+
+      // Update both the surface-calculation and surface-calculation-customizer elements
+      const calculatedText = `${widthInMeters.toFixed(2)}m x ${heightInMeters.toFixed(2)}m = ${totalSurface.toFixed(
+        2
+      )} m²`;
+      const dimensionsText = `${widthInMeters.toFixed(2)}m x ${heightInMeters.toFixed(2)}m`;
+      surfaceCalculationElement.textContent = calculatedText;
+      surfaceToggleContent.textContent = dimensionsText;
+      surfaceCalculationCustomizerElement.textContent = calculatedText;
+    }
+
+    // Function to save dimensions to localStorage
+    function saveDimensionsToLocalStorage() {
+      const customizerInputs = {
+        width: externalWidthInput.value,
+        height: externalHeightInput.value,
+        widthUnit: widthUnitSelector.value,
+        heightUnit: heightUnitSelector.value,
+      };
+      localStorage.setItem('customizerInputs', JSON.stringify(customizerInputs));
+    }
+
+    // Function to update form-surface inputs
+    function updateFormSurfaceInputs() {
+      internalWidthInput.value = externalWidthInput.value;
+      internalHeightInput.value = externalHeightInput.value;
+    }
+
+    // Function to load dimensions from localStorage or save defaults
+    function initializeDimensions() {
+      const savedInputs = JSON.parse(localStorage.getItem('customizerInputs'));
+
+      if (savedInputs) {
+        // Load saved inputs
+        externalWidthInput.value = savedInputs.width || '';
+        externalHeightInput.value = savedInputs.height || '';
+        widthUnitSelector.value = savedInputs.widthUnit || 'cm';
+        heightUnitSelector.value = savedInputs.heightUnit || 'cm';
+        updateFormSurfaceInputs(); // Sync form-surface inputs
+        synchronizeUnits(savedInputs.widthUnit || 'cm');
+      } else {
+        // Save default inputs
+        saveDimensionsToLocalStorage();
+        updateFormSurfaceInputs(); // Sync form-surface inputs
+      }
+      calculateValues();
+    }
+
+    // Synchronize external inputs to internal ones and recalculate values
+    externalWidthInput.addEventListener('input', function () {
+      updateFormSurfaceInputs(); // Sync form-surface inputs
+      updateProductCustomizer(); // Update logic for customizer
+      calculateValues(); // Recalculate values
+      saveDimensionsToLocalStorage();
+    });
+
+    externalHeightInput.addEventListener('input', function () {
+      updateFormSurfaceInputs(); // Sync form-surface inputs
+      updateProductCustomizer();
+      calculateValues(); // Recalculate values
+      saveDimensionsToLocalStorage();
+    });
+
+    // Handle unit changes and synchronize both selectors
+    function synchronizeUnits(unit) {
+      widthUnitSelector.value = unit;
+      heightUnitSelector.value = unit;
+
+      // Trigger the corresponding radio label inside the customizer
+      if (unit === 'cm') {
+        cmRadioLabel.click(); // Click the cm label inside the customizer
+      } else if (unit === 'ft') {
+        ftRadioLabel.click(); // Click the ft label inside the customizer
+      }
+
+      calculateValues();
+      saveDimensionsToLocalStorage();
+    }
+
+    // Event listeners for unit selectors
+    widthUnitSelector.addEventListener('change', function () {
+      synchronizeUnits(widthUnitSelector.value);
+    });
+
+    heightUnitSelector.addEventListener('change', function () {
+      synchronizeUnits(heightUnitSelector.value);
+    });
+
+    // Synchronize internal inputs to external ones (in case of dialog updates)
+    internalWidthInput.addEventListener('input', function () {
+      externalWidthInput.value = internalWidthInput.value;
+      calculateValues();
+      saveDimensionsToLocalStorage();
+    });
+
+    internalHeightInput.addEventListener('input', function () {
+      externalHeightInput.value = internalHeightInput.value;
+      calculateValues();
+      saveDimensionsToLocalStorage();
+    });
+
+    // Function to update the customizer
+    function updateProductCustomizer() {
+      const productCustomizerInstance = document.querySelector('product-customizer');
+      if (productCustomizerInstance) {
+        productCustomizerInstance.update();
+      } else {
+        console.error('ProductCustomizer instance not found.');
+      }
+    }
+
+    // Initialize dimensions on page load
+    initializeDimensions();
+
+    // Detect changes inside the customizer when it's opened and update external selectors
+    cmRadioLabel.addEventListener('click', function () {
+      synchronizeUnits('cm');
+    });
+
+    ftRadioLabel.addEventListener('click', function () {
+      synchronizeUnits('ft');
+    });
+  });
+</script>
+
+<style>
+  /* Container to wrap the input fields horizontally */
+  .external-quantity-selector {
+    display: flex;
+    flex-direction: row; /* Keep it horizontal */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Each input group (label + input) */
+  .external-quantity-selector .input-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: flex-start; /* Align labels to the left */
+    width: 100%; /* Make input group take up full width */
+  }
+
+  /* Label styling */
+  .external-quantity-selector label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left; /* Align label to the left */
+    width: 100%;
+  }
+
+  /* Wrapper for input and unit */
+  .input-with-unit {
+    position: relative;
+    width: 100%;
+  }
+
+  /* Input styling */
+  .input-with-unit input {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 2px 8px 2px 2px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  /* Unit selector styling */
+  .unit-selector {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: #666;
+  }
+
+  /* Adding focus effect */
+  .external-quantity-selector input:focus {
+    border-color: #000;
+    outline: none;
+  }
+
+  /* Section for displaying calculated values */
+  .calculated-values {
+    font-size: 18px;
+    margin: 10px 0;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    text-align: center; /* Center-align calculated values */
+    width: 100%; /* Take up the full width */
+  }
+
+  .calculated-values p {
+    margin: 5px 0;
+    color: #504746;
+  }
+</style>

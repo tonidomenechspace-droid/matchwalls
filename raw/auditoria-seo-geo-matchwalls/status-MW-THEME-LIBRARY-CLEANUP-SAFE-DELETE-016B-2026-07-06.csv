@@ -1,0 +1,9 @@
+item,status,evidence,next_step
+"Inventario actual Shopify","VERIFICADO Y CORRECTO","Consulta Admin GraphQL themes(first:50) devuelve 20 temas","Usar como base 016B"
+"Tema MAIN protegido","VERIFICADO Y CORRECTO","MAIN = gid://shopify/OnlineStoreTheme/178399019384","No tocar"
+"Límite de temas","VERIFICADO Y CORRECTO","Shopify UI muestra Theme limit reached y GraphQL devuelve 20 temas","Liberar 1 hueco"
+"Candidato recomendado","CORREGIDO Y VERIFICADO","Dev / gid://shopify/OnlineStoreTheme/141375406307 / UNPUBLISHED / actualizado 2024-07-21","Eliminar manualmente si Daniel procede"
+"Eliminación vía Codex","NO ACCESIBLE","La herramienta Shopify conectada bloquea theme deletion por seguridad","Daniel debe hacerlo manualmente en Admin"
+"Riesgo operativo","VERIFICADO PERO MEJORABLE","Tema borrador no MAIN; sin reversión automática Shopify tras borrar","Eliminar solo este tema"
+"Postcheck requerido","REQUIERE DECISION HUMANA","Pendiente confirmación de Daniel","Ejecutar MW-THEME-LIBRARY-CLEANUP-POSTCHECK-016B1"
+

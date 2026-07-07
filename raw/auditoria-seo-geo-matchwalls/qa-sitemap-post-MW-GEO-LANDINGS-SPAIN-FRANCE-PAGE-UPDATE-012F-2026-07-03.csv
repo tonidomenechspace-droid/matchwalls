@@ -1,0 +1,4 @@
+sitemap_url,status,loc_count,contains_espana,contains_francia_base,contains_fr_good,contains_fr_bad,estado_012F
+https://www.matchwalls.com/sitemap.xml,200,29,false,false,false,false,"VERIFICADO Y CORRECTO"
+"https://www.matchwalls.com/sitemap_pages_1.xml?from=105383657699&to=687313092984",200,41,true,true,false,false,"VERIFICADO Y CORRECTO"
+"https://www.matchwalls.com/fr/sitemap_pages_1.xml?from=105383657699&to=687313092984",200,41,false,false,true,false,"VERIFICADO Y CORRECTO"

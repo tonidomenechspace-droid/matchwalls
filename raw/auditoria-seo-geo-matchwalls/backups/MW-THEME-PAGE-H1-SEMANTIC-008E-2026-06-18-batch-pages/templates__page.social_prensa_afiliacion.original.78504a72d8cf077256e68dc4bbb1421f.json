@@ -1,0 +1,406 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_4NRiwc": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_NJ88dw": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_hgPYpz": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_LkEzfC": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>¿Estás buscando una forma emocionante de<strong> ganar dinero mientras promueves papeles pintados, murales, arte<\/strong> y diseño excepcionales? En Matchwalls, te invitamos a formar parte de <strong>nuestro programa de afiliación<\/strong>. Al unirte, tendrás la oportunidad de compartir nuestra pasión por los papeles pintados, murales, cuadros, prints, posters y obras de arte únicas, ayudando a otros a descubrir cómo pueden transformar sus espacios y proyectos de interiores con nuestras colecciones.<br\/><\/p><p><strong>Nuestro programa es simple y rentable<\/strong>: por cada venta realizada a través de tus referencias, <strong>recibirás una comisión<\/strong>. Proporcionamos todo el material necesario para que puedas empezar de inmediato, incluyendo imágenes atractivas y enlaces exclusivos a nuestro sitio web.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_NJ88dw",
+        "heading_hgPYpz",
+        "richtext_LkEzfC"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "tabs_aFzJ3J": {
+      "type": "tabs",
+      "blocks": {
+        "tab_kPGrmk": {
+          "type": "tab",
+          "settings": {
+            "tab_type": "other",
+            "content_long": "",
+            "product": "",
+            "product_summary": false,
+            "title": "¿Tienes un blog o sitio web y creas contenido?",
+            "content": "<p>¿Estás buscando una forma emocionante de <strong>ganar dinero mientras promueves papeles pintados, murales, arte<\/strong> y diseño excepcionales? En Matchwalls, te invitamos a formar parte de<strong> nuestro programa de afiliación<\/strong>. Al unirte, tendrás la oportunidad de compartir nuestra pasión por los papeles pintados, murales, cuadros, prints, posters y obras de arte únicas, ayudando a otros a descubrir cómo pueden transformar sus espacios y proyectos de interiores con nuestras colecciones.<br\/><\/p><p><strong>Nuestro programa es simple y rentable<\/strong>: por cada venta realizada a través de tus referencias,<strong> recibirás una comisión<\/strong>. Proporcionamos todo el material necesario para que puedas empezar de inmediato, incluyendo imágenes atractivas y enlaces exclusivos a nuestro sitio web.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_kj8Bd7": {
+          "type": "tab",
+          "settings": {
+            "tab_type": "other",
+            "content_long": "",
+            "product": "",
+            "product_summary": false,
+            "title": "¿Cómo empezar?",
+            "content": "<p>Para más información y para unirte a nuestro programa de afiliación, por favor contacta a nuestro equipo en social@matchwalls.com Estamos aquí para ayudarte en cada paso del camino y para asegurarnos de que tu experiencia como afiliado de Matchwalls sea exitosa y gratificante.<br\/><\/p><p>En Matchwalls, creemos y estamos emocionados de trabajar contigo para compartir esta pasión con el mundo y amantes de la decoración e interiorismo. <strong>¡Únete hoy y comienza a ganar con nosotros! <\/strong>Escríbenos y empecemos a ganar Social@matchwalls.com<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_kPGrmk",
+        "tab_kj8Bd7"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "",
+        "title": "Programa de afiliación Matchwalls.com",
+        "first_tab_open": false,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "17199343384d6ff68d": {
+      "type": "apps",
+      "blocks": {
+        "uppromote_affiliate_customer_referral_landing_D6EBW4": {
+          "type": "shopify:\/\/apps\/uppromote-affiliate\/blocks\/customer-referral-landing\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+          "settings": {
+            "section_corners": 0,
+            "section_top_margin": 20,
+            "section_bottom_margin": 20
+          }
+        }
+      },
+      "block_order": [
+        "uppromote_affiliate_customer_referral_landing_D6EBW4"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_MgHqpG": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_KPhCd9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1-2_410bd2bd-9e00-45e7-aad4-3b05a34c6f95.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Imágenes",
+            "title_img_position": "start",
+            "content": "<p>¿Necesitas<strong> imágenes para tu blog<\/strong>, artículo o contenido? <strong>Te podremos ayudar proporcionándote imágenes<\/strong> y detalles en primer plano y fotografías de estilo de vida en alta y baja resolución, por favor contacta con nuestro responsable de prensa, social y afiliados social@matchwalls.com<br\/><\/p><p>Todas nuestras imágenes son producidas y estilizadas por nuestro talentoso equipo creativo interno y están <strong>destinadas únicamente<\/strong> para uso profesional, con los créditos apropiados.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f2f2f2",
+            "background_gradient": "",
+            "text_color": "#504746",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KPhCd9"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "rich_text_9tRm9e": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yiVNME": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "heading_gYY3nh": {
+          "type": "heading",
+          "settings": {
+            "text": "¿Quieres información, notas de prensa o cualquier otra necesidad para crear tus contenidos?",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_hqmEX6": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>No dudes en <strong>explicarnos tu idea y necesidad<\/strong>, nuestro responsable de prensa y afiliación esta ya pensando como ayudarte <a href=\"mailto:social@matchwalls.com\"><span style=\"text-decoration:underline\"><strong>social@matchwalls.com<\/strong><\/span><\/a><strong> <\/strong><\/p>"
+          }
+        },
+        "heading_qP4xyG": {
+          "type": "heading",
+          "settings": {
+            "text": "Share",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "html_Mx4Gbj": {
+          "type": "html",
+          "settings": {
+            "content": "<p>\n    <strong> <\/strong>Te invitamos a <strong>compartir y utilizar todas las fotos en nuestro sitio web<\/strong>, pero\n    por favor recuerda dar crédito a Matchwalls.com o a la fuente original. Estaremos muy agradecidos de que nuestros\n    cuadros de arte sean parte de tu historia.\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/art-designer-04.png?v=1713180329%0A%20%20%20%20%20%20\" width=\"60\" height=\"60\" style=\"display:inline; margin: 0;\">\n  <\/p>\n  <p><strong>Comparte tu espacio con nosotros en @bematchwalls @matchwalls<\/strong><\/p>\n  <p><strong> <\/strong>#bematchwalls #matchwalls #matchwallsbarcelona #matchwallswallpapers<\/p>"
+          }
+        },
+        "divider_f6Ftp4": {
+          "type": "divider",
+          "settings": {}
+        },
+        "image_XDaAEn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pag-profesionales_01.jpg",
+            "width_mode": "custom",
+            "max_width": 410,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "heading_yiVNME",
+        "heading_gYY3nh",
+        "richtext_hqmEX6",
+        "heading_qP4xyG",
+        "html_Mx4Gbj",
+        "divider_f6Ftp4",
+        "image_XDaAEn"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "scrolling_text_yYwLQT": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "#MatchWalls",
+        "text_size": "small",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 20,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#f3bac9",
+        "text_gradient": ""
+      }
+    },
+    "rich_text_miETDe": {
+      "type": "rich-text",
+      "blocks": {
+        "image_EKCGeC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sesiones-de-fotos-Matchwalls_03.jpg",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "divider_9QghBm": {
+          "type": "divider",
+          "settings": {}
+        },
+        "heading_Lec64W": {
+          "type": "heading",
+          "settings": {
+            "text": "Sesiones de fotos y estilismos",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": "",
+            "title_img_position": "start"
+          }
+        },
+        "richtext_9ediqE": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><\/p><p>Ponte en contacto con nosotros Social@matchwalls.com y no dudes en explicarnos tus ideas, necesidades y proyecto.<\/p><p><\/p>"
+          }
+        },
+        "liquid_qiwBCh": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"image-container\" style=\"display: flex; flex-wrap: wrap; max-width: 100%;\">\n  {% assign images = 'https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/facebook.png?v=1712931213,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/pinterest_1.png?v=1712931214,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/instagram.png?v=1712931213,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/linkedin.png?v=1712931214,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/youtube.png?v=1712931366,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/tik-tok.png?v=1712931366' | split: ',' %}\n  \n  {% for image in images %}\n    <img src=\"{{ image }}\" alt=\"Image\" width=\"50\" height=\"50\" style=\"margin-right: 10px; margin-top: 10px;  max-width: 100%;\">\n  {% endfor %}\n<\/div>"
+          }
+        },
+        "liquid_QqUctm": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"image-container\" style=\"display: flex; flex-wrap: wrap; max-width: 100%;\">\n  {% assign images_with_links = 'https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/facebook.png?v=1712931213|https:\/\/www.facebook.com\/Bematchwalls\/,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/pinterest_1.png?v=1712931214|https:\/\/www.pinterest.es\/Bematchwalls\/,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/instagram.png?v=1712931213|https:\/\/www.instagram.com\/Bematchwalls\/,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/linkedin.png?v=1712931214|https:\/\/www.linkedin.com\/company\/bematch-walls\/,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/youtube.png?v=1712931366|https:\/\/www.youtube.com\/channel\/UCWZvQj5uRHcC6ht2vgPZZXg\/,https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/tik-tok.png?v=1712931366|https:\/\/www.tiktok.com\/@bematchwalls' | split: ',' %}\n  \n  {% for image_with_link in images_with_links %}\n    {% assign parts = image_with_link | split: '|' %}\n    <a href=\"{{ parts[1] }}\">\n      <img src=\"{{ parts[0] }}\" alt=\"Social Media\" width=\"50\" height=\"50\" style=\"margin-right: 10px; max-width: 100%;\">\n    <\/a>\n  {% endfor %}\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "image_EKCGeC",
+        "divider_9QghBm",
+        "heading_Lec64W",
+        "richtext_9ediqE",
+        "liquid_qiwBCh",
+        "liquid_QqUctm"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "press_G6mxFV": {
+      "type": "press",
+      "blocks": {
+        "quote_CYJVpA": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "@ArtGallery",
+            "content": "Cada papel pintado de Matchwalls cuenta una historia. Son piezas únicas que realmente destacan\"",
+            "show_rating": true,
+            "rating": 4
+          }
+        },
+        "quote_GmPGAy": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Dani, cliente satisfecho",
+            "content": "Nuestros amigos no paran de preguntar dónde conseguimos nuestros murales ¡Gracias Matchwalls!",
+            "show_rating": true,
+            "rating": 4
+          }
+        },
+        "quote_LiPqAt": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "@GourmetBistro",
+            "content": "La personalización y el servicio de Matchwalls son inigualables. Nuestro restaurante nunca se ha visto tan bien",
+            "show_rating": true,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "quote_CYJVpA",
+        "quote_GmPGAy",
+        "quote_LiPqAt"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "rich_text_jzKyJq": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_NgdqkC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Comparte tu espacio con nosotros en @bematchwalls @matchwalls <\/strong>#bematchwalls #matchwalls #matchwallsbarcelona #matchwallswallpapers<\/p>"
+          }
+        },
+        "html_7tm4Ec": {
+          "type": "html",
+          "settings": {
+            "content": "<p><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\">Envíanos tu video de instalación o fotografías a help@matchwalls.com <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0677\/5308\/3107\/files\/atencion_al_cliente-04.png?v=1711544540\" width=\"40\" height=\"40\" style=\"display:inline; margin: 0;\"><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NgdqkC",
+        "html_7tm4Ec"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_4NRiwc",
+    "tabs_aFzJ3J",
+    "17199343384d6ff68d",
+    "media_with_text_MgHqpG",
+    "rich_text_9tRm9e",
+    "scrolling_text_yYwLQT",
+    "rich_text_miETDe",
+    "press_G6mxFV",
+    "rich_text_jzKyJq"
+  ]
+}

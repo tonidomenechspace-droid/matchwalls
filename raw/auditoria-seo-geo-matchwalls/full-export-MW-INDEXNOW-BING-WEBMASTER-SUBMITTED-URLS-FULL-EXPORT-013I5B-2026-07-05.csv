@@ -1,0 +1,9 @@
+lote,fecha,item,valor_visible,evidencia,estado,accion_recomendada
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,Propiedad Bing,matchwalls.com/,Captura manual de Bing Webmaster Tools,VERIFICADO Y CORRECTO,Sin accion
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,Submitted URLs agregado,13,Panel IndexNow Insights,VERIFICADO Y CORRECTO,Monitorizar
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,Filas visibles en tabla,3,Submitted Urls list muestra 3 rows,VERIFICADO PERO MEJORABLE,No inventar las 10 restantes
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,URL visible 1,https://www.matchwalls.com/,Tabla Bing IndexNow; Source Self; Today at 10:02,VERIFICADO Y CORRECTO,Ya auditada en 013I5
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,URL visible 2,https://www.matchwalls.com/products/custom-file-uploader,Tabla Bing IndexNow; Source Shopify; 15 Jun 2026 22:52,VERIFICADO PERO MEJORABLE,No enviar manualmente por noindex/nofollow
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,URL visible 3,https://www.matchwalls.com/products/bambuze-negro,Tabla Bing IndexNow; Source Shopify; 15 Jun 2026 14:49,VERIFICADO Y CORRECTO,Ya auditada en 013I5
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,URLs restantes no visibles,10,Diferencia entre agregado 13 y tabla/export 3,INCOMPLETO,Recheck posterior 24-72h
+MW-INDEXNOW-BING-WEBMASTER-SUBMITTED-URLS-FULL-EXPORT-013I5B,2026-07-05,Modificaciones realizadas,0,Solo lectura,VERIFICADO Y CORRECTO,Continuar plan sin cambios manuales

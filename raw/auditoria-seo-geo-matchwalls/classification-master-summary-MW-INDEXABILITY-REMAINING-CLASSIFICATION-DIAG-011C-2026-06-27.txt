@@ -1,0 +1,4 @@
+total_urls_current_sitemap=7330
+by_estado={'DECLARADO PERO NO VERIFICADO': 6535, 'INCORRECTO': 97, 'REQUIERE DECISION HUMANA': 688, 'VERIFICADO PERO MEJORABLE': 10}
+by_grupo={'coleccion_geografica_candidata': 346, 'coleccion_promocion_obsoleta': 5, 'pagina_muestras_informativa': 10, 'prueba_facade_en_sitemap': 7, 'sin_flag_automatica_prioritaria': 6535, 'sufijo_1_posible_duplicado': 337, 'typo_enchathed': 19, 'typo_matchalls': 1, 'typo_norid_noridcas': 70}
+by_prioridad={'Alta': 448, 'Baja': 6535, 'Media': 347}

@@ -1,0 +1,25 @@
+﻿group_type,group,rows,impressions,clicks,ctr_calculated
+overall,country export,11,749,3,0.40%
+overall,device export,2,749,3,0.40%
+country_market_bucket,Agregado/unknown,1,456,1,0.22%
+country_market_bucket,Prioritario ES,1,112,1,0.89%
+country_market_bucket,Prioritario FR,1,68,0,0.00%
+country_market_bucket,PT-BR fuera prioridad,1,40,1,2.50%
+country_market_bucket,Futuro EN-US,1,38,0,0.00%
+country_market_bucket,IT fuera prioridad,1,12,0,0.00%
+country_market_bucket,Prioritario DE,1,11,0,0.00%
+country_market_bucket,No prioritario,2,7,0,0.00%
+country_market_bucket,Prioritario EN-UK,1,4,0,0.00%
+country_market_bucket,Futuro/EN,1,1,0,0.00%
+country_status,VERIFICADO PERO MEJORABLE,7,690,2,0.29%
+country_status,STANDBY,2,52,1,1.92%
+country_status,REQUIERE DECISION HUMANA,1,7,0,0.00%
+country_status,VERIFICADO Y CORRECTO,1,0,0,0.00%
+country_priority,ALTA,3,636,2,0.31%
+country_priority,BAJA,4,59,1,1.69%
+country_priority,MEDIA,4,54,0,0.00%
+device_device,Desktop,1,713,3,0.42%
+device_device,Mobile,1,36,0,0.00%
+device_status,VERIFICADO PERO MEJORABLE,2,749,3,0.40%
+device_priority,ALTA,1,713,3,0.42%
+device_priority,MEDIA,1,36,0,0.00%

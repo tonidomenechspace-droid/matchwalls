@@ -1,0 +1,5 @@
+resource_type,id,name,type,handle,displayName,metaobjectsCount,onlineStore_enabled,publishable_enabled,onlineStore_templateSuffix,publishable_status,updatedAt,fields,estado
+MetaobjectDefinition,gid://shopify/MetaobjectDefinition/1111458019,Facade variants,facade_variants,,,1,true,true,,,,VERIFICADO PERO MEJORABLE
+Metaobject,gid://shopify/Metaobject/65268613347,,facade_variants,test,Test,,,,"",ACTIVE,2024-11-20T16:57:46Z,"opts=[gid://shopify/Product/8277681733859,gid://shopify/Product/8277681832163,gid://shopify/Product/8308962623715]",INCORRECTO
+UrlRedirect,gid://shopify/UrlRedirect/412625207523,,url_redirect,/pages/facade-variants/test,,,,,,target=/,,VERIFICADO PERO MEJORABLE
+

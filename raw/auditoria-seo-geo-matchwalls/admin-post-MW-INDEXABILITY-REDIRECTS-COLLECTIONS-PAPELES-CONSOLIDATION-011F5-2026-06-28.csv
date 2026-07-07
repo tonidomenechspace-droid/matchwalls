@@ -1,0 +1,6 @@
+check_type,query_or_id,result_count,precision,id,path,target,collection_id,handle,title,products_count,publications_count,estado,nota
+updated_redirect,gid://shopify/UrlRedirect/410027000035,1,EXACT,gid://shopify/UrlRedirect/410027000035,/collections/papeles-pintados,/collections/murales,,,,,,CORREGIDO Y VERIFICADO,"Target actualizado directo a /collections/murales"
+kept_redirect,gid://shopify/UrlRedirect/417318207715,1,EXACT,gid://shopify/UrlRedirect/417318207715,/collections/papeles-pintados-old,/collections/murales,,,,,,VERIFICADO Y CORRECTO,"Intermedio conservado para enlaces históricos directos"
+path_murales_count,path:/collections/murales,0,EXACT,,,,,,,,,CORREGIDO Y VERIFICADO,"Sigue sin existir redirect Admin con path /collections/murales"
+path_papeles_search,path:/collections/papeles-pintados,1,EXACT,gid://shopify/UrlRedirect/410027000035,/collections/papeles-pintados,/collections/murales,,,,,,CORREGIDO Y VERIFICADO,"Búsqueda por path confirma nuevo target"
+real_collection,collectionByHandle(murales),1,EXACT,,,,gid://shopify/Collection/439953719523,murales,Todos los Papeles Pintados,758,9,VERIFICADO Y CORRECTO,"Colección real intacta"

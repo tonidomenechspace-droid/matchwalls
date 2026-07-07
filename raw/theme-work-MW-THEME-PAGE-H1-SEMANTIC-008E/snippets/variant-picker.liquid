@@ -1,0 +1,336 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  VARIANT PICKER
+  ----------------------------------------------------------------------------------------------------------------------
+
+  Render the variant picker option selectors.
+
+  ********************************************
+  Supported variables
+  ********************************************
+
+  * product: the product for which to render the selector (required)
+  * update_url: if set to true, the URL is updated when the variant changes (usually used for product page)
+  * hide_sold_out_variants: if set to true, the sold out or unavailable variants are hidden
+  * hide_size_chart: if set to true, size chart is always hidden
+  * force_dropdown_as_block: if set to true, the dropdown selectors are replaced by blocks, which is useful for quick buy where dropdown are not convenient to use
+  * form_id: the ID of the form that is listening
+  * block: the block itself, for theme-specific options (such as selector types)
+{%- endcomment -%}
+
+{%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
+{%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
+{%- assign variant_image_options = block.settings.variant_image_options | replace: ', ', ',' | downcase | split: ',' -%}
+
+{%- unless product.has_only_default_variant or hide_sold_out_variants and product.available == false -%}
+  <variant-picker
+    id="div-to-duplicate"
+    class="variant-picker"
+    handle="{{ product.handle }}"
+    form="{{ form_id }}"
+    {% if update_url %}
+      update-url
+    {% endif %}
+    {% if hide_sold_out_variants %}
+      hide-sold-out-variants
+    {% endif %}
+  >
+    {%- for option in product.options_with_values -%}
+      {% liquid
+        assign option_downcase = option.name | downcase
+        assign resolved_option_selector_style = block.settings.selector_style
+
+        assign swatch_count = option.values | map: 'swatch' | compact | size
+
+        if swatch_count > 0 and block.settings.swatch_selector_style != 'none'
+          # Use the swatch selector type only if we have at least one swatch and a supported swatch selector type
+          assign resolved_option_selector_style = block.settings.swatch_selector_style
+        endif
+
+        # Implementation note: if the option value has no native swatch, BUT that the option name matches a hardcoded list of color names,
+        # we fallback to the legacy config-based system. This allows to keep compatibility with stores that were using the config-based, and
+        # allow those merchants to upgrade to the new system at their own pace.
+        if swatch_count == 0 and color_label_list contains option_downcase and block.settings.swatch_selector_style != 'none'
+          assign resolved_option_selector_style = block.settings.swatch_selector_style
+        endif
+
+        if resolved_option_selector_style == 'dropdown' and force_dropdown_as_block
+          assign resolved_option_selector_style = 'block'
+        endif
+
+        if variant_image_options contains option_downcase
+          assign resolved_option_selector_style = 'variant_image'
+        endif
+      %}
+
+      <fieldset class="variant-picker__option no-js:hidden">
+        {% if template.suffix == 'murales' or template.suffix == 'rollos' %}
+          <div class="variant-picker__option-info">
+            <div style="display: none" class="h-stack gap-2">
+              <legend class="text-subdued">{{ option.name }}:</legend>
+              <variant-option-value form="{{ form_id }}" for="option{{ option.position }}">
+                {{- option.selected_value -}}
+              </variant-option-value>
+            </div>
+            <div style="width: 100%; display: flex; align-items: center; justify-content: space-between;">
+              <span
+                class="wallpaper-type"
+                data-tooltip="{{ option.values[index].variant.metafields.custom.option_description }}"
+              >
+                {{ 'general.product.type_wallpaper' | t }}
+              </span>
+            </div>
+
+            {%- if hide_size_chart != true
+              and block.settings.size_chart_page != blank
+              and size_label_list contains option_downcase
+            -%}
+              {%- capture drawer_id -%}size-chart-{{ section.id }}-{{ block.id }}{%- endcapture -%}
+
+              <button
+                type="button"
+                class="text-sm text-subdued"
+                aria-controls="{{ drawer_id | escape }}"
+                aria-expanded="false"
+              >
+                <span class="link">{{ 'product.general.size_chart' | t }}</span>
+              </button>
+
+              <x-drawer id="{{ drawer_id }}" class="drawer drawer--lg">
+                <span class="h5" slot="header">{{ block.settings.size_chart_page.title }}</span>
+
+                <div class="prose">
+                  {{- block.settings.size_chart_page.content -}}
+                </div>
+              </x-drawer>
+            {%- endif -%}
+          </div>
+        {% else %}
+          {{ option.name }}
+        {% endif %}
+
+        {%- if resolved_option_selector_style == 'dropdown' -%}
+          {%- capture popover_id -%}popover-variant-picker-{{ section.id }}-{{ product.id }}-{{ option.position }}{%- endcapture -%}
+
+          <div class="relative">
+            <button type="button" class="select" aria-controls="{{ popover_id }}" aria-expanded="false">
+              <span id="{{ popover_id }}-selected-value">{{- option.selected_value -}}</span>
+              {%- render 'icon' with 'chevron-bottom', class: 'select-chevron' -%}
+            </button>
+
+            <x-popover
+              id="{{ popover_id }}"
+              class="popover"
+              initial-focus="[aria-selected='true']"
+              close-on-listbox-select
+              anchor-horizontal="start"
+              anchor-vertical="end"
+            >
+              <p class="h5" slot="title">{{ option.name }}</p>
+
+              <x-listbox data-option-selector class="popover-listbox" aria-owns="{{ popover_id }}-selected-value">
+                <input
+                  type="hidden"
+                  name="option{{ option.position }}"
+                  form="{{ form_id }}"
+                  value="{{ option.selected_value | escape }}"
+                >
+
+                {%- for value in option.values -%}
+                  <button
+                    type="button"
+                    class="popover-listbox__option"
+                    role="option"
+                    value="{{ value | escape }}"
+                    {% if value == option.selected_value %}
+                      aria-selected="true"
+                    {% endif %}
+                    data-option-value
+                  >
+                    {{ value }}
+                  </button>
+                {%- endfor -%}
+              </x-listbox>
+            </x-popover>
+          </div>
+        {%- else -%}
+          <div
+            {% unless block.settings.stack_blocks %}
+              class="scroll-area bleed sm:unbleed"
+            {% endunless %}
+          >
+            <div
+              data-option-selector
+              class="variant-picker__option-values {% if block.settings.stack_blocks %}wrap{% else %}scroll-area bleed sm:unbleed{% endif %} {% if resolved_option_selector_style == 'swatch' and settings.color_swatch_style == 'rectangle' %}variant-picker__option-values--color gap-4{% else %}gap-2{% endif %}"
+            >
+              {% liquid
+                assign name = 'option' | append: option.position
+
+                for value in option.values
+                  assign selected = false
+
+                  if value == option.selected_value
+                    assign selected = true
+                  endif
+
+                  case resolved_option_selector_style
+                    when 'variant_image'
+                      render 'option-value', type: 'thumbnail', value: value, image: value.variant.featured_media, selected: selected, name: name, form: form_id, bordered: true, option: option, index: forloop.index0
+                    when 'swatch'
+                      if value.swatch.image
+                        render 'option-value', type: 'swatch', value: value, image: value.swatch.image, selected: selected, name: name, form: form_id, option: option, index: forloop.index0
+                      elsif value.swatch.color
+                        render 'option-value', type: 'swatch', value: value, color: value.swatch.color, selected: selected, name: name, form: form_id, option: option, index: forloop.index0
+                      else
+                        # Use the configuration based approach for compatibility reason
+                        render 'option-value', type: 'swatch', value: value, selected: selected, name: name, form: form_id, option: option, index: forloop.index0
+                      endif
+                    when 'block'
+                      render 'option-value', type: 'block', value: value, selected: selected, name: name, form: form_id, option: option, index: forloop.index0
+                    when 'block_swatch'
+                      if value.swatch.image
+                        render 'option-value', type: 'block', value: value, image: value.swatch.image, selected: selected, name: name, form: form_id, show_swatch: true, option: option, index: forloop.index0
+                      elsif value.swatch.color
+                        render 'option-value', type: 'block', value: value, color: value.swatch.color, selected: selected, name: name, form: form_id, show_swatch: true, option: option, index: forloop.index0
+                      else
+                        # Use the configuration based approach for compatibility reason
+                        render 'option-value', type: 'block', value: value, selected: selected, name: name, form: form_id, show_swatch: true, option: option, index: forloop.index0
+                      endif
+                  endcase
+                endfor
+              %}
+            </div>
+          </div>
+        {%- endif -%}
+      </fieldset>
+    {%- endfor -%}
+
+    <noscript>
+      {%- capture input_label -%}{{ 'product.general.variant' | t }}{%- endcapture -%}
+      {%- capture select_options -%}
+        {%- for variant in product.variants -%}
+          <option {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+        {%- endfor -%}
+      {%- endcapture -%}
+
+      {%- render 'select', label: input_label, form: form_id, name: 'id', options: select_options -%}
+    </noscript>
+    <button style="color: #504746; text-align: right;" id="learn-more-button">
+      {{ 'general.product.learn_more_about_wallpaper_types' | t }}
+    </button>
+  </variant-picker>
+{%- else -%}
+  <noscript>
+    <input type="hidden" name="id" form="{{ form_id }}" value="{{ product.selected_or_first_available_variant.id }}">
+  </noscript>
+{%- endunless -%}
+
+<style>
+  /* Style for tooltip */
+  .block-swatch[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .block-swatch[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -30px; /* Adjust the position */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.75); /* Dark background for the tooltip */
+    color: #fff; /* White text for contrast */
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+    font-size: 12px; /* Adjust text size */
+  }
+
+  .block-swatch[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  @media screen and (max-width: 699px) {
+    .product-info__variant-picker .block-swatch[data-tooltip]::after {
+      content: none;
+      display: none;
+    }
+  }
+  .variant-instructions {
+    display: none;
+  }
+  .price-and-title {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .variant-title {
+    margin-bottom: 5px; /* Space between title and price circle */
+    font-size: 0.9em; /* Adjust the size of the title text */
+    color: #555; /* Softer color for unselected variant titles */
+    font-weight: bold; /* Makes the title bold */
+    text-align: center;
+  }
+
+  .price-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Adjust size for the price circle */
+    height: 60px; /* Same as width for the circle */
+    border-radius: 50%; /* Makes it a perfect circle */
+    background-color: #fff; /* Default white background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-weight: bold;
+    color: #333; /* Default text color inside the circle */
+    font-size: calc(1.2em - 0.2vw);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis if text is too long */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+
+  .price-circle span {
+    text-align: center; /* Ensure the price is centered */
+    width: 100%; /* Fill the width of the circle */
+    display: inline-block;
+    word-wrap: break-word; /* Allow long text to break and stay within bounds */
+  }
+
+  .price-circle:hover {
+    transform: scale(1.1); /* Slightly enlarge the circle on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  }
+
+  .currency-info {
+    margin-top: 5px; /* Space between the circle and currency info */
+    font-size: 0.8em; /* Slightly smaller text for the currency info */
+    color: #555; /* Softer color for the currency/unit text */
+    text-align: center;
+  }
+
+  .selected-variant .price-circle {
+    border: 2px solid #504746; /* Border for selected variant circle */
+    background-color: #504746; /* Change background for selected variant */
+    color: #fff; /* Change text color inside the selected circle */
+    box-shadow: 0 6px 15px #504746; /* Stronger shadow for selected variant */
+    transform: scale(1.1); /* Enlarge the selected circle */
+  }
+
+  .selected-variant .variant-title {
+    color: #504746; /* Change title color for selected variant */
+    font-weight: bold; /* Make the title bold for selected variant */
+  }
+
+  .selected-variant .currency-info {
+    color: #504746;
+  }
+</style>

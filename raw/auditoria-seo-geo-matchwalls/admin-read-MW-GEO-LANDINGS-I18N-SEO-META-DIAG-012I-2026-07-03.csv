@@ -1,0 +1,6 @@
+resource,page_id,handle,check,result,estado,nota
+Page schema,n/a,n/a,seo_direct_field,not_exposed,VERIFICADO Y CORRECTO,"Page no expone seo/meta title/meta description en Admin GraphQL."
+TranslatableResource,gid://shopify/Page/687276622200,papel-pintado-espana,keys,title|body_html|handle,VERIFICADO Y CORRECTO,"No aparecen claves SEO/meta."
+TranslatableResource,gid://shopify/Page/687276654968,papel-pintado-francia,keys,title|body_html|handle,VERIFICADO Y CORRECTO,"No aparecen claves SEO/meta."
+Metafields,gid://shopify/Page/687276622200,papel-pintado-espana,count,0,VERIFICADO Y CORRECTO,"Sin metafields SEO."
+Metafields,gid://shopify/Page/687276654968,papel-pintado-francia,count,0,VERIFICADO Y CORRECTO,"Sin metafields SEO."

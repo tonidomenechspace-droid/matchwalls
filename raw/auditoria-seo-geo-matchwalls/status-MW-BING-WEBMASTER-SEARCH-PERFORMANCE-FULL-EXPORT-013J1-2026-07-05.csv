@@ -1,0 +1,12 @@
+field,value,status,notes
+lote,MW-BING-WEBMASTER-SEARCH-PERFORMANCE-FULL-EXPORT-013J1,INCOMPLETO,Bloqueado por falta de sesión autenticada/export.
+fecha,2026-07-05 16:00 Europe/Madrid,VERIFICADO Y CORRECTO,
+propiedad_objetivo,matchwalls.com/,VERIFICADO Y CORRECTO,Propiedad objetivo según 013J y Bing Webmaster previo.
+url_intentada,https://www.bing.com/webmasters/searchperf?siteUrl=https://matchwalls.com/,VERIFICADO Y CORRECTO,
+resultado_browser,Redirige a pantalla pública con Sign In,NO ACCESIBLE,Navegador integrado sin sesión activa.
+csv_en_escritorio,NO,INCOMPLETO,No encontrado export Search Performance.
+csv_en_descargas,NO,INCOMPLETO,No encontrado export Search Performance.
+accion_requerida,Descargar Download all desde sesión autenticada,REQUIERE DECISION HUMANA,Guardar en Escritorio y avisar GUARDADO 013J1.
+shopify_modificado,NO,VERIFICADO Y CORRECTO,
+bing_config_modificada,NO,VERIFICADO Y CORRECTO,
+estado_final,INCOMPLETO,INCOMPLETO,Se reanudará al existir el CSV.

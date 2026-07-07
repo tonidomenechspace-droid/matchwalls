@@ -1,0 +1,575 @@
+{
+  "lot": "MW-GEO-LANDINGS-SPAIN-FRANCE-INTERNAL-LINKING-STOREFRONT-RENDER-SHARD-DIAG-012O5",
+  "csv_path": "C:\\Users\\d.bermejo\\OneDrive - Matchwalls\\Documentos\\Matchwalls Shopify\\auditoria-seo-geo-matchwalls\\qa-publico-MW-GEO-LANDINGS-SPAIN-FRANCE-INTERNAL-LINKING-STOREFRONT-RENDER-SHARD-DIAG-012O5-2026-07-04.csv",
+  "total": 80,
+  "pass": 11,
+  "fail": 69,
+  "noindex_count": 0,
+  "status_counts": [
+    {
+      "key": "200",
+      "count": 78
+    },
+    {
+      "key": "ERROR",
+      "count": 2
+    }
+  ],
+  "by_page_pass": [
+    {
+      "key": "france | FAIL",
+      "count": 31
+    },
+    {
+      "key": "france | PASS",
+      "count": 9
+    },
+    {
+      "key": "spain | FAIL",
+      "count": 38
+    },
+    {
+      "key": "spain | PASS",
+      "count": 2
+    }
+  ],
+  "by_locale_pass": [
+    {
+      "key": "de | FAIL",
+      "count": 13
+    },
+    {
+      "key": "de | PASS",
+      "count": 3
+    },
+    {
+      "key": "en | FAIL",
+      "count": 16
+    },
+    {
+      "key": "es | FAIL",
+      "count": 16
+    },
+    {
+      "key": "fr | FAIL",
+      "count": 14
+    },
+    {
+      "key": "fr | PASS",
+      "count": 2
+    },
+    {
+      "key": "nl | FAIL",
+      "count": 10
+    },
+    {
+      "key": "nl | PASS",
+      "count": 6
+    }
+  ],
+  "by_ua_pass": [
+    {
+      "key": "bingbot | FAIL",
+      "count": 18
+    },
+    {
+      "key": "bingbot | PASS",
+      "count": 2
+    },
+    {
+      "key": "browser_chrome | FAIL",
+      "count": 17
+    },
+    {
+      "key": "browser_chrome | PASS",
+      "count": 3
+    },
+    {
+      "key": "generic_ai_search | FAIL",
+      "count": 16
+    },
+    {
+      "key": "generic_ai_search | PASS",
+      "count": 4
+    },
+    {
+      "key": "googlebot | FAIL",
+      "count": 18
+    },
+    {
+      "key": "googlebot | PASS",
+      "count": 2
+    }
+  ],
+  "by_theme_pass": [
+    {
+      "key": " | FAIL",
+      "count": 2
+    },
+    {
+      "key": "178399019384 | FAIL",
+      "count": 67
+    },
+    {
+      "key": "178399019384 | PASS",
+      "count": 11
+    }
+  ],
+  "by_content_language_pass": [
+    {
+      "key": " | FAIL",
+      "count": 2
+    },
+    {
+      "key": "de-ES | FAIL",
+      "count": 12
+    },
+    {
+      "key": "de-ES | PASS",
+      "count": 3
+    },
+    {
+      "key": "en-ES | FAIL",
+      "count": 16
+    },
+    {
+      "key": "es-ES | FAIL",
+      "count": 16
+    },
+    {
+      "key": "fr-ES | FAIL",
+      "count": 14
+    },
+    {
+      "key": "fr-ES | PASS",
+      "count": 2
+    },
+    {
+      "key": "nl-ES | FAIL",
+      "count": 9
+    },
+    {
+      "key": "nl-ES | PASS",
+      "count": 6
+    }
+  ],
+  "fail_reasons": [
+    {
+      "reason": "missing_country_heading+missing_cross_country_href",
+      "count": 65
+    },
+    {
+      "reason": "missing_country_heading",
+      "count": 2
+    },
+    {
+      "reason": "status_not_200+missing_country_heading+missing_cross_country_href",
+      "count": 2
+    }
+  ],
+  "pass_rows": [
+    {
+      "round": "1",
+      "page": "france",
+      "locale": "fr",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "jcnz",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "98eb6cc2-9e6b-4257-a85d-711a86fe34ad-1783177234"
+    },
+    {
+      "round": "1",
+      "page": "france",
+      "locale": "de",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "9lqh",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "ea21e949-2f12-4f5a-a553-e87389d20874-1783177236"
+    },
+    {
+      "round": "1",
+      "page": "france",
+      "locale": "de",
+      "ua_label": "generic_ai_search",
+      "server_timing_servedBy": "7jm4",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "259f103a-afac-4023-8e37-78cd151764e5-1783177239"
+    },
+    {
+      "round": "1",
+      "page": "france",
+      "locale": "nl",
+      "ua_label": "googlebot",
+      "server_timing_servedBy": "xvvc",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "2bece229-5d45-43f9-a86c-7bb453dbbabd-1783177240"
+    },
+    {
+      "round": "1",
+      "page": "france",
+      "locale": "nl",
+      "ua_label": "generic_ai_search",
+      "server_timing_servedBy": "wnsc",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "64eca86a-2e4d-439d-94f6-66a1c0ac806e-1783177242"
+    },
+    {
+      "round": "2",
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "bingbot",
+      "server_timing_servedBy": "pssn",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "748b3625-bb77-464b-9347-7d25ee5645a5-1783177286"
+    },
+    {
+      "round": "2",
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "generic_ai_search",
+      "server_timing_servedBy": "94vz",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "7d98e6ae-905d-4a01-a1e5-23ab3b1fcc7f-1783177289"
+    },
+    {
+      "round": "2",
+      "page": "france",
+      "locale": "fr",
+      "ua_label": "generic_ai_search",
+      "server_timing_servedBy": "v5pc",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "fbc31199-2ba0-4b7d-9f27-4a8dad5c11d7-1783177297"
+    },
+    {
+      "round": "2",
+      "page": "france",
+      "locale": "nl",
+      "ua_label": "browser_chrome",
+      "server_timing_servedBy": "4kcx",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "53df15e7-ea52-4783-bbf1-61786ad3cb32-1783177301"
+    },
+    {
+      "round": "2",
+      "page": "france",
+      "locale": "nl",
+      "ua_label": "googlebot",
+      "server_timing_servedBy": "vr6m",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "9cb7dc32-99cc-467e-bcfe-f4aafe9a6ef7-1783177302"
+    },
+    {
+      "round": "2",
+      "page": "france",
+      "locale": "nl",
+      "ua_label": "bingbot",
+      "server_timing_servedBy": "jsgg",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "x_request_id": "378a4b83-dacc-47d1-803a-4d24e9394310-1783177303"
+    }
+  ],
+  "sample_fail_rows": [
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "whwj",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "ad3a2a76-80f6-48bb-a2e5-8008722e1bc9-1783177179"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "7q66",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "True",
+      "x_request_id": "a5ac7995-0dae-4382-ab66-ffdc5ef737df-1783177180"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "kxcj",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "696516eb-bc4f-4155-9e57-eef8b59696e2-1783177180"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "es",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "m4zm",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "es-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "75c21fea-8744-4182-8fd1-49e2af906f39-1783177181"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "9nw8",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "7ede2604-7506-4df8-9c00-b6d781976a4a-1783177182"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "sc8p",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "58d18ba7-d2fd-4bc5-a152-14050fcc7f3f-1783177183"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "78f9",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "7d69bb1b-fadf-461c-99df-3cff9f1042a7-1783177184"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "en",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "hw7h",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "en-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "871339a1-29f8-44b7-8496-2e126fbbe980-1783177184"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "bpkg",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "e99afe80-a583-4115-9ec5-94e6ff9bac33-1783177185"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "v5pc",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "01356e59-70f1-4f3a-852d-d1bb978a863d-1783177186"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "6ppw",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "925aa692-5e3e-401f-80da-ad0f52a5dec7-1783177187"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "fr",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "k4q6",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "fr-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "25bf8926-4253-4981-95cb-52d6ebd81aec-1783177187"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "browser_chrome",
+      "status": "200",
+      "server_timing_servedBy": "b4rn",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "73c9a0e7-d2bc-44df-bd0f-cb060787aeb8-1783177188"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "vfxw",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "4709d0d1-5895-45d6-9edf-0fa374d812b1-1783177189"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "z725",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "92738774-1547-4ba7-ab61-e8eb9730f009-1783177189"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "de",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "nk89",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "de-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "63da0578-23b4-47ef-97c3-c9647a061b09-1783177190"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "browser_chrome",
+      "status": "ERROR",
+      "server_timing_servedBy": "",
+      "server_timing_theme": "",
+      "content_language_header": "",
+      "cf_cache_status": "",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": ""
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "googlebot",
+      "status": "200",
+      "server_timing_servedBy": "hz7s",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "33ce84ae-9183-49c0-9d7f-bdf02b531bac-1783177226"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "bingbot",
+      "status": "200",
+      "server_timing_servedBy": "hxml",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "a8efa726-6936-4ee9-a6ed-36f34df10ede-1783177227"
+    },
+    {
+      "round": "1",
+      "page": "spain",
+      "locale": "nl",
+      "ua_label": "generic_ai_search",
+      "status": "200",
+      "server_timing_servedBy": "jmvq",
+      "server_timing_theme": "178399019384",
+      "content_language_header": "nl-ES",
+      "cf_cache_status": "DYNAMIC",
+      "has_country_heading": "False",
+      "has_cross_country_href": "False",
+      "x_request_id": "c4b1aa4e-683b-436a-a7fd-df955e4aba0a-1783177227"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+metric,language,count,status
+candidate_urls_historical,es,58,VERIFICADO Y CORRECTO
+candidate_urls_current_sitemap,es,52,VERIFICADO Y CORRECTO
+classification_CORREGIDO Y VERIFICADO,es,6,CORREGIDO Y VERIFICADO
+classification_STANDBY,es,20,STANDBY
+classification_REQUIERE DECISION HUMANA,es,32,REQUIERE DECISION HUMANA
+candidate_urls_historical,en,56,VERIFICADO Y CORRECTO
+candidate_urls_current_sitemap,en,50,VERIFICADO Y CORRECTO
+classification_CORREGIDO Y VERIFICADO,en,6,CORREGIDO Y VERIFICADO
+classification_STANDBY,en,19,STANDBY
+classification_REQUIERE DECISION HUMANA,en,31,REQUIERE DECISION HUMANA
+candidate_urls_historical,fr,56,VERIFICADO Y CORRECTO
+candidate_urls_current_sitemap,fr,51,VERIFICADO Y CORRECTO
+classification_CORREGIDO Y VERIFICADO,fr,5,CORREGIDO Y VERIFICADO
+classification_STANDBY,fr,19,STANDBY
+classification_REQUIERE DECISION HUMANA,fr,32,REQUIERE DECISION HUMANA
+candidate_urls_historical,de,41,VERIFICADO Y CORRECTO
+candidate_urls_current_sitemap,de,36,VERIFICADO Y CORRECTO
+classification_CORREGIDO Y VERIFICADO,de,5,CORREGIDO Y VERIFICADO
+classification_STANDBY,de,13,STANDBY
+classification_REQUIERE DECISION HUMANA,de,23,REQUIERE DECISION HUMANA
+candidate_urls_historical,nl,52,VERIFICADO Y CORRECTO
+candidate_urls_current_sitemap,nl,46,VERIFICADO Y CORRECTO
+classification_CORREGIDO Y VERIFICADO,nl,6,CORREGIDO Y VERIFICADO
+classification_STANDBY,nl,17,STANDBY
+classification_REQUIERE DECISION HUMANA,nl,29,REQUIERE DECISION HUMANA
+candidate_urls_historical,pt,55,VERIFICADO Y CORRECTO
+candidate_urls_current_sitemap,pt,49,STANDBY
+classification_STANDBY,pt,55,STANDBY
+candidate_urls_historical,it,28,VERIFICADO Y CORRECTO
+candidate_urls_current_sitemap,it,26,STANDBY
+classification_STANDBY,it,28,STANDBY
+sitemap_files,all,29,VERIFICADO Y CORRECTO
+sitemap_locs,all,7274,VERIFICADO Y CORRECTO
+sitemap_errors,all,0,VERIFICADO Y CORRECTO

@@ -1,0 +1,13 @@
+ronda,cliente,idioma,status,dirty_by_phrase,meta_length,meta_prefix,estado
+1,chrome_locale,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE
+1,googlebot_sim,ES,200,true,134,"Papel pintado, murales y soluciones a medida para viviendas y proyectos profesionales en España. Pide muestras y personaliza tu mural.",INCORRECTO
+1,bingbot_sim,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE
+1,oai_searchbot_sim,ES,200,true,134,"Papel pintado, murales y soluciones a medida para viviendas y proyectos profesionales en España. Pide muestras y personaliza tu mural.",INCORRECTO
+2,chrome_locale,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE
+2,googlebot_sim,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE
+2,bingbot_sim,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE
+2,oai_searchbot_sim,ES,200,true,134,"Papel pintado, murales y soluciones a medida para viviendas y proyectos profesionales en España. Pide muestras y personaliza tu mural.",INCORRECTO
+3,chrome_locale,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE
+3,googlebot_sim,ES,200,true,134,"Papel pintado, murales y soluciones a medida para viviendas y proyectos profesionales en España. Pide muestras y personaliza tu mural.",INCORRECTO
+3,bingbot_sim,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE
+3,oai_searchbot_sim,ES,200,false,320,"Papel pintado, murales y soluciones a medida en España En MatchWalls diseñamos papel pintado, murales decorativos y soluciones a medida para transformar paredes en hogares, hoteles",VERIFICADO PERO MEJORABLE

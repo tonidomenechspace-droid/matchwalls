@@ -1,0 +1,1662 @@
+{%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }} {%- endcapture -%}
+{%- render 'external-selectors' -%}
+
+<product-customizer
+  replicate-product="{{ product.metafields.custom.replicate_product }}"
+  class="product-customizer"
+  data-surface="{{ product.metafields.custom.surface }}">
+  {% if product.template_suffix == 'murales-custom' %}
+    <div style="position: relative;">
+      <input
+        type="file"
+        name="properties[Custom Image]"
+        id="customImage"
+        accept="image/*"
+        open-modal
+        style="
+          display: block;
+          width: 100%;
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          cursor: pointer;
+          z-index: 2;
+        ">
+      <div class="button button--xl button--secondary" style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          cursor: pointer;
+          pointer-events: none;
+          z-index: 1;
+        ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30px"
+          viewBox="0 0 24 24"
+          width="30px"
+          fill="#000000"
+          style="margin-right: 8px;">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M18 20H4V6h9V4H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9h-2v9zm-7.79-3.17l-1.96-2.36L5.5 18h11l-3.54-4.71zM20 4V1h-2v3h-3c.01.01 0 2 0 2h3v2.99c.01.01 2 0 2 0V6h3V4h-3z" />
+        </svg>
+        {{ 'product.customizer.upload_image' | t }}
+      </div>
+    </div>
+
+    <br>
+
+  {% else %}
+    <button class="button button--xl button--secondary" open-modal>
+      {{ 'product.customizer.customize' | t }}
+    </button>
+  {% endif %}
+
+  <dialog>
+    <div
+      id="spinnerOverlay"
+      class="spinner-overlay"
+      style="display: none;"></div>
+    <div
+      id="loadingSpinner"
+      class="spinner"
+      style="display:none;">
+      {%- render 'logo-matchwalls.svg' -%}
+    </div>
+    <div class="customizer__content">
+      <header>
+        <div class="customizer__btns">
+          <button close-modal>
+            {% render 'icon' with 'navigate_back' -%}
+          </button>
+          <button data-action="length">
+            {% render 'icon' with 'lines' -%}
+            {{- 'product.customizer.show_length' | t }}
+          </button>
+          <button data-action="grayscale">
+            {% render 'icon' with 'grayscale' %}
+            {{ 'product.customizer.greyscale' | t }}
+          </button>
+          <button data-action="flip">
+            {% render 'icon' with 'flip' %}
+            {{ 'product.customizer.flip' | t }}
+          </button>
+
+          <div
+            {% if product.metafields.custom.replicate_product %}
+            style="display: none"
+            {% endif -%}
+            class="zoom-controls">
+            <button id="zoom-in">{% render 'icon' with 'zoom-in' %}</button>
+            <button id="zoom-out">{% render 'icon' with 'zoom-out' %}</button>
+          </div>
+          <button style="background-color: #e9bcc7; width: 131px" id="downloadpdf">
+            <span>{%- render 'icon' with 'download-simulation' -%}</span>
+            {{ 'general.customizer.download_pdf' | t }}
+          </button>
+        </div>
+      </header>
+
+      <div class="customizer__body">
+        <div class="customizer__canvas">
+          <div class="canvas__wrapper">
+            <div class="canvas__width__container">
+              <div class="canvas__width">
+                <span>700cm</span>
+              </div>
+            </div>
+
+            <div class="canvas__height__container">
+              <div class="canvas__height">
+                <span>700cm</span>
+              </div>
+            </div>
+            {% assign customizer_img = product.metafields.pdp.tester_product.value %}
+            {% if product.metafields.custom.replicate_product %}
+              <style>
+                .canvas__container {
+                  position: relative;
+                  overflow: hidden;
+                  width: 100%;
+                  height: 97%;
+                }
+              </style>
+              <div class="canvas__container">
+                <div
+                  customizer="{{ customizer_img.title }}"
+                  class="canvas__image canvas_product_image"
+                  style="background-image:url('{{ customizer_img | image_url: width: customizer_img.featured_image.width }}"
+                  id="canvas_product_image">
+                  <div class="length-lines"></div>
+                </div>
+                <div class="selection-frame">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              {% assign widthdoubled = customizer_img.featured_image.width | times: 2 %}
+              <style>
+                /* The container that holds both the image and the selection frame */
+                .canvas__container {
+                  grid-area: canvas;
+                  position: relative;
+                  /* so the absolute .selection-frame is positioned relative to it */
+                  max-width: 100%;
+                  margin: auto;
+                  overflow: hidden;
+                  height: 410px;
+                  /* adjust as needed */
+                }
+
+                /* The actual large/wide image to drag */
+                .canvas__container .canvas__image {
+                  height: 100%;
+                  background-position: left;
+                  width: {{ widthdoubled }}px;
+                  background-repeat: repeat-x;
+                  background-size: contain;
+                  position: relative;
+                  cursor: ew-resize;
+                }
+
+                .selection-frame {
+                  position: sticky;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  pointer-events: none;
+                  /* ensures we can drag the image behind it */
+                }
+              </style>
+            {% else %}
+              <style>
+                @media (min-width: 800px) {
+                  .canvas__container {
+                    height: 490px;
+                    width: 783px;
+                  }
+                }
+                @media (max-width: 800px) {
+                  .canvas__container {
+                    height: 400px;
+                  }
+                }
+                @media (max-width: 750px) {
+                  .canvas__container {
+                    height: 400px;
+                  }
+                }
+                @media (max-width: 650px) {
+                  .canvas__container {
+                    height: 324px;
+                  }
+                }
+                @media (max-width: 600px) {
+                  .canvas__container {
+                    height: 292px;
+                  }
+                }
+                @media (max-width: 500px) {
+                  .canvas__container {
+                    height: 260px;
+                  }
+                }
+                @media (max-width: 450px) {
+                  .canvas__container {
+                    height: 208px;
+                  }
+                }
+                .selection-frame {
+                  position: relative;
+                }
+              </style>
+              <div class="canvas__container">
+                <div customizer="{{ customizer_img.title }}" class="canvas__image">
+                  <div
+                    id="canvas_product_image"
+                    class="canvas_product_image"
+                    width="{{ customizer_img.featured_image.width }}"
+                    height="{{ customizer_img.featured_image.height }}"
+                    style="background-image:url('{{ customizer_img | image_url: width: customizer_img.width }}')">
+                    <div class="length-lines"></div>
+                  </div>
+
+                  <div class="selection-frame">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="customizer__body__container">
+          <!-- Dimensions Section -->
+          <div id="dimensions" class="height-width-configurador">
+            <div class="dimensions-toggle">
+              <span class="dimension-toggle-text">{%- render 'icon' with 'dimensions' -%}</span>
+              <span id="dimension-toggle-content">
+                0.00m x 0.00m = 0.00 m²</span>
+            </div>
+            <div class="dimensions-content">
+              <button class="popup-close">✕</button>
+              <div class="dimensions-pop-up-content">
+                <p class="pop-up-content-title">{{ 'general.customizer.input_dimensions' | t }}</p>
+                <p id="surface-calculation-customizer" class="info__container">0.00m x 0.00m = 0.00 m²</p>
+                <div class="input-row-flex" style="display: none">
+                  <div class="form-control">
+                    <label for="centimeters" class="radio-label">
+                      <input
+                        type="radio"
+                        id="centimeters"
+                        name="measure"
+                        value="cm"
+                        checked>
+                      {{ 'product.customizer.cm' | t }}
+                    </label>
+                  </div>
+                  <div class="form-control">
+                    <label for="in" class="radio-label">
+                      <input
+                        type="radio"
+                        id="in"
+                        name="measure"
+                        value="in">
+                      {{ 'product.customizer.inches' | t }}
+                    </label>
+                  </div>
+                </div>
+                <div class="form-surface-container">
+                  <div class="form-surface centimeter-selector">
+                    <div class="form-control">
+                      <label for="width">
+                        <p style="font-weight: 800; letter-spacing: 1px">↔ {{- 'product.customizer.width' | t }}</p>
+                        <input
+                          type="number"
+                          class="input"
+                          id="width"
+                          min="100"
+                          max="2000"
+                          value="400"
+                          unit="cm">
+                        <span>(cm)</span>
+                      </label>
+                    </div>
+                    <div class="form-control">
+                      <label for="height">
+                        <p style="font-weight: 800; letter-spacing: 1px">↕ {{- 'product.customizer.height' | t }}</p>
+                        <input
+                          type="number"
+                          id="height"
+                          class="input"
+                          min="100"
+                          max="2000"
+                          value="290">
+                        <span>(cm)</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-surface-feets" style="display: none">
+                    <div class="form-control-feets">
+                      <label for="width">{{ 'product.customizer.width' | t }}</label>
+                      <input
+                        type="number"
+                        class="input"
+                        id="width-feet"
+                        min="0"
+                        max="65"
+                        value="0">
+                      <span>(ft)</span>
+                      <input
+                        type="number"
+                        class="input"
+                        id="width-inch"
+                        min="0"
+                        max="12"
+                        value="0">
+                      <span>(in)</span>
+                    </div>
+                    <div class="form-control-feets">
+                      <label for="height">{{ 'product.customizer.height' | t }}</label>
+                      <input
+                        type="number"
+                        id="height-feet"
+                        class="input"
+                        min="0"
+                        max="65"
+                        value="0">
+                      <span>(ft)</span>
+                      <input
+                        type="number"
+                        id="height-inch"
+                        min="0"
+                        max="12"
+                        value="0">
+                      <span>(in)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="warning-message">
+                  <div class="warning-title">
+                    <span>⚠️</span>
+                    <span>{{ 'product.customizer.warning_message_label' | t }}</span>
+                  </div>
+                  <div class="warning-content">
+                    <span>{{ 'product.customizer.warning_message' | t }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualities Section -->
+          <div id="qualities">
+            <div class="qualities-toggle arrow-down">
+              <span class="quality-toggle-label">{%- render 'icon' with 'quality' -%}</span>
+              <span class="quality-toggle-text">Non Woven</span>
+            </div>
+            <div class="qualities-content">
+              <button class="popup-close">✕</button>
+              <p class="pop-up-content-title">{{ 'general.customizer.input_quality' | t }}</p>
+              <div class="customizer-quality-selector"></div>
+            </div>
+          </div>
+
+
+          <div class="checkout-container">
+            <div class="info__container" style="display: none">
+              <p>
+                <span style="display: none" class="total-surface">100cm</span>
+              </p>
+              <div id="final-price-cta">
+                <span class="add-to-cart-text">{%- render 'icon' with 'checkout-cart' -%}</span>
+                <span class="add-to-cart-cta-label">{{ 'product.general.add_to_cart_button' | t }}</span>
+                <span class="add-to-cart-arrow">{%- render 'icon' with 'navigate_next' -%}</span>
+              </div>
+            </div>
+
+            <div class="total-cta">
+              <div class="add-to-cart-price">
+                <span>
+                  {{ 'cart.order.total' | t }}
+                </span>
+                <span class="final-price text-on-sale" style=" font-weight: 900;"></span>
+                <div>
+                  <span class="compare-final-price text-subdued line-through" style="font-size: 14px"></span>
+                  <span class="discount-percentage text-on-sale " style="font-size: 14px;"></span>
+                </div>
+              </div>
+              <div>
+                {%- form 'product'
+                  , product
+                  , id: product_form_id
+                  , is: 'product-form'
+                  , style: 'height: 100%; align-content: center'
+                -%}
+                  <input
+                    type="hidden"
+                    name="quantity"
+                    value="1"
+                    customizer-input>
+                  <input
+                    type="hidden"
+                    name="id"
+                    customizer-input
+                    value="{{ product.selected_or_first_available_variant.id }}">
+                  <input
+                    type="hidden"
+                    name="properties[_customizer]"
+                    customizer-input>
+                  <input
+                    type="hidden"
+                    name="properties[dimensions]"
+                    customizer-input
+                    value="100x100cm">
+                  <input
+                    type="hidden"
+                    name="properties[greyscale]"
+                    customizer-input
+                    value="false">
+                  {%- render 'button'
+                    , content: button_content
+                    , type: 'submit'
+                    , secondary: true
+                    , size: 'lg'
+                    , id: 'mural_cta'
+                    , stretch: true
+                  -%}
+                {%- endform -%}
+              </div>
+            </div>
+            <div class="confidence-trust">
+              <div class="trust-pilot-icon">
+
+                <a
+                  href="https://es.trustpilot.com/review/matchwalls.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="text-decoration: none; display: inline-block; text-align: center;">
+                  <img
+                    src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg"
+                    alt="Trustpilot 4.5 Stars"
+                    width="130"
+                    height="20">
+                  <p style="font-size: 12px;
+                      font-weight: 600;
+                      letter-spacing: 0.5px;
+                      line-height: 14px; color: #453526;">
+                    {{ 'product.customizer.what_they_think' | t }}</p>
+                </a>
+
+
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: center;">
+                <span>
+                  <img
+                    style="height: 3rem;"
+                    src="https://cdn.shopify.com/s/files/1/0677/5308/3107/files/envio-gratis-04.png?v=1712656774"
+                    alt="Icono de envío gratuito">
+                </span>
+                <div class="free-shipping-text">
+                  <span class="title">{{ 'shopify.checkout.order_summary.free_shipping_discount_label' | t }}</span>
+                  <span class="description">
+                    {{ 'shopify.store_availability.pick_up_time.two_to_four_days' | t }}</span>
+                </div>
+
+              </div>
+              {% comment %} <div class="klarna-duplicated-div"></div> {% endcomment %}
+              <div class="paymnent-methods-cta">
+                <p style="font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.5px;
+                      line-height: 14px; color: #453526;">
+                  {{ 'general.product.secured_methods' | t }}</p>
+                {%- for type in shop.enabled_payment_types -%}
+                  {{- type | payment_type_svg_tag -}}
+                {%- endfor -%}
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</product-customizer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 1100) { // Only apply on mobile screens
+        const checkoutContainer = document.querySelector(".checkout-container");
+        const muralCtaButton = document.getElementById("mural_cta");
+
+        if (checkoutContainer && muralCtaButton) {
+            checkoutContainer.addEventListener("click", function () {
+                muralCtaButton.click(); // Simulate a click on the mural CTA button
+            });
+        }
+    }
+  });
+
+
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const fileInput = document.getElementById('customImage');
+    const canvasImageDiv = document.getElementById('canvas_product_image');
+    const dialog = document.querySelector('product-customizer dialog');
+    const targetContainer = document.querySelector('.customizer-quality-selector');
+    const divToDuplicate = document.getElementById('div-to-duplicate');
+
+    // Function to add click event listeners to labels
+    function addLabelListeners(labels) {
+      labels.forEach((label) => {
+        label.addEventListener('click', function () {
+          console.log('Label clicked:', this);
+          handleLabelSelection(this); // Replace this with your selection logic
+        });
+      });
+    }
+
+    // Function to handle label selection and toggle 'selected-variant' class
+    function handleLabelSelection(label) {
+      const allLabels = document.querySelectorAll(
+        '.variant-picker__option-values label, .customizer-quality-selector label'
+      );
+      allLabels.forEach((lbl) => {
+        lbl.classList.remove('selected-variant');
+      });
+      label.classList.add('selected-variant');
+      console.log('Selected variant:', label);
+    }
+
+    // Event listener for file input change
+    fileInput.addEventListener('change', function () {
+      // Clone the div and append it to the target container
+      const duplicatedDiv = divToDuplicate.cloneNode(true);
+      targetContainer.appendChild(duplicatedDiv);
+      divToDuplicate.style.display = 'none';
+
+      // Hide the variant-picker__option-info in the duplicated div
+      const variantPickerOptionInfo = duplicatedDiv.querySelector('.variant-picker__option-info');
+      if (variantPickerOptionInfo) {
+        variantPickerOptionInfo.style.display = 'none';
+      }
+
+      // Add event listeners to the duplicated labels
+      const duplicatedLabels = duplicatedDiv.querySelectorAll('.variant-picker__option-values label');
+      addLabelListeners(duplicatedLabels); // Attach listeners to the new labels
+
+      duplicatedDiv.addEventListener('change', function () {
+        const productCustomizerFileInstance = document.querySelector('product-customizer');
+        if (productCustomizerFileInstance) {
+          productCustomizerFileInstance.update();
+        } else {
+          console.error('ProductCustomizerFile instance not found.');
+        }
+      });
+
+      // Handle file reading and setting image in canvas
+      if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          canvasImageDiv.style.backgroundImage = 'url(' + e.target.result + ')';
+          dialog.showModal();
+        };
+        reader.readAsDataURL(fileInput.files[0]);
+      }
+    });
+
+    // Initial setup: Add event listeners to the original labels
+    const originalLabels = document.querySelectorAll('.variant-picker__option-values label');
+    addLabelListeners(originalLabels); // Attach listeners to the original labels
+  });
+
+  window.product = {{ product | json }};
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const openModalButton = document.querySelector('button[open-modal]');
+    const closeModalButton = document.querySelector('button[close-modal]');
+    const dialog = document.querySelector('product-customizer dialog');
+    const targetContainer = document.querySelector('.customizer-quality-selector');
+    const divToDuplicate = document.getElementById('div-to-duplicate');
+    const originalPosition = divToDuplicate.parentNode;
+    let duplicatedDiv = null;
+
+    openModalButton.addEventListener('click', function () {
+      dialog.showModal();
+      duplicatedDiv = divToDuplicate.cloneNode(true);
+      targetContainer.appendChild(duplicatedDiv);
+      divToDuplicate.style.display = 'none';
+
+      // Hide the variant-picker__option-info in the duplicated div
+      const variantPickerOptionInfo = duplicatedDiv.querySelector('.variant-picker__option-info');
+      if (variantPickerOptionInfo) {
+        variantPickerOptionInfo.style.display = 'none';
+      }
+
+      duplicatedDiv.addEventListener('change', function () {
+        const productCustomizerFileInstance = document.querySelector('product-customizer');
+        if (productCustomizerFileInstance) {
+          productCustomizerFileInstance.update();
+        } else {
+          console.error('ProductCustomizerFile instance not found.');
+        }
+      });
+    });
+
+    function closeModal() {
+      dialog.close();
+      if (duplicatedDiv) {
+        duplicatedDiv.parentNode.removeChild(duplicatedDiv);
+        divToDuplicate.style.display = '';
+        duplicatedDiv = null;
+      }
+    }
+
+    closeModalButton.addEventListener('click', closeModal);
+
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) {
+        closeModal();
+      }
+    });
+  });
+  // JavaScript to toggle the warning message on mobile
+  document.addEventListener('DOMContentLoaded', function () {
+    const formContainer = document.querySelector('.form-surface-container');
+    const warningMessage = document.querySelector('.warning-message');
+
+    formContainer.addEventListener('click', function () {
+      if (window.innerWidth <= 768) {
+        // Only for mobile view
+        warningMessage.style.display = 'block';
+      }
+    });
+
+    // Optional: To hide the message when clicked again or elsewhere
+    document.addEventListener('click', function (e) {
+      if (!formContainer.contains(e.target) && !warningMessage.contains(e.target) && window.innerWidth <= 768) {
+        warningMessage.style.display = 'none'; // Hide if clicked outside
+      }
+    });
+  });
+</script>
+<script>
+  // Ensure the window is in desktop view (example: 1024px or higher)
+  if (window.innerWidth >= 1024) {
+    // Get the elements
+    const dimensions = document.querySelector('#dimensions');
+    const qualities = document.querySelector('#qualities');
+    const customizerCanvas = document.querySelector('.customizer__canvas');
+    const canvasWrapper = document.querySelector('.canvas__wrapper');
+
+    // Check if the elements exist before proceeding
+    if (dimensions && qualities && customizerCanvas && canvasWrapper) {
+      // Move #dimensions inside .customizer__canvas before .canvas__wrapper
+      customizerCanvas.insertBefore(dimensions, canvasWrapper);
+
+      // Move #qualities after .canvas__wrapper
+      customizerCanvas.appendChild(qualities);
+
+      // Optionally, you can remove the original elements if they exist elsewhere
+      // This is not necessary because the elements are already moved, but if needed:
+      // dimensions.remove();
+      // qualities.remove();
+    }
+  }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Handle dimensions toggle
+    const dimensionsToggle = document.querySelector('.dimensions-toggle');
+    const dimensionsContent = document.querySelector('.dimensions-content');
+    const dimensionsClose = dimensionsContent.querySelector('.popup-close');
+
+    dimensionsToggle.addEventListener('click', function () {
+        dimensionsContent.parentElement.classList.toggle('toggle-open');
+    });
+
+    dimensionsClose.addEventListener('click', function () {
+        dimensionsContent.parentElement.classList.remove('toggle-open');
+    });
+
+    // Handle qualities toggle
+    const qualitiesToggle = document.querySelector('.qualities-toggle');
+    const qualitiesContent = document.querySelector('.qualities-content');
+    const qualitiesClose = qualitiesContent.querySelector('.popup-close');
+
+    function updateVariantInstructions() {
+    const variantInstructions = document.querySelectorAll('.customizer-quality-selector .variant-instructions');
+    if (qualitiesToggle && window.innerWidth > 1024) {
+        const isArrowUp = qualitiesToggle.classList.contains('arrow-up'); // Updated to check arrow-up class
+        variantInstructions.forEach(instruction => {
+            instruction.style.display = isArrowUp ? 'flex' : 'none';
+        });
+    }
+  }
+
+  qualitiesToggle.addEventListener('click', function () {
+    if (window.innerWidth <= 1024) {
+        console.log("Button clicked: Toggle for mobile view");
+        qualitiesContent.parentElement.classList.toggle('toggle-open');
+    }
+  });
+
+  // Apply the hover effect for desktop view
+  if (window.innerWidth > 1024) {
+    let qualitiesElement = document.querySelector("#qualities");
+
+    qualitiesElement.addEventListener('mouseenter', function () {
+        if (qualitiesElement) {
+            console.log("Hovered: Expanding side panel");
+            qualitiesElement.style.width = "30%";
+            qualitiesToggle.classList.remove('arrow-down');
+            qualitiesToggle.classList.add('arrow-up');
+            updateVariantInstructions();
+        }
+    });
+
+    qualitiesElement.addEventListener('mouseleave', function () {
+        if (qualitiesElement) {
+            console.log("Mouse left: Collapsing side panel");
+            qualitiesElement.style.width = "";
+            qualitiesToggle.classList.remove('arrow-up');
+            qualitiesToggle.classList.add('arrow-down');
+            updateVariantInstructions();
+        }
+    });
+  }
+
+
+
+    qualitiesClose.addEventListener('click', function () {
+        qualitiesContent.parentElement.classList.remove('toggle-open');
+    });
+
+    // Observe DOM changes to update variant instructions
+    const observer = new MutationObserver(() => {
+        updateVariantInstructions();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+
+
+</script>
+<style>
+  @media (max-height: 700px) and (min-width: 1100px) {
+    .product-customizer .customizer__canvas {
+      height: 82% !important;
+    }
+    .product-customizer .customizer-quality-selector {
+      height: 450px !important;
+    }
+  }
+
+
+  @media (max-width: 1100px) {
+    .checkout-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .warning-message {
+      display: none;
+      /* Hidden by default */
+      position: absolute;
+      /* Positioned absolutely relative to the container */
+      background-color: #fff4e5;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      z-index: 9999;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+      animation: slideDown 0.3s ease-in-out;
+    }
+    .confidence-trust {
+      display: none
+    }
+    .discount-percentage {
+      font-weight: bold;
+    }
+    .compare-final-price {
+      color: white;
+    }
+    .add-to-cart-cta-label {
+      display: none;
+    }
+    .paymnent-methods-cta {
+      display: none;
+    }
+    product-customizer .selected-variant {
+      border: 3px solid #ffc0cb;
+      /* A warm orange border */
+      background: linear-gradient(135deg, #ffd3e0, #ffafbd);
+      box-shadow: 0 4px 15px #ffc0cb;
+      /* Glowing effect */
+      border-radius: 12px;
+      /* Rounded corners */
+      transform: scale(1.05);
+      /* Slight pop-up effect */
+      transition: all 0.3s ease-in-out;
+      font-weight: bold;
+      color: #6d4c41;
+      /* Warm brown text color for contrast */
+      padding: 12px;
+      /* More comfortable spacing */
+      cursor: pointer;
+    }
+    product-customizer label {
+      padding: 1rem;
+      border: 2px solid #000;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    product-customizer .variant-instructions {
+      display: flex;
+      flex-direction: column;
+      white-space: break-spaces;
+    }
+    .qualities-content {
+      top: 116%;
+    }
+    .dimensions-content {
+      top: 160%;
+    }
+    .label-bullet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+    product-customizer .customizer-quality-selector {
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin-top: 22px;
+      height: 79%;
+    }
+
+    product-customizer .variant-picker__option-values {
+      display: flex;
+      flex-direction: column;
+    }
+    .pop-up-content-title {
+      color: #453526;
+      font-size: 17px;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      width: 90%;
+    }
+    .product-customizer .customizer__btns {
+      padding-left: 5px;
+      padding-right: 5px;
+      height: 90%;
+      align-self: flex-end;
+    }
+    .product-customizer label {
+      color: #453526;
+    }
+    #surface-calculation-customizer {
+      background-color: #453526;
+    }
+    .product-customizer dialog header {
+      margin-bottom: 0.2rem;
+    }
+    .product-customizer .customizer__content {
+      padding: 0;
+    }
+    .checkout-container {
+      background-color: #453526 !important;
+      padding: 0;
+    }
+    #mural_cta {
+      justify-content: space-evenly;
+      padding: 0;
+      background-color: #453526;
+      flex: 1 0 0;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      flex: 1 1 0;
+      position: relative;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      cursor: pointer;
+      font-family: Urbanist
+      , Helvetica
+      , sans-serif;
+    }
+    #mural_cta span {
+      font-size: 13px;
+    }
+    #dimensions,
+    #qualities,
+    .checkout-container {
+      width: 33%;
+    }
+    #dimension-toggle-content {
+      text-align-last: center;
+      font-size: 12px;
+    }
+    .customizer__body__container > div {
+      flex: 1 1 0;
+      position: relative;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: #e9bcc7;
+      color: rgb(255, 255, 255);
+    }
+    .customizer__body__container {
+      height: 13%;
+      width: 100%;
+      gap: 1px;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      z-index: 888888889;
+    }
+    .product-customizer .customizer__canvas {
+      width: 100%;
+      height: 88%;
+    }
+    .popup-close {
+      display: block;
+    }
+    /* Toggle button styles */
+    .qualities-toggle,
+    .dimensions-toggle {
+      color: #453526;
+      padding: 2px;
+      flex-direction: column;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #e9bcc7;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Full-height popup styles */
+    .dimensions-content,
+    .qualities-content {
+      padding-left: 5px;
+      padding-right: 5px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: 9999;
+      overflow-y: auto;
+      transition: transform 0.3s ease;
+      transform: translateY(0);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .toggle-open .dimensions-content,
+    .toggle-open .qualities-content {
+      transform: translateY(-100%);
+    }
+
+    /* Close button */
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: #504746;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 1100px) {
+
+    /* Default state: Show only the title with a subtle color */
+    .warning-message {
+      color: #d94f70;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+    }
+
+    /* Initially hide the warning content, but prepare it for animation */
+    .warning-content {
+      opacity: 0;
+      font-size: 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.4s ease-in-out
+      , max-height 0.4s ease-in-out;
+    }
+
+    /* When #dimensions is hovered, smoothly reveal the warning message */
+    #dimensions:hover .warning-message {
+      color: #6d2a36;
+      /* Darker color for better readability */
+      background: rgba(255, 235, 235, 0.9);
+      padding: 8px;
+      border-radius: 8px;
+      border-left: 4px solid #d94f70;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Smoothly reveal the warning content */
+    #dimensions:hover .warning-content {
+      opacity: 1;
+      max-height: 100px;
+    }
+    #dimensions:hover .form-control {
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    /* Smooth transition for expanding #dimensions */
+    #dimensions {
+      width: 15%;
+      height: 100%;
+      border: solid;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      transition: width 0.6s ease-in-out
+      , background-color 0.4s ease-in-out;
+      overflow: hidden;
+    }
+
+    /* Expanding effect when hovering */
+    #dimensions:hover {
+      width: 30%;
+      background-color: rgba(255, 192, 203, 0.61);
+    }
+
+    /* Toggle arrow transition */
+    .dimensions-toggle::after {
+      content: '►';
+      font-size: 12px;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    #dimensions:hover .dimensions-toggle::after {
+      content: '◄';
+      transition: transform 0.3s ease;
+    }
+
+
+    .free-shipping-text {
+      display: flex;
+      color: #453526;
+      flex-direction: column;
+    }
+    .add-to-cart-price {
+      color: #453526;
+    }
+    .add-to-cart-price span {
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+    .free-shipping-text .title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
+    .free-shipping-text .description {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 14px;
+    }
+    .confidence-trust {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      justify-content: space-evenly;
+    }
+    .quality-toggle-label {
+      display: none;
+    }
+    .arrow-up,
+    .arrow-down {
+
+      font-size: 15px;
+
+    }
+
+    .dimension-toggle-text {
+      display: none
+    }
+    .dimensions-toggle {
+      text-align: center;
+    }
+    .qualities-toggle.arrow-down::before {
+      content: '◄';
+      font-size: 12px;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+    .qualities-toggle.arrow-up::before {
+      content: '►';
+      font-size: 12px;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    product-customizer .selected-variant {
+      border: 3px solid #ffc0cb;
+      background: linear-gradient(135deg, #ffd3e0, #ffafbd);
+      box-shadow: 0 4px 15px #ffc0cb;
+      border-radius: 12px;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+      font-weight: bold;
+      color: #6d4c41;
+      padding: 12px;
+      cursor: pointer;
+    }
+    product-customizer label {
+      padding: 1rem;
+      border: 2px solid #000;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    product-customizer .variant-instructions {
+      display: flex;
+      flex-direction: column;
+      white-space: break-spaces;
+    }
+    .qualities-content .customizer-quality-selector {
+      height: 588px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    #qualities {
+      width: 10%;
+      height: 100%;
+      border: solid;
+      padding: 5px;
+      border-radius: 10px;
+      position: relative;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: rgb(255, 255, 255);
+      overflow: hidden;
+      transition: width 0.4s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 1034;
+    }
+    product-customizer .variant-instructions {
+      display: none;
+    }
+    .customizer-quality-selector .variant-picker__option-values {
+      display: flex;
+      flex-direction: column;
+    }
+    .total-cta > div {
+      width: 50%;
+    }
+    .total-cta {
+      gap: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+    }
+    .checkout-container {
+      width: 90%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+    }
+    .compare-final-price {
+      color: black;
+    }
+    .discount-percentage {
+      font-weight: bold;
+    }
+    .pop-up-content-title {
+      color: #453526;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+    }
+    .product-customizer .customizer__btns > button {
+      width: 122px;
+      height: 67px;
+      font-size: 10px;
+    }
+    product-customizer dialog {
+      padding: 0;
+      overflow-y: auto;
+      width: 100%;
+      height: 100%;
+    }
+    .product-customizer dialog .customizer__body {
+      height: 90%;
+      gap: 0;
+    }
+    .add-to-cart-price {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      font-size: 18px;
+      margin-top: 5px;
+      border-radius: 25px;
+      background-color: #f1f1f1;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      justify-content: center;
+    }
+    #mural_cta {
+      padding: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      justify-content: center;
+      gap: 0.5rem;
+      display: flex;
+      flex-direction: row;
+    }
+    .qualities-content {
+      flex-direction: column;
+    }
+    .product-customizer dialog header {
+      margin-bottom: 0.2rem;
+    }
+    .arrow-up,
+    .arrow-down,
+    .dimensions-toggle {
+      cursor: pointer;
+      padding: 5px 10px;
+      border: 1px solid #453526;
+      border-radius: 5px;
+      font-weight: 600;
+      background-color: #fff;
+      color: #453526;
+      transition: background-color 0.3s ease;
+    }
+    .product-customizer .customizer__canvas {
+      justify-content: space-between;
+      width: 100%;
+      height: 87%;
+    }
+    .popup-close {
+      display: none;
+    }
+    .qualities-toggle {}
+  #qualities .pop-up-content-title {
+    display: none
+  }
+
+
+  .dimensions-content,
+  .qualities-content {
+    display: flex;
+    position: static;
+    top: auto;
+    left: auto;
+    height: auto;
+    width: auto;
+    transform: none;
+    box-shadow: none;
+  }
+  .customizer__body__container {
+    position: relative;
+    height: 10%;
+  }
+}
+</style>
+<style>
+  .form-control input {
+    font-size: 23px;
+    border-radius: 25px;
+    height: 35px;
+  }
+  .form-control label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-control label span {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+  }
+  /* Main warning message styling (for desktop) */
+
+
+  .form-surface-container {
+    position: relative;
+  }
+
+  .form-surface-container:hover + .warning-message {
+    display: block;
+  }
+
+  .warning-content {
+    display: flex;
+    align-items: center;
+  }
+
+
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 1100px) {
+    .warning-message {
+      position: relative;
+      /* Use relative positioning on mobile */
+      width: 100%;
+      /* Make the warning take the full width */
+      margin-top: 10px;
+      /* Adjust margin for mobile */
+      font-size: 0.9rem;
+      /* Smaller font size for better readability */
+      padding: 10px;
+      /* Adjust padding to fit better on small screens */
+    }
+
+    .warning-content span:first-child {
+      font-size: 1.2rem;
+      /* Slightly smaller warning icon for mobile */
+    }
+
+    .warning-message + .form-surface-container:hover {
+      display: block;
+    }
+  }
+  .add-to-cart-text {
+    color: #ffffff;
+    opacity: 1;
+    border-radius: 36px;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+  .checkout-info-cta {
+    width: 50%;
+  }
+  .customizer__body__container {
+    width: 100%;
+    justify-content: space-evenly;
+
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .configurations {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .arrow-up:hover,
+  .arrow-down:hover,
+  .dimensions-toggle:hover {
+    background-color: #d29ea8;
+    color: #fff;
+  }
+
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .content.expanded {
+    max-height: 500px;
+    /* Adjust as needed for your content's height */
+  }
+  .input-row-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-control {
+    position: relative;
+  }
+
+  .radio-label {
+    display: inline-block;
+    padding: 5px 10px;
+    /* Reduce padding */
+    border: 1px solid #e9bcc7;
+    /* Reduce border size */
+    border-radius: 20px;
+    /* Smaller radius */
+    cursor: pointer;
+    font-size: 14px;
+    /* Smaller font size */
+    transition: background-color 0.3s ease
+    , color 0.3s ease
+    , border-color 0.3s ease;
+    text-align: center;
+  }
+
+  .radio-label input[type='radio'] {
+    display: none;
+  }
+
+  .radio-label input[type='radio']:checked + label,
+  .radio-label:hover {
+    background-color: #e9bcc7;
+    color: white;
+    border-color: #d29ea8;
+  }
+
+  .radio-label input[type='radio']:checked + label {
+    background-color: #d29ea8;
+    color: white;
+  }
+
+  .zoom-controls {
+    flex-direction: column;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .zoom-controls button {
+    font-size: 14px;
+    /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease
+    , transform 0.3s ease
+    , color 0.3s ease;
+    border: 1px solid #e9bcc7;
+    /* Reduce border size */
+    border-radius: 20px;
+    /* Smaller radius */
+    text-align: center;
+  }
+
+  .zoom-controls button:hover,
+  .zoom-controls button:focus {
+    background-color: #d29ea8;
+    color: white;
+    border-color: #d29ea8;
+    transform: scale(1.05);
+    /* Reduce zoom effect */
+  }
+
+  .form-surface {
+    display: flex;
+    flex-wrap: wrap;
+    /* Flex wrap to adjust smaller screens */
+  }
+
+  .form-control {
+    margin: 0 5px;
+    /* Reduce margin */
+  }
+
+  .form-control-feets {
+    margin: 0 5px;
+    /* Reduce margin */
+  }
+
+  .button[is='custom-button'] {
+    background-color: #504746;
+    color: white;
+  }
+  /* Full-screen shadow overlay */
+  .spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    z-index: 9998;
+    /* Below the spinner, but above the rest of the page */
+    pointer-events: none;
+    /* Allow interaction with the spinner */
+  }
+
+  /* Spinner itself */
+  .spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    animation: spin 1s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    /* Center the spinner */
+  }
+
+  /* Spinner logo */
+  .spinner-logo {
+    width: 97px;
+    height: 100px;
+  }
+
+  /* Spinner animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .canvas__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .canvas_product_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    /* Lower z-index to be behind the selection frame */
+  }
+
+  .selection-frame {
+    z-index: 10;
+    /* Higher z-index to be on top of the image */
+    border: 2px solid #000;
+    background: transparent;
+    cursor: move;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr);
+    /* 3 equal rows */
+    width: 100%;
+    /* Ensure it spans the entire frame */
+    height: 100%;
+    /* Ensure it spans the entire frame */
+  }
+
+  .selection-frame > div {
+    background-color: transparent;
+    border: 0.5px dashed black;
+    /* Thinner black dashed lines for each grid cell */
+    box-sizing: border-box;
+    /* Ensure the borders are within the cell dimensions */
+    pointer-events: none;
+    /* Prevent interference with dragging */
+  }
+
+  .selection-frame::before {
+    content: '';
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.6), /* Shadow outside the frame */ inset 0 0 0 9999px transparent;
+    /* Transparent inside the frame */
+    pointer-events: none;
+  }
+
+  .zoom-controls {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .zoom-controls button {
+    height: 33px;
+    width: 42%;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>

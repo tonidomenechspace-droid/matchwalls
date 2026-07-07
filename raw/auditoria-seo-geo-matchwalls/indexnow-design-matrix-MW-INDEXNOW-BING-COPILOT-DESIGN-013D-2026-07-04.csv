@@ -1,0 +1,14 @@
+area,current_state,status,recommendation,next_lot
+robots.txt,200 and sitemap referenced,VERIFICADO Y CORRECTO,No change needed for IndexNow discovery,none
+sitemap.xml,29 sitemap children and 7274 URLs counted,VERIFICADO PERO MEJORABLE,Use as inventory source but do not bulk-submit all URLs,MW-INDEXNOW-PILOT-PROPOSAL-013F
+indexnow key obvious path,/indexnow.txt returns 404,INCOMPLETO,Find valid root key hosting method,MW-INDEXNOW-KEY-HOSTING-DIAG-013D1
+root key hosting,Not verified,NO ACCESIBLE,Prefer root {key}.txt covering whole host,MW-INDEXNOW-KEY-HOSTING-DIAG-013D1
+Shopify native root TXT,Not verified,NO ACCESIBLE,Do not assume Shopify page or asset works as root key,MW-INDEXNOW-KEY-HOSTING-DIAG-013D1
+CDN or worker key hosting,Not verified,NO ACCESIBLE,Consider if Shopify cannot serve root TXT,MW-INDEXNOW-KEY-HOSTING-DIAG-013D1
+third-party app,Not installed or verified,NO ACCESIBLE,Only consider if it proves key and exclusions,MW-INDEXNOW-KEY-HOSTING-DIAG-013D1
+Bing Webmaster Tools,Access not verified,NO ACCESIBLE,Verify property and sitemap before scale,MW-BING-WEBMASTER-VERIFICATION-DIAG-013E
+URLs eligible,Canonical public changed URLs only,REQUIERE DECISION HUMANA,Exclude noindex samples filters tests redirects and 012O blocked landings,MW-INDEXNOW-PILOT-PROPOSAL-013F
+initial pilot,Not executed,INCOMPLETO,10-20 URLs max after real change and key verification,MW-INDEXNOW-PILOT-PROPOSAL-013F
+012O Spain France landings,Blocked by Shopify Engineering/TMS,INCOMPLETO,Do not submit as fixed until storefront stable,wait Shopify/TMS
+IT PT,Published but out of active priority,STANDBY,Do not include in priority pilot unless explicitly authorized,none
+automation,Not designed,INCOMPLETO,Manual first; automate only after exclusions are proven,post-pilot

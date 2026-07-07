@@ -1,0 +1,16 @@
+field,value
+lote,MW-SHOPIFY-INFRA-500-REQUEST-ID-UPDATE-013J6R1
+date,2026-07-05
+mode,solo lectura/documental
+related_shopify_ticket,68731900
+source_lote,MW-BING-SEO-GEO-PRIORITY-URL-PUBLIC-QA-013J6R
+new_500_events,2
+affected_pop,MAD
+request_ids_present,yes
+support_message_created,yes
+shopify_changed,no
+bing_changed,no
+indexnow_changed,no
+cloudflare_changed,no
+recommended_action,reply_to_shopify_ticket_68731900
+final_state,VERIFICADO Y CORRECTO

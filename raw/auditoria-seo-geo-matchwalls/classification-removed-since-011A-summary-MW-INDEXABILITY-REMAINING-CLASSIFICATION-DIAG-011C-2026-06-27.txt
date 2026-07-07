@@ -1,0 +1,4 @@
+total_removed_since_011A=602
+by_section={'products': 602}
+by_language={'de': 86, 'en': 86, 'es': 86, 'fr': 86, 'it': 86, 'nl': 86, 'pt': 86}
+classification=CORREGIDO Y VERIFICADO para producto muestra retirado del sitemap por lotes 011B4/011B5/011B5B

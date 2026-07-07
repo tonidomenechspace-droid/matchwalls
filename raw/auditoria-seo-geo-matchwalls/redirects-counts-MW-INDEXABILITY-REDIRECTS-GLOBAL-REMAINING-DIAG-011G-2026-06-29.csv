@@ -1,0 +1,37 @@
+﻿scope,query,count,precision,estado,nota
+total,,634,EXACT,VERIFICADO PERO MEJORABLE,Conteo total actual Shopify Admin tras 011F4/011F5
+risk_free_search,matchwallsmurals,333,EXACT,REQUIERE DECISION HUMANA,Bloque masivo legacy; incluye idiomas no prioritarios y FR/EN
+risk_free_search,matchwallswallpapers,44,EXACT,REQUIERE DECISION HUMANA,Bloque de naming antiguo wallpaper/wallpapers
+risk_free_search,facade,1,EXACT,INCORRECTO,Redirect de prueba a home
+risk_free_search,black-friday,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects Admin
+risk_free_search,matchalls,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects Admin
+risk_free_search,norid,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects Admin
+risk_free_search,enchathed,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects Admin
+risk_free_search,muestra,6,EXACT,VERIFICADO PERO MEJORABLE,Redirects de productos muestra
+risk_free_search,copy,6,EXACT,VERIFICADO PERO MEJORABLE,Redirects con copy
+risk_free_search,copia,12,EXACT,VERIFICADO PERO MEJORABLE,Redirects con copia
+risk_free_search,old,1,EXACT,STANDBY,Solo queda papeles-pintados-old tras 011F5
+admin_path_filter,path:/products/*,24,EXACT,VERIFICADO PERO MEJORABLE,Todos los redirects de producto Admin
+admin_path_filter,path:/collections/*,55,EXACT,RIESGO CRITICO,Colecciones ES legacy; requiere sitemap exacto
+admin_path_filter,path:/pages/*,4,EXACT,VERIFICADO PERO MEJORABLE,P?ginas legacy
+admin_path_filter,path:/blogs/*,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects blog
+admin_path_filter,path:/ar/*,4,EXACT,STANDBY,Idioma no prioritario publicado/legacy
+admin_path_filter,path:/fr/*,23,EXACT,RIESGO CRITICO,FR prioritario con slugs literales antiguos
+admin_path_filter,path:/en/*,2,EXACT,VERIFICADO PERO MEJORABLE,EN prioritario con 2 redirects legacy
+admin_path_filter,path:/de/*,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects DE
+admin_path_filter,path:/nl/*,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects NL
+admin_path_filter,path:/it/*,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects IT
+admin_path_filter,path:/pt/*,0,EXACT,VERIFICADO Y CORRECTO,Sin redirects PT
+admin_target_filter,target:/,36,EXACT,RIESGO CRITICO,Redirects a home; posible p?rdida de intenci?n
+admin_target_filter,target:/collections/murales,4,EXACT,STANDBY,Clasificado en 011F6
+admin_target_filter,target:/en/collections/all-matchwallsmurals-murals,8,EXACT,STANDBY,Clasificado en 011F6
+admin_path_filter,path:/collections/murales,0,EXACT,CORREGIDO Y VERIFICADO,Colisi?n corregida sigue ausente
+legacy_locale,path:/no/*,31,EXACT,RIESGO CRITICO,Noruego legacy a home
+legacy_locale,path:/el/*,39,EXACT,STANDBY,Idioma no prioritario legacy
+legacy_locale,path:/sv/*,39,EXACT,STANDBY,Idioma no prioritario legacy
+legacy_locale,path:/he/*,38,EXACT,STANDBY,Idioma no prioritario legacy
+legacy_locale,path:/pl/*,39,EXACT,STANDBY,Idioma no prioritario legacy
+legacy_locale,path:/hu/*,39,EXACT,STANDBY,Idioma no prioritario legacy
+legacy_locale,path:/hi/*,39,EXACT,STANDBY,Idioma no prioritario legacy
+legacy_locale,path:/ja/*,40,EXACT,STANDBY,Idioma no prioritario legacy
+legacy_locale,path:/zh/*,47,EXACT,STANDBY,Idioma no prioritario legacy

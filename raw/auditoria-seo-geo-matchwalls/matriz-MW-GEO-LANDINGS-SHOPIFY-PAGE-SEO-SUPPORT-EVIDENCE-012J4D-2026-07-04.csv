@@ -1,0 +1,14 @@
+area,evidencia,estado,uso_en_soporte
+Support ticket,Expected/Actual añadido,VERIFICADO Y CORRECTO,Acelera triage de soporte
+Admin API,global.description_tag null,VERIFICADO Y CORRECTO,Demuestra que no hay campo SEO visible que limpiar
+Admin API,global.title_tag null,VERIFICADO Y CORRECTO,Descarta title_tag como fuente
+Admin API,metafields.nodes vacio,VERIFICADO Y CORRECTO,Descarta metacampos normales como fuente
+Admin API,traducciones EN/FR/DE/NL solo title/body_html/handle,VERIFICADO Y CORRECTO,Descarta description_tag traducido accesible por lectura usada
+Admin API,bodySummary actual no coincide con valor corto 012J3,VERIFICADO Y CORRECTO,Refuerza que el valor corto no es fallback vivo del body actual
+Shopify UI,metadescripcion nativa vacia tras rollback,VERIFICADO Y CORRECTO,Demuestra estado visual de Admin
+LangShop UI,SEO ES/DE visible y vacio,VERIFICADO Y CORRECTO,Demuestra que LangShop visible no contiene el valor
+Theme,page_description usado para meta/OG/twitter,VERIFICADO Y CORRECTO,Demuestra que el HTML toma el valor de page_description
+Storefront ES Chrome,meta autogenerada limpia,VERIFICADO PERO MEJORABLE,Demuestra que no falla siempre
+Storefront ES OAI simulado,valor 012J3 intermitente,INCORRECTO,Demuestra salida contradictoria por contexto
+Accion propuesta,soporte Shopify/LangShop,REQUIERE DECISION HUMANA,Enviar ticket manualmente con evidencias
+Accion pendiente,no-op save no ejecutado,REQUIERE DECISION HUMANA,Solo ejecutar como lote separado aprobado

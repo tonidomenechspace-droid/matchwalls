@@ -1,0 +1,185 @@
+<div class="info-dialog-content">
+  <div class="dialog-header">
+    <span id="close-dialog" class="close-dialog">&times;</span>
+  </div>
+  <div class="dialog-content prose">
+    {{ block.settings.page.content }}
+  </div>
+  <div class="redirection-div">
+    <a href="{{block.settings.page.url}}" class="btn-redirection">Know More in Details</a>
+  </div>
+</div>
+<style>
+  .redirection-div {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .btn-redirection {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    /* Text color white */
+    background-color: rgb(196, 217, 204);
+    /* Background color */
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(196, 217, 204);
+    /* Initial border color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease
+    , color 0.3s ease
+    , border-color 0.3s ease
+    , transform 0.3s ease;
+  }
+
+  .btn-redirection:hover {
+    background-color: #fff;
+    /* White background on hover */
+    color: rgb(196, 217, 204);
+    /* Text color */
+    border-color: rgb(196, 217, 204);
+    /* Green border on hover */
+    transform: scale(1.05);
+  }
+
+  .btn-redirection:active {
+    background-color: rgb(230, 230, 230);
+    /* Slightly darker white on click */
+    color: rgb(196, 217, 204);
+    /* Text color */
+    border-color: rgb(196, 217, 204);
+    /* Border color */
+    transform: scale(1);
+  }
+
+  .dialog-header {
+    display: flex;
+    height: 2rem;
+  }
+  /* Style for the dialog */
+  .info-dialog-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-dialog {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    border: none;
+    /* Removes the default border of the dialog */
+    transition: right 0.6s ease-in-out;
+    /* Slow down the transition */
+    z-index: 1001;
+    /* Increase the z-index value */
+    margin: 0;
+    /* Ensures no default margin */
+    padding: 0;
+    /* Ensures no default padding */
+  }
+
+  /* Style for the dialog when opened */
+  .info-dialog.open {
+    right: 0;
+  }
+  .info-dialog li {
+    display: list-item;
+  }
+
+  /* Style for the content inside the dialog */
+  .info-dialog-content {
+    padding: 20px;
+  }
+
+  /* Style for the close button */
+  .close-dialog {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1002;
+    /* Ensure close button is above the dialog content */
+  }
+
+  #learn-more-button {
+    text-decoration-line: underline;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* Overlay style */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 1000;
+    display: none;
+    /* Hidden by default */
+  }
+
+  .overlay.open {
+    display: block;
+    /* Show overlay when open */
+  }
+
+  /* Media query for desktop to make the dialog a side panel */
+  @media (min-width: 768px) {
+    .info-dialog {
+      width: 30%;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const learnMoreButton = document.getElementById('learn-more-button');
+    const infoDialog = document.getElementById('info-dialog');
+    const closeDialog = document.getElementById('close-dialog');
+    const overlay = document.getElementById('overlay');
+    const header = document.querySelector('header'); // Adjust the selector if needed
+    const customCtaBar = document.querySelector('.custom-cta-bar-wrapper'); // Adjust the selector if needed
+
+    learnMoreButton.addEventListener('click', function () {
+      infoDialog.classList.add('open');
+      overlay.classList.add('open');
+      header.style.zIndex = '1';
+      if (customCtaBar) {
+        customCtaBar.style.zIndex = '0';
+      }
+    });
+
+    closeDialog.addEventListener('click', function () {
+      infoDialog.classList.remove('open');
+      overlay.classList.remove('open');
+      setTimeout(function () {
+        header.style.zIndex = '10';
+        if (customCtaBar) {
+          customCtaBar.style.zIndex = ''; // Reset to default or previous value
+        }
+      }, 1000);
+    });
+
+    // Optional: Close the dialog when clicking outside of it
+    overlay.addEventListener('click', function () {
+      infoDialog.classList.remove('open');
+      overlay.classList.remove('open');
+      setTimeout(function () {
+        header.style.zIndex = '10';
+        if (customCtaBar) {
+          customCtaBar.style.zIndex = ''; // Reset to default or previous value
+        }
+      }, 1000);
+    });
+  });
+</script>

@@ -1,0 +1,1947 @@
+[
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "language": "ES",
+    "requestedUrl": "https://www.matchwalls.com/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Consentimiento para el uso de cookies Nosotros y nuestros partners, incluido Shopify, utilizamos cookies y otras tecnologías para personalizar tu experiencia, mostrarte anuncios y realizar informes y estadísticas, y no utilizaremos cookies ni otras tecnologías para estos fines a menos que las aceptes. Obtén más información en nuestra Política de privacidad Administrar preferencias Aceptar Rechazar saltar al contenido Lo que opinan de nosotros Envío internacional gratuito Paga en 3 plazos con Kla",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "El papel pintado suele elegirse por diseño o patrón; un mural se adapta a una pared o composición concreta y puede requerir medidas personalizadas.",
+        "summary": "¿Qué diferencia hay entre papel pintado y mural?"
+      },
+      {
+        "answer": "Sí. Las muestras ayudan a comprobar color, textura y acabado antes de elegir el papel pintado o mural definitivo.",
+        "summary": "¿Puedo pedir muestras antes de comprar?"
+      },
+      {
+        "answer": "Depende del uso, la superficie y el nivel de exigencia del proyecto. Antes de decidir, conviene revisar las opciones de material y medir correctamente la pared.",
+        "summary": "¿Qué material debo elegir?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/collections",
+    "fixedOverlays": [
+      {
+        "area": 175264,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 170485,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Consentimiento para el uso de cookiesNosotros y nuestros partners, incluido Shop",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 96877,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      },
+      {
+        "area": 12357,
+        "className": "needsclick",
+        "position": "fixed",
+        "tag": "inbox-online-store-chat",
+        "text": "",
+        "visible": true,
+        "zIndex": "2147483647"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Colecciones de papel pintado y murales"
+    ],
+    "h2s": [
+      "Consentimiento para el uso de cookies",
+      "Cómo elegir tu papel pintado o mural",
+      "Explora las colecciones",
+      "Nuevos Papeles Pintados",
+      "Ofertas",
+      "Papel Pintado 3D",
+      "Papel pintado Albacete",
+      "Papel pintado Alicante",
+      "Papel pintado Almería",
+      "Papel Pintado Amarillo"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/collections/murales",
+        "href": "/collections/murales",
+        "text": "Ver todos los diseños"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/medidas-paredes",
+        "href": "/pages/medidas-paredes",
+        "text": "Medir la pared"
+      },
+      {
+        "abs": "https://www.matchwalls.com/products/custom-file-uploader",
+        "href": "/products/custom-file-uploader",
+        "text": "Crear mural personalizado"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/formulario-profesionales",
+        "href": "/pages/formulario-profesionales",
+        "text": "Cuenta profesional"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/papel-pintado-espana",
+        "href": "/pages/papel-pintado-espana",
+        "text": "Papel pintado en España"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/papel-pintado-francia",
+        "href": "/pages/papel-pintado-francia",
+        "text": "Papel pintado en Francia"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 1567,
+        "tag": "span",
+        "visible": true,
+        "width": 1233
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1485,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1567,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 2800,
+        "tag": "span",
+        "visible": true,
+        "width": 1233
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 1739,
+        "tag": "p",
+        "visible": true,
+        "width": 172
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1821,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 2071,
+        "tag": "p",
+        "visible": true,
+        "width": 172
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 2153,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 672,
+    "rootTop": 321,
+    "rootVisible": true,
+    "scrollWidth": 1425,
+    "title": "Colecciones",
+    "viewportWidth": 1440,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-ES-desktop.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "language": "EN",
+    "requestedUrl": "https://www.matchwalls.com/en/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Cookie consent We and our partners, including Shopify, use cookies and other technologies to personalize your experience, show you ads, and perform analytics, and we will not use cookies or other technologies for these purposes unless you accept them. Learn more in our Privacy Policy Manage preferences Accept Decline Jump to content What they think of us Free international shipping Pay in 3 terms with Klarna Satisfaction guarantee Fast delivery Free international shipping Pay in 3 terms with Kla",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Wallpaper is usually selected by pattern or design family; a mural is adapted to a specific wall, composition or custom size.",
+        "summary": "What is the difference between wallpaper and a mural?"
+      },
+      {
+        "answer": "Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.",
+        "summary": "Can I order samples before buying?"
+      },
+      {
+        "answer": "It depends on the surface, use and project requirements. Review the material options and measure the wall before ordering.",
+        "summary": "Which material should I choose?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/en/collections",
+    "fixedOverlays": [
+      {
+        "area": 175264,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 156595,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Cookie consentWe and our partners, including Shopify, use cookies and other tech",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 96877,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      },
+      {
+        "area": 13086,
+        "className": "needsclick",
+        "position": "fixed",
+        "tag": "inbox-online-store-chat",
+        "text": "",
+        "visible": true,
+        "zIndex": "2147483647"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Wallpaper and mural collections"
+    ],
+    "h2s": [
+      "Cookie consent",
+      "How to choose your wallpaper or mural",
+      "Explore collections",
+      "3D Wallpaper",
+      "Albacete Wallpaper",
+      "Alicante Wallpaper",
+      "Almeria Wallpaper",
+      "Artistic Wallpaper",
+      "Asturias Wallpaper",
+      "Badajoz Wallpaper"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/en/collections/all-matchwallsmurals-murals",
+        "href": "/en/collections/all-matchwallsmurals-murals",
+        "text": "View all designs"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/how-to-take-wall-measurements",
+        "href": "/en/pages/how-to-take-wall-measurements",
+        "text": "Measure your wall"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/products/custom-file-uploader",
+        "href": "/en/products/custom-file-uploader",
+        "text": "Create a custom mural"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/professional-form",
+        "href": "/en/pages/professional-form",
+        "text": "Professional account"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/spain-wallpaper",
+        "href": "/en/pages/spain-wallpaper",
+        "text": "Wallpaper in Spain"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/french-wallpaper",
+        "href": "/en/pages/french-wallpaper",
+        "text": "Wallpaper in France"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 1705,
+        "tag": "span",
+        "visible": true,
+        "width": 1191
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 1541,
+        "tag": "p",
+        "visible": true,
+        "width": 78
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1623,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1705,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 2896,
+        "tag": "span",
+        "visible": true,
+        "width": 1191
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 1871,
+        "tag": "p",
+        "visible": true,
+        "width": 166
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1953,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 2192,
+        "tag": "p",
+        "visible": true,
+        "width": 161
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 610,
+    "rootTop": 321,
+    "rootVisible": true,
+    "scrollWidth": 1425,
+    "title": "Collections",
+    "viewportWidth": 1440,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-EN-desktop.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "language": "FR",
+    "requestedUrl": "https://www.matchwalls.com/fr/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Consentement aux cookies Nous et nos partenaires, y compris Shopify, utilisons des cookies et d’autres technologies pour personnaliser votre expérience, vous afficher des publicités et effectuer des analyses. Nous n’utiliserons pas de cookies ou d’autres technologies à ces fins sans votre consentement. En savoir plus dans notre Politique de confidentialité Gérer vos préférences Accepter Refuser Sauter au contenu Ce qu'ils pensent de nous Expédition internationale gratuite Payer en 3 conditions a",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Un papier peint se choisit souvent par motif ou par collection; un panoramique mural s’adapte à une composition ou à des dimensions précises.",
+        "summary": "Quelle est la différence entre un papier peint et un panoramique mural ?"
+      },
+      {
+        "answer": "Oui. Les échantillons permettent de vérifier la couleur, la texture et la finition avant de choisir le papier peint ou le panoramique définitif.",
+        "summary": "Puis-je commander des échantillons avant d’acheter ?"
+      },
+      {
+        "answer": "Le choix dépend de la surface, de l’usage et du niveau d’exigence du projet. Il est conseillé de comparer les matières et de mesurer le mur avant de commander.",
+        "summary": "Quelle matière choisir ?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/fr/collections",
+    "fixedOverlays": [
+      {
+        "area": 175264,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 170485,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Consentement aux cookiesNous et nos partenaires, y compris Shopify, utilisons de",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 96877,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      },
+      {
+        "area": 17296,
+        "className": "needsclick",
+        "position": "fixed",
+        "tag": "inbox-online-store-chat",
+        "text": "",
+        "visible": true,
+        "zIndex": "2147483647"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Collections de papiers peints et panoramiques"
+    ],
+    "h2s": [
+      "Consentement aux cookies",
+      "Comment choisir votre papier peint ou panoramique",
+      "Explorer les collections",
+      "Nouveaux Papiers Peints",
+      "Offres",
+      "Papier Peint 3D",
+      "Papier Peint Alava",
+      "Papier Peint Albacete",
+      "Papier Peint Alicante",
+      "Papier Peint Almeria"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/fr/collections/tous-les-peintures-murales-matchwallsmurals",
+        "href": "/fr/collections/tous-les-peintures-murales-matchwallsmurals",
+        "text": "Voir tous les designs"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/comment-prendre-des-mesures-murales",
+        "href": "/fr/pages/comment-prendre-des-mesures-murales",
+        "text": "Mesurer le mur"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/products/telechargeur-de-fichiers-personnalise",
+        "href": "/fr/products/telechargeur-de-fichiers-personnalise",
+        "text": "Créer un panoramique personnalisé"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/forme-professionnelle",
+        "href": "/fr/pages/forme-professionnelle",
+        "text": "Compte professionnel"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/papier-peint-en-espagne",
+        "href": "/fr/pages/papier-peint-en-espagne",
+        "text": "Papier peint en Espagne"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/papier-peint-en-france",
+        "href": "/fr/pages/papier-peint-en-france",
+        "text": "Papier peint en France"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 1856,
+        "tag": "span",
+        "visible": true,
+        "width": 1307
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1517,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 1692,
+        "tag": "p",
+        "visible": true,
+        "width": 97
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1774,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1856,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 3163,
+        "tag": "span",
+        "visible": true,
+        "width": 1307
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 2065,
+        "tag": "p",
+        "visible": true,
+        "width": 209
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 2147,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 672,
+    "rootTop": 321,
+    "rootVisible": true,
+    "scrollWidth": 1425,
+    "title": "Collections",
+    "viewportWidth": 1440,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-FR-desktop.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "language": "DE",
+    "requestedUrl": "https://www.matchwalls.com/de/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Cookie-Zustimmung Wir und unsere Partner, einschließlich Shopify, verwenden Cookies und weitere Technologien, um dein Erlebnis individuell an dich anzupassen, dir Werbung zu zeigen und Analysen durchzuführen. Wir nutzen Cookies und andere Technologien für diese Zwecke nur mit deiner Zustimmung. Mehr Informationen findest du in unserer Datenschutzerklärung Einstellungen verwalten Akzeptieren Ablehnen Zu Inhalt springen Was sie von uns halten Kostenloser internationaler Versand 3 mit Klarna in 3 A",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Tapete wird meist nach Muster oder Designfamilie gewählt; ein Wandbild wird auf eine bestimmte Wand, Komposition oder Größe abgestimmt.",
+        "summary": "Was ist der Unterschied zwischen Tapete und Wandbild?"
+      },
+      {
+        "answer": "Ja. Muster helfen, Farbe, Struktur und Oberfläche vor der endgültigen Auswahl zu prüfen.",
+        "summary": "Kann ich vor dem Kauf Muster bestellen?"
+      },
+      {
+        "answer": "Das hängt von Oberfläche, Nutzung und Anforderungen des Projekts ab. Materialoptionen und Wandmaße sollten vor der Bestellung geprüft werden.",
+        "summary": "Welches Material soll ich wählen?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/de/collections",
+    "fixedOverlays": [
+      {
+        "area": 175264,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 170485,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Cookie-ZustimmungWir und unsere Partner, einschließlich Shopify, verwenden Cooki",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 96877,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      },
+      {
+        "area": 11670,
+        "className": "needsclick",
+        "position": "fixed",
+        "tag": "inbox-online-store-chat",
+        "text": "",
+        "visible": true,
+        "zIndex": "2147483647"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Kollektionen für Tapeten und Wandbilder"
+    ],
+    "h2s": [
+      "Cookie-Zustimmung",
+      "So wählst du Tapete oder Wandbild aus",
+      "Kollektionen entdecken",
+      "Angebote",
+      "Botanische Tapete",
+      "Florale Tapete",
+      "Geometrische Tapetenstile",
+      "Grafische Tapete",
+      "Künstlerische Tapete",
+      "Neue Tapeten"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/de/collections/alle-matchwallsmurals-wandbilder",
+        "href": "/de/collections/alle-matchwallsmurals-wandbilder",
+        "text": "Alle Designs ansehen"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/wie-man-wandmessungen-durchnimmt",
+        "href": "/de/pages/wie-man-wandmessungen-durchnimmt",
+        "text": "Wand messen"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/products/benutzerdefinierte-datei-uploader",
+        "href": "/de/products/benutzerdefinierte-datei-uploader",
+        "text": "Individuelles Wandbild erstellen"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/professionelle-form",
+        "href": "/de/pages/professionelle-form",
+        "text": "Professionelles Konto"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/spanien-tapete",
+        "href": "/de/pages/spanien-tapete",
+        "text": "Tapete in Spanien"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/franzosische-tapete",
+        "href": "/de/pages/franzosische-tapete",
+        "text": "Tapete in Frankreich"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 1860,
+        "tag": "span",
+        "visible": true,
+        "width": 1360
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1503,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 1696,
+        "tag": "p",
+        "visible": true,
+        "width": 115
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1778,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1860,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 3220,
+        "tag": "span",
+        "visible": true,
+        "width": 1360
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 2082,
+        "tag": "p",
+        "visible": true,
+        "width": 222
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 2164,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 672,
+    "rootTop": 321,
+    "rootVisible": true,
+    "scrollWidth": 1425,
+    "title": "Sammlungen",
+    "viewportWidth": 1440,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-DE-desktop.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "language": "NL",
+    "requestedUrl": "https://www.matchwalls.com/nl/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Cookietoestemming Wij en onze partners, waaronder Shopify, gebruiken cookies en andere technologieën om jouw ervaring te personaliseren, advertenties te tonen en analyses uit te voeren. We zullen deze cookies of technologieën pas voor deze doeleinden gebruiken nadat je hiermee hebt ingestemd. Bekijk voor meer informatie ons Privacybeleid Voorkeuren beheren Accepteren Afwijzen Spring naar inhoud Wat ze van ons denken Gratis internationale verzending Betaal in 3 termen met Klarna Tevredenheidsgara",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Behang wordt meestal gekozen op patroon of collectie; een wandprint wordt afgestemd op een specifieke wand, compositie of maat.",
+        "summary": "Wat is het verschil tussen behang en een wandprint?"
+      },
+      {
+        "answer": "Ja. Stalen helpen om kleur, textuur en afwerking te beoordelen voordat je het definitieve behang of de wandprint kiest.",
+        "summary": "Kan ik stalen bestellen voordat ik koop?"
+      },
+      {
+        "answer": "Dat hangt af van de ondergrond, het gebruik en de eisen van het project. Vergelijk de materialen en meet de wand voordat je bestelt.",
+        "summary": "Welk materiaal moet ik kiezen?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/nl/collections",
+    "fixedOverlays": [
+      {
+        "area": 175264,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 170485,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "CookietoestemmingWij en onze partners, waaronder Shopify, gebruiken cookies en a",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 96877,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      },
+      {
+        "area": 14938,
+        "className": "needsclick",
+        "position": "fixed",
+        "tag": "inbox-online-store-chat",
+        "text": "",
+        "visible": true,
+        "zIndex": "2147483647"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Collecties behang en wandprints"
+    ],
+    "h2s": [
+      "Cookietoestemming",
+      "Hoe kies je behang of een wandprint",
+      "Collecties bekijken",
+      "Aanbiedingen",
+      "Artistiek Behang",
+      "Behang 3D",
+      "Behang Albacete",
+      "Behang Alicante",
+      "Behang Almería",
+      "Behang Asturias"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/nl/collections/alle-matchwallsmurals-muurschilderingen",
+        "href": "/nl/collections/alle-matchwallsmurals-muurschilderingen",
+        "text": "Alle designs bekijken"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/hoe-u-muurmetingen-kunt-uitvoeren",
+        "href": "/nl/pages/hoe-u-muurmetingen-kunt-uitvoeren",
+        "text": "Wand meten"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/products/aangepaste-bestandsbelaster",
+        "href": "/nl/products/aangepaste-bestandsbelaster",
+        "text": "Gepersonaliseerde wandprint maken"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/professionele-vorm",
+        "href": "/nl/pages/professionele-vorm",
+        "text": "Professioneel account"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/spanje-behang",
+        "href": "/nl/pages/spanje-behang",
+        "text": "Behang in Spanje"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/frans-behang",
+        "href": "/nl/pages/frans-behang",
+        "text": "Behang in Frankrijk"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 1764,
+        "tag": "span",
+        "visible": true,
+        "width": 1260
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 1600,
+        "tag": "p",
+        "visible": true,
+        "width": 90
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1682,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1764,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 3024,
+        "tag": "span",
+        "visible": true,
+        "width": 1260
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 1963,
+        "tag": "p",
+        "visible": true,
+        "width": 199
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 2045,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 2308,
+        "tag": "p",
+        "visible": true,
+        "width": 185
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 586,
+    "rootTop": 321,
+    "rootVisible": true,
+    "scrollWidth": 1425,
+    "title": "Collecties",
+    "viewportWidth": 1440,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-NL-desktop.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "mobile",
+    "width": 390,
+    "height": 844,
+    "language": "ES",
+    "requestedUrl": "https://www.matchwalls.com/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Consentimiento para el uso de cookies Nosotros y nuestros partners, incluido Shopify, utilizamos cookies y otras tecnologías para personalizar tu experiencia, mostrarte anuncios y realizar informes y estadísticas, y no utilizaremos cookies ni otras tecnologías para estos fines a menos que las aceptes. Obtén más información en nuestra Política de privacidad Administrar preferencias Aceptar Rechazar saltar al contenido Lo que opinan de nosotros Envío internacional gratuito Paga en 3 plazos con Kla",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "El papel pintado suele elegirse por diseño o patrón; un mural se adapta a una pared o composición concreta y puede requerir medidas personalizadas.",
+        "summary": "¿Qué diferencia hay entre papel pintado y mural?"
+      },
+      {
+        "answer": "Sí. Las muestras ayudan a comprobar color, textura y acabado antes de elegir el papel pintado o mural definitivo.",
+        "summary": "¿Puedo pedir muestras antes de comprar?"
+      },
+      {
+        "answer": "Depende del uso, la superficie y el nivel de exigencia del proyecto. Antes de decidir, conviene revisar las opciones de material y medir correctamente la pared.",
+        "summary": "¿Qué material debo elegir?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/collections",
+    "fixedOverlays": [
+      {
+        "area": 121799,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Consentimiento para el uso de cookiesNosotros y nuestros partners, incluido Shop",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 35219,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 25477,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Colecciones de papel pintado y murales"
+    ],
+    "h2s": [
+      "Consentimiento para el uso de cookies",
+      "Cómo elegir tu papel pintado o mural",
+      "Explora las colecciones",
+      "Nuevos Papeles Pintados",
+      "Ofertas",
+      "Papel Pintado 3D",
+      "Papel pintado Albacete",
+      "Papel pintado Alicante",
+      "Papel pintado Almería",
+      "Papel Pintado Amarillo"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/collections/murales",
+        "href": "/collections/murales",
+        "text": "Ver todos los diseños"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/medidas-paredes",
+        "href": "/pages/medidas-paredes",
+        "text": "Medir la pared"
+      },
+      {
+        "abs": "https://www.matchwalls.com/products/custom-file-uploader",
+        "href": "/products/custom-file-uploader",
+        "text": "Crear mural personalizado"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/formulario-profesionales",
+        "href": "/pages/formulario-profesionales",
+        "text": "Cuenta profesional"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/papel-pintado-espana",
+        "href": "/pages/papel-pintado-espana",
+        "text": "Papel pintado en España"
+      },
+      {
+        "abs": "https://www.matchwalls.com/pages/papel-pintado-francia",
+        "href": "/pages/papel-pintado-francia",
+        "text": "Papel pintado en Francia"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 965,
+        "tag": "span",
+        "visible": true,
+        "width": 835
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 508,
+        "tag": "p",
+        "visible": true,
+        "width": 149
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 550,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 719,
+        "tag": "p",
+        "visible": true,
+        "width": 131
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 761,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 881,
+        "tag": "p",
+        "visible": true,
+        "width": 82
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 923,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 965,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 736,
+    "rootTop": 209,
+    "rootVisible": true,
+    "scrollWidth": 375,
+    "title": "Colecciones",
+    "viewportWidth": 390,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-ES-mobile.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "mobile",
+    "width": 390,
+    "height": 844,
+    "language": "EN",
+    "requestedUrl": "https://www.matchwalls.com/en/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Cookie consent We and our partners, including Shopify, use cookies and other technologies to personalize your experience, show you ads, and perform analytics, and we will not use cookies or other technologies for these purposes unless you accept them. Learn more in our Privacy Policy Manage preferences Accept Decline Jump to content What they think of us Free international shipping Pay in 3 terms with Klarna Satisfaction guarantee Fast delivery Free international shipping Pay in 3 terms with Kla",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Wallpaper is usually selected by pattern or design family; a mural is adapted to a specific wall, composition or custom size.",
+        "summary": "What is the difference between wallpaper and a mural?"
+      },
+      {
+        "answer": "Yes. Samples help you check colour, texture and finish before choosing the final wallpaper or mural.",
+        "summary": "Can I order samples before buying?"
+      },
+      {
+        "answer": "It depends on the surface, use and project requirements. Review the material options and measure the wall before ordering.",
+        "summary": "Which material should I choose?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/en/collections",
+    "fixedOverlays": [
+      {
+        "area": 116101,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Cookie consentWe and our partners, including Shopify, use cookies and other tech",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 35219,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 25477,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Wallpaper and mural collections"
+    ],
+    "h2s": [
+      "Cookie consent",
+      "How to choose your wallpaper or mural",
+      "Explore collections",
+      "3D Wallpaper",
+      "Albacete Wallpaper",
+      "Alicante Wallpaper",
+      "Almeria Wallpaper",
+      "Artistic Wallpaper",
+      "Asturias Wallpaper",
+      "Badajoz Wallpaper"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/en/collections/all-matchwallsmurals-murals",
+        "href": "/en/collections/all-matchwallsmurals-murals",
+        "text": "View all designs"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/how-to-take-wall-measurements",
+        "href": "/en/pages/how-to-take-wall-measurements",
+        "text": "Measure your wall"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/products/custom-file-uploader",
+        "href": "/en/products/custom-file-uploader",
+        "text": "Create a custom mural"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/professional-form",
+        "href": "/en/pages/professional-form",
+        "text": "Professional account"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/spain-wallpaper",
+        "href": "/en/pages/spain-wallpaper",
+        "text": "Wallpaper in Spain"
+      },
+      {
+        "abs": "https://www.matchwalls.com/en/pages/french-wallpaper",
+        "href": "/en/pages/french-wallpaper",
+        "text": "Wallpaper in France"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 927,
+        "tag": "span",
+        "visible": true,
+        "width": 798
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 492,
+        "tag": "p",
+        "visible": true,
+        "width": 139
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 534,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 695,
+        "tag": "p",
+        "visible": true,
+        "width": 123
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 737,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 843,
+        "tag": "p",
+        "visible": true,
+        "width": 68
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 885,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 927,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 691,
+    "rootTop": 209,
+    "rootVisible": true,
+    "scrollWidth": 375,
+    "title": "Collections",
+    "viewportWidth": 390,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-EN-mobile.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "mobile",
+    "width": 390,
+    "height": 844,
+    "language": "FR",
+    "requestedUrl": "https://www.matchwalls.com/fr/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Consentement aux cookies Nous et nos partenaires, y compris Shopify, utilisons des cookies et d’autres technologies pour personnaliser votre expérience, vous afficher des publicités et effectuer des analyses. Nous n’utiliserons pas de cookies ou d’autres technologies à ces fins sans votre consentement. En savoir plus dans notre Politique de confidentialité Gérer vos préférences Accepter Refuser Sauter au contenu Ce qu'ils pensent de nous Expédition internationale gratuite Payer en 3 conditions a",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Un papier peint se choisit souvent par motif ou par collection; un panoramique mural s’adapte à une composition ou à des dimensions précises.",
+        "summary": "Quelle est la différence entre un papier peint et un panoramique mural ?"
+      },
+      {
+        "answer": "Oui. Les échantillons permettent de vérifier la couleur, la texture et la finition avant de choisir le papier peint ou le panoramique définitif.",
+        "summary": "Puis-je commander des échantillons avant d’acheter ?"
+      },
+      {
+        "answer": "Le choix dépend de la surface, de l’usage et du niveau d’exigence du projet. Il est conseillé de comparer les matières et de mesurer le mur avant de commander.",
+        "summary": "Quelle matière choisir ?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/fr/collections",
+    "fixedOverlays": [
+      {
+        "area": 127496,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Consentement aux cookiesNous et nos partenaires, y compris Shopify, utilisons de",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 35219,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 25477,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Collections de papiers peints et panoramiques"
+    ],
+    "h2s": [
+      "Consentement aux cookies",
+      "Comment choisir votre papier peint ou panoramique",
+      "Explorer les collections",
+      "Nouveaux Papiers Peints",
+      "Offres",
+      "Papier Peint 3D",
+      "Papier Peint Alava",
+      "Papier Peint Albacete",
+      "Papier Peint Alicante",
+      "Papier Peint Almeria"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/fr/collections/tous-les-peintures-murales-matchwallsmurals",
+        "href": "/fr/collections/tous-les-peintures-murales-matchwallsmurals",
+        "text": "Voir tous les designs"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/comment-prendre-des-mesures-murales",
+        "href": "/fr/pages/comment-prendre-des-mesures-murales",
+        "text": "Mesurer le mur"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/products/telechargeur-de-fichiers-personnalise",
+        "href": "/fr/products/telechargeur-de-fichiers-personnalise",
+        "text": "Créer un panoramique personnalisé"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/forme-professionnelle",
+        "href": "/fr/pages/forme-professionnelle",
+        "text": "Compte professionnel"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/papier-peint-en-espagne",
+        "href": "/fr/pages/papier-peint-en-espagne",
+        "text": "Papier peint en Espagne"
+      },
+      {
+        "abs": "https://www.matchwalls.com/fr/pages/papier-peint-en-france",
+        "href": "/fr/pages/papier-peint-en-france",
+        "text": "Papier peint en France"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 1036,
+        "tag": "span",
+        "visible": true,
+        "width": 899
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 579,
+        "tag": "p",
+        "visible": true,
+        "width": 180
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 621,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 788,
+        "tag": "p",
+        "visible": true,
+        "width": 129
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 830,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 952,
+        "tag": "p",
+        "visible": true,
+        "width": 84
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 994,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1036,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": true,
+    "quickLinkCount": 6,
+    "rootHeight": 807,
+    "rootTop": 209,
+    "rootVisible": true,
+    "scrollWidth": 408,
+    "title": "Collections",
+    "viewportWidth": 390,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-FR-mobile.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "mobile",
+    "width": 390,
+    "height": 844,
+    "language": "DE",
+    "requestedUrl": "https://www.matchwalls.com/de/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Cookie-Zustimmung Wir und unsere Partner, einschließlich Shopify, verwenden Cookies und weitere Technologien, um dein Erlebnis individuell an dich anzupassen, dir Werbung zu zeigen und Analysen durchzuführen. Wir nutzen Cookies und andere Technologien für diese Zwecke nur mit deiner Zustimmung. Mehr Informationen findest du in unserer Datenschutzerklärung Einstellungen verwalten Akzeptieren Ablehnen Zu Inhalt springen Was sie von uns halten Kostenloser internationaler Versand 3 mit Klarna in 3 A",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Tapete wird meist nach Muster oder Designfamilie gewählt; ein Wandbild wird auf eine bestimmte Wand, Komposition oder Größe abgestimmt.",
+        "summary": "Was ist der Unterschied zwischen Tapete und Wandbild?"
+      },
+      {
+        "answer": "Ja. Muster helfen, Farbe, Struktur und Oberfläche vor der endgültigen Auswahl zu prüfen.",
+        "summary": "Kann ich vor dem Kauf Muster bestellen?"
+      },
+      {
+        "answer": "Das hängt von Oberfläche, Nutzung und Anforderungen des Projekts ab. Materialoptionen und Wandmaße sollten vor der Bestellung geprüft werden.",
+        "summary": "Welches Material soll ich wählen?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/de/collections",
+    "fixedOverlays": [
+      {
+        "area": 127496,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "Cookie-ZustimmungWir und unsere Partner, einschließlich Shopify, verwenden Cooki",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 35219,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 25477,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Kollektionen für Tapeten und Wandbilder"
+    ],
+    "h2s": [
+      "Cookie-Zustimmung",
+      "So wählst du Tapete oder Wandbild aus",
+      "Kollektionen entdecken",
+      "Angebote",
+      "Botanische Tapete",
+      "Florale Tapete",
+      "Geometrische Tapetenstile",
+      "Grafische Tapete",
+      "Künstlerische Tapete",
+      "Neue Tapeten"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/de/collections/alle-matchwallsmurals-wandbilder",
+        "href": "/de/collections/alle-matchwallsmurals-wandbilder",
+        "text": "Alle Designs ansehen"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/wie-man-wandmessungen-durchnimmt",
+        "href": "/de/pages/wie-man-wandmessungen-durchnimmt",
+        "text": "Wand messen"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/products/benutzerdefinierte-datei-uploader",
+        "href": "/de/products/benutzerdefinierte-datei-uploader",
+        "text": "Individuelles Wandbild erstellen"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/professionelle-form",
+        "href": "/de/pages/professionelle-form",
+        "text": "Professionelles Konto"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/spanien-tapete",
+        "href": "/de/pages/spanien-tapete",
+        "text": "Tapete in Spanien"
+      },
+      {
+        "abs": "https://www.matchwalls.com/de/pages/franzosische-tapete",
+        "href": "/de/pages/franzosische-tapete",
+        "text": "Tapete in Frankreich"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 1067,
+        "tag": "span",
+        "visible": true,
+        "width": 945
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 599,
+        "tag": "p",
+        "visible": true,
+        "width": 205
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 641,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 803,
+        "tag": "p",
+        "visible": true,
+        "width": 124
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 845,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 983,
+        "tag": "p",
+        "visible": true,
+        "width": 100
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1025,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 1067,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 783,
+    "rootTop": 209,
+    "rootVisible": true,
+    "scrollWidth": 375,
+    "title": "Sammlungen",
+    "viewportWidth": 390,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-DE-mobile.png"
+  },
+  {
+    "lot": "MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B",
+    "viewport": "mobile",
+    "width": 390,
+    "height": 844,
+    "language": "NL",
+    "requestedUrl": "https://www.matchwalls.com/nl/collections?preview_theme_id=178396463480",
+    "bodySnippet": "Cookietoestemming Wij en onze partners, waaronder Shopify, gebruiken cookies en andere technologieën om jouw ervaring te personaliseren, advertenties te tonen en analyses uit te voeren. We zullen deze cookies of technologieën pas voor deze doeleinden gebruiken nadat je hiermee hebt ingestemd. Bekijk voor meer informatie ons Privacybeleid Voorkeuren beheren Accepteren Afwijzen Spring naar inhoud Wat ze van ons denken Gratis internationale verzending Betaal in 3 termen met Klarna Tevredenheidsgara",
+    "collectionCardCount": 48,
+    "details": [
+      {
+        "answer": "Behang wordt meestal gekozen op patroon of collectie; een wandprint wordt afgestemd op een specifieke wand, compositie of maat.",
+        "summary": "Wat is het verschil tussen behang en een wandprint?"
+      },
+      {
+        "answer": "Ja. Stalen helpen om kleur, textuur en afwerking te beoordelen voordat je het definitieve behang of de wandprint kiest.",
+        "summary": "Kan ik stalen bestellen voordat ik koop?"
+      },
+      {
+        "answer": "Dat hangt af van de ondergrond, het gebruik en de eisen van het project. Vergelijk de materialen en meet de wand voordat je bestelt.",
+        "summary": "Welk materiaal moet ik kiezen?"
+      }
+    ],
+    "faqCount": 3,
+    "finalUrl": "https://www.matchwalls.com/nl/collections",
+    "fixedOverlays": [
+      {
+        "area": 127496,
+        "className": "shopify-pc__banner__dialog",
+        "position": "fixed",
+        "tag": "section",
+        "text": "CookietoestemmingWij en onze partners, waaronder Shopify, gebruiken cookies en a",
+        "visible": true,
+        "zIndex": "2000000"
+      },
+      {
+        "area": 35219,
+        "className": "shopify-section shopify-section-group-header-group shopify-section--header",
+        "position": "sticky",
+        "tag": "header",
+        "text": ":root { --sticky-header-enabled:1; } #shopify-section-sections--24950424797560__",
+        "visible": true,
+        "zIndex": "10"
+      },
+      {
+        "area": 25477,
+        "className": "",
+        "position": "fixed",
+        "tag": "div",
+        "text": "",
+        "visible": true,
+        "zIndex": "auto"
+      }
+    ],
+    "h1Count": 1,
+    "h1s": [
+      "Collecties behang en wandprints"
+    ],
+    "h2s": [
+      "Cookietoestemming",
+      "Hoe kies je behang of een wandprint",
+      "Collecties bekijken",
+      "Aanbiedingen",
+      "Artistiek Behang",
+      "Behang 3D",
+      "Behang Albacete",
+      "Behang Alicante",
+      "Behang Almería",
+      "Behang Asturias"
+    ],
+    "hasCollectionList": true,
+    "hasRoot": true,
+    "links": [
+      {
+        "abs": "https://www.matchwalls.com/nl/collections/alle-matchwallsmurals-muurschilderingen",
+        "href": "/nl/collections/alle-matchwallsmurals-muurschilderingen",
+        "text": "Alle designs bekijken"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/hoe-u-muurmetingen-kunt-uitvoeren",
+        "href": "/nl/pages/hoe-u-muurmetingen-kunt-uitvoeren",
+        "text": "Wand meten"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/products/aangepaste-bestandsbelaster",
+        "href": "/nl/products/aangepaste-bestandsbelaster",
+        "text": "Gepersonaliseerde wandprint maken"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/professionele-vorm",
+        "href": "/nl/pages/professionele-vorm",
+        "text": "Professioneel account"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/spanje-behang",
+        "href": "/nl/pages/spanje-behang",
+        "text": "Behang in Spanje"
+      },
+      {
+        "abs": "https://www.matchwalls.com/nl/pages/frans-behang",
+        "href": "/nl/pages/frans-behang",
+        "text": "Behang in Frankrijk"
+      }
+    ],
+    "missingTranslation": false,
+    "mixedLanguageSuspect": false,
+    "offenders": [
+      {
+        "className": "announcement-bar__item",
+        "display": "grid",
+        "position": "static",
+        "right": 975,
+        "tag": "span",
+        "visible": true,
+        "width": 858
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 530,
+        "tag": "p",
+        "visible": true,
+        "width": 160
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 572,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 733,
+        "tag": "p",
+        "visible": true,
+        "width": 123
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 775,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "bold text-base",
+        "display": "block",
+        "position": "static",
+        "right": 891,
+        "tag": "p",
+        "visible": true,
+        "width": 78
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 933,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      },
+      {
+        "className": "shape-circle shape--sm",
+        "display": "block",
+        "position": "static",
+        "right": 975,
+        "tag": "span",
+        "visible": true,
+        "width": 4
+      }
+    ],
+    "overflowX": false,
+    "quickLinkCount": 6,
+    "rootHeight": 712,
+    "rootTop": 209,
+    "rootVisible": true,
+    "scrollWidth": 381,
+    "title": "Collecties",
+    "viewportWidth": 390,
+    "screenshot": "C:/Users/d.bermejo/OneDrive - Matchwalls/Documentos/Matchwalls Shopify/auditoria-seo-geo-matchwalls/evidencias/MW-COLLECTIONS-ROOT-HUB-I18N-DRAFT-VISUAL-LINGUISTIC-QA-013E13B-2026-07-04/013E13B-NL-mobile.png"
+  }
+]

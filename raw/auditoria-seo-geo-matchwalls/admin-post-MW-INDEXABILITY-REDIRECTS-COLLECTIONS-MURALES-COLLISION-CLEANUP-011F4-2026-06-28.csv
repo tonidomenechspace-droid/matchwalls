@@ -1,0 +1,5 @@
+check_type,query_or_id,result_count,precision,id,path,target,collection_id,handle,title,products_count,publications_count,estado,nota
+deleted_gid,gid://shopify/UrlRedirect/1534386274680,0,EXACT,,,,,,,,,CORREGIDO Y VERIFICADO,"urlRedirect(id) devuelve null"
+path_search,path:/collections/murales,0,EXACT,,,,,,,,,CORREGIDO Y VERIFICADO,"No quedan redirects Admin con path exacto /collections/murales"
+target_search,target:/en/collections/all-matchwallsmurals-murals,8,EXACT,,,,,,,,,VERIFICADO PERO MEJORABLE,"Quedan 8 redirects legacy hacia handle EN; fuera del alcance 011F4"
+real_collection,collectionByHandle(murales),1,EXACT,,,,gid://shopify/Collection/439953719523,murales,Todos los Papeles Pintados,758,9,VERIFICADO Y CORRECTO,"Colección real intacta tras eliminar redirect conflictivo"

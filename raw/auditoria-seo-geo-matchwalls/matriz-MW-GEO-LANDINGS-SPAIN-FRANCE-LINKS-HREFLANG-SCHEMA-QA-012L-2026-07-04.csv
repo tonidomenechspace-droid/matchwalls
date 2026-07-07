@@ -1,0 +1,9 @@
+area,recurso,estado,evidencia,recomendacion,prioridad,riesgo,siguiente_lote
+Canonical,10 URLs Espana/Francia ES EN FR DE NL,VERIFICADO Y CORRECTO,"10/10 canonical exacto a URL solicitada","Mantener",Alta,Bajo,MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-SOURCE-PROPOSAL-012L1
+Indexabilidad,10 URLs Espana/Francia ES EN FR DE NL,VERIFICADO Y CORRECTO,"10/10 HTTP 200 y sin noindex","Mantener",Alta,Bajo,MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-SOURCE-PROPOSAL-012L1
+Hreflang prioritario,ES EN FR DE NL,VERIFICADO Y CORRECTO,"Alternates esperados presentes y reciprocos; x-default a ES","Mantener; no tocar handles",Alta,Bajo,MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-SOURCE-PROPOSAL-012L1
+Hreflang IT/PT,IT PT,STANDBY,"IT/PT detectados en hreflang publico pero fuera de prioridad del lote","Auditar solo con aprobacion expresa o en limpieza defensiva",Baja,Medio,STANDBY
+CTAs editoriales,40 presencias de CTA en 10 landings,VERIFICADO Y CORRECTO,"Colecciones/muestras/custom/profesionales presentes; destinos 200 canonical sin noindex","Mantener",Alta,Bajo,MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-SOURCE-PROPOSAL-012L1
+Schema JSON-LD tecnico,10 URLs pais,VERIFICADO Y CORRECTO,"1 bloque JSON-LD valido por URL; 0 errores parseo","Mantener BreadcrumbList",Alta,Bajo,MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-SOURCE-PROPOSAL-012L1
+Schema GEO/AGEO,10 URLs pais,VERIFICADO PERO MEJORABLE,"Solo BreadcrumbList/ListItem; falta WebPage/FAQPage/factual layer","Preparar propuesta sin duplicar schema",Alta,Medio,MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-SOURCE-PROPOSAL-012L1
+Meta descriptions,10 URLs pais,STANDBY,"Metas automaticas largas; ruta meta manual bloqueada por incidencia 012J","No tocar todavia",Media,Medio,STANDBY

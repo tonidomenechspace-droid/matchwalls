@@ -1,0 +1,24 @@
+﻿group_type,group,rows,impressions,clicks,ctr_calculated,weighted_avg_position
+language_signal,ES,64,93,1,1.08%,6.31
+language_signal,EN/MIXED,9,16,0,0.00%,7.94
+language_signal,PT,9,13,1,7.69%,6.77
+language_signal,FR,2,4,0,0.00%,5.25
+language_signal,BRAND_TYPO,1,2,1,50.00%,1.00
+language_signal,IT,2,2,0,0.00%,5.00
+language_signal,CORRUPTED/EXPORT_NOISE,1,1,0,0.00%,8.00
+intent_cluster,Producto/color/patr?n/estilo,48,78,1,1.28%,6.41
+intent_cluster,Mural personalizado / proyecto,13,17,1,5.88%,6.59
+intent_cluster,Geo/local,8,16,0,0.00%,6.94
+intent_cluster,Medici?n/instalaci?n/mantenimiento,11,11,0,0.00%,5.55
+intent_cluster,Consulta gen?rica o ambigua,6,6,0,0.00%,8.17
+intent_cluster,Marca con typo,1,2,1,50.00%,1.00
+intent_cluster,Ruido t?cnico/export,1,1,0,0.00%,8.00
+priority,MEDIA,64,77,0,0.00%,6.34
+priority,ALTA,8,34,2,5.88%,6.18
+priority,BAJA,15,19,1,5.26%,7.21
+priority,STANDBY,1,1,0,0.00%,8.00
+status,VERIFICADO PERO MEJORABLE,72,111,2,1.80%,6.29
+status,STANDBY,11,15,1,6.67%,6.53
+status,REQUIERE DECISION HUMANA,4,4,0,0.00%,9.75
+status,INCORRECTO,1,1,0,0.00%,8.00
+overall,query export available,88,131,3,2.29%,6.43

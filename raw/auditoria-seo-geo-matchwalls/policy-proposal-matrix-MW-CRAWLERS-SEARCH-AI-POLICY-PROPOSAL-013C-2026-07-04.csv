@@ -1,0 +1,18 @@
+platform,bot_or_control,purpose,current_state,proposed_policy,status,next_step
+Google Search,Googlebot,Search crawl and AI Overviews/AI Mode eligibility,Allowed via User-agent star,Keep allowed,VERIFICADO Y CORRECTO,No robots change
+Google Gemini/Vertex,Google-Extended,Control token for Gemini/Vertex training/grounding outside Search,Allowed implicitly via User-agent star,Visibility-first keep allowed unless Daniel chooses training opt-out,REQUIERE DECISION HUMANA,Decision only
+Bing Edge Copilot,bingbot,Bing crawl and Microsoft search ecosystem,Allowed via User-agent star,Keep allowed and verify Bing Webmaster Tools,VERIFICADO PERO MEJORABLE,013D/013E
+Yahoo,Yahoo via Bing and Slurp legacy,Yahoo discovery primarily via Bing,Allowed via User-agent star,Use Bing Webmaster Tools as main route,VERIFICADO PERO MEJORABLE,013E
+ChatGPT Search,OAI-SearchBot,ChatGPT search result/citation eligibility,Allowed via User-agent star,Keep allowed,VERIFICADO Y CORRECTO,No robots change
+ChatGPT user fetch,ChatGPT-User,User-requested fetch,Allowed via User-agent star,Keep allowed,VERIFICADO Y CORRECTO,No robots change
+OpenAI training,GPTBot,Training/foundation model crawl,Allowed implicitly via User-agent star,Visibility-first keep allowed unless Daniel chooses training opt-out,REQUIERE DECISION HUMANA,Decision only
+Claude Search,Claude-SearchBot,Claude search indexing/visibility,Allowed via User-agent star,Keep allowed,VERIFICADO Y CORRECTO,No robots change
+Claude user fetch,Claude-User,User-requested fetch,Allowed via User-agent star,Keep allowed,VERIFICADO Y CORRECTO,No robots change
+Anthropic training,ClaudeBot,Training/foundation model crawl,Allowed implicitly via User-agent star,Visibility-first keep allowed unless Daniel chooses training opt-out,REQUIERE DECISION HUMANA,Decision only
+Perplexity Search,PerplexityBot,Perplexity search/index/citation,Allowed via User-agent star,Keep allowed,VERIFICADO Y CORRECTO,No robots change
+Perplexity user fetch,Perplexity-User,User-requested fetch,Allowed via User-agent star,Keep allowed and later verify WAF allowlist,VERIFICADO PERO MEJORABLE,013F if WAF access exists
+Apple search,Applebot,Safari/Siri/Spotlight search crawl,Allowed via User-agent star,Keep allowed,VERIFICADO Y CORRECTO,No robots change
+Apple extended,Applebot-Extended,Apple foundation model usage control,Allowed implicitly via User-agent star,Visibility-first keep allowed unless Daniel chooses training opt-out,REQUIERE DECISION HUMANA,Decision only
+Meta AI,Meta-WebIndexer/FacebookBot,Meta AI citation/linking or social crawlers,Allowed via User-agent star but official source not fully verified,Do not add specific rules until source/logs verified,DECLARADO PERO NO VERIFICADO,Verify official docs/logs
+Grok xAI,Grok/xAI unknown,Possible AI crawler,Allowed via User-agent star if it honors robots but official source not verified,Do not invent rules,NO ACCESIBLE,Recheck when official source/log evidence exists
+IndexNow,Key file and submission protocol,Real-time URL change notification,Not verified; /indexnow.txt 404,Design separately before implementation,INCOMPLETO,MW-INDEXNOW-BING-COPILOT-DESIGN-013D

@@ -1,0 +1,12 @@
+lot,area,item,status,evidence,action,next_lot
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Public,robots.txt,VERIFICADO Y CORRECTO,"robots.txt 200 in 013B/013D1","No action",""
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Public,sitemap.xml,VERIFICADO Y CORRECTO,"sitemap.xml 200; 29 sitemaps; 7274 URL entries counted","Verify submitted/read in Bing Webmaster Tools","MW-BING-WEBMASTER-MANUAL-CONFIRMATION-013E1"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Public,bingbot robots allow,VERIFICADO Y CORRECTO,"013B matrix allows bingbot on public core URLs and blocks private/low-value routes","No robots change now",""
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Public,indexnow.txt,INCOMPLETO,"/indexnow.txt 404 in 013B/013D1","Keep IndexNow blocked until key hosting resolved","MW-INDEXNOW-SHOPIFY-ROOT-KEY-SUPPORT-QUESTION-013D2"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Bing Webmaster,property exists,NO ACCESIBLE,"No account access in this lot","Daniel must confirm in Bing Webmaster Tools","MW-BING-WEBMASTER-MANUAL-CONFIRMATION-013E1"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Bing Webmaster,verification method,NO ACCESIBLE,"No account access in this lot","Prefer GSC import if available, then DNS TXT if needed","MW-BING-WEBMASTER-GSC-IMPORT-OR-DNS-PROPOSAL-013E3"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Bing Webmaster,sitemap submitted,NO ACCESIBLE,"No account access in this lot","Check exact sitemap URL and status","MW-BING-WEBMASTER-MANUAL-CONFIRMATION-013E1"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Bing Webmaster,crawl errors,NO ACCESIBLE,"No account access in this lot","Check for 429/5xx/blocked issues from real Bingbot","MW-BING-WEBMASTER-SITEMAP-STATUS-QA-013E2"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Bing Webmaster,IndexNow tab,NO ACCESIBLE,"No account access in this lot","Check visibility/activity only; do not submit yet","MW-BING-WEBMASTER-MANUAL-CONFIRMATION-013E1"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,Bing Webmaster,AI Performance Copilot,NO ACCESIBLE,"Bing announced AI Performance public preview in 2026, but account availability unknown","Check if menu/data visible","MW-BING-WEBMASTER-MANUAL-CONFIRMATION-013E1"
+MW-BING-WEBMASTER-VERIFICATION-DIAG-013E,QA,bingbot simulated fetch,DECLARADO PERO NO VERIFICADO,"Local simulated user-agent returned 429/500; not a verified Bingbot test","Do not treat as blocking proof; validate in Bing Webmaster real crawl reports","MW-BING-WEBMASTER-SITEMAP-STATUS-QA-013E2"

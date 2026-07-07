@@ -1,0 +1,9 @@
+﻿check_type,url,present_in_product_sitemap,estado
+sample_anomaly_url,https://www.matchwalls.com/products/muestra-abstract-curves-negro,no,CORREGIDO Y VERIFICADO
+sample_anomaly_url,https://www.matchwalls.com/en/products/black-curves-abstract-sample-1,no,CORREGIDO Y VERIFICADO
+sample_anomaly_url,https://www.matchwalls.com/fr/products/courbes-noires-echantillon-abstrait,no,CORREGIDO Y VERIFICADO
+sample_anomaly_url,https://www.matchwalls.com/de/products/schwarze-kurven-abstrakte-probe,no,CORREGIDO Y VERIFICADO
+sample_anomaly_url,https://www.matchwalls.com/nl/products/black-curves-abstract-sample,no,CORREGIDO Y VERIFICADO
+sample_anomaly_url,https://www.matchwalls.com/it/products/curve-nere-campione-astratto,no,CORREGIDO Y VERIFICADO
+sample_anomaly_url,https://www.matchwalls.com/pt/products/curvas-pretas-amostra-abstrata,no,CORREGIDO Y VERIFICADO
+inferred_main_product_es,https://www.matchwalls.com/products/abstract-curves-negro,yes,CORREGIDO Y VERIFICADO

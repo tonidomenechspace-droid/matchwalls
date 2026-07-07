@@ -1,0 +1,3 @@
+﻿type,id,path,target,collection_id,handle,title,products_count,publications_count,seo_hidden,rollback_method,estado
+"redirect_to_delete","gid://shopify/UrlRedirect/1534386274680","/collections/murales","/en/collections/all-matchwallsmurals-murals","","","","","","","urlRedirectCreate path=/collections/murales target=/en/collections/all-matchwallsmurals-murals","VERIFICADO Y CORRECTO"
+"real_collection","gid://shopify/Collection/439953719523","/collections/murales","","gid://shopify/Collection/439953719523","murales","Todos los Papeles Pintados","758","9","null","No revert; collection unchanged","VERIFICADO Y CORRECTO"

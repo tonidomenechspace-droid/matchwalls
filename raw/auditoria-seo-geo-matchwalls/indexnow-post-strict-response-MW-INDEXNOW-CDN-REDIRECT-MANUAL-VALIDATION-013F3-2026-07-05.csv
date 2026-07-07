@@ -1,0 +1,2 @@
+﻿"timestamp_utc","endpoint","method","host","key_location","url_submitted","http_status","content_type","effective_url","body","raw"
+"2026-07-05T08:03:42Z","https://api.indexnow.org/IndexNow","POST_STRICT_FILE","www.matchwalls.com","https://www.matchwalls.com/1fe8851103534006a2a9433fe8b56f2d.txt","https://www.matchwalls.com/","200","","https://api.indexnow.org/IndexNow","","200||https://api.indexnow.org/IndexNow"

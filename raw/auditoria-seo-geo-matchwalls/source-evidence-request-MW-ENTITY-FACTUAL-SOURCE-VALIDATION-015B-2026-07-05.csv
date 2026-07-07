@@ -1,0 +1,15 @@
+priority,needed_evidence,status,why_needed,acceptable_format,if_not_provided
+1,"Razón social exacta","REQUIERE DECISION HUMANA","Permite legalName si procede y coherencia legal","Texto confirmado por Daniel o documento legal","No usar legalName"
+1,"CIF/NIF/VAT/tax ID y decisión de publicabilidad","REQUIERE DECISION HUMANA","Evita inventar taxID/vatID","Documento fiscal o confirmación escrita","No usar taxID/vatID"
+1,"Dirección legal/publicable","REQUIERE DECISION HUMANA","Bloquea PostalAddress/LocalBusiness si no existe fuente","Documento legal o política pública vigente","No usar address ni LocalBusiness"
+1,"Email oficial atención cliente","REQUIERE DECISION HUMANA","Permite ContactPoint solo si es vigente","Confirmación escrita o fuente pública estable","No usar ContactPoint.email"
+2,"Teléfono oficial si existe","REQUIERE DECISION HUMANA","Permite ContactPoint.telephone si es público","Confirmación escrita","No usar telephone"
+2,"Perfiles oficiales sameAs","REQUIERE DECISION HUMANA","Evita enlazar perfiles no oficiales o erróneos","Lista de URLs oficiales","No usar sameAs"
+2,"Trustpilot/reseñas autorizadas","REQUIERE DECISION HUMANA","Evita aggregateRating/review falsos o no permitidos","URL oficial y permiso de uso/dato actual","No usar ratings/reviews"
+2,"Relación real con Barcelona","REQUIERE DECISION HUMANA","Evita claim geográfico incorrecto","Frase aprobada por marca/legal","No usar Barcelona como sede/origen"
+2,"Historia y claim 'desde 1961'","REQUIERE DECISION HUMANA","Evita atribución histórica incorrecta","Documento o explicación corporativa aprobada","No usar foundingDate/founding claim"
+2,"Modelo de fabricación/producción","REQUIERE DECISION HUMANA","Evita decir 'fabricante' sin evidencia","Descripción aprobada del proceso y ubicación publicable","Usar solo 'ofrece/diseña'"
+3,"Certificaciones y fichas técnicas","REQUIERE DECISION HUMANA","Permite claims de materiales/sostenibilidad","PDF/certificados/fichas técnicas","No usar certificaciones ni eco claims"
+3,"Políticas vigentes de envío/devolución/garantía","REQUIERE DECISION HUMANA","Evita claims legales/logísticos inseguros","URLs o texto legal vigente","No usar plazos, envío gratis, garantía ni devoluciones"
+3,"Autores/revisores expertos","REQUIERE DECISION HUMANA","Refuerza E-E-A-T de guías y artículos","Nombres, cargos, bio y permiso","No usar author/reviewer estructurado"
+

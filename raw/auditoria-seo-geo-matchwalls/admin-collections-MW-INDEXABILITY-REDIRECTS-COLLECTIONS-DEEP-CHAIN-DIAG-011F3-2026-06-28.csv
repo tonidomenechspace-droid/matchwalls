@@ -1,0 +1,6 @@
+queried_handle,collection_id,legacy_id,admin_handle,title,products_count,publications_count,seo_hidden,seo_title,estado,nota
+murales,gid://shopify/Collection/439953719523,439953719523,murales,Todos los Papeles Pintados,758,9,,"Todos los Papeles Pintados y Murales - Diseños modernos",VERIFICADO Y CORRECTO,"Colección real, publicada, indexable y presente en sitemap"
+all-matchwallsmurals-murals,,,,,,,,,VERIFICADO PERO MEJORABLE,"No existe como handle Admin base; es traducción EN del handle de murales"
+papeles-pintados,,,,,,,,,VERIFICADO PERO MEJORABLE,"No existe colección Admin con este handle; ruta legacy de redirección"
+papeles-pintados-old,,,,,,,,,VERIFICADO PERO MEJORABLE,"No existe colección Admin con este handle; ruta legacy de redirección"
+murales-mvp,,,,,,,,,VERIFICADO PERO MEJORABLE,"No existe colección Admin con este handle; ruta legacy de redirección"

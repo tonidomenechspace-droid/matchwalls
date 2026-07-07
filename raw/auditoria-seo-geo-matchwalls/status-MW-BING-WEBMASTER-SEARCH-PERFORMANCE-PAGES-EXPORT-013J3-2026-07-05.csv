@@ -1,0 +1,16 @@
+field,value,status
+lote,MW-BING-WEBMASTER-SEARCH-PERFORMANCE-PAGES-EXPORT-013J3,VERIFICADO PERO MEJORABLE
+date,2026-07-05,VERIFICADO Y CORRECTO
+mode,solo lectura,VERIFICADO Y CORRECTO
+source_file,C:\Users\d.bermejo\OneDrive - Matchwalls\Escritorio\matchwalls.com_PageTrafficReport_7_5_2026 CCCCCCCCCC.csv,VERIFICADO Y CORRECTO
+target,Bing Webmaster Tools > Search Performance > List By > Pages,VERIFICADO Y CORRECTO
+page_csv_found,yes,VERIFICADO Y CORRECTO
+rows,49,VERIFICADO Y CORRECTO
+impressions,136,VERIFICADO Y CORRECTO
+clicks,3,VERIFICADO Y CORRECTO
+ctr_calculated,2.21%,VERIFICADO Y CORRECTO
+weighted_avg_position,6.19,VERIFICADO Y CORRECTO
+shopify_changed,no,VERIFICADO Y CORRECTO
+bing_changed,no,VERIFICADO Y CORRECTO
+indexnow_changed,no,VERIFICADO Y CORRECTO
+next_recommended_lote,MW-BING-WEBMASTER-SEARCH-PERFORMANCE-COUNTRY-DEVICE-EXPORT-013J4,VERIFICADO PERO MEJORABLE

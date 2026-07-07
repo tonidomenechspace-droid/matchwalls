@@ -1,0 +1,8 @@
+HTTP/1.1 400 Bad Request
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+X-Cache: CONFIG_NOCACHE
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+X-MSEdge-Ref: Ref A: C65DE4DBAC2C4C3F9F70C649F9163722 Ref B: MRS211050313021 Ref C: 2026-07-05T08:01:20Z
+Date: Sun, 05 Jul 2026 08:01:20 GMT
+

@@ -1,0 +1,12 @@
+lot,artifact,status,value
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,shopify_changed,"VERIFICADO Y CORRECTO","no"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,langshop_changed,"VERIFICADO Y CORRECTO","no"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,bing_changed,"VERIFICADO Y CORRECTO","no"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,public_crawl_executed,"NO ACCESIBLE","no; bloqueado por ticket Shopify Engineering 68731900"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,brief_md,"VERIFICADO Y CORRECTO","entity-factual-brief-MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A-2026-07-05.md"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,claims_matrix,"VERIFICADO Y CORRECTO","32 claims clasificados"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,i18n_brief,"VERIFICADO Y CORRECTO","5 idiomas prioritarios"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,schema_map,"VERIFICADO Y CORRECTO","12 tipos/campos evaluados"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,entity_public_state,"INCOMPLETO","faltan datos legales, contacto oficial, perfiles sameAs, certificaciones y claims productivos"
+MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A,next_recommended_lot,"REQUIERE DECISION HUMANA","MW-ENTITY-FACTUAL-SOURCE-VALIDATION-015B"
+

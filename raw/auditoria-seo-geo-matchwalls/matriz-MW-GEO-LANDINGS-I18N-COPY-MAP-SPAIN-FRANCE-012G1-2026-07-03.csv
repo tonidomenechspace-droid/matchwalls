@@ -1,0 +1,17 @@
+country,page_id,locale,field,action,current_state,proposed_value_or_rule,handle_rule,execution_tool,status
+Spain,gid://shopify/Page/687276622200,fr,title,replace,INCORRECTO,"Papier peint en Espagne pour maisons et projets professionnels",conservar papier-peint-en-espagne,LangShop / Shopify Translate,INCOMPLETO
+Spain,gid://shopify/Page/687276622200,fr,body_html,replace,INCORRECTO,"Ver copy-map 012G1 sección 6.1",conservar papier-peint-en-espagne,LangShop / Shopify Translate,INCOMPLETO
+Spain,gid://shopify/Page/687276622200,en,title,replace,INCORRECTO,"Wallpaper in Spain for homes and professional projects",conservar spain-wallpaper,LangShop / Shopify Translate,INCOMPLETO
+Spain,gid://shopify/Page/687276622200,en,body_html,replace,INCORRECTO,"Ver copy-map 012G1 sección 6.2",conservar spain-wallpaper,LangShop / Shopify Translate,INCOMPLETO
+Spain,gid://shopify/Page/687276622200,de,title,replace,INCORRECTO,"Tapeten in Spanien für Wohnräume und professionelle Projekte",conservar spanien-tapete,LangShop / Shopify Translate,INCOMPLETO
+Spain,gid://shopify/Page/687276622200,de,body_html,replace,INCORRECTO,"Ver copy-map 012G1 sección 6.3",conservar spanien-tapete,LangShop / Shopify Translate,INCOMPLETO
+Spain,gid://shopify/Page/687276622200,nl,title,replace,INCORRECTO,"Behang in Spanje voor woningen en professionele projecten",conservar spanje-behang,LangShop / Shopify Translate,INCOMPLETO
+Spain,gid://shopify/Page/687276622200,nl,body_html,replace,INCORRECTO,"Ver copy-map 012G1 sección 6.4",conservar spanje-behang,LangShop / Shopify Translate,INCOMPLETO
+France,gid://shopify/Page/687276654968,fr,title,keep,CORREGIDO Y VERIFICADO,"Mantener valor actual 012F",conservar papier-peint-en-france,LangShop / Shopify Translate,CORREGIDO Y VERIFICADO
+France,gid://shopify/Page/687276654968,fr,body_html,keep,CORREGIDO Y VERIFICADO,"Mantener valor actual 012F",conservar papier-peint-en-france,LangShop / Shopify Translate,CORREGIDO Y VERIFICADO
+France,gid://shopify/Page/687276654968,en,title,replace,INCORRECTO,"Wallpaper in France for interiors and professional projects",conservar french-wallpaper,LangShop / Shopify Translate,INCOMPLETO
+France,gid://shopify/Page/687276654968,en,body_html,replace,INCORRECTO,"Ver copy-map 012G1 sección 6.5",conservar french-wallpaper,LangShop / Shopify Translate,INCOMPLETO
+France,gid://shopify/Page/687276654968,de,title,replace,INCORRECTO,"Tapeten in Frankreich für Innenräume und professionelle Projekte",conservar franzosische-tapete,LangShop / Shopify Translate,INCOMPLETO
+France,gid://shopify/Page/687276654968,de,body_html,replace,INCORRECTO,"Ver copy-map 012G1 sección 6.6",conservar franzosische-tapete,LangShop / Shopify Translate,INCOMPLETO
+France,gid://shopify/Page/687276654968,nl,title,replace,INCORRECTO,"Behang in Frankrijk voor interieurs en professionele projecten",conservar frans-behang,LangShop / Shopify Translate,INCOMPLETO
+France,gid://shopify/Page/687276654968,nl,body_html,replace,INCORRECTO,"Ver copy-map 012G1 sección 6.7",conservar frans-behang,LangShop / Shopify Translate,INCOMPLETO

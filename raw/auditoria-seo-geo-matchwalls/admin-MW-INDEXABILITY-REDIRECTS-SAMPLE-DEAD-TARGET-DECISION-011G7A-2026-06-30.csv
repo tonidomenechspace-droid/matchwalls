@@ -1,0 +1,5 @@
+recurso,id,handle_o_path,titulo,status_admin,publicado,online_url_o_target,estado,observacion
+UrlRedirect,gid://shopify/UrlRedirect/412616229091,/products/muestra-desnudos-blanco-y-negro,,existe,,/collections/muestras,INCORRECTO,"Redirect activo hacia target 404"
+Product,gid://shopify/Product/8561719247075,muestra-desnudos-blanco-y-negro,"Muestra de Desnudos Blanco y negro",DRAFT,no,,VERIFICADO PERO MEJORABLE,"Producto fuente existe pero no esta publicado; productType Muestra; tags blanco|muestra-mural|negro"
+Collection,,muestras,,no existe,no,,NO ACCESIBLE,"No existe coleccion con handle muestras; target actual publico 404"
+Page,gid://shopify/Page/106299195619,muestras,"Solicita muestras de papel pintado",publicada,si,https://www.matchwalls.com/pages/muestras,VERIFICADO Y CORRECTO,"Pagina informativa de muestras publicada; template muestras-2; aparece en sitemap"

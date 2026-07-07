@@ -1,0 +1,15 @@
+﻿group,id,path,target,estado,nota
+matchwallsmurals,gid://shopify/UrlRedirect/417580974307,/fr/collections/floral-painted-papers-matchwallswallspapers,/fr/collections/floral-murals-matchwallsmurals,REQUIERE DECISION HUMANA,Ejemplo del bloque matchwallsmurals/matchwallswallpapers
+matchwallsmurals,gid://shopify/UrlRedirect/417581007075,/fr/collections/painted-papers-graphic-matchwallswallpapers-1,/fr/collections/graphical-murals-matchwallsmurals,REQUIERE DECISION HUMANA,Ejemplo del bloque matchwallsmurals/matchwallswallpapers
+matchwallsmurals,gid://shopify/UrlRedirect/417581072611,/fr/collections/nature-painted-papers-matchwallswallpapers,/fr/collections/nature-murals-matchwallsmurals,REQUIERE DECISION HUMANA,Ejemplo del bloque matchwallsmurals/matchwallswallpapers
+matchwallsmurals,gid://shopify/UrlRedirect/417581105379,/fr/collections/wall-paper-matchwallswallpapers,/fr/collections/rays-mural-matchwallsmurals-1,REQUIERE DECISION HUMANA,Ejemplo del bloque matchwallsmurals/matchwallswallpapers
+matchwallsmurals,gid://shopify/UrlRedirect/417581170915,/fr/collections/painted-papeles-marble-matchwallswallpa,/fr/collections/mural-mural-matchwallsmurals,INCORRECTO,Slug truncado/literal detectado en muestra
+matchwallswallpapers,gid://shopify/UrlRedirect/417581203683,/en/collections/matchwalls-painted-papers-matchwallswallpapers,/en/collections/all-matchwallsmurals-murals,REQUIERE DECISION HUMANA,Ejemplo EN del bloque legacy
+facade,gid://shopify/UrlRedirect/412625207523,/pages/facade-variants/test,/,INCORRECTO,Redirección de prueba conservada; no tocar sin lote
+muestra,gid://shopify/UrlRedirect/408525799651,/products/muestra-de-enchanted-garden-symphony-multicolor-copia,/products/muestra-de-enchanted-garden-symphony-negro-copia,VERIFICADO PERO MEJORABLE,Muestra/redirección legacy
+muestra,gid://shopify/UrlRedirect/412616229091,/products/muestra-desnudos-blanco-y-negro,/collections/muestras,VERIFICADO PERO MEJORABLE,Muestra a colección muestras
+copy,gid://shopify/UrlRedirect/410313523427,/products/botanical-grid-marron-copy,/products/floral-cascade-rosa,VERIFICADO PERO MEJORABLE,Copy legacy
+copia,gid://shopify/UrlRedirect/408471535843,/products/blue-dot-harmony-gris-copia,/products/blue-dot-harmony-rosa-1,VERIFICADO PERO MEJORABLE,Copia legacy
+copia,gid://shopify/UrlRedirect/408531796195,/products/abismo-dorado-negro-copia,/products/eternal-marble-elegance,VERIFICADO PERO MEJORABLE,Copia legacy
+old,gid://shopify/UrlRedirect/410027000035,/collections/papeles-pintados,/collections/papeles-pintados-old,RIESGO CRITICO,Cadena confirmada por Admin
+old,gid://shopify/UrlRedirect/417318207715,/collections/papeles-pintados-old,/collections/murales,RIESGO CRITICO,Cadena confirmada por Admin

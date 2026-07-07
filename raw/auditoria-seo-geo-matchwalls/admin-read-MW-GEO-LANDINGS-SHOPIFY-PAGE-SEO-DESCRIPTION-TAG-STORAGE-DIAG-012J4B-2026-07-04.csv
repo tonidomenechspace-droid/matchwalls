@@ -1,0 +1,16 @@
+recurso,id,campo,valor,estado
+Page,gid://shopify/Page/687276622200,title,"Papel pintado en España para hogares y proyectos profesionales",VERIFICADO Y CORRECTO
+Page,gid://shopify/Page/687276622200,handle,papel-pintado-espana,VERIFICADO Y CORRECTO
+Page,gid://shopify/Page/687276622200,updatedAt,2026-07-04T00:07:41Z,VERIFICADO Y CORRECTO
+Page,gid://shopify/Page/687276622200,isPublished,true,VERIFICADO Y CORRECTO
+Page,gid://shopify/Page/687276622200,global.title_tag,NULL,VERIFICADO Y CORRECTO
+Page,gid://shopify/Page/687276622200,global.description_tag,NULL,VERIFICADO Y CORRECTO
+Page,gid://shopify/Page/687276622200,metafields.nodes,[],VERIFICADO Y CORRECTO
+TranslatableResource,gid://shopify/Page/687276622200,translatableContent ES keys,"title; body_html; handle",VERIFICADO Y CORRECTO
+Translations,gid://shopify/Page/687276622200,EN keys,"title; body_html; handle",VERIFICADO Y CORRECTO
+Translations,gid://shopify/Page/687276622200,FR keys,"title; body_html; handle",VERIFICADO Y CORRECTO
+Translations,gid://shopify/Page/687276622200,DE keys,"title; body_html; handle",VERIFICADO Y CORRECTO
+Translations,gid://shopify/Page/687276622200,NL keys,"title; body_html; handle",VERIFICADO Y CORRECTO
+Translations,gid://shopify/Page/687276622200,ES keys,[],VERIFICADO Y CORRECTO
+Market,gid://shopify/Market/15250456803,name,Spain,VERIFICADO Y CORRECTO
+MarketTranslations,gid://shopify/Page/687276622200,Spain ES/EN/FR/DE/NL,[],VERIFICADO Y CORRECTO

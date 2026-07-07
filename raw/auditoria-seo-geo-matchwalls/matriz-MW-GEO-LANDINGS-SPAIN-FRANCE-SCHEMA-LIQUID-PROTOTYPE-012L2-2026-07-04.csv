@@ -1,0 +1,8 @@
+"area","recurso","estado","problema","evidencia","prioridad","riesgo","recomendacion","siguiente_lote"
+"Liquid prototype","snippets/geo-landing-schema.liquid","VERIFICADO Y CORRECTO","Ninguno en validacion local","validate.mjs revision 2","Alta","Bajo como prototipo local","Usar como base de implementacion en tema no publicado","MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-DRAFT-THEME-TARGET-DIAG-012L3"
+"Tema destino","Tema Shopify no publicado","REQUIERE DECISION HUMANA","Aun no se ha seleccionado destino de escritura","012L2 no escribe Shopify","Alta","RIESGO CRITICO si se toca MAIN","Hacer diagnostico de tema destino antes de escribir","MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-DRAFT-THEME-TARGET-DIAG-012L3"
+"Schema actual","BreadcrumbList existente","VERIFICADO Y CORRECTO","No debe tocarse","012L/012L1","Alta","RIESGO CRITICO si se duplica o rompe","Mantener intacto; anadir render separado","MW-GEO-LANDINGS-SPAIN-FRANCE-SCHEMA-DRAFT-THEME-TARGET-DIAG-012L3"
+"Idiomas","ES/EN/FR/DE/NL","VERIFICADO Y CORRECTO","Prototipo limitado a idiomas prioritarios","geo-landing-schema.liquid revision 2","Alta","Medio tras implementacion si hay divergencia visible/schema","QA publico sobre 10 URLs despues de implementar","Futuro postcheck"
+"IT/PT","Landings fuera de prioridad","STANDBY","No deben recibir schema nuevo en este lote","Guard de idioma en revision 2","Media","Riesgo editorial si se activan accidentalmente","Mantener excluidos salvo decision expresa","STANDBY"
+"Organization global","Entidad MatchWalls","VERIFICADO PERO MEJORABLE","Home tiene Organization sin @id global estable documentado para grafo","auditoria-schema.md y 012L1","Media","Medio","Mantener publisher minimo; entidad global para 013C/013D","MW-SCHEMA-GLOBAL-AUDIT-013C"
+

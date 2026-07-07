@@ -1,0 +1,30 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 05 Jul 2026 08:00:20 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+x-dc: gcp-europe-west1,gcp-europe-west1,gcp-europe-west1
+location: https://cdn.shopify.com/s/files/1/0677/5308/3107/files/1fe8851103534006a2a9433fe8b56f2d.txt?v=1783238351
+x-redirect-reason: shop_redirect
+shopify-complexity-score: 720
+shopify-complexity-score-v2: 72
+set-cookie: _shopify_essential=:AZ8xSuf5AAEAESC_wZzbVAwz5xjh8Yj_OnUkUdP0zo-8GSnOKhK2rECLE-iWI0j_Zzf8Q0sDk2ItBExHlNYamsNnHbP_h9G9ypzcxaIT-9zEwJ7E1PQjTIbFRsLFsvsfqAqNQTRM6wGCQHscB76em2QWZ0uJAwC5FSCCbOhVhAKGoNeilfYpYr7xQ4-HV1Qky24iFg7ZjWXI2nKJrLKn8qMQbsB9Ylwh3HQg-woZu5cupPqaGQBMJX2bQGJ4XkVfWe9E2pKuW95iRwVOFQWcWZTo3NEXvZOG_J6RODJ1aw-vpJIj62776G3ROv4t2GKLGF1gF08:; Max-Age=31536000; Path=/; HttpOnly; Secure; Priority=High; SameSite=Lax
+x-frame-options: DENY
+content-security-policy: block-all-mixed-content; frame-ancestors 'none'; upgrade-insecure-requests;
+strict-transport-security: max-age=7889238
+X-Permitted-Cross-Domain-Policies: none
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wnEtKdSSzPpDtFdXr1LPut9N2dxR0zGlToWjejDG7UU9JmyKptx02QPOBeEWdRpHXMQF5sScjva7FnhwzAKNoVq0q2937wlq4Hm9gDO8AwrJcnBb%2FmuM%2FdWU7dGf%2F8cNybAK5w%3D%3D"}]}
+vary: Accept
+Alt-Svc: h3=":443"; ma=86400
+cache-control: private, no-store
+powered-by: Shopify
+server-timing: processing;dur=75, db;dur=26, asn;desc="3352", edge;desc="MAD", country;desc="ES", servedBy;desc="vsg9", requestID;desc="c21aa5bb-dc4f-4f8e-a1e0-a32a25185dee-1783238420", _y;desc="00000000-0000-0000-5000-000000000000", _s;desc="00000000-0000-0000-5000-000000000000", _cmp;desc="3.ampS_ESCT_t_f_eB1xnqLYT*Ghh4mM2HSRYg"
+X-Download-Options: noopen
+x-request-id: c21aa5bb-dc4f-4f8e-a1e0-a32a25185dee-1783238420
+cf-cache-status: DYNAMIC
+X-XSS-Protection: 1; mode=block
+Nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+X-Content-Type-Options: nosniff
+server: cloudflare
+CF-RAY: a164d5df6a8c2729-MAD
+

@@ -1,0 +1,29 @@
+metric,value,status,notes
+lote,MW-BING-WEBMASTER-SEARCH-PERFORMANCE-FULL-EXPORT-013J1,INCOMPLETO,El CSV recibido es overview diario; no contiene keywords ni páginas.
+source_file,matchwalls.com_SearchPerformanceOverview_All_7_5_2026.csv,VERIFICADO Y CORRECTO,Archivo recibido desde Escritorio.
+source_path,C:\Users\d.bermejo\OneDrive - Matchwalls\Escritorio\matchwalls.com_SearchPerformanceOverview_All_7_5_2026.csv,VERIFICADO Y CORRECTO,
+rows,21,VERIFICADO Y CORRECTO,
+columns,"Date | Clicks | Impressions | Avg. CTR",VERIFICADO Y CORRECTO,
+period_start,2026-06-13,VERIFICADO Y CORRECTO,
+period_end,2026-07-03,VERIFICADO Y CORRECTO,
+total_clicks,3,VERIFICADO Y CORRECTO,Coincide con baseline visible 013J.
+total_impressions,749,VERIFICADO Y CORRECTO,Coincide con baseline visible 013J.
+calculated_ctr_percent,0.40,VERIFICADO Y CORRECTO,3 / 749 * 100.
+days_with_clicks,3,VERIFICADO Y CORRECTO,"2026-06-14; 2026-06-17; 2026-06-23"
+days_without_clicks,18,VERIFICADO Y CORRECTO,
+best_impressions_day,2026-06-17,VERIFICADO Y CORRECTO,66 impresiones y 1 click.
+second_best_impressions_day,2026-06-23,VERIFICADO Y CORRECTO,54 impresiones y 1 click.
+third_best_impressions_day,2026-06-18,VERIFICADO Y CORRECTO,52 impresiones y 0 clicks.
+window_2026_06_13_to_2026_06_19_impressions,236,VERIFICADO Y CORRECTO,Primer bloque de 7 días.
+window_2026_06_13_to_2026_06_19_clicks,2,VERIFICADO Y CORRECTO,CTR bloque 0.85%.
+window_2026_06_20_to_2026_06_26_impressions,278,VERIFICADO Y CORRECTO,Segundo bloque de 7 días.
+window_2026_06_20_to_2026_06_26_clicks,1,VERIFICADO Y CORRECTO,CTR bloque 0.36%.
+window_2026_06_27_to_2026_07_03_impressions,235,VERIFICADO Y CORRECTO,Tercer bloque de 7 días.
+window_2026_06_27_to_2026_07_03_clicks,0,VERIFICADO Y CORRECTO,CTR bloque 0.00%.
+keyword_export_available,NO,INCOMPLETO,No contiene las 88 queries visibles en Bing.
+page_export_available,NO,INCOMPLETO,No contiene URLs/páginas.
+country_export_available,NO,INCOMPLETO,No contiene países.
+device_export_available,NO,INCOMPLETO,No contiene dispositivos.
+shopify_modified,NO,VERIFICADO Y CORRECTO,
+bing_modified,NO,VERIFICADO Y CORRECTO,
+next_required,MW-BING-WEBMASTER-SEARCH-PERFORMANCE-KEYWORDS-EXPORT-013J2,REQUIERE DECISION HUMANA,Descargar export de Keywords/List By Keywords.

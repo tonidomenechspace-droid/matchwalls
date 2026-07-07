@@ -1,0 +1,3 @@
+public_noindex_ok=7/7
+sitemap_removed_ok=7/7
+expected_public_status=200 with noindex; URLs remain directly accessible
