@@ -10,6 +10,12 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] query | Shopify SEO/GEO developer handoff
+
+- Created [[wiki/Analyses/shopify-seo-geo-developer-handoff-2026-07-07|Shopify SEO/GEO developer handoff]] for developer onboarding.
+- Summarized the current Shopify SEO/GEO/AEO state, the Codex lot workflow, the live theme state, the confirmed Black Friday collection hub change, the Shopify Engineering blocker, IndexNow readiness, entity factual constraints, safe next tasks, and blocked/high-risk actions.
+- Updated [[wiki/index|Wiki Index]] to include the new analysis page.
+
 ## [2026-07-07] lint | Initial wiki structure and raw inventory
 
 - Created the base wiki catalog at [[wiki/index|Wiki Index]].
