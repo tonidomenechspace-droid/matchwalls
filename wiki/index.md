@@ -30,6 +30,7 @@ No concept pages have been created yet.
 
 - [[wiki/Analyses/shopify-seo-geo-developer-handoff-2026-07-07|Shopify SEO/GEO developer handoff]]
 - [[wiki/Analyses/matchwalls-audit-status-objectives-2026-07-07|MatchWalls audit status and completed objectives]]
+- [[wiki/Analyses/obsidian-knowledge-graph-quality-2026-07-07|Obsidian knowledge graph quality]]
 
 ## Maintenance notes
 
@@ -38,3 +39,4 @@ No concept pages have been created yet.
 - `matchwalls_matchwalls-shopify_2026-07-06_1043.zip` was removed from Git because the extracted source set already exists under `raw/`.
 - Added the Shopify SEO/GEO developer handoff analysis on 2026-07-07.
 - Added the MatchWalls audit status and objectives report on 2026-07-07.
+- Added the Obsidian knowledge graph quality report on 2026-07-07.

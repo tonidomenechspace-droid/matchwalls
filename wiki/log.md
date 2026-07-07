@@ -10,6 +10,14 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] query | Obsidian knowledge graph quality
+
+- Created [[wiki/Analyses/obsidian-knowledge-graph-quality-2026-07-07|Obsidian knowledge graph quality]].
+- Assessed whether `AGENTS.md` is producing useful Obsidian tags and relationships.
+- Documented evidence: current wiki pages have frontmatter, 19 wikilinks were detected, [[wiki/index|Wiki Index]] and [[wiki/log|Wiki Log]] are active, but `wiki/Sources/`, `wiki/Entities/`, and `wiki/Concepts/` do not exist yet.
+- Concluded that the vault is useful as an audit memory layer, but still incomplete as a rich Obsidian knowledge graph.
+- Updated [[wiki/index|Wiki Index]] to include the new analysis page.
+
 ## [2026-07-07] lint | AGENTS.md execution
 
 - Executed `AGENTS.md` as a wiki maintenance/lint pass against the current repository layout.
