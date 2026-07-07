@@ -46,6 +46,9 @@ seguridad/*.local.md
 # Local source drops with credentials or OAuth secrets.
 raw/hub_matchwalls/
 
+# Confidential M&A / business-plan deliverables.
+raw/informe_machtwell/
+
 # OS/editor noise
 .DS_Store
 Thumbs.db

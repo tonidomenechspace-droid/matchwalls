@@ -25,6 +25,7 @@ tags:
 - [[wiki/Sources/entity-factual-brief-015a|Entity factual brief 015A]]
 - [[wiki/Sources/entity-source-validation-015b|Entity source validation 015B]]
 - [[wiki/Sources/hub-matchwalls-raw-folder|Hub MatchWalls raw folder]]
+- [[wiki/Sources/informe-machtwell-erismann-business-plan|Informe Machtwell Erismann business plan]]
 
 ## Entities
 
@@ -37,6 +38,7 @@ tags:
 - [[wiki/Entities/hub-matchwalls|Hub MatchWalls]]
 - [[wiki/Entities/n8n|n8n]]
 - [[wiki/Entities/google-analytics|Google Analytics]]
+- [[wiki/Entities/erismann|Erismann]]
 
 ## Concepts
 
@@ -52,6 +54,8 @@ tags:
 - [[wiki/Concepts/shopify-liquid|Shopify Liquid]]
 - [[wiki/Concepts/shopify-api|Shopify API]]
 - [[wiki/Concepts/business-transferability|Business transferability]]
+- [[wiki/Concepts/ma-due-diligence|M&A due diligence]]
+- [[wiki/Concepts/digital-growth-plan|Digital growth plan]]
 
 ## Analyses
 
@@ -69,3 +73,4 @@ tags:
 - Added the Obsidian knowledge graph quality report on 2026-07-07.
 - Added the first source, entity, and concept graph layer on 2026-07-07.
 - Added a sanitized Hub MatchWalls graph layer on 2026-07-07.
+- Added a sanitized Erismann business-plan graph layer on 2026-07-07.

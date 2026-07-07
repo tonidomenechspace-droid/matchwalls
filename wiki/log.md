@@ -10,6 +10,16 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] ingest | Informe Machtwell Erismann business plan
+
+- Processed local source folder `raw/informe_machtwell/` according to `AGENTS.md`.
+- Created sanitized source summary [[wiki/Sources/informe-machtwell-erismann-business-plan|Informe Machtwell Erismann business plan]].
+- Created entity page [[wiki/Entities/erismann|Erismann]].
+- Created concept pages [[wiki/Concepts/ma-due-diligence|M&A due diligence]] and [[wiki/Concepts/digital-growth-plan|Digital growth plan]].
+- Updated [[wiki/index|Wiki Index]] with the new source, entity, and concepts.
+- Security/confidentiality finding: the source contains confidential business-plan and M&A material. The folder was added to `.gitignore`; raw files were not committed and sensitive legal/financial detail was not copied into wiki pages.
+- Raw files were not edited.
+
 ## [2026-07-07] ingest | Hub MatchWalls raw folder
 
 - Processed local source folder `raw/hub_matchwalls/` according to `AGENTS.md`.
