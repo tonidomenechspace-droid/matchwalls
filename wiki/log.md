@@ -10,6 +10,14 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] lint | First Obsidian graph layer
+
+- Created the first source summary layer under `wiki/Sources/` for key Shopify, infrastructure, Bing, IndexNow, and entity validation documents.
+- Created entity pages for [[wiki/Entities/matchwalls|MatchWalls]], [[wiki/Entities/shopify|Shopify]], [[wiki/Entities/shopify-engineering-ticket-68731900|Shopify Engineering ticket 68731900]], [[wiki/Entities/bing|Bing]], [[wiki/Entities/langshop|LangShop]], and [[wiki/Entities/indexnow|IndexNow]].
+- Created concept pages for [[wiki/Concepts/seo|SEO]], [[wiki/Concepts/geo|GEO]], [[wiki/Concepts/aeo|AEO]], [[wiki/Concepts/schema|Schema]], [[wiki/Concepts/indexability|Indexability]], [[wiki/Concepts/crawl|Crawl]], [[wiki/Concepts/canonical|Canonical]], [[wiki/Concepts/hreflang|Hreflang]], [[wiki/Concepts/entity-facts|Entity facts]], and [[wiki/Concepts/shopify-liquid|Shopify Liquid]].
+- Updated [[wiki/index|Wiki Index]] and linked the current analysis reports to the new graph nodes.
+- Confirmed raw files remain immutable in this pass.
+
 ## [2026-07-07] query | Obsidian knowledge graph quality
 
 - Created [[wiki/Analyses/obsidian-knowledge-graph-quality-2026-07-07|Obsidian knowledge graph quality]].

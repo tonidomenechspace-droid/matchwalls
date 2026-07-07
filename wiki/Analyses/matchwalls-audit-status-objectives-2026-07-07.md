@@ -17,7 +17,7 @@ tags:
 
 ## Summary
 
-Este reporte resume que se ha conseguido con la auditoria SEO/GEO/AEO de MatchWalls, por que el trabajo ha requerido muchos tokens y cual es el estado actual verificable de `matchwalls.com` frente a la auditoria.
+Este reporte resume que se ha conseguido con la auditoria [[wiki/Concepts/seo|SEO]]/[[wiki/Concepts/geo|GEO]]/[[wiki/Concepts/aeo|AEO]] de [[wiki/Entities/matchwalls|MatchWalls]], por que el trabajo ha requerido muchos tokens y cual es el estado actual verificable de `matchwalls.com` frente a la auditoria.
 
 La conclusion ejecutiva es:
 
@@ -25,8 +25,8 @@ La conclusion ejecutiva es:
 - Se ha creado una capa de conocimiento util para desarrollo: [[wiki/Analyses/shopify-seo-geo-developer-handoff-2026-07-07|Shopify SEO/GEO developer handoff]].
 - Hay un cambio live confirmado en Shopify: exclusion de Black Friday evergreen del hub `/collections`.
 - La web publica responde correctamente en comprobaciones ligeras de home, collections, sitemap, robots, `llms.txt` y `agents.md`.
-- IndexNow sigue sin estar activo: `https://www.matchwalls.com/indexnow.txt` devuelve 404.
-- El mayor bloqueo sigue siendo la incidencia de Shopify Engineering `68731900`, relacionada con sincronizacion/cache/render en landings geograficas.
+- [[wiki/Entities/indexnow|IndexNow]] sigue sin estar activo: `https://www.matchwalls.com/indexnow.txt` devuelve 404.
+- El mayor bloqueo sigue siendo la incidencia de [[wiki/Entities/shopify-engineering-ticket-68731900|Shopify Engineering ticket 68731900]], relacionada con sincronizacion/cache/render en landings geograficas.
 
 ## Objectives completed
 
@@ -149,13 +149,13 @@ Comprobacion ligera realizada el 2026-07-07. No es un crawl completo y respeta l
 | Area | Estado | Comentario |
 |---|---|---|
 | Repositorio/wiki | `OPERATIVO` | Informe de handoff creado, indexado y registrado |
-| Shopify MAIN | `PARCIALMENTE MODIFICADO` | Cambio live confirmado en `sections/main-list-collections.liquid` |
+| [[wiki/Entities/shopify|Shopify]] MAIN | `PARCIALMENTE MODIFICADO` | Cambio live confirmado en `sections/main-list-collections.liquid` |
 | Hub `/collections` | `MEJORADO` | Black Friday evergreen excluido segun reporte postcheck |
 | Landings Espana/Francia | `BLOQUEADO` | Caso `012O` por discrepancia Admin/storefront |
 | Schema visible | `BLOQUEADO` | No avanzar hasta resolver infraestructura/cache/render |
 | LangShop/traducciones | `BLOQUEADO` | No tocar mientras siga el ticket critico |
-| Bing base | `DOCUMENTADO` | Hay baseline de Search Performance, sitemap y AI Performance |
-| IndexNow | `NO ACTIVO` | Falta key verificable; `indexnow.txt` devuelve 404 |
+| [[wiki/Entities/bing|Bing]] base | `DOCUMENTADO` | Hay baseline de Search Performance, sitemap y AI Performance |
+| [[wiki/Entities/indexnow|IndexNow]] | `NO ACTIVO` | Falta key verificable; `indexnow.txt` devuelve 404 |
 | Entity facts | `PRUDENTE` | Base segura definida; claims corporativos fuertes bloqueados |
 | SEM pago | `NO EVIDENCIADO` | No se han visto campanas ads/pago en los raw revisados |
 

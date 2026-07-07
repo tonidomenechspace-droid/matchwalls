@@ -16,15 +16,36 @@ tags:
 
 ## Sources
 
-No individual source summaries have been created yet.
+- [[wiki/Sources/shopify-seo-geo-staging-readme|Shopify SEO-GEO staging README]]
+- [[wiki/Sources/operational-plan-2026-07-04|Operational plan 2026-07-04]]
+- [[wiki/Sources/infra-hold-replan-014b|Infrastructure hold replan 014B]]
+- [[wiki/Sources/ceo-cmo-panel-spec-014c|CEO CMO panel spec 014C]]
+- [[wiki/Sources/shopify-cli-theme-push-013e16e2|Shopify CLI theme push 013E16E2]]
+- [[wiki/Sources/indexnow-readiness-013f|IndexNow readiness 013F]]
+- [[wiki/Sources/entity-factual-brief-015a|Entity factual brief 015A]]
+- [[wiki/Sources/entity-source-validation-015b|Entity source validation 015B]]
 
 ## Entities
 
-No entity pages have been created yet.
+- [[wiki/Entities/matchwalls|MatchWalls]]
+- [[wiki/Entities/shopify|Shopify]]
+- [[wiki/Entities/shopify-engineering-ticket-68731900|Shopify Engineering ticket 68731900]]
+- [[wiki/Entities/bing|Bing]]
+- [[wiki/Entities/langshop|LangShop]]
+- [[wiki/Entities/indexnow|IndexNow]]
 
 ## Concepts
 
-No concept pages have been created yet.
+- [[wiki/Concepts/seo|SEO]]
+- [[wiki/Concepts/geo|GEO]]
+- [[wiki/Concepts/aeo|AEO]]
+- [[wiki/Concepts/schema|Schema]]
+- [[wiki/Concepts/indexability|Indexability]]
+- [[wiki/Concepts/crawl|Crawl]]
+- [[wiki/Concepts/canonical|Canonical]]
+- [[wiki/Concepts/hreflang|Hreflang]]
+- [[wiki/Concepts/entity-facts|Entity facts]]
+- [[wiki/Concepts/shopify-liquid|Shopify Liquid]]
 
 ## Analyses
 
@@ -40,3 +61,4 @@ No concept pages have been created yet.
 - Added the Shopify SEO/GEO developer handoff analysis on 2026-07-07.
 - Added the MatchWalls audit status and objectives report on 2026-07-07.
 - Added the Obsidian knowledge graph quality report on 2026-07-07.
+- Added the first source, entity, and concept graph layer on 2026-07-07.

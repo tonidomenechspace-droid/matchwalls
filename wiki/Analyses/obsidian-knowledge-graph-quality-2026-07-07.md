@@ -18,14 +18,14 @@ tags:
 
 ## Summary
 
-La boveda esta funcionando bien como primera capa de memoria auditada para MatchWalls: ya hay indice, log, sintesis inicial y dos informes utiles para entender el estado SEO/GEO de Shopify.
+La boveda esta funcionando bien como primera capa de memoria auditada para [[wiki/Entities/matchwalls|MatchWalls]]: ya hay indice, log, sintesis inicial, informes utiles y una primera capa de fuentes, entidades y conceptos para entender el estado [[wiki/Concepts/seo|SEO]]/[[wiki/Concepts/geo|GEO]] de [[wiki/Entities/shopify|Shopify]].
 
-Pero todavia no esta funcionando plenamente como grafo Obsidian de etiquetas y relaciones. La razon es concreta: faltan paginas de fuentes, entidades y conceptos. Ahora mismo la relacion principal es entre informes, no entre los objetos de negocio del proyecto.
+Todavia no es un grafo exhaustivo de todo el corpus, pero ya no esta limitado a relaciones entre informes. La primera capa conecta fuentes criticas, entidades de negocio/plataforma y conceptos tecnicos.
 
-Diagnostico corto:
+Diagnostico actualizado:
 
 - Como repositorio compartido y memoria de auditoria: `BIEN`.
-- Como wiki Obsidian navegable por relaciones: `INCOMPLETO`.
+- Como wiki Obsidian navegable por relaciones: `MEJORADO TRAS LA PRIMERA CAPA DE GRAFO`.
 - Como base para tomar decisiones tecnicas sin releer todos los raw: `UTIL`.
 - Como sistema automatico de etiquetas/relaciones de todo el corpus: `TODAVIA NO`.
 
@@ -35,24 +35,32 @@ Comprobacion local realizada el 2026-07-07:
 
 | Evidencia | Resultado |
 |---|---:|
-| Archivos actuales bajo `wiki/` | 6 |
+| Archivos actuales bajo `wiki/` | 31 |
 | Paginas generadas principales con frontmatter YAML | Si |
-| Wikilinks detectados en `wiki/` | 19 |
+| Wikilinks detectados en `wiki/` | 240 |
+| Wikilinks rotos detectados | 0 |
 | `wiki/index.md` enlaza la sintesis y los analisis | Si |
 | `wiki/log.md` registra consultas y lint passes | Si |
-| Carpeta `wiki/Sources/` | No existe |
-| Carpeta `wiki/Entities/` | No existe |
-| Carpeta `wiki/Concepts/` | No existe |
+| Paginas en `wiki/Sources/` | 8 |
+| Paginas en `wiki/Entities/` | 6 |
+| Paginas en `wiki/Concepts/` | 10 |
 | Raw files modificados durante las pasadas recientes | No |
 
-Archivos actuales:
+Archivos iniciales de la capa wiki:
 
 - [[wiki/index|Wiki Index]]
 - [[wiki/log|Wiki Log]]
 - [[wiki/Synthesis/raw-inventory-initial-pass|Raw inventory initial pass]]
 - [[wiki/Analyses/shopify-seo-geo-developer-handoff-2026-07-07|Shopify SEO/GEO developer handoff]]
 - [[wiki/Analyses/matchwalls-audit-status-objectives-2026-07-07|MatchWalls audit status and completed objectives]]
+- [[wiki/Analyses/obsidian-knowledge-graph-quality-2026-07-07|Obsidian knowledge graph quality]]
 - `wiki/_templates/source-summary.md`
+
+Nodos de grafo creados en la primera capa:
+
+- Fuentes: [[wiki/Sources/shopify-seo-geo-staging-readme|Shopify SEO-GEO staging README]], [[wiki/Sources/operational-plan-2026-07-04|Operational plan 2026-07-04]], [[wiki/Sources/infra-hold-replan-014b|Infrastructure hold replan 014B]], [[wiki/Sources/ceo-cmo-panel-spec-014c|CEO CMO panel spec 014C]], [[wiki/Sources/shopify-cli-theme-push-013e16e2|Shopify CLI theme push 013E16E2]], [[wiki/Sources/indexnow-readiness-013f|IndexNow readiness 013F]], [[wiki/Sources/entity-factual-brief-015a|Entity factual brief 015A]], [[wiki/Sources/entity-source-validation-015b|Entity source validation 015B]].
+- Entidades: [[wiki/Entities/matchwalls|MatchWalls]], [[wiki/Entities/shopify|Shopify]], [[wiki/Entities/shopify-engineering-ticket-68731900|Shopify Engineering ticket 68731900]], [[wiki/Entities/bing|Bing]], [[wiki/Entities/langshop|LangShop]], [[wiki/Entities/indexnow|IndexNow]].
+- Conceptos: [[wiki/Concepts/seo|SEO]], [[wiki/Concepts/geo|GEO]], [[wiki/Concepts/aeo|AEO]], [[wiki/Concepts/schema|Schema]], [[wiki/Concepts/indexability|Indexability]], [[wiki/Concepts/crawl|Crawl]], [[wiki/Concepts/canonical|Canonical]], [[wiki/Concepts/hreflang|Hreflang]], [[wiki/Concepts/entity-facts|Entity facts]], [[wiki/Concepts/shopify-liquid|Shopify Liquid]].
 
 ## What is being done well
 
@@ -94,29 +102,29 @@ Valor: permite futuras vistas, filtros, bases de Obsidian o consultas por tipo/e
 
 ## What is not yet being done well
 
-### 1. Faltan paginas de fuentes
+### 1. Las paginas de fuentes todavia son una primera capa
 
-El `AGENTS.md` pide preservar procedencia mediante paginas en `wiki/Sources/`, pero esa carpeta aun no existe.
+El `AGENTS.md` pide preservar procedencia mediante paginas en `wiki/Sources/`. Ya existe una primera seleccion de fuentes criticas, pero no se ha ingerido todo el corpus.
 
-Impacto: los informes citan raw paths y otras paginas wiki, pero todavia no existe una pagina resumen por fuente. Para auditoria fuerte, esto es insuficiente.
+Impacto: la trazabilidad mejoro, pero para auditoria fuerte falta crear mas source summaries de los raw restantes.
 
-### 2. Faltan entidades
+### 2. Faltan entidades secundarias
 
-No existe `wiki/Entities/`. Terminos como `MatchWalls`, `Shopify`, `Bing`, `LangShop`, `IndexNow`, `Dani`, `Daniel`, `Shopify Engineering ticket 68731900` deberian tener paginas propias si se repiten.
+Ya existen entidades principales. Quedan entidades secundarias por decidir, como `Dani`, `Daniel`, `Google Search Console`, `GA4`, `Copilot`, `Cloudflare`, `Shopify CLI` y colecciones/productos criticos si pasan a ser recurrentes.
 
-Impacto: el grafo Obsidian no puede mostrar relaciones reales entre actores, plataformas, tickets y decisiones.
+Impacto: el grafo ya muestra relaciones centrales, pero aun no todo el ecosistema operativo.
 
-### 3. Faltan conceptos
+### 3. Faltan conceptos secundarios
 
-No existe `wiki/Concepts/`. Conceptos como `SEO`, `GEO`, `AEO`, `AGEO`, `IndexNow`, `schema`, `crawl`, `canonical`, `hreflang`, `entity facts` deberian estar normalizados.
+Ya existen conceptos principales. Quedan conceptos secundarios como `AGEO`, `SEM`, `crawl budget`, `robots.txt`, `sitemap`, `llms.txt`, `agents.md`, `FAQPage`, `BreadcrumbList`, `WebPage`, `sameAs` y `Search Performance`.
 
-Impacto: se pierde valor de busqueda semantica interna y reutilizacion de conocimiento.
+Impacto: la busqueda semantica interna mejora, pero todavia puede especializarse.
 
-### 4. Las relaciones aun son pocas
+### 4. Las relaciones aun pueden profundizarse
 
-Hay 19 wikilinks detectados en `wiki/`, pero la mayoria conectan indice, log e informes. No hay todavia red rica de relaciones entre entidades, conceptos, fuentes y decisiones.
+Hay 240 wikilinks detectados en `wiki/` y 0 enlaces rotos. Ya hay red util entre fuentes, entidades, conceptos y analisis, pero todavia faltan enlaces reciprocos mas finos por cada lote raw.
 
-Impacto: Obsidian aun no aporta todo su valor como mapa visual del proyecto.
+Impacto: Obsidian ya aporta valor como mapa visual inicial, pero no como mapa exhaustivo de todo el corpus.
 
 ### 5. `AGENTS.md` no genera por si solo
 
@@ -152,16 +160,16 @@ Lo que puede aportar si se completa el grafo:
 
 ## Recommended next pass
 
-La siguiente pasada recomendable no es escribir otro informe largo, sino crear la primera capa de relaciones:
+La siguiente pasada recomendable es ampliar la primera capa de relaciones:
 
-1. Crear `wiki/Sources/` con 5-10 paginas resumen de los raw mas importantes.
-2. Crear `wiki/Entities/` para `MatchWalls`, `Shopify`, `Bing`, `LangShop`, `IndexNow` y `Shopify Engineering ticket 68731900`.
-3. Crear `wiki/Concepts/` para `SEO`, `GEO`, `AEO`, `schema`, `IndexNow`, `crawl budget`, `canonical`, `hreflang`.
-4. Enlazar los dos informes existentes a esas paginas.
-5. Actualizar `wiki/index.md` y `wiki/log.md`.
+1. Ingerir mas fuentes raw por prioridad, empezando por reportes de lotes `012`, `013`, `014` y `015`.
+2. Crear entidades secundarias solo cuando tengan recurrencia real.
+3. Crear conceptos secundarios para `AGEO`, `SEM`, `robots.txt`, `sitemap`, `llms.txt`, `agents.md`, `FAQPage`, `BreadcrumbList` y `WebPage`.
+4. Enlazar cada source summary a los lotes, entidades y conceptos afectados.
+5. Ejecutar lint de orfandad y links tras cada tanda.
 
 ## Decision
 
-El trabajo se esta haciendo bien como base inicial, pero todavia no como sistema completo de etiquetas y relaciones Obsidian. La evidencia principal es que ya existen informes enlazados, frontmatter e indice/log, pero aun no existen `Sources`, `Entities` ni `Concepts`.
+El trabajo se estaba haciendo bien como base inicial, pero todavia no como sistema completo de etiquetas y relaciones Obsidian. Tras la primera capa de grafo, ya existen `Sources`, `Entities` y `Concepts` para las piezas centrales de [[wiki/Entities/matchwalls|MatchWalls]], [[wiki/Entities/shopify|Shopify]], [[wiki/Entities/bing|Bing]], [[wiki/Entities/indexnow|IndexNow]], [[wiki/Entities/langshop|LangShop]], [[wiki/Concepts/seo|SEO]], [[wiki/Concepts/geo|GEO]] y [[wiki/Concepts/aeo|AEO]].
 
-La prioridad ahora es convertir los nombres repetidos y fuentes criticas en paginas propias.
+La prioridad ahora es ampliar el ingest de fuentes y crear enlaces reciprocos mas profundos a medida que se procesen mas raw.

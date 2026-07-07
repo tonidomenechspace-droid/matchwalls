@@ -17,7 +17,7 @@ tags:
 
 ## Summary
 
-El repositorio contiene una auditoria operativa de MatchWalls centrada en SEO, GEO, AEO/AGEO, Bing/Copilot, crawlers, schema, contenido multidioma y cambios controlados en Shopify. No es solo un repositorio de codigo: es una bitacora de lotes ejecutados con evidencias, respaldos, matrices CSV y decisiones de bloqueo.
+El repositorio contiene una auditoria operativa de [[wiki/Entities/matchwalls|MatchWalls]] centrada en [[wiki/Concepts/seo|SEO]], [[wiki/Concepts/geo|GEO]], [[wiki/Concepts/aeo|AEO]]/AGEO, [[wiki/Entities/bing|Bing]]/Copilot, [[wiki/Concepts/crawl|crawlers]], [[wiki/Concepts/schema|schema]], contenido multidioma y cambios controlados en [[wiki/Entities/shopify|Shopify]]. No es solo un repositorio de codigo: es una bitacora de lotes ejecutados con evidencias, respaldos, matrices CSV y decisiones de bloqueo.
 
 El estado actual no es "todo aplicado". La lectura correcta es:
 
@@ -32,16 +32,16 @@ Inference: tu socio esta usando Codex como operador de paquetes de trabajo, no c
 
 Archivos raw principales revisados para este handoff:
 
-- `raw/shopify-staging/README.md`
-- `raw/auditoria-seo-geo-matchwalls/addendum-plan-operativo-vigente-2026-07-04.md`
-- `raw/auditoria-seo-geo-matchwalls/infra-hold-replan-MW-MASTER-QUEUE-INFRA-HOLD-REPLAN-014B-2026-07-05.md`
+- [[wiki/Sources/shopify-seo-geo-staging-readme|Shopify SEO-GEO staging README]]
+- [[wiki/Sources/operational-plan-2026-07-04|Operational plan 2026-07-04]]
+- [[wiki/Sources/infra-hold-replan-014b|Infrastructure hold replan 014B]]
 - `raw/auditoria-seo-geo-matchwalls/cola-segura-mientras-shopify-engineering-2026-07-05.md`
-- `raw/auditoria-seo-geo-matchwalls/ceo-cmo-panel-spec-MW-CEO-CMO-PANEL-SPEC-014C-2026-07-05.md`
+- [[wiki/Sources/ceo-cmo-panel-spec-014c|CEO CMO panel spec 014C]]
 - `raw/auditoria-seo-geo-matchwalls/resultado-MW-COLLECTIONS-BLACK-FRIDAY-EVERGREEN-MAIN-SURGICAL-EXCLUDE-013E16E-2026-07-05.md`
-- `raw/auditoria-seo-geo-matchwalls/resultado-MW-SHOPIFY-CLI-INSTALL-AUTH-THEME-PUSH-013E16E2-2026-07-05.md`
-- `raw/auditoria-seo-geo-matchwalls/readiness-MW-INDEXNOW-BING-COPILOT-IMPLEMENTATION-READINESS-013F-2026-07-05.md`
-- `raw/auditoria-seo-geo-matchwalls/entity-factual-brief-MW-ENTITY-FACTUAL-BRIEF-ES-EN-FR-DE-NL-015A-2026-07-05.md`
-- `raw/auditoria-seo-geo-matchwalls/source-validation-MW-ENTITY-FACTUAL-SOURCE-VALIDATION-015B-2026-07-05.md`
+- [[wiki/Sources/shopify-cli-theme-push-013e16e2|Shopify CLI theme push 013E16E2]]
+- [[wiki/Sources/indexnow-readiness-013f|IndexNow readiness 013F]]
+- [[wiki/Sources/entity-factual-brief-015a|Entity factual brief 015A]]
+- [[wiki/Sources/entity-source-validation-015b|Entity source validation 015B]]
 
 ## What is in the repository
 
@@ -159,7 +159,7 @@ Pero siguen bloqueados para schema/copy publico:
 
 ## Main blocker
 
-El bloqueo principal es Shopify Engineering ticket `68731900`.
+El bloqueo principal es [[wiki/Entities/shopify-engineering-ticket-68731900|Shopify Engineering ticket 68731900]].
 
 Problema documentado: inconsistencia entre Admin y storefront publico en landings geograficas, especialmente el caso `012O`. Los QA registran muchas respuestas FAIL aunque no aparecen `noindex`, las canonicals son correctas y el tema publico es el esperado.
 
@@ -201,7 +201,7 @@ Regla vigente hasta respuesta de Shopify Engineering:
 
 ## IndexNow status
 
-IndexNow no esta implementado.
+[[wiki/Entities/indexnow|IndexNow]] no esta implementado.
 
 Estado publico revisado el 2026-07-05:
 
