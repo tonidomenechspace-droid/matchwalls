@@ -1,5 +1,6 @@
 [
   "chatgpt-md",
   "github-sync",
-  "ollama"
+  "ollama",
+  "html-page-viewer"
 ]
