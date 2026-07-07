@@ -26,6 +26,7 @@ tags:
 - [[wiki/Sources/entity-source-validation-015b|Entity source validation 015B]]
 - [[wiki/Sources/hub-matchwalls-raw-folder|Hub MatchWalls raw folder]]
 - [[wiki/Sources/informe-machtwell-erismann-business-plan|Informe Machtwell Erismann business plan]]
+- [[wiki/Sources/erismann-due-diligence-data-room|Erismann due diligence data room]]
 
 ## Entities
 
@@ -39,6 +40,7 @@ tags:
 - [[wiki/Entities/n8n|n8n]]
 - [[wiki/Entities/google-analytics|Google Analytics]]
 - [[wiki/Entities/erismann|Erismann]]
+- [[wiki/Entities/weco|WECO]]
 
 ## Concepts
 
@@ -56,6 +58,8 @@ tags:
 - [[wiki/Concepts/business-transferability|Business transferability]]
 - [[wiki/Concepts/ma-due-diligence|M&A due diligence]]
 - [[wiki/Concepts/digital-growth-plan|Digital growth plan]]
+- [[wiki/Concepts/data-room|Data room]]
+- [[wiki/Concepts/investor-reporting|Investor reporting]]
 
 ## Analyses
 
@@ -74,3 +78,4 @@ tags:
 - Added the first source, entity, and concept graph layer on 2026-07-07.
 - Added a sanitized Hub MatchWalls graph layer on 2026-07-07.
 - Added a sanitized Erismann business-plan graph layer on 2026-07-07.
+- Added a sanitized Erismann data-room graph layer on 2026-07-07.

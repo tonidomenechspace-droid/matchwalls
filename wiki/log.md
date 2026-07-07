@@ -10,6 +10,17 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] ingest | Erismann due diligence data room
+
+- Processed local source folder `raw/ERISMAN/` according to `AGENTS.md`.
+- Created sanitized source summary [[wiki/Sources/erismann-due-diligence-data-room|Erismann due diligence data room]].
+- Updated [[wiki/Entities/erismann|Erismann]] with aliases for `Erisman`, `ERISMAN`, and `Erismann & Cie.`.
+- Created entity page [[wiki/Entities/weco|WECO]].
+- Created concept pages [[wiki/Concepts/data-room|Data room]] and [[wiki/Concepts/investor-reporting|Investor reporting]].
+- Updated [[wiki/index|Wiki Index]] with the new source, entity, and concepts.
+- Security/confidentiality finding: `raw/ERISMAN/` contains confidential data-room material including legal, fiscal, financial, operational, analytics, advertising, presentation, certification, and private travel/document files. The folder was added to `.gitignore`; raw files were not committed and sensitive details were not copied into wiki pages.
+- Raw files were not edited.
+
 ## [2026-07-07] ingest | Informe Machtwell Erismann business plan
 
 - Processed local source folder `raw/informe_machtwell/` according to `AGENTS.md`.
