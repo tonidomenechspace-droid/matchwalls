@@ -39,6 +39,9 @@ raw/auditoria-seo-geo-matchwalls/diagnostico-data-MW-CRAWLERS-BING-COPILOT-AI-RO
 !.env.example
 *.pem
 *.key
+seguridad/configuraciones.md
+seguridad/configuracion.md
+seguridad/*.local.md
 
 # OS/editor noise
 .DS_Store
