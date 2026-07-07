@@ -24,6 +24,7 @@ tags:
 - [[wiki/Sources/indexnow-readiness-013f|IndexNow readiness 013F]]
 - [[wiki/Sources/entity-factual-brief-015a|Entity factual brief 015A]]
 - [[wiki/Sources/entity-source-validation-015b|Entity source validation 015B]]
+- [[wiki/Sources/hub-matchwalls-raw-folder|Hub MatchWalls raw folder]]
 
 ## Entities
 
@@ -33,6 +34,9 @@ tags:
 - [[wiki/Entities/bing|Bing]]
 - [[wiki/Entities/langshop|LangShop]]
 - [[wiki/Entities/indexnow|IndexNow]]
+- [[wiki/Entities/hub-matchwalls|Hub MatchWalls]]
+- [[wiki/Entities/n8n|n8n]]
+- [[wiki/Entities/google-analytics|Google Analytics]]
 
 ## Concepts
 
@@ -46,6 +50,8 @@ tags:
 - [[wiki/Concepts/hreflang|Hreflang]]
 - [[wiki/Concepts/entity-facts|Entity facts]]
 - [[wiki/Concepts/shopify-liquid|Shopify Liquid]]
+- [[wiki/Concepts/shopify-api|Shopify API]]
+- [[wiki/Concepts/business-transferability|Business transferability]]
 
 ## Analyses
 
@@ -62,3 +68,4 @@ tags:
 - Added the MatchWalls audit status and objectives report on 2026-07-07.
 - Added the Obsidian knowledge graph quality report on 2026-07-07.
 - Added the first source, entity, and concept graph layer on 2026-07-07.
+- Added a sanitized Hub MatchWalls graph layer on 2026-07-07.

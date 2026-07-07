@@ -43,6 +43,9 @@ seguridad/configuraciones.md
 seguridad/configuracion.md
 seguridad/*.local.md
 
+# Local source drops with credentials or OAuth secrets.
+raw/hub_matchwalls/
+
 # OS/editor noise
 .DS_Store
 Thumbs.db

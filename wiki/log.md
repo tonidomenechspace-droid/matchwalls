@@ -10,6 +10,16 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] ingest | Hub MatchWalls raw folder
+
+- Processed local source folder `raw/hub_matchwalls/` according to `AGENTS.md`.
+- Created sanitized source summary [[wiki/Sources/hub-matchwalls-raw-folder|Hub MatchWalls raw folder]].
+- Created entity pages [[wiki/Entities/hub-matchwalls|Hub MatchWalls]], [[wiki/Entities/n8n|n8n]], and [[wiki/Entities/google-analytics|Google Analytics]].
+- Created concept pages [[wiki/Concepts/shopify-api|Shopify API]] and [[wiki/Concepts/business-transferability|Business transferability]].
+- Updated [[wiki/index|Wiki Index]] with the new source, entities, and concepts.
+- Security finding: `raw/hub_matchwalls/` contains passwords, social credentials, and Google OAuth secrets. The folder was added to `.gitignore`; secrets were not copied into wiki pages.
+- Raw files were not edited.
+
 ## [2026-07-07] lint | First Obsidian graph layer
 
 - Created the first source summary layer under `wiki/Sources/` for key Shopify, infrastructure, Bing, IndexNow, and entity validation documents.
