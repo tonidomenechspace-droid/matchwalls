@@ -10,6 +10,16 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] lint | AGENTS.md execution
+
+- Executed `AGENTS.md` as a wiki maintenance/lint pass against the current repository layout.
+- Confirmed current generated wiki pages have YAML frontmatter: [[wiki/index|Wiki Index]], [[wiki/log|Wiki Log]], [[wiki/Synthesis/raw-inventory-initial-pass|Raw inventory initial pass]], [[wiki/Analyses/shopify-seo-geo-developer-handoff-2026-07-07|Shopify SEO/GEO developer handoff]], and [[wiki/Analyses/matchwalls-audit-status-objectives-2026-07-07|MatchWalls audit status and completed objectives]].
+- Confirmed [[wiki/index|Wiki Index]] lists the current synthesis and analysis pages.
+- Confirmed no raw files were edited during this pass.
+- Maintenance finding: `AGENTS.md` names `000-Wiki/raw/` and `000-Wiki/wiki/`, while this repository currently uses `raw/` and `wiki/`. Continue using the existing layout unless a future structural migration is explicitly approved.
+- Maintenance finding: individual source summaries under `wiki/Sources/`, entity pages, and concept pages have not been created yet. Current analyses cite reviewed raw paths and the initial synthesis, but full provenance would improve after scoped source ingest pages are added.
+- Maintenance finding: recurring terms that should become entity/concept pages in a later pass include `MatchWalls`, `Shopify`, `Bing`, `IndexNow`, `GEO`, `AEO`, `LangShop`, and `Shopify Engineering ticket 68731900`.
+
 ## [2026-07-07] query | MatchWalls audit status and completed objectives
 
 - Created [[wiki/Analyses/matchwalls-audit-status-objectives-2026-07-07|MatchWalls audit status and completed objectives]].
