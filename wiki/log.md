@@ -10,6 +10,12 @@ tags:
 
 # Wiki Log
 
+## [2026-07-07] query | MatchWalls audit status and completed objectives
+
+- Created [[wiki/Analyses/matchwalls-audit-status-objectives-2026-07-07|MatchWalls audit status and completed objectives]].
+- Reported completed objectives, token-use rationale, current public lightweight HTTP checks for `matchwalls.com`, IndexNow status, audit area status, and recommended executive wording.
+- Updated [[wiki/index|Wiki Index]] to include the new report.
+
 ## [2026-07-07] query | Shopify SEO/GEO developer handoff
 
 - Created [[wiki/Analyses/shopify-seo-geo-developer-handoff-2026-07-07|Shopify SEO/GEO developer handoff]] for developer onboarding.
